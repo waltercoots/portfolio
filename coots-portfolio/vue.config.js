@@ -1,7 +1,20 @@
 const { defineConfig } = require('@vue/cli-service')
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+const webpack = require('webpack');
+
 module.exports = defineConfig({
   transpileDependencies: true,
+  publicPath: process.env.NODE_ENV === 'production' ? '/' : '/',
+  css: {
+    loaderOptions: {
+      sass: {
+        additionalData: `
+          @import "@/assets/styles/_reset.scss";
+          @import "@/assets/styles/_variables.scss";
+        `,
+      }
+    }
+  },
   configureWebpack: {
     resolve: {
       alias: {
@@ -20,6 +33,11 @@ module.exports = defineConfig({
           reload: false,
         }
       ),
+      new webpack.DefinePlugin({
+        // This is just here to fix a warning
+        // https://github.com/vuejs/vue-cli/pull/7443
+        __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: 'false',
+      })      
     ],
   },  
 })
