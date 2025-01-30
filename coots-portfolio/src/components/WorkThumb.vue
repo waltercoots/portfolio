@@ -1,15 +1,15 @@
 <template>
-	<div>
+	<div class="workthumb">
+		<div></div>
 	</div>
 </template>
 
 <style scoped lang="scss">
-	div {
-		display:inline-block;
-		box-sizing: border-box;
-		width:100px;
-		height:100px;
-		border:1px solid #000;
+	div.workthumb {
+		margin:1rem;
+		width:8rem;
+		height:8rem;
 		background:#F0EFEF;
+		aspect-ratio: 1 / 1;
 	}
 </style>

@@ -11,8 +11,10 @@
 <style scoped lang="scss">
 	nav {
 		display:flex;
+		justify-content: center;
 		a {
 			padding:0 0.5em;
+			color:$black;
 		}
 	}
 </style>

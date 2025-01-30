@@ -23,38 +23,30 @@ export default {
       <p>I’m Walter Coots, an Austin-based designer with over 20 years experience. I craft products and brands that help companies stand out and grow faster. <router-link to="/about">More</router-link></p>
       <NavBar />
     </div>
-    <Transition name="work-implode">
-      <WorkGrid />
-    </Transition>
+    <WorkGrid />
   </div>
 </template>
 
 <style scoped lang="scss">
 div.home {
-  display:flex;
-  flex-grow: 1;
+  width:100%;
+  height:100%;
   div.homeContent {
-    margin: 20px auto;
-    flex-grow: 1;
     max-width:32.625rem;
     text-align:center;
     p {
-      font-size:1.30625rem;
-    }   
+      font-size:1.25rem;
+      margin-top:1rem;
+    }
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translateY(-50%) translateX(-50%);
   }
   .workgrid {
-    position: absolute;
-    top: 20%;
-    left: 20%;
-    z-index: -5;
   }
-}
-.work-implode-enter-active,
-.work-implode-leave-active {
-  transition: transform 2s;
-}
-.work-implode-enter-from,
-.work-implode-leave-to {
-  opacity:0;
+  nav {
+    margin-top:2rem;
+  }
 }
 </style>
