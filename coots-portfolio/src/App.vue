@@ -1,13 +1,10 @@
 <template>
   <div>
-    <nav>
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
-      <router-link to="/work">Work</router-link>
-      <a href="https://blog.waltercoots.com/" target="_blank">Blog</a>
-      <router-link to="/contact">Contact</router-link>
-    </nav>
-    <router-view />
+      <router-view v-slot="{ Component }">
+        <transition name="fade" mode="out-in">
+          <component :is="Component" />
+        </transition>
+      </router-view>     
   </div>
 </template>
 
@@ -15,9 +12,6 @@
 body {
   background:$white;
   color:$black;
-}
-
-#app {
 }
 a {
     color:$accent;
@@ -28,12 +22,16 @@ a {
     &:focus {
       background:#000;
     }
+    a:hover {
+      color:$accent;
+      text-decoration: underline;
+    }
   }
-
-nav {
-  display:flex;
-  a {
-    padding:0 0.5em;
-  }
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease-out;
 }
 </style>

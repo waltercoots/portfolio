@@ -19,6 +19,7 @@ module.exports = defineConfig({
     resolve: {
       alias: {
         '@babel': require.resolve('@babel/core'),
+        '@': '/src',
       },
     },
     plugins: [
@@ -37,7 +38,7 @@ module.exports = defineConfig({
         // This is just here to fix a warning
         // https://github.com/vuejs/vue-cli/pull/7443
         __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: 'false',
-      })      
+      },)      
     ],
   },  
 })
