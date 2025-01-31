@@ -1,6 +1,11 @@
+<script>
+export default {
+	name: 'WorkThumb'
+}
+</script>
+
 <template>
-	<div class="workthumb">
-	</div>
+	<div class="workthumb">	</div>
 </template>
 
 <style scoped lang="scss">
