@@ -1,6 +1,5 @@
 <template>
 	<div class="workthumb">
-		<div></div>
 	</div>
 </template>
 

@@ -1,9 +1,8 @@
 <template>
 	<nav>
-		<router-link to="/">Home</router-link>
-		<router-link to="/about">About</router-link>
+		<router-link to="/">About</router-link>
 		<router-link to="/work">Work</router-link>
-		<a href="https://blog.waltercoots.com/" target="_blank">Blog</a>
+		<!-- <a href="https://blog.waltercoots.com/" target="_blank">Blog</a> -->
 		<router-link to="/contact">Contact</router-link>
 	</nav>
 </template>
@@ -15,6 +14,9 @@
 		a {
 			padding:0 0.5em;
 			color:$black;
+			&.router-link-active {
+				color:fade-out($black, 0.5);
+			}
 		}
 	}
 </style>
