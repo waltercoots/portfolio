@@ -1,0 +1,154 @@
+{
+	"projects": [
+		{
+			"title": "WorkStep",
+			"slug": "workstep",
+			"year": "20x6",
+			"description": "Something I worked on",
+			"images": [
+				{
+					"url": "WorkStep",
+					"width": 920,
+					"clear": "",
+					"caption": "",
+					"credits": ""
+				}
+			]
+		},
+		{
+			"title": "Unilease",
+			"slug": "unilease",
+			"year": "20x6",
+			"description": "Something I worked on",
+			"images": [
+				{
+					"url": "",
+					"width": 920,
+					"clear": "",
+					"caption": "",
+					"credits": ""
+				}
+			]
+		},
+		{
+			"title": "Hallmark",
+			"slug": "hallmark",
+			"year": "20x6",
+			"description": "Something I worked on",
+			"images": [
+				{
+					"url": "",
+					"width": 920,
+					"clear": "",
+					"caption": "",
+					"credits": ""
+				}
+			]
+		},
+		{
+			"title": "Halliburton",
+			"slug": "halliburton",
+			"year": "20x6",
+			"description": "Something I worked on",
+			"images": [
+				{
+					"url": "",
+					"width": 920,
+					"clear": "",
+					"caption": "",
+					"credits": ""
+				}
+			]
+		},
+		{
+			"title": "EverlyWell",
+			"slug": "everlywell",
+			"year": "20x6",
+			"description": "Something I worked on",
+			"images": [
+				{
+					"url": "",
+					"width": 920,
+					"clear": "",
+					"caption": "",
+					"credits": ""
+				}
+			]
+		},
+		{
+			"title": "Insitome",
+			"slug": "insitome",
+			"year": "20x6",
+			"description": "Something I worked on",
+			"images": [
+				{
+					"url": "",
+					"width": 920,
+					"clear": "",
+					"caption": "",
+					"credits": ""
+				}
+			]
+		},
+		{
+			"title": "SXSW Music Blogger's Guide",
+			"slug": "sxsw",
+			"year": "20x6",
+			"description": "Something I worked on",
+			"images": [
+				{
+					"url": "",
+					"width": 920,
+					"clear": "",
+					"caption": "",
+					"credits": ""
+				}
+			]
+		},
+		{
+			"title": "Dimensional",
+			"slug": "dimensional",
+			"year": "20x6",
+			"description": "Something I worked on",
+			"images": [
+				{
+					"url": "",
+					"width": 920,
+					"clear": "",
+					"caption": "",
+					"credits": ""
+				}
+			]
+		},
+		{
+			"title": "Austin Film Society",
+			"slug": "afs",
+			"year": "20x6",
+			"description": "Something I worked on",
+			"images": [
+				{
+					"url": "",
+					"width": 920,
+					"clear": "",
+					"caption": "",
+					"credits": ""
+				}
+			]
+		},
+		{
+			"title": "Misc.",
+			"slug": "misc",
+			"year": "20x6",
+			"description": "Something I worked on",
+			"images": [
+				{
+					"url": "",
+					"width": 920,
+					"clear": "",
+					"caption": "",
+					"credits": ""
+				}
+			]
+		}
+	]
+}

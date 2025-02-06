@@ -1,16 +1,13 @@
 <script>
-import NavBar from '@/components/NavBar.vue';
 export default {
   name: "ContactView",
   components: {
-    NavBar,
   },
 };
 </script>
 
 <template>
   <div class="contact">
-    <NavBar /> 
     <div class="contactContent">
       <ul class="contactMethods">
         <li><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#119;&#97;&#108;&#116;&#101;&#114;&#64;&#119;&#97;&#108;&#116;&#101;&#114;&#99;&#111;&#111;&#116;&#115;&#46;&#99;&#111;&#109;">&#69;&#109;&#97;&#105;&#108;</a></li>

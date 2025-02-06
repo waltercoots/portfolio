@@ -1,6 +1,6 @@
 <template>
 	<nav>
-		<router-link to="/">About</router-link>
+		<router-link to="/" >About</router-link>
 		<router-link to="/work">Work</router-link>
 		<!-- <a href="https://blog.waltercoots.com/" target="_blank">Blog</a> -->
 		<router-link to="/contact">Contact</router-link>
