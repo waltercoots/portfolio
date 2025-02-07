@@ -135,9 +135,6 @@
 </template>
 
 <style lang="scss" scoped>
-	template {
-		z-index:1;
-	}
 	div.workgrid {
 		display: flex;
 		flex-wrap: wrap;
