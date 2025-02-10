@@ -128,7 +128,7 @@
 	}
 </script>
 
-<template class="workview">
+<template>
 	<div class="workgrid">
 		<WorkThumb v-for="(item, index) in jsonData.projects" v-bind:project="item" v-bind:key="index" />
 	</div>

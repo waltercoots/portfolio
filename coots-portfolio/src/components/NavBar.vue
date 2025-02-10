@@ -1,5 +1,5 @@
 <template>
-	<nav>
+	<nav class="mainNav">
 		<router-link to="/" >About</router-link>
 		<router-link to="/work">Work</router-link>
 		<!-- <a href="https://blog.waltercoots.com/" target="_blank">Blog</a> -->
@@ -8,7 +8,7 @@
 </template>
 
 <style scoped lang="scss">
-	nav {
+	nav.mainNav {
 		display:flex;
 		justify-content: center;
 		a {

@@ -1,18 +1,18 @@
 <script>
 import WorkGrid from './components/WorkGrid.vue';
-import NavBar from './components/NavBar.vue';
+import HomeAbout from './views/HomeAbout.vue';
 export default {
   components: {
+    HomeAbout,
     WorkGrid,
-    NavBar
   }
 }
 </script>
 
 <template>
-  <div>
+  <div class="foundation">
     <WorkGrid ref="bgGrid" class="bg" />
-    <NavBar />
+    <HomeAbout />
     <router-view v-slot="{ Component }">
       <transition name="flyaway" mode="out-in">
         <component :is="Component" />
@@ -22,9 +22,27 @@ export default {
 </template>
 
 <style lang="scss">
+* {
+  box-sizing: border-box;
+}
+html, body {
+  padding:0;
+  margin:0;
+  height:100vh;
+  width:100vw;
+  overflow:hidden;
+}
 body {
   background:$white;
   color:$black;
+  perspective: 1500px;
+}
+div.foundation {
+  width:100vw;
+  height:100vh;
+  overflow:hidden;
+  margin:0;
+  padding:0;
 }
 a {
     color:$accent;
@@ -49,8 +67,6 @@ a {
     opacity:1;
   }
   .flyaway-leave-active, .flyaway-enter-active {
-		transition: opacity 1.5s ease-out;  
-    transition-timing-function:cubic-bezier(0, 0.79, 0.43, 0.99);
-
+		transition: opacity 1.5s ease-in;
   }
 </style>

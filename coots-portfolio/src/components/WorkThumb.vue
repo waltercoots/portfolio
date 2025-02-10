@@ -6,11 +6,17 @@ export default {
 		// Individual Project data from work.json
 		project: Object
 	},
+	methods: {
+		// When a thumbnail is clicked, navigate to the project page
+		goToProject() {
+			this.$router.push({ path: '/work/project/'+this.project.slug });
+		}
+	}
 }
 </script>
 
 <template>
-	<div class="workthumb" :key="project.title">
+	<div class="workthumb" :key="project.title" @click="goToProject">
 		<span class="title">{{ project.title }}</span>
 		<span class="year">{{ project.year }}</span>
 	</div>

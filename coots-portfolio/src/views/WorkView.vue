@@ -10,13 +10,11 @@ export default {
 
 <template>
   <div class="work">
-    <Transition name="explosion" mode="out-in">
-      <WorkGrid />
-    </Transition>
+    <WorkGrid />
   </div>
 </template>
 
 <style lang="scss">
-
-
+.work { 
+}
 </style>
