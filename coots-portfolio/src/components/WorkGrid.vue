@@ -134,7 +134,7 @@
 	</div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 	div.workgrid {
 		display: flex;
 		flex-wrap: wrap;
@@ -151,6 +151,11 @@
 		&.bg {
 			z-index: -2;
 			pointer-events: none;
+			div.workthumb {
+				div.imageWrapper {
+					opacity:0;
+				}
+			}
 		}
 	}
 

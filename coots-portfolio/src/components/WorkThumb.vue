@@ -17,6 +17,9 @@ export default {
 
 <template>
 	<div class="workthumb" :key="project.title" @click="goToProject">
+		<div class="imageWrapper">
+			<img :src="`/img/workthumbs/${project.slug}.jpg`" alt="" />
+		</div>
 		<span class="title">{{ project.title }}</span>
 		<span class="year">{{ project.year }}</span>
 	</div>
@@ -31,10 +34,22 @@ export default {
 		height: 8rem;
 		background: #F0EFEF;
 		aspect-ratio: 1 / 1;
-		transform-style: preserve-3d;
+		transform-style:flat;
 		transition: transform 1s ease-out, left 1s ease-out, top 1s ease-out;
 		transition-timing-function:cubic-bezier(0.05, 0.31, 0.22, 0.99);
 		padding:1rem;
+		overflow:hidden;
+		div.imageWrapper {
+			position: absolute;
+			left:0;
+			top:0;
+			height:100%;
+			aspect-ratio: 660 / 410;
+		}
+		img {
+			min-height:100%;
+			opacity:1;
+		}
 		span { 
 			opacity:0; 
 			transition: opacity 0.55s ease-out;
