@@ -31,6 +31,8 @@ html, body {
   height:100vh;
   width:100vw;
   overflow:hidden;
+  font-family: 'TT Hoves', sans-serif;
+  font-weight:300;
 }
 body {
   background:$white;

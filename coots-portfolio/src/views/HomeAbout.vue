@@ -80,6 +80,7 @@ export default {
       p {
         font-size:1.25rem;
         margin-top:1rem;
+        @include modular-scale(-1);
       }
       &.collapsed {
         transform:translateY(calc(-100% + 3rem)) translateX(-50%);
