@@ -5,7 +5,7 @@
 			"slug": "workstep",
 			"year": "2022–2024",
 			"description": "WorkStep started as a hiring platform for frontline workers in Portland, OR but over the years evolved into an enterprise HR SaaS product for companies with high headcounts in warehouse and supply chain.",
-			"images": [
+			"content": [
 				{
 					"url": "WorkStep",
 					"width": 920,
@@ -19,8 +19,8 @@
 			"title": "Unilease",
 			"slug": "unilease",
 			"year": "2021–2022",
-			"description": "Unilease is an early stage startup creating software to automate a lot of the manual processes commercial real estate brokers perform on behalf of their clients. After freelancing with them for a while, I joined on as head of design in 2021. During this time I helped them establish a brand identity, a design system, a new marketing website, and the web-based app.",
-			"images": [
+			"description": "Commercial real estate is an industry slow to adopt new ways of doing things. Brokers who are doing well for themselves have little incentive to change things, large firms even less so, and tenants are at the mercy of these gatekeepers’ well-established processes. Unilease was created by a commercial real estate broker in central Texas to streamline the way he did business, making it easier for both brokers and tenants. I was brought in to help establish a design system, improve the existing user experience, and expand the toolset Unilease offered with the intent of it becoming a product available to all brokers and brokerages.",
+			"content": [
 				{
 					"url": "",
 					"width": 920,
@@ -35,7 +35,7 @@
 			"slug": "halliburton",
 			"year": "2020–2021",
 			"description": "The goal of Halliburton's 2020 website redesign was to not only bring them into the 21st century, but give them a look and feel that rivaled competitors such as Schlumberger. We built an elaborate system of prefab components, content guidelines, and a backend that allowed the company to make changes as needed.",
-			"images": [
+			"content": [
 				{
 					"url": "",
 					"width": 920,
@@ -45,13 +45,12 @@
 				}
 			]
 		},
-
 		{
 			"title": "Hallmark",
 			"slug": "hallmark",
 			"year": "2019–2020",
 			"description": "My first client at T3 was Hallmark, who were a joy to work with. Our engagement lasted over a year, so I was involved in a variety of initiatives: coordinating with other designers on establishing a new design system; designing the main navigation; collaborating with Hallmark's internal stakeholders on how the new site's registration would work with Hallmark's Crown Rewards program; and desiging the product details page (PDP) to name the big ones.",
-			"images": [
+			"content": [
 				{
 					"url": "",
 					"width": 920,
@@ -66,7 +65,7 @@
 			"slug": "everlywell",
 			"year": "2018–2019",
 			"description": "EverlyWell sells at-home lab testing kits for things such as thyroid, vitamins, STD, and food sensitivities. After a user collects their sample and mails it in, EverlyWell helps make sense of the results. When I joined, it had just raised its series A and had a staff of about 25 people. I stayed 18 months, and during that time it raised its series B, launched two major versions of its results platform, tripled in staff, and began offering several additional tests.",
-			"images": [
+			"content": [
 				{
 					"url": "",
 					"width": 920,
@@ -81,7 +80,7 @@
 			"slug": "insitome",
 			"year": "20x6",
 			"description": "Insitome (pronounced “insight-oam”) was a company partnered with DNA testing startup Helix. Helix processed DNA saliva samples, and with users’ consent, provided their DNA to independent developers like Insitome within Helix’s marketplace. What made this special for end-users was that they would pay once to have their DNA sequenced, and then have the ability to continue learning from it as new information was discovered, and new apps were created to do fun things with it.",
-			"images": [
+			"content": [
 				{
 					"url": "",
 					"width": 920,
@@ -96,7 +95,7 @@
 			"slug": "sxsw",
 			"year": "2017",
 			"description": "Each year, SXSW likes to highlight some of the lesser-known artists performing at SXSW. So they invite bloggers and music journalists from around the world to pick any artist on the upcoming SXSW schedule, and write a paragraph about them. 2017 was the first year they moved the guide to the web. My role as the lead UX designer involved scoping, leading internal workshops, and acting as a liaison between UI, UX, and dev.",
-			"images": [
+			"content": [
 				{
 					"url": "",
 					"width": 920,
@@ -108,18 +107,32 @@
 		},
 		{
 			"title": "Dimensional",
-			"slug": "dimensional",
+			"slug": "dfa",
 			"year": "2016",
 			"url": "http://dimensional.com",
 			"description": "Foxtrot was challenged to redesign the website for Austin-based investment firm Dimensional Fund Advisors. I was honored to be involved in early UI concepting and mood boards, as well as the lead UX designer. The pages were structured using a series of reusable building blocks so that the client could mix and match to make new pages as necessary.",
 			"credits": "Created as a collaborative effort at <a href=\"http://foxtrot.co\" target=\"_blank\">Foxtrot</a>, with my role as UX lead and some UI design and concepting.",
-			"images": [
+			"content": [
 				{
-					"url": "",
-					"width": 920,
-					"clear": "",
-					"caption": "",
-					"credits": ""
+					"url":"01-home-d.jpg",
+					"border":true,
+					"clear":true
+				},
+				{
+					"url":"04-phone.jpg",
+					"clear":true
+				},
+				{
+					"url":"02-lowfi-wires.jpg",
+					"border":true,
+					"clear":true,
+					"caption":"Pages were ultimately structured using a series of reusable building blocks so that the client could mix and match to make new pages as necessary, even after our contract with them ended. We created low fidelity wireframes to illustrate which blocks would be used where."
+				},
+				{
+					"url":"03-highfi-wires.png",
+					"border":true,
+					"clear":true,
+					"caption":"Each component had its own documentation to show how it operated. This is the page for the primary nav bar."
 				}
 			]
 		},
@@ -129,7 +142,7 @@
 			"year": "2016",
 			"description": "As a film lover, I was thrilled to be the lead UX designer on the Austin Film Society web site redesign. The old site was very confusing and difficult to navigate, with several stakeholders handling separate parts of the site. Implementation is still underway, and it has shifted some from our original design. Here, you can see what our intent was.",
 			"credits": "Created as a collaborative effort at <a href=\"http://foxtrot.co\" target=\"_blank\">Foxtrot</a>, with my role as UX lead and some UI design and concepting.",
-			"images": [
+			"content": [
 				{
 					"url": "",
 					"width": 920,
@@ -144,7 +157,7 @@
 			"slug": "misc",
 			"year": "",
 			"description": "Some things that don't warrant an individual spot, but that I can't bring myself to leave out.",
-			"images": [
+			"content": [
 				{
 					"url": "",
 					"width": 920,
