@@ -1,156 +1,242 @@
 <script>
-import Matter from 'matter-js';
-//import p5 from 'p5';
-
+import Matter from "matter-js";
 export default {
   name: "AboutView",
   mounted() {
-    const matterContainer = this.$refs.scene;
-    const thickness = 60;
-
-    // module aliases
-    var Engine = Matter.Engine,
-      Render = Matter.Render,
-      Runner = Matter.Runner,
-      Bodies = Matter.Bodies,
-      Composite = Matter.Composite;
-
-    // create an engine
-    var engine = Engine.create();
-
-    // create a renderer
-    var render = Render.create({
-      element: matterContainer,
-      engine: engine,
-      options: {
-        width: matterContainer.clientWidth,
-        height: matterContainer.clientHeight,
-        background: "transparent",
-        wireframes: false,
-        showAngleIndicator: false
-      }
-    });
-
-    // create two boxes and a ground
-    // var boxA = Bodies.rectangle(400, 200, 80, 80);
-    // var boxB = Bodies.rectangle(450, 50, 80, 80);
-
-    for (let i = 0; i < 100; i++) {
-      let circle = Bodies.circle(i, 5, 10, {
-        friction: 0.3,
-        frictionAir: 0.00001,
-        restitution: 0.8
-      });
-      Composite.add(engine.world, circle);
-    }
-
-    var ground = Bodies.rectangle(
-      matterContainer.clientWidth / 2,
-      matterContainer.clientHeight + thickness / 2,
-      27184,
-      thickness,
-      { isStatic: true }
-    );
-
-    let leftWall = Bodies.rectangle(
-      0 - thickness / 2,
-      matterContainer.clientHeight / 2,
-      thickness,
-      matterContainer.clientHeight * 5,
-      {
-        isStatic: true
-      }
-    );
-
-    let rightWall = Bodies.rectangle(
-      matterContainer.clientWidth + thickness / 2,
-      matterContainer.clientHeight / 2,
-      thickness,
-      matterContainer.clientHeight * 5,
-      { isStatic: true }
-    );
-
-    // add all of the bodies to the world
-    Composite.add(engine.world, [ground, leftWall, rightWall]);
-
-    let mouse = Matter.Mouse.create(render.canvas);
-    let mouseConstraint = Matter.MouseConstraint.create(engine, {
-      mouse: mouse,
-      constraint: {
-        stiffness: 0.2,
-        render: {
-          visible: false
-        }
-      }
-    });
-
-    Composite.add(engine.world, mouseConstraint);
-
-    // allow scroll through the canvas
-    mouseConstraint.mouse.element.removeEventListener(
-      "mousewheel",
-      mouseConstraint.mouse.mousewheel
-    );
-    mouseConstraint.mouse.element.removeEventListener(
-      "DOMMouseScroll",
-      mouseConstraint.mouse.mousewheel
-    );
-
-    Render.run(render);
-    var runner = Runner.create();
-    Runner.run(runner, engine);
-
-    function handleResize(matterContainer) {
-      // set canvas size to new values
-      render.canvas.width = matterContainer.clientWidth;
-      render.canvas.height = matterContainer.clientHeight;
-
-      // reposition ground
-      Matter.Body.setPosition(
-        ground,
-        Matter.Vector.create(
-          matterContainer.clientWidth / 2,
-          matterContainer.clientHeight + thickness / 2
-        )
-      );
-
-      // reposition right wall
-      Matter.Body.setPosition(
-        rightWall,
-        Matter.Vector.create(
-          matterContainer.clientWidth + thickness / 2,
-          matterContainer.clientHeight / 2
-        )
-      );
-    }
-
-    window.addEventListener("resize", () => handleResize(matterContainer));
+    skillFallSetup();
+    window.addEventListener('resize', this.handleResize);
   },
-};
+  methods: {
+    handleResize() {
+      updateStageDimensions();
+      updateBodyDimensions();
+    }
+  },
+  unmounted() {
+    window.removeEventListener('resize', this.handleResize);
+  },
+}
+
+/* MatterJS Shortcuts */
+const Engine = Matter.Engine,
+    Render = Matter.Render,
+    Runner = Matter.Runner,
+    Bodies = Matter.Bodies,
+    Body = Matter.Body,
+    Composite = Matter.Composite,
+    MouseConstraint = Matter.MouseConstraint;
+/* MatterJS Placeholders */
+let engine = undefined;
+let stage = undefined;
+let render = undefined;
+let engineArray = []; // to pass all the bodies to MatterJS
+/* MatterJS Bodies */
+let ceiling = undefined;
+let ground = undefined;
+let wallLeft = undefined;
+let wallRight = undefined;
+let boxes = [];
+let mouseConstraint = undefined;
+
+/* 
+Todo: use Matter.svg to load the /public/img/headshot outline 
+*/
+
+function skillFallSetup() {
+  engine = Engine.create();
+  engine.gravity.y = 0.015;
+  stage = document.querySelector(".skills");
+  render = Render.create({
+    element: stage,
+    engine: engine,
+    options: {
+        wireframes: true,
+        background: "transparent",
+  }});
+  mouseConstraint = MouseConstraint.create(engine, {
+    element: stage,
+  });
+  updateStageDimensions();
+  ceiling = Bodies.rectangle(stage.width / 2, -40, (stage.width), 80, { isStatic: true });
+  ground = Bodies.rectangle(stage.width / 2, (stage.height+20), (stage.width), 40, { isStatic: true });
+  console.log(ground);
+  wallLeft = Bodies.rectangle(-10, 0, 20, stage.height * 2, { isStatic: true });
+  wallRight = Bodies.rectangle((stage.width+10), 0, 20, stage.height * 2, { isStatic: true });
+  updateBodyDimensions();
+  populateSkills();
+
+  // Add all of the bodies to the world
+  Composite.add(engine.world, engineArray);
+
+  // Run the renderer
+  // Render.run(render);
+  // Run the runner
+  const runner = Runner.create();
+  Runner.run(runner, engine);
+
+  // Render loop
+  (function rerender() {
+      boxes.forEach((box) => {
+          box.render();
+      });  
+      Matter.Engine.update(engine);
+      requestAnimationFrame(rerender);
+  })();
+}
+
+function updateStageDimensions() {
+  stage.width = document.querySelector(".skills").getBoundingClientRect().width;
+  stage.height = document.querySelector(".skills").getBoundingClientRect().height;
+  stage.x = document.querySelector(".skills").getBoundingClientRect().x;
+  stage.y = document.querySelector(".skills").getBoundingClientRect().y;
+  render.options.width = stage.width;
+  render.options.height = stage.height;
+  render.canvas.width = stage.width;
+  render.canvas.height = stage.height;
+}
+
+function updateBodyDimensions() {
+  Body.setPosition(ground, {x: (stage.width / 2), y: (stage.height+20)});
+  Body.set(ceiling,"width", (stage.width));
+  Body.set(ground,"width", (stage.width));
+  Body.set(wallLeft,"height", (stage.height * 2));
+  Body.set(wallRight,"position", {x:(stage.width+10),y:0});
+  Body.set(wallRight,"height", (stage.height * 2));
+}
+
+function populateSkills() {
+  // Select all target elements and create boxes
+  document.querySelectorAll(".skills li").forEach((boxElem) => {
+      const engineBox = connectBox(boxElem);
+      boxes.push(engineBox);
+      engineArray.push(engineBox.body);
+  });
+  engineArray.push(ceiling,ground,wallLeft,wallRight,mouseConstraint);
+}
+
+function connectBox(elem) {
+  const skill = {};
+  skill.element = elem;
+  skill.clientRect = skill.element.getBoundingClientRect();
+  skill.w = skill.clientRect.width;
+  skill.h = skill.clientRect.height;
+  skill.x = Math.random() * (stage.width - skill.w);
+  skill.y = 0;
+  skill.body = Bodies.rectangle(skill.x, skill.y, skill.w, skill.h);
+  skill.render = function () {
+      const x = this.body.position.x;
+      const y = this.body.position.y;
+      this.element.style.position = "absolute"; // Ensure positioning works
+      this.element.style.top = `${y - this.h / 2}px`;
+      this.element.style.left = `${x - this.w / 2}px`;
+      this.element.style.transform = `rotate(${this.body.angle}rad)`;
+  };
+  return skill;
+}
 </script>
+
 
 <template>
   <div class="about">
     <div class="bio">
-      <h1>Walter Coots</h1>
       <p>My name’s Walter Coots, and I’m a (digital product | web | UX / UI | brand) designer in Austin, Texas. I’ve worked across a variety of industries including travel, healthcare, restaurants, entertainment, non-profits, news media, enterprise HR SaaS, energy, and finance.</p>
       <p>My philosophy is that good design affords clarity and establishes trust with users and customers. It helps build lasting relationships and familiarity, and helps a company’s product and brand stay memorable and relevant. When it’s at its best, it also brightens people’s lives.</p> 
       <p>Coworkers tell me I’m a positive and enthusiastic person who’s excellent at making complex ideas easier to understand. My grasp on frontend web coding affords me a higher than average understanding and empathy for engineers.  My management style leans servant leader, so I like to work alongside rather than over when it’s appropriate. Finally, I have an entrepreneurial streak that I can’t seem to turn off, and consequently a backlog of ideas I hope to someday be able to test the waters with.</p>
       <p>I’m a husband, parent, and home owner with a dog, all which keep me busy. I have tons of interests and hobbies: art, music, gardening, video /board / computer games, food and cooking, movies and television, animals, bicycling, home automation, and cocktails.</p>
     </div>
-    <div ref="scene" class="scene"></div>
+    <div ref="scene" class="skills">
+      <img src="img/headshot-placeholder.png" alt="What Walter looks like" class="headshot" />
+      <ul>
+        <li>Digital Product Design</li>
+        <li>Graphic Design</li>
+        <li>Webflow</li>
+        <li>Data Visualization</li>
+        <li>Animate</li>
+        <li>User Interface</li>
+        <li>Miro</li>
+        <li>Layout</li>
+        <li>Roadmapping</li>
+        <li>Agile Methodologies</li>
+        <li>Responsive Web Design</li>
+        <li>InVision</li>
+        <li>Prototyping</li>
+        <li>User Research</li>
+        <li>Workshops</li>
+        <li>Adobe Creative Suite</li>
+        <li>Figma</li>
+        <li>User-Centered Design</li>
+        <li>User Experience</li>
+        <li>Photoshop</li>
+        <li>Framer</li>
+        <li>JavaScript</li>
+        <li>Information Architecture</li>
+        <li>InDesign</li>
+        <li>Illustrator</li>
+        <li>After Effects</li>
+        <li>Visual Design</li>
+        <li>Wireframing</li>
+        <li>Problem Solving</li>
+        <li>Color</li>
+        <li>Typography</li>
+        <li>Design Thinking</li>
+        <li>Mentorship</li>
+        <li>Sketch</li>
+        <li>Usability Testing</li>
+        <li>Motion Graphics</li>
+        <li>Simplification</li>
+        <li>Mobile Web Design</li>
+        <li>Blender</li>
+        <li>HTML & CSS</li>
+        <li>Design Systems</li>
+        <li>Frontend Coding</li>
+      </ul>
+    </div>
     <router-link to="/">Close</router-link>
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 div.about {
-  display:flex;
-  flex-grow: 1;
+  background:$black;
+  color:$white;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
 }
-.scene {
-  margin: 20px auto;
-  flex-grow: 1;
-  min-width:40rem;
+div.bio {
+  width:60rem;
+  padding:5rem;
+  position:absolute;
+  left:0;
+  top:0;
+  width:40%;
+}
+div.skills {
+  width:60%;
+  height:100vh;
+  position:absolute;
+  left:40%;
+  user-select: none;
+  ul {
+    list-style:none;
+    position:relative;
+    cursor: move;
+    li {
+      position:absolute;
+      display:inline-block;
+      color:$accent;
+      background:none;
+    }    
+  }
+  img.headshot {
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform:translate(-50%,0);
+    mix-blend-mode: color-dodge;
+  }
+  overflow:hidden;
 }
 </style>

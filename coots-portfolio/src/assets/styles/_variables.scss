@@ -5,3 +5,14 @@ $accent: #FF744D;
 $util-caution: #FACD21;
 $util-error: #EF0F34;
 $util-success: #2C999C;
+
+
+:export {
+	black: $black;
+	white: $white;
+	gray: $gray;
+	accent: $accent;
+	util-caution: $util-caution;
+	util-error: $util-error;
+	util-success: $util-success;
+}
