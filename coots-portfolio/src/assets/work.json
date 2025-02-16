@@ -4,10 +4,10 @@
 			"title": "WorkStep",
 			"slug": "workstep",
 			"year": "2022–2024",
-			"description": "WorkStep started as a hiring platform for frontline workers in Portland, OR but over the years evolved into an enterprise HR SaaS product for companies with high headcounts in warehouse and supply chain.",
+			"description": "WorkStep is enterprise HR and ops SaaS designed for companies with large warehouse, supply chain, and retail divisions. The software helps leaders identify ways they can improve working conditions for employees, thus leading to higher engagement and happiness in the workforce, leading to reduced turnover, and increases in other important factors like productivity and safety.",
 			"content": [
 				{
-					"url": "WorkStep",
+					"url": "../placeholder.png",
 					"width": 920,
 					"clear": "",
 					"caption": "",
@@ -22,11 +22,19 @@
 			"description": "Commercial real estate is an industry slow to adopt new ways of doing things. Brokers who are doing well for themselves have little incentive to change things, large firms even less so, and tenants are at the mercy of these gatekeepers’ well-established processes. Unilease was created by a commercial real estate broker in central Texas to streamline the way he did business, making it easier for both brokers and tenants. I was brought in to help establish a design system, improve the existing user experience, and expand the toolset Unilease offered with the intent of it becoming a product available to all brokers and brokerages.",
 			"content": [
 				{
-					"url": "",
-					"width": 920,
-					"clear": "",
-					"caption": "",
-					"credits": ""
+					"url":"comp.png",
+					"width":"920",
+					"clear":"false"
+				},
+				{
+					"url":"sign.png",
+					"width":"327",
+					"clear":"false"
+				},
+				{
+					"url":"t-shirt.png",
+					"width":"327",
+					"clear":"false"
 				}
 			]
 		},
@@ -37,7 +45,7 @@
 			"description": "The goal of Halliburton's 2020 website redesign was to not only bring them into the 21st century, but give them a look and feel that rivaled competitors such as Schlumberger. We built an elaborate system of prefab components, content guidelines, and a backend that allowed the company to make changes as needed.",
 			"content": [
 				{
-					"url": "",
+					"url": "../placeholder.png",
 					"width": 920,
 					"clear": "",
 					"caption": "",
@@ -52,11 +60,22 @@
 			"description": "My first client at T3 was Hallmark, who were a joy to work with. Our engagement lasted over a year, so I was involved in a variety of initiatives: coordinating with other designers on establishing a new design system; designing the main navigation; collaborating with Hallmark's internal stakeholders on how the new site's registration would work with Hallmark's Crown Rewards program; and desiging the product details page (PDP) to name the big ones.",
 			"content": [
 				{
-					"url": "",
-					"width": 920,
-					"clear": "",
-					"caption": "",
-					"credits": ""
+					"url":"../placeholder.png",
+					"width":"0",
+					"clear":"false",
+					"caption":"The finished PDP. Hallmark saw an enormous increase in card sales after the launch of this new PDP, although it was during the 2020 COVID-19 pandemic and folks wanting to reach out to each other from afar was no doubt partly responsible. "
+				},
+				{
+					"url":"../placeholder.png",
+					"width":"0",
+					"clear":"true",
+					"caption":"Flowchart detailing sign up behavior. Hallmark's leadership wanted user registration to automatically assign a rewards account to any new user signing up. But because customers could enroll in the rewards program at a physical Hallmark store without providing an email address, we wanted to afford the ability to link an existing rewards program account during account registration. Similar functionality existed in the account area, but we knew resolving it here would reduce support call volume to Hallmark."
+				},
+				{
+					"url":"../placeholder.png",
+					"width":"0",
+					"clear":"true",
+					"caption":"Some examples from the design system's documentation."
 				}
 			]
 		},		
@@ -67,11 +86,33 @@
 			"description": "EverlyWell sells at-home lab testing kits for things such as thyroid, vitamins, STD, and food sensitivities. After a user collects their sample and mails it in, EverlyWell helps make sense of the results. When I joined, it had just raised its series A and had a staff of about 25 people. I stayed 18 months, and during that time it raised its series B, launched two major versions of its results platform, tripled in staff, and began offering several additional tests.",
 			"content": [
 				{
-					"url": "",
-					"width": 920,
-					"clear": "",
-					"caption": "",
-					"credits": ""
+					"url":"UIKit.png",
+					"width":"1440",
+					"clear":"false"
+				},
+				{
+					"url":"Results.jpg",
+					"width":"1440",
+					"clear":"false",
+					"caption":"There was a running joke that time spent at EverlyWell was like dog years, because everyone did a lot in a small amount of time. EverlyWell’s branding was purchased through Fiverr, and the marketing site when I arrived had been designed by Funsize. A lot of talented people helped create the 2019 design for the results platform, including <a href=\"https://www.anna-ho.com/\" target=\"_blank\">Anna Ho</a>, <a href=\"http://williamfikes.com/\" target=\"_blank\">Will Fikes</a>, and <a href=\"http://www.ericbog.gs\" target=\"_blank\">Eric Boggs</a>."
+				},
+				{
+					"url":"SciencePage.jpg",
+					"width":"1350",
+					"clear":"false",
+					"caption":"When the 2019 Theranos documentary was about to be released on HBO, EverlyWell’s leaders were working hard to close series B funding. The website had only cursory information about the science behind EverlyWell’s tests, and it wasn’t easy to find. With only a week’s turnaround, we planned, designed, wrangled content for, and published a brand new science section prominently featured in the main navigation."
+				},
+				{
+					"url":"ContentBlocks.png",
+					"width":"800",
+					"clear":"false",
+					"caption":"EverlyWell’s results platform had a “one-size-fits-all” approach to 30 different tests, and consistently we heard that users’ results didn’t feel very personalized or actionable. Using low fidelity wireframes, I created a modular content system to outline the different blocks of content we’d show, and when. For example, if a user had taken the same test six times and their latest results were normal, we wouldn’t show the same content as a brand new user who had abnormal results. This was a page from a document intended to get buy-in from stakeholders on what these blocks were, what order we’d show them, and in what phase we’d roll them out."
+				},
+				{
+					"url":"ADA-Color-Wheel.svg",
+					"width":"800",
+					"clear":"false",
+					"caption":"EverlyWell had a lot of fragmentation when it came to color. There were two or three blues used for button colors, and three or four different greens used throughout the site. To make matters worse, one of our frontend engineers was colorblind, and it was really difficult for him to notice the differences. Additionally the entire company was wanting to become more ADA compliant, and we really didn’t have any internal guidelines on how that would translate to our work. I followed Lyft’s lead and used their <a href=“http://colorbox.io/“ target=“_blank”>color tool</a> to create a systematic color scheme. Black text was compliant on the 6 inner rings, and white text was compliant on the 6 outer rings. We didn’t use more than a handful of the colors, but it gave us room to grow if we needed. It was much easier to tell the devs to use “Blue 4” instead of “The same one we use for button colors”. Plus since all the colors were variables in the code, it paved the way to more smoothly roll out future branding."
 				}
 			]
 		},
@@ -82,11 +123,71 @@
 			"description": "Insitome (pronounced “insight-oam”) was a company partnered with DNA testing startup Helix. Helix processed DNA saliva samples, and with users’ consent, provided their DNA to independent developers like Insitome within Helix’s marketplace. What made this special for end-users was that they would pay once to have their DNA sequenced, and then have the ability to continue learning from it as new information was discovered, and new apps were created to do fun things with it.",
 			"content": [
 				{
-					"url": "",
-					"width": 920,
-					"clear": "",
-					"caption": "",
-					"credits": ""
+					"url":"Neanderhtal_Insight@2x.jpg",
+					"width":"420",
+					"clear":"false"
+				},
+				{
+					"url":"Metabolism_Trait-Top@2x.jpg",
+					"width":"420",
+					"clear":"false"
+				},
+				{
+					"url":"Regional-Ancestry_Dashboard@2x.jpg",
+					"width":"420",
+					"clear":"false"
+				},
+				{
+					"url":"Regional-Ancestry_Subregion@2x.jpg",
+					"width":"420",
+					"clear":"false"
+				},
+				{
+					"url":"Metabolism_Trait-Infographics@2x.jpg",
+					"width":"420",
+					"clear":"false",
+					"caption":"With branding and packaging created by Lindsay Gravette at Elbow, and one product (Neanderthal) already in the wild, my primary job was to help launch two sister products, Metabolism and Regional Ancestry. I also designed an updated marketing website, helped launch a podcast, helped plan content for the products, created a full-page print ad, and did some motion graphics work."
+				},
+				{
+					"url":"OnboardingFlow@2x.png",
+					"width":"1047",
+					"clear":"true",
+					"caption":"Helix acting as a middleman between the apps on its marketplace and the end-user created a lot of interesting challenges from an onboarding perspective. The existing onboarding had several steps, many of which weren’t skippable. One of my first tasks was to come up with recommendations to simplify."
+				},
+				{
+					"url":"responsive@2x.jpg",
+					"width":"920",
+					"clear":"true",
+					"caption":"Another added challenge was that there were two versions of each app being developed in parallel: an iOS version, and a responsive web version. (This was a contractual obligation with Helix.) Since I had never worked alongside an iOS developer before, I was grateful to have someone who helped me understand the nuances of layout in iOS and how they differed from web, which is what I was used to."
+				},
+				{
+					"url":"migration.gif",
+					"width":"750",
+					"clear":"true"
+				},
+				{
+					"url":"WorldMap@2x.png",
+					"width":"1440",
+					"clear":"true",
+					"border":"true",
+					"caption":"Maps were a big part of Insitome. Sitting alongside the director of science content, I acted as a pair of hands to get the regions and migration paths in the right places with the right amount of overlap."
+				},
+				{
+					"url":"GenomeAdSketches@2x.png",
+					"width":"732",
+					"clear":"true"
+				},
+				{
+					"url":"Genome-Ad-Layout@2x.jpg",
+					"width":"920",
+					"clear":"true",
+					"caption":"After launching the Metabolism and Regional Ancestry products, I helped create an ad for Genome magazine. Several rough concept sketches were presented, and the CEO fell in love with the idea of a decoder ring because he thought it would strike a nostalgia chord with the magazine’s audience. I styled and directed the shot, retouched the photos, layed out the ad, and coordinated with Helix’s legal team and Genome magazine."
+				},
+				{
+					"url":"Marketing-Site@2x.jpg",
+					"width":"1440",
+					"clear":"true",
+					"caption":"After the holidays were over, I helped design a new marketing site. Before construction was complete, Insitome parted ways with its product and engineering staff to put the company in maintenance mode. But before that happened, I created a prototype of the desktop site which you can see <a href=\"https://framer.cloud/itJps/\" target=\"_blank\">here</a>."
 				}
 			]
 		},
@@ -97,11 +198,42 @@
 			"description": "Each year, SXSW likes to highlight some of the lesser-known artists performing at SXSW. So they invite bloggers and music journalists from around the world to pick any artist on the upcoming SXSW schedule, and write a paragraph about them. 2017 was the first year they moved the guide to the web. My role as the lead UX designer involved scoping, leading internal workshops, and acting as a liaison between UI, UX, and dev.",
 			"content": [
 				{
-					"url": "",
-					"width": 920,
-					"clear": "",
-					"caption": "",
-					"credits": ""
+					"url":"01-landing.jpg",
+					"clear":"true"
+				},
+				{
+					"url":"02-browse.jpg",
+					"clear":"true"
+				},
+				{
+					"url":"03-artist.jpg",
+					"clear":"true"
+				},
+				{
+					"url":"04-directory.jpg",
+					"clear":"true"
+				},
+				{
+					"url":"05-mbg-phone.jpg",
+					"clear":"true"
+				},
+				{
+					"url":"07-persona.jpg",
+					"border":"true",
+					"clear":"true",
+					"caption":"After creating personas and establishing who we were designing the guide for, we created problem and vision statements."
+				},
+				{
+					"url":"06-wires.jpg",
+					"border":"true",
+					"clear":"true",
+					"caption":"The team created rough wireframe sketches separately, then came together as a group to share ideas and evaluate.  The stickies were us organizing our thoughts on common elements we were seeing across everyone's ideas."
+				},
+				{
+					"url":"08-flowchart.jpg",
+					"border":"true",
+					"clear":"true",
+					"caption":"One of our initial ideas included the ability for users to make and share playlists of their favorite artists in the guide, but for business reasons, we shelved the idea for another time. We also had loftier ideas for names, but due to the naming system for SXSW, were forced to keep it simple and straightforward. The final structure of the site was fairly simple."
 				}
 			]
 		},
@@ -144,11 +276,32 @@
 			"credits": "Created as a collaborative effort at <a href=\"http://foxtrot.co\" target=\"_blank\">Foxtrot</a>, with my role as UX lead and some UI design and concepting.",
 			"content": [
 				{
-					"url": "",
-					"width": 920,
-					"clear": "",
-					"caption": "",
-					"credits": ""
+					"url":"01-homed.jpg",
+					"border":"true",
+					"clear":"true"
+				},
+				{
+					"url":"08-tfhfd.jpg",
+					"clear":"true"
+				},
+				{
+					"url":"02-homem.jpg"
+				},
+				{
+					"url":"09-tfhfp.jpg"
+				},
+				{
+					"url":"03-content-mapping.jpg",
+					"clear":"true",
+					"caption":"The most daunting part was doing a full inventory of the content on every page, with the intent of bringing it to the stakeholders at AFS to weigh in on usefulness and determine what we could cut, and what needed to be added. Good thing I like spreadsheets!"
+				},
+				{
+					"url":"04-recipes.jpg",
+					"caption":"Similar to Dimensional Fund Advisors, the AFS site was designed with a modular design so that we could provide AFS with “recipes” to build all of the pages. This afforded flexibility for them, and substantially cut down on the time and cost of design for Foxtrot."
+				},
+				{
+					"url":"05-sitemap.png",
+					"border":"true"
 				}
 			]
 		},
@@ -159,11 +312,23 @@
 			"description": "Some things that don't warrant an individual spot, but that I can't bring myself to leave out.",
 			"content": [
 				{
-					"url": "",
-					"width": 920,
-					"clear": "",
-					"caption": "",
-					"credits": ""
+					"url":"growing-pains.jpg",
+					"clear":"true",
+					"caption":"This was an art piece I created for a friend around 2007 or 2008. It's made entirely from materials I purchased at the hardware store - PVC pipe, clamps, screws, fence planks, and paints."
+				},
+				{
+					"url":"rr_02.jpg",
+					"clear":"true",
+					"caption":"Packaging design from my days in school. I really love being able to think three-dimensionally and work with physical objects."
+				},
+				{
+					"url":"shrew.jpg",
+					"caption":"This is another school project I can't stop putting in my portfolio because I had so much fun with it. I hardly ever get to do lettering, but when I do, I have a blast.",
+					"clear":"true"
+				},
+				{
+					"url":"tamed.jpg",
+					"clear":"true"
 				}
 			]
 		}
