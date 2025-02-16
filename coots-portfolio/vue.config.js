@@ -20,6 +20,8 @@ module.exports = defineConfig({
     resolve: {
       alias: {
         '@babel': require.resolve('@babel/core'),
+        'matter-js': require.resolve('matter-js/build/matter.js'),
+        'poly-decomp': require.resolve('poly-decomp/build/decomp.js'),
         '@': '/src',
       },
     },

@@ -1,5 +1,6 @@
 <script>
 import Matter from "matter-js";
+import decomp from "poly-decomp";
 export default {
   name: "AboutView",
   mounted() {
@@ -37,6 +38,7 @@ let wallLeft = undefined;
 let wallRight = undefined;
 let boxes = [];
 let mouseConstraint = undefined;
+let headshotOutline = undefined;
 
 /* 
 Todo: use Matter.svg to load the /public/img/headshot outline 
@@ -44,7 +46,7 @@ Todo: use Matter.svg to load the /public/img/headshot outline
 
 function skillFallSetup() {
   engine = Engine.create();
-  engine.gravity.y = 0.015;
+  engine.gravity.y = 0.15;
   stage = document.querySelector(".skills");
   render = Render.create({
     element: stage,
@@ -56,12 +58,32 @@ function skillFallSetup() {
   mouseConstraint = MouseConstraint.create(engine, {
     element: stage,
   });
+  Matter.Common.setDecomp(decomp);
   updateStageDimensions();
   ceiling = Bodies.rectangle(stage.width / 2, -40, (stage.width), 80, { isStatic: true });
   ground = Bodies.rectangle(stage.width / 2, (stage.height+20), (stage.width), 40, { isStatic: true });
   console.log(ground);
   wallLeft = Bodies.rectangle(-10, 0, 20, stage.height * 2, { isStatic: true });
   wallRight = Bodies.rectangle((stage.width+10), 0, 20, stage.height * 2, { isStatic: true });
+  headshotOutline = Bodies.fromVertices((stage.width / 2),(stage.height/2)+(645/2)+82,
+	[
+  { x: 77, y: 641 },
+  { x: 77, y: 581 },
+  { x: 52, y: 573 },
+  { x: 22, y: 549 },
+  { x: 69, y: 287 },
+  { x: 183, y: 249 },
+  { x: 151, y: 110 },
+  { x: 217, y: 32 },
+  { x: 303, y: 58 },
+  { x: 315, y: 147 },
+  { x: 295, y: 241 },
+  { x: 405, y: 298 },
+  { x: 455, y: 455 },
+  { x: 432, y: 595 },
+  { x: 376, y: 607 },
+  { x: 380, y: 637 },
+],{ isStatic:true},true, 0.01, 20, 0.01);
   updateBodyDimensions();
   populateSkills();
 
@@ -69,7 +91,7 @@ function skillFallSetup() {
   Composite.add(engine.world, engineArray);
 
   // Run the renderer
-  // Render.run(render);
+  // Render.run(render); // Note this line is only for testing
   // Run the runner
   const runner = Runner.create();
   Runner.run(runner, engine);
@@ -96,12 +118,14 @@ function updateStageDimensions() {
 }
 
 function updateBodyDimensions() {
+  /* Note: there are issues here when the page is resized; need to resolve but it's 2:30am on a Sunday and I'm tired */
   Body.setPosition(ground, {x: (stage.width / 2), y: (stage.height+20)});
   Body.set(ceiling,"width", (stage.width));
   Body.set(ground,"width", (stage.width));
   Body.set(wallLeft,"height", (stage.height * 2));
   Body.set(wallRight,"position", {x:(stage.width+10),y:0});
   Body.set(wallRight,"height", (stage.height * 2));
+  Body.setPosition(headshotOutline,{x:(stage.width / 2),y:(stage.height)-(645/2)+82});
 }
 
 function populateSkills() {
@@ -111,7 +135,7 @@ function populateSkills() {
       boxes.push(engineBox);
       engineArray.push(engineBox.body);
   });
-  engineArray.push(ceiling,ground,wallLeft,wallRight,mouseConstraint);
+  engineArray.push(ceiling,ground,wallLeft,wallRight,headshotOutline,mouseConstraint);
 }
 
 function connectBox(elem) {
