@@ -250,6 +250,7 @@ div.skills {
     li {
       position:absolute;
       display:inline-block;
+      white-space: nowrap;
       color:$accent;
       background:none;
     }    
