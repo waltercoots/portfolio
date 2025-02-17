@@ -73,7 +73,7 @@ export default {
       position: absolute;
       left:50%;
       transform: translateY(calc(50vh - 50%)) translateX(-50%);
-      transition:transform 0.5s ease-out;
+      transition:transform 0.1s ease-out;
       video {
         margin-bottom:-4rem;
       }

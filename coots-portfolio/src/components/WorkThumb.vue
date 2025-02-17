@@ -35,7 +35,7 @@ export default {
 		background: #F0EFEF;
 		aspect-ratio: 1 / 1;
 		transform-style:flat;
-		transition: transform 1s ease-out, left 1s ease-out, top 1s ease-out;
+		transition: transform 0.1s ease-out, left 0.1s ease-out, top 0.1s ease-out;
 		transition-timing-function:cubic-bezier(0.05, 0.31, 0.22, 0.99);
 		padding:1rem;
 		overflow:hidden;
@@ -52,7 +52,7 @@ export default {
 		}
 		span { 
 			opacity:0; 
-			transition: opacity 0.55s ease-out;
+			transition: opacity 0.1s ease-out;
 		}
 		span.title {
 			font-size:1rem;

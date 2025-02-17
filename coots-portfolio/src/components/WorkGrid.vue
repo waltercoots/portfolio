@@ -161,7 +161,7 @@
 
 	div.workgrid.exploded {
       div.workthumb {
-		transition: transform 1.5s ease-out, left 1.5s ease-out, top 1.5s ease-out;
+		transition: transform 0.1s ease-out, left 0.1s ease-out, top 0.1s ease-out;
 		transition-timing-function:cubic-bezier(0, 0.79, 0.43, 0.99);
       }
     }	

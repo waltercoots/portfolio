@@ -29,7 +29,7 @@
 			<p v-html="project.url"></p>
 			<div class="contents">
 				<div v-for="(item, index) in project.content" v-bind:project="item" v-bind:key="index" class="contentPiece">
-					<img v-if="item.url" :src="`/img/${project.slug}/${item.url}`" :alt="TBD" :class="item.border" />
+					<img v-if="item.url" :src="`/img/${project.slug}/${item.url}`" :alt="project.title" :class="item.border" />
 					<p v-if="item.caption" v-html="item.caption" class="caption"></p>
 				</div>
 			</div>
