@@ -10,6 +10,7 @@ module.exports = defineConfig({
       sass: {
         additionalData: `
           @import "@/assets/styles/_reset.scss";
+          @import "@/assets/styles/_breakpoints.scss";
           @import "@/assets/styles/_variables.scss";
           @import "@/assets/styles/_fonts.scss";
         `,
