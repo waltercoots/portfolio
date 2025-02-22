@@ -39,6 +39,33 @@ body {
   color:$black;
   perspective: 1500px;
 }
+/* This is a testing element to just show what breakpoint we're viewing at */
+body:after {
+	content:'Test';
+	position:absolute;
+	top:0;
+	right:0;
+	background:$black;
+	color:#fff;
+	font-size:1rem;
+	padding:0.5rem;
+	z-index:11;
+	@include xs {
+		content:'XS (Phone)';
+	}
+	@include sm {
+		content:'SM (Phablet)';
+	}
+	@include md {
+		content:'M (Tablet)';
+	}
+	@include lg {
+		content:'LG (Desktop)';
+	}
+	@include xl {
+		content:'XL (Jumbo)';
+	}
+}
 div.foundation {
   width:100vw;
   height:100vh;

@@ -29,8 +29,27 @@ export default {
 	div.workthumb {
 		box-sizing: border-box;
 		position:relative;
-		width: 14rem;
-		height: 14rem;
+		@include xs {
+			width: 10.1875rem;
+			height: 10.1875rem;
+		}
+		@include sm {
+			width: 10.5rem;
+			height: 10.5rem;
+		}
+		@include md {
+			width: 10.5rem;
+			height: 10.5rem;
+		}
+		@include lg {
+			width: 14rem;
+			height: 14rem;
+		}
+		@include xl {
+			width: 14rem;
+			height: 14rem;
+		}
+
 		background: #F0EFEF;
 		aspect-ratio: 1 / 1;
 		padding:1rem;
