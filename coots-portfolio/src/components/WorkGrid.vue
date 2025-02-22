@@ -2,8 +2,6 @@
 	import WorkThumb from '@/components/WorkThumb.vue';
 	import projects from '@/assets/work.json';
 	let workgrid; // Reference to the grid
-	let thumbs; // Reference to the thumbnails
-	let isAnimating = false; // Flag to disable event listeners during animation
 
 	export default {
 		name: 'WorkGrid',
@@ -20,31 +18,22 @@
 				if(bool===undefined) 
 				{
 					workgrid.classList.toggle('exploded');
-					if (workgrid.classList.contains('exploded')) {
-						scatterThumbs();
-					} else {
-						resetThumbs();
-					}
 				}
 				else
 				{
 					if(bool===true)
 					{
 						workgrid.classList.add('exploded');
-						scatterThumbs();
 					}
 					else
 					{
 						workgrid.classList.remove('exploded');
-						resetThumbs();
 					}
 				}
 			}
 		},
 		mounted() {
 			workgrid = document.querySelector('.workgrid');
-			thumbs = document.querySelectorAll('.workthumb');
-			setUpEvents();
 		},
 		watch: {
 			'$route' (to) {
@@ -58,74 +47,6 @@
 		}
 	}
 
-
-	/* 
-		Scatters the thumbnails in a circular pattern around the center of the grid
-	*/ 
-	const scatterThumbs = () => {
-		isAnimating = true; // Disable mousemove
-
-		const gridRect = workgrid.getBoundingClientRect();
-
-		thumbs.forEach((thumb, index) => {
-			const angle = (index / thumbs.length) * Math.PI * 2;
-			const radius = Math.random() * (gridRect.width / 1.75) + (gridRect.width / 2.25);
-
-			const xOffset = Math.cos(angle) * radius;
-			const yOffset = Math.sin(angle) * radius;
-
-			const rotation = (Math.random() * 25 - 30).toFixed(2);
-			const scale = (Math.random() * 0.25 + 0.35).toFixed(2);
-
-			thumb.style.transform = `translate(${xOffset}px, ${yOffset}px) rotate(${rotation}deg) scale(${scale})`;
-		});
-	};
-
-	/* 
-		Resets the thumbnails to their original positions
-	*/ 
-	const resetThumbs = () => {
-		isAnimating = true; // Disable mousemove
-		thumbs.forEach((thumb) => {
-			thumb.style.transform = 'translate(0, 0) rotate(0deg) scale(1)';
-		});
-	};
-
-	const setUpEvents = () => {
-		/*
-			Listen for the end of the transition on each thumbnail
-		*/
-		thumbs.forEach((thumb) => {
-			thumb.addEventListener('transitionend', () => {
-				isAnimating = false; // Re-enable mousemove once animation finishes
-			});
-		});
-	
-		/*
-			Rotates the grid slightly based on the user's cursor position
-		*/
-		document.addEventListener('mousemove', (e) => {
-			if (isAnimating) return; // Prevent updates during animation
-	
-			const { innerWidth, innerHeight } = window;
-			const x = e.clientX - innerWidth / 2;
-			const y = e.clientY - innerHeight / 2;
-	
-			const xRotation = (y / innerHeight) * 10;
-			const yRotation = -(x / innerWidth) * 10;
-	
-			workgrid.style.transform = `rotateX(${xRotation}deg) rotateY(${yRotation}deg) translate(-50%,-50%)`;
-	
-			thumbs.forEach((thumb) => {
-				const existingTransform = thumb.style.transform || '';
-				const translateMatch = existingTransform.match(/translate\([^)]*\)/g) || ['translate(0, 0)'];
-				const rotateMatch = existingTransform.match(/rotate\([^)]*\)/g) || ['rotate(0)'];
-				const scaleMatch = existingTransform.match(/scale\([^)]*\)/g) || ['scale(1)'];
-	
-				thumb.style.transform = `${translateMatch[0]} ${scaleMatch[0]} ${rotateMatch[0]}`;
-			});
-		});
-	}
 </script>
 
 <template>
@@ -138,10 +59,11 @@
 	div.workgrid {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;
+		justify-content: space-between;
+		align-content:space-between;
 		z-index: 1;
-		max-width: 50rem;
-		width:100%;
+		width:80rem;
+		height:30.5rem;
 		transform-style: preserve-3d;
 		position:absolute;
 		left:50%;
@@ -157,12 +79,30 @@
 				}
 			}
 		}
+		div.workthumb {
+			/* defaults to animate to / from when the below is added / removed */
+			rotate:0deg;
+			transform: scale(1) translate(0,0);
+			transition: transform 1000ms ease-out, rotate 1000ms ease-out;
+			transform-origin: top left;
+		}
+		&.exploded {
+			div.workthumb {
+				transition: transform 1000ms ease-out, rotate 1000ms ease-out;
+				transition-delay: 1000ms;
+				transition-timing-function:cubic-bezier(0, 0.79, 0.43, 0.99);
+				&:nth-child(1) { transform: translate(8.88%, -18.40%) scale(16.52%) rotate(26.88deg); }
+				&:nth-child(2) { transform: translate(-55.82%, 19.33%) scale(38.07%) rotate(16.59deg); }
+				&:nth-child(3) { transform: translate(-116.43%, -28.78%) scale(16.96%) rotate(17.36deg); }
+				&:nth-child(4) { transform: translate(115.20%, 110.54%) scale(33.93%) rotate(-11.7deg); }
+				&:nth-child(5) { transform: translate(20.62%, 0.71%) scale(26.05%) rotate(24.74deg); }
+				&:nth-child(6) { transform: translate(28.96%, -12.49%) scale(35.81%) rotate(9.45deg); }
+				&:nth-child(7) { transform: translate(-0.27%, 86.85%) scale(18.09%) rotate(42.11deg); }
+				&:nth-child(8) { transform: translate(183.75%, 87.90%) scale(24.11%) rotate(-41.39deg); }
+				&:nth-child(9) { transform: translate(196.56%, -11.71%) scale(28.13%) rotate(-10.54deg); }
+				&:nth-child(10) { transform: translate(28.30%, 90.84%) scale(12.05%) rotate(-27.58deg); }
+			}
+		}	
 	}
 
-	div.workgrid.exploded {
-      div.workthumb {
-		transition: transform 0.1s ease-out, left 0.1s ease-out, top 0.1s ease-out;
-		transition-timing-function:cubic-bezier(0, 0.79, 0.43, 0.99);
-      }
-    }	
 </style>

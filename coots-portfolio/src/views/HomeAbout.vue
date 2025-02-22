@@ -73,7 +73,8 @@ export default {
       position: absolute;
       left:50%;
       transform: translateY(calc(50vh - 50%)) translateX(-50%);
-      transition:transform 0.1s ease-out;
+      transition:transform 1000ms ease-out;
+      transition-delay:1000ms;
       video {
         margin-bottom:-4rem;
       }
@@ -84,6 +85,8 @@ export default {
       }
       &.collapsed {
         transform:translateY(calc(-100% + 3rem)) translateX(-50%);
+        transition:transform 1000ms ease-out;
+        transition-delay:0ms;
       }
     }
     nav {

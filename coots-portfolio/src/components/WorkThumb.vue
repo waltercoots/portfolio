@@ -29,14 +29,10 @@ export default {
 	div.workthumb {
 		box-sizing: border-box;
 		position:relative;
-		margin: 1rem;
-		width: 8rem;
-		height: 8rem;
+		width: 14rem;
+		height: 14rem;
 		background: #F0EFEF;
 		aspect-ratio: 1 / 1;
-		transform-style:flat;
-		transition: transform 0.1s ease-out, left 0.1s ease-out, top 0.1s ease-out;
-		transition-timing-function:cubic-bezier(0.05, 0.31, 0.22, 0.99);
 		padding:1rem;
 		overflow:hidden;
 		div.imageWrapper {
@@ -52,7 +48,7 @@ export default {
 		}
 		span { 
 			opacity:0; 
-			transition: opacity 0.1s ease-out;
+			transition: opacity 50ms ease-out;
 		}
 		span.title {
 			font-size:1rem;

@@ -69,6 +69,6 @@ a {
     opacity:1;
   }
   .flyaway-leave-active, .flyaway-enter-active {
-		transition: opacity 0.1s ease-in;
+		transition: opacity 1000ms ease-in;
   }
 </style>
