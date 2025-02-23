@@ -42,6 +42,7 @@ body {
 /* This is a testing element to just show what breakpoint we're viewing at */
 body:after {
 	content:'Test';
+  display:none; // When testing, comment this line out
 	position:absolute;
 	top:0;
 	right:0;

@@ -15,6 +15,7 @@ export default {
   },
   unmounted() {
     window.removeEventListener('resize', this.handleResize);
+    clearSkillFall();
   },
 }
 
@@ -28,6 +29,7 @@ const Engine = Matter.Engine,
     MouseConstraint = Matter.MouseConstraint;
 /* MatterJS Placeholders */
 let engine = undefined;
+let runner = undefined;
 let stage = undefined;
 let render = undefined;
 let engineArray = []; // to pass all the bodies to MatterJS
@@ -39,14 +41,11 @@ let wallRight = undefined;
 let boxes = [];
 let mouseConstraint = undefined;
 let headshotOutline = undefined;
-
-/* 
-Todo: use Matter.svg to load the /public/img/headshot outline 
-*/
+let animationFrameId; // Store the animation frame ID
 
 function skillFallSetup() {
   engine = Engine.create();
-  engine.gravity.y = 0.15;
+  engine.gravity.scale = 0.0001;
   stage = document.querySelector(".skills");
   render = Render.create({
     element: stage,
@@ -62,7 +61,6 @@ function skillFallSetup() {
   updateStageDimensions();
   ceiling = Bodies.rectangle(stage.width / 2, -40, (stage.width), 80, { isStatic: true });
   ground = Bodies.rectangle(stage.width / 2, (stage.height+20), (stage.width), 40, { isStatic: true });
-  console.log(ground);
   wallLeft = Bodies.rectangle(-10, 0, 20, stage.height * 2, { isStatic: true });
   wallRight = Bodies.rectangle((stage.width+10), 0, 20, stage.height * 2, { isStatic: true });
   headshotOutline = Bodies.fromVertices((stage.width / 2),(stage.height/2)+(645/2)+82,
@@ -91,9 +89,9 @@ function skillFallSetup() {
   Composite.add(engine.world, engineArray);
 
   // Run the renderer
-  // Render.run(render); // Note this line is only for testing
+  // Render.run(render); // Disable this line for production; enable it for troubleshooting
   // Run the runner
-  const runner = Runner.create();
+  runner = Runner.create();
   Runner.run(runner, engine);
 
   // Render loop
@@ -102,32 +100,9 @@ function skillFallSetup() {
           box.render();
       });  
       Matter.Engine.update(engine);
-      requestAnimationFrame(rerender);
+      animationFrameId = requestAnimationFrame(rerender);
   })();
 }
-
-function updateStageDimensions() {
-  stage.width = document.querySelector(".skills").getBoundingClientRect().width;
-  stage.height = document.querySelector(".skills").getBoundingClientRect().height;
-  stage.x = document.querySelector(".skills").getBoundingClientRect().x;
-  stage.y = document.querySelector(".skills").getBoundingClientRect().y;
-  render.options.width = stage.width;
-  render.options.height = stage.height;
-  render.canvas.width = stage.width;
-  render.canvas.height = stage.height;
-}
-
-function updateBodyDimensions() {
-  /* Note: there are issues here when the page is resized; need to resolve but it's 2:30am on a Sunday and I'm tired */
-  Body.setPosition(ground, {x: (stage.width / 2), y: (stage.height+20)});
-  Body.set(ceiling,"width", (stage.width));
-  Body.set(ground,"width", (stage.width));
-  Body.set(wallLeft,"height", (stage.height * 2));
-  Body.set(wallRight,"position", {x:(stage.width+10),y:0});
-  Body.set(wallRight,"height", (stage.height * 2));
-  Body.setPosition(headshotOutline,{x:(stage.width / 2),y:(stage.height)-(645/2)+82});
-}
-
 function populateSkills() {
   // Select all target elements and create boxes
   document.querySelectorAll(".skills li").forEach((boxElem) => {
@@ -155,7 +130,60 @@ function connectBox(elem) {
       this.element.style.left = `${x - this.w / 2}px`;
       this.element.style.transform = `rotate(${this.body.angle}rad)`;
   };
+  skill.stop = function () {
+    cancelAnimationFrame(animationFrameId);
+  }
   return skill;
+}
+
+function updateStageDimensions() {
+  stage.width = document.querySelector(".skills").getBoundingClientRect().width;
+  stage.height = document.querySelector(".skills").getBoundingClientRect().height;
+  stage.x = document.querySelector(".skills").getBoundingClientRect().x;
+  stage.y = document.querySelector(".skills").getBoundingClientRect().y;
+  render.options.width = stage.width;
+  render.options.height = stage.height;
+  render.canvas.width = stage.width;
+  render.canvas.height = stage.height;
+}
+
+function updateBodyDimensions() {
+  /* Note: there are issues here when the page is resized; need to resolve but it's 2:30am on a Sunday and I'm tired */
+  Body.setPosition(ground, {x: (stage.width / 2), y: (stage.height+20)});
+  Body.set(ceiling,"width", (stage.width));
+  Body.set(ground,"width", (stage.width));
+  Body.set(wallLeft,"height", (stage.height * 2));
+  Body.set(wallRight,"position", {x:(stage.width+10),y:0});
+  Body.set(wallRight,"height", (stage.height * 2));
+  Body.setPosition(headshotOutline,{x:(stage.width / 2),y:(stage.height)-(645/2)+82});
+}
+
+
+function clearSkillFall() {
+  boxes.forEach((box) => {
+    box.stop();
+  });
+  
+  Composite.clear(engine.world, false);  
+  Engine.clear(engine);
+  Render.stop(render);
+  Runner.stop(runner);
+  Render.canvas = null;
+  Render.context = null;
+  Render.textures = {};
+  // Clear all the original values
+  engine = undefined;
+  runner = undefined;
+  stage = undefined;
+  render = undefined;
+  engineArray = [];
+  ceiling = undefined;
+  ground = undefined;
+  wallLeft = undefined;
+  wallRight = undefined;
+  boxes = [];
+  mouseConstraint = undefined;
+  headshotOutline = undefined;
 }
 </script>
 
@@ -215,7 +243,11 @@ function connectBox(elem) {
         <li>Frontend Coding</li>
       </ul>
     </div>
-    <router-link to="/">Close</router-link>
+    <router-link to="/" class="close-btn">
+      <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2.42362 2L18 16M17.5764 2L2 16" />
+      </svg>      
+    </router-link>
   </div>
 </template>
 
@@ -223,26 +255,127 @@ function connectBox(elem) {
 div.about {
   background:$black;
   color:$white;
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
+  display:flex;
+  justify-content: center;
+	@include xs {
+    flex-direction: column-reverse;
+    overflow-x:auto;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+	}
+	@include sm {
+    flex-direction: column-reverse;
+    overflow-x:auto;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+	}
+	@include md {
+    flex-direction: row;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+	}
+	@include lg {
+    flex-direction: row;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+	}
+	@include xl {
+    flex-direction: row;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+	}
 }
 div.bio {
-  width:60rem;
-  padding:5rem;
-  position:absolute;
-  left:0;
-  top:0;
-  width:40%;
+  align-items: center;
+  align-content: center;
+	@include xs {
+    @include modular-scale(-2); // Font size
+    padding:1rem;
+    p {
+      margin-bottom:0.5rem;       
+    }
+	}
+	@include sm {
+    @include modular-scale(-2); // Font size
+    padding:5rem;
+    p { 
+      max-width:30rem;
+      margin-bottom:0.5rem; 
+    }
+	}
+	@include md {
+    @include modular-scale(-2); // Font size
+    padding:2rem;
+    p {
+      max-width:30rem;
+      margin-bottom:0.5rem; 
+    }
+	}
+	@include lg {
+    @include modular-scale(-2); // Font size
+    padding:2rem;
+    p {
+      max-width:35rem;
+      margin-bottom:0.5rem; 
+    }
+	}
+	@include xl {
+    @include modular-scale(0); // Font size
+    padding:4rem;
+    p { 
+      max-width:50rem; 
+      margin-bottom:1rem; 
+    }
+	}
+}
+.close-btn {
+  z-index: 12;
+  top: 1rem;
+  right:1rem;
+  position:fixed;
+  svg path {
+    stroke:$white;
+    stroke-width: 3;
+    stroke-linecap: round;
+  }
 }
 div.skills {
-  width:60%;
-  height:100vh;
-  position:absolute;
-  left:40%;
+	@include xs {
+    flex:2 0 50vh;
+	}
+	@include sm {
+    flex:2 0 50vh;
+	}
+	@include md {
+    flex:1 0 33vw;
+	}
+	@include lg {
+    flex:2 0 50vw;
+	}
+	@include xl {
+    flex:2 0 50vw;
+    max-width:80rem;
+	}
+
+  height:100%;
   user-select: none;
+  position: sticky;
+  top:0;
   ul {
     list-style:none;
     position:relative;
@@ -261,6 +394,26 @@ div.skills {
     left:50%;
     transform:translate(-50%,0);
     mix-blend-mode: color-dodge;
+    user-select:none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;    
+
+    @include xs {
+      width:15rem;
+    }
+    @include sm {
+      width:15rem;
+    }
+    @include md {
+      width:30rem;
+    }
+    @include lg {
+      flex:2 0 50vw;
+    }
+    @include xl {
+      flex:2 0 50vw;
+      max-width:80rem;
+    }
   }
   overflow:hidden;
 }
