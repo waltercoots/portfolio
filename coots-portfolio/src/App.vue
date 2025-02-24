@@ -42,7 +42,7 @@ body {
 /* This is a testing element to just show what breakpoint we're viewing at */
 body:after {
 	content:'Test';
-  display:none; // When testing, comment this line out
+  // display:none; // When testing, comment this line out
 	position:absolute;
 	top:0;
 	right:0;
@@ -74,6 +74,9 @@ div.foundation {
   margin:0;
   padding:0;
 }
+div.workgrid.bg {
+  position:absolute;
+}
 a {
     color:$accent;
     text-decoration: none;
@@ -81,7 +84,8 @@ a {
       color:$accent;
     }
     &:focus {
-      background:#000;
+      color:$accent;
+      text-decoration: underline;
     }
     a:hover {
       color:$accent;

@@ -59,34 +59,35 @@
 	div.workgrid {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
-		align-content:space-between;
 		z-index: 1;
 		@include xs {
 			width: 100%;
 			height: 58rem;
+			justify-content:center;
+			align-content:flex-start;
 		}
 		@include sm {
 			width: 48rem;
 			height: 48rem;
 		}
 		@include md {
-			width:61.5rem;
-			height:25.5rem;
+			width: 48rem;
+			height: 48rem;
 		}
 		@include lg {
-			width:80rem;
-			height:30.5rem;
+			width:61.5rem;
+			height:25.5rem;
+			justify-content: space-evenly;
+			align-content:space-evenly;
+			position:absolute;
+			left:50%;
+			top:50%;
+			transform:translate(-50%,-50%);
 		}
 		@include xl {
 			width:80rem;
 			height:30.5rem;
 		}
-		transform-style: preserve-3d;
-		position:absolute;
-		left:50%;
-		top:50%;
-		transform:translate(-50%,-50%);
 
 		&.bg {
 			z-index: -2;

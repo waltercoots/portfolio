@@ -32,10 +32,12 @@ export default {
 		@include xs {
 			width: 10.1875rem;
 			height: 10.1875rem;
+			margin:0.5rem;
 		}
 		@include sm {
 			width: 10.5rem;
 			height: 10.5rem;
+			margin:0.75rem;
 		}
 		@include md {
 			width: 10.5rem;

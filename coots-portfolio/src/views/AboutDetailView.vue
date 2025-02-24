@@ -353,6 +353,19 @@ div.bio {
     stroke-width: 3;
     stroke-linecap: round;
   }
+  @media (hover:hover) {
+    &:hover {
+      svg path {
+        stroke:$accent;
+      }
+    }
+  }
+  &:focus {
+    svg path {
+      stroke:$accent;
+    }
+  }
+
 }
 div.skills {
 	@include xs {

@@ -10,12 +10,14 @@ const routes = [
     // Note: the actual content for the about page is contained within App.vue because it contains the main navigation and we want it to be visible on all pages. This decision was mainly made to support transitions and animation. 
     path: '/',
     name: 'about',
-    component: EmptyScreen
+    component: EmptyScreen,
+    meta: { title: 'Walter Coots' }
   },
   {
     path: '/aboutDetail',
     name: 'aboutDetail',
-    component: AboutDetailView
+    component: AboutDetailView,
+    meta: { title: 'Walter Coots - About' }
   },
   {
     path: '/work',
@@ -23,25 +25,32 @@ const routes = [
       {
         name: 'work',
         path: '',
-        component: WorkView
+        component: WorkView,
+        meta: { title: 'Walter Coots - Work' }
       },
       { 
         name: 'project',
         path: 'project/:slug',
-        component: ProjectView
+        component: ProjectView,
+        meta: { title: 'Walter Coots - Work' }
       },
     ]
   },
   {
     path: '/contact',
     name: 'contact',
-    component:ContactView
+    component:ContactView,
+    meta: { title: 'Walter Coots - Contact' }
   }
 ]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
+})
+
+router.beforeEach((to) => {
+  document.title = to.meta?.title ?? 'Walter Coots';
 })
 
 export default router
