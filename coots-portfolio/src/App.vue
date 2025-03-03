@@ -11,7 +11,7 @@ export default {
 
 <template>
   <div class="foundation">
-    <WorkGrid ref="bgGrid" class="bg" />
+    <WorkGrid class="bg" />
     <HomeAbout />
     <router-view v-slot="{ Component }">
       <transition name="flyaway" mode="out-in">
@@ -28,7 +28,8 @@ export default {
 html, body {
   padding:0;
   margin:0;
-  height:100vh;
+  min-height:100vh;
+  height: -webkit-fill-available;
   width:100vw;
   overflow:hidden;
   font-family: 'TT Hoves', sans-serif;
@@ -37,12 +38,11 @@ html, body {
 body {
   background:$white;
   color:$black;
-  perspective: 1500px;
 }
 /* This is a testing element to just show what breakpoint we're viewing at */
 body:after {
 	content:'Test';
-  // display:none; // When testing, comment this line out
+  display:none; // When testing, comment this line out
 	position:absolute;
 	top:0;
 	right:0;
@@ -73,9 +73,6 @@ div.foundation {
   overflow:hidden;
   margin:0;
   padding:0;
-}
-div.workgrid.bg {
-  position:absolute;
 }
 a {
     color:$accent;

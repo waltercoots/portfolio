@@ -4,8 +4,20 @@
 			"title": "WorkStep",
 			"slug": "workstep",
 			"year": "2022–2024",
-			"description": "WorkStep is enterprise HR and ops SaaS designed for companies with large warehouse, supply chain, and retail divisions. The software helps leaders identify ways they can improve working conditions for employees, thus leading to higher engagement and happiness in the workforce, leading to reduced turnover, and increases in other important factors like productivity and safety.",
+			"description": "WorkStep is enterprise HR software designed for companies with large warehouse, supply chain, and retail divisions. The software helps leaders identify ways they can improve working conditions for employees, thus leading to higher engagement and happiness in the workforce, which in turn leads to reduced turnover, and increases other important factors like productivity and safety.\r\nSince many of these employees aren’t desk workers and often have corporate emails, web-based surveys are sent out to workers’ personal contact info via text and email. Results are anonymous unless workers elect to reveal their contact info on a question-by-question basis, and the aggregated results are summarized and analyzed within the WorkStep app.\r\nAs is the case in a typical Series B startup, I wore a lot of hats and had my hands in a lot of areas in the product. I’ll take you through some highlights that I think were pretty fun and interesting.",
 			"content": [
+				{
+					"title": "Re-architecture",
+					"description": "WorkStep actually started out as a tool for sourcing candidates for frontline jobs. The software went through a lot of changes during those first several years and not all of the changes were carefully thought through. It was starting to show, and hampering product and engineering’s ability to move quickly, so the product team was approached with the task of “Making the product make sense”. I was the design lead on this project."
+				},
+				{
+					"subtitle": "The Problem",
+					"description": "An emphasis on moving fast caused features and areas to be bolted on without making adjustments to surrounding features that may have been affected, which accumulated several years worth of design and tech debt."
+				},
+				{
+					"subtitle": "The Approach",
+					"description": "The PM and myself conducted interviews and surveys with both internal stakeholders as well as customers. After creating some opportunity solution trees and better identifying some key problem areas, we worked together to fill out a product brief and get new designs going. We didn’t want to change the design so much that what was working was eliminated. But we did want to rename and move things into places that were more self-evident."
+				},
 				{
 					"url": "../placeholder.png",
 					"width": 920,
@@ -272,7 +284,7 @@
 			"title": "Austin Film Society",
 			"slug": "afs",
 			"year": "2016",
-			"description": "As a film lover, I was thrilled to be the lead UX designer on the Austin Film Society web site redesign. The old site was very confusing and difficult to navigate, with several stakeholders handling separate parts of the site. Implementation is still underway, and it has shifted some from our original design. Here, you can see what our intent was.",
+			"description": "As a film lover, I was thrilled to be the lead UX designer on the Austin Film Society website redesign. The old site was very confusing and difficult to navigate, with several stakeholders handling separate parts of the site. Implementation is still underway, and it has shifted some from our original design. Here, you can see what our intent was.",
 			"credits": "Created as a collaborative effort at <a href=\"http://foxtrot.co\" target=\"_blank\">Foxtrot</a>, with my role as UX lead and some UI design and concepting.",
 			"content": [
 				{

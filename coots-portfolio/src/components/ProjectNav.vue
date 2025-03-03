@@ -39,13 +39,10 @@ export default {
 
 <style lang="scss" scoped>
 .projectNav {
-	text-align: center;
-	margin:0 auto 0;
+	display:flex;
+	justify-content: center;
 }
 .nav-button {
-	display:inline-block;
-	vertical-align: middle;
-	text-align:center;
 	width:1.5rem;
 	height:1.5rem;
 	margin:0 0.5rem;

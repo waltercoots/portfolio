@@ -16,16 +16,13 @@ export default {
 </script>
 
 <template>
-	<div class="workthumb" :key="project.title" @click="goToProject">
-		<div class="imageWrapper">
-			<img :src="`/img/workthumbs/${project.slug}.jpg`" alt="" />
-		</div>
+	<div class="workthumb" :key="project.title" @click="goToProject" :style="`background:url(/img/workthumbs/${project.slug}.jpg) no-repeat center / contain;`">
 		<span class="title">{{ project.title }}</span>
 		<span class="year">{{ project.year }}</span>
 	</div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 	div.workthumb {
 		box-sizing: border-box;
 		position:relative;
@@ -42,10 +39,11 @@ export default {
 		@include md {
 			width: 10.5rem;
 			height: 10.5rem;
+			margin:0.5rem;
 		}
 		@include lg {
-			width: 14rem;
-			height: 14rem;
+			width: 10.5rem;
+			height: 10.5rem;
 		}
 		@include xl {
 			width: 14rem;
@@ -56,37 +54,48 @@ export default {
 		aspect-ratio: 1 / 1;
 		padding:1rem;
 		overflow:hidden;
-		div.imageWrapper {
-			position: absolute;
-			left:0;
-			top:0;
-			height:100%;
-			aspect-ratio: 660 / 410;
-		}
-		img {
-			min-height:100%;
-			opacity:1;
-		}
+		display:flex;
+		flex-direction: column;
+		justify-content: space-between;
+		text-align: center;
 		span { 
-			opacity:0; 
-			transition: opacity 50ms ease-out;
+			opacity:0;
+			transition: opacity 100ms ease-out;
+			position: relative;
+			z-index:2;
 		}
 		span.title {
-			font-size:1rem;
-			line-height:125%;
-			display:block;
+			@include modular-scale(0); // Font size
+			line-height:145%;
 			margin-bottom:0.25rem;
 		}
 		span.year {
-			font-size:0.8rem;
-			display:block;
+			@include modular-scale(-3); // Font size
 		}
-		&:hover {
-			padding:calc(1rem - 1px);
-			cursor: pointer;
-			border:1px solid $black;
-			span { opacity:1; }
+		@media (hover:hover) {
+			&:hover {
+				cursor: pointer;
+				span { 
+					opacity:1; 
+					transition: opacity 100ms ease-in;				
+				}
+				&:after {
+					background:#FFF;
+					opacity:85%;
+					transition: opacity 100ms ease-out;
+				}
+			}
 		}
-
+		&:after {
+			content:'';
+			position:absolute;
+			opacity:0;
+			left:0;
+			top:0;
+			width:100%;
+			height:100%;
+			background:#F0EFEF;
+			transition: opacity 500ms ease-in;
+		}
 	}
 </style>

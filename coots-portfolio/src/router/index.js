@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import AboutDetailView from '@/views/AboutDetailView.vue'
-import WorkView from '@/views/WorkView.vue'
 import ContactView from '@/views/ContactView.vue'
 import ProjectView from '@/views/ProjectView.vue'
 import EmptyScreen from '@/components/EmptyScreen.vue'
@@ -25,7 +24,7 @@ const routes = [
       {
         name: 'work',
         path: '',
-        component: WorkView,
+        component: EmptyScreen,
         meta: { title: 'Walter Coots - Work' }
       },
       { 

@@ -68,6 +68,7 @@ export default {
 <style lang="scss">
   div.home {
     div.homeContent {
+      z-index:2;
       @include xs {
         width: calc(100vw - 1rem);
         max-width:20rem;
@@ -94,8 +95,7 @@ export default {
       position: absolute;
       left:50%;
       transform: translateY(calc(50vh - 50%)) translateX(-50%);
-      transition:transform 1000ms ease-out;
-      transition-delay:1000ms;
+      transition:transform 250ms ease-out;
       video {
         margin-bottom:-4rem;
       }
@@ -104,8 +104,7 @@ export default {
       }
       &.collapsed {
         transform:translateY(calc(-100% + 3rem)) translateX(-50%);
-        transition:transform 1000ms ease-out;
-        transition-delay:0ms;
+        transition:transform 250ms ease-out;
       }
     }
     nav {

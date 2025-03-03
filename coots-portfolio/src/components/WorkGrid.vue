@@ -1,7 +1,7 @@
 <script>
 	import WorkThumb from '@/components/WorkThumb.vue';
 	import projects from '@/assets/work.json';
-	let workgrid; // Reference to the grid
+	let gridContainer; // Reference to the grid
 
 	export default {
 		name: 'WorkGrid',
@@ -17,98 +17,106 @@
 			toggleExplosion	(bool) {
 				if(bool===undefined) 
 				{
-					workgrid.classList.toggle('exploded');
+					gridContainer.classList.toggle('bg');
 				}
 				else
 				{
 					if(bool===true)
 					{
-						workgrid.classList.add('exploded');
+						gridContainer.classList.add('bg');
 					}
 					else
 					{
-						workgrid.classList.remove('exploded');
+						gridContainer.classList.remove('bg');
 					}
 				}
 			}
 		},
 		mounted() {
-			workgrid = document.querySelector('.workgrid');
+			gridContainer = document.querySelector('.grid-container');
 		},
 		watch: {
 			'$route' (to) {
-				if (to.path === '/work' && workgrid.classList.contains('bg')) {
+				if (to.path === '/work') {
 					this.toggleExplosion(false);
 				}
-				if(to.path === '/' && workgrid.classList.contains('bg')) {
+				if(to.path === '/' || to.path === '/contact') {
 					this.toggleExplosion(true);
 				}
 			}
 		}
 	}
-
 </script>
 
 <template>
-	<div class="workgrid">
-		<WorkThumb v-for="(item, index) in jsonData.projects" v-bind:project="item" v-bind:key="index" />
+	<div class="grid-container">
+		<div class="workgrid">
+			<WorkThumb v-for="(item, index) in jsonData.projects" v-bind:project="item" v-bind:key="index" />
+		</div>
 	</div>
 </template>
 
 <style lang="scss">
-	div.workgrid {
-		display: flex;
-		flex-wrap: wrap;
-		z-index: 1;
+	div.grid-container {
+		position:absolute;
+		top:0;
+		left:0;
+		overflow:auto;
+		width:100vw;
+		height:100vh;
+		z-index:1;
+		display:flex;
+		align-items: center; // vertical centering
+		align-content:center; // only works with more than one line of content
+		justify-content: center;
+
+		/*
+		For some reason, align-items:center has issues with scrolling
+		when items are taller than the viewport, so we're doing media queries
+		to set align-items to flex-start when the viewport is too short
+		*/
+
 		@include xs {
-			width: 100%;
-			height: 58rem;
-			justify-content:center;
-			align-content:flex-start;
+			align-items: flex-start;
 		}
 		@include sm {
-			width: 48rem;
-			height: 48rem;
-		}
-		@include md {
-			width: 48rem;
-			height: 48rem;
-		}
-		@include lg {
-			width:61.5rem;
-			height:25.5rem;
-			justify-content: space-evenly;
-			align-content:space-evenly;
-			position:absolute;
-			left:50%;
-			top:50%;
-			transform:translate(-50%,-50%);
-		}
-		@include xl {
-			width:80rem;
-			height:30.5rem;
-		}
-
-		&.bg {
-			z-index: -2;
-			pointer-events: none;
-			div.workthumb {
-				div.imageWrapper {
-					opacity:0;
-				}
+			align-items:center;
+			@media (max-height: 770px) { 
+				align-items:flex-start;
 			}
 		}
-		div.workthumb {
-			/* defaults to animate to / from when the below is added / removed */
-			rotate:0deg;
-			transform: scale(1) translate(0,0);
-			transition: transform 1000ms ease-out, rotate 1000ms ease-out;
-			transform-origin: top left;
+		@include md {
+			align-items:center;
+			@media (max-height: 554px) { 
+				align-items:flex-start;
+			} 			
 		}
-		&.exploded {
+		@include lg {
+			align-items:center;
+			@media (max-height: 370px) { 
+				align-items:flex-start;
+			} 
+		}
+		@include xl {
+			align-items:center;
+			@media (max-height: 500px) { 
+				align-items:flex-start;
+			} 
+		}
+
+
+		&.bg {
+			/* Applied when the grid is shown as a background element */
+			overflow:hidden;
+			z-index: -2;
+			pointer-events: none;
+			div.workgrid div.workthumb {
+				&:after {
+					opacity:1;
+				}
+			}
 			div.workthumb {
 				transition: transform 1000ms ease-out, rotate 1000ms ease-out;
-				transition-delay: 1000ms;
 				transition-timing-function:cubic-bezier(0, 0.79, 0.43, 0.99);
 				@include xs {
 					&:nth-child(1) { transform: translate(9.27%, 5.18%) scale(17.79%) rotate(18.77deg); }
@@ -123,18 +131,6 @@
 					&:nth-child(10) { transform: translate(23.31%, 70.05%) scale(28.83%) rotate(5.1deg); }
 				}
 				@include sm {
-					&:nth-child(1) { transform: translate(26.76%, -83.25%) scale(14.29%) rotate(17.4deg); }
-					&:nth-child(2) { transform: translate(-2.82%, -61.84%) scale(27.38%) rotate(-14.04deg); }
-					&:nth-child(3) { transform: translate(51.98%, -54.08%) scale(21.43%) rotate(9.27deg); }
-					&:nth-child(4) { transform: translate(85.37%, -36.44%) scale(51.19%) rotate(-25.22deg); }
-					&:nth-child(5) { transform: translate(0.90%, -48.90%) scale(28.57%) rotate(40.82deg); }
-					&:nth-child(6) { transform: translate(-41.89%, 177.77%) scale(38.10%) rotate(-21.03deg); }
-					&:nth-child(7) { transform: translate(32.52%, 206.54%) scale(28.57%) rotate(14.91deg); }
-					&:nth-child(8) { transform: translate(97.12%, 93.98%) scale(23.40%) rotate(-7.71deg); }
-					&:nth-child(9) { transform: translate(-96.45%, 171.36%) scale(12.26%) rotate(-29.5deg); }
-					&:nth-child(10) { transform: translate(173.90%, 123.18%) scale(13.99%) rotate(27.32deg); }
-				}
-				@include md {
 					&:nth-child(1) { transform: translate(22.83%, -59.84%) scale(15.94%) rotate(37deg); }
 					&:nth-child(2) { transform: translate(-121.98%, 5.56%) scale(63.10%) rotate(16.59deg); }
 					&:nth-child(3) { transform: translate(-122.17%, -78.04%) scale(22.62%) rotate(17.36deg); }
@@ -145,6 +141,18 @@
 					&:nth-child(8) { transform: translate(188.40%, 117.52%) scale(32.14%) rotate(-41.39deg); }
 					&:nth-child(9) { transform: translate(200.46%, 5.98%) scale(37.50%) rotate(-10.54deg); }
 					&:nth-child(10) { transform: translate(49.20%, 138.36%) scale(16.07%) rotate(27.58deg); }
+				}
+				@include md {
+					&:nth-child(1) { transform: translate(26.76%, -83.25%) scale(14.29%) rotate(17.4deg); }
+					&:nth-child(2) { transform: translate(-2.82%, -61.84%) scale(27.38%) rotate(-14.04deg); }
+					&:nth-child(3) { transform: translate(51.98%, -54.08%) scale(21.43%) rotate(9.27deg); }
+					&:nth-child(4) { transform: translate(85.37%, -36.44%) scale(51.19%) rotate(-25.22deg); }
+					&:nth-child(5) { transform: translate(0.90%, -48.90%) scale(28.57%) rotate(40.82deg); }
+					&:nth-child(6) { transform: translate(-41.89%, 177.77%) scale(38.10%) rotate(-21.03deg); }
+					&:nth-child(7) { transform: translate(32.52%, 206.54%) scale(28.57%) rotate(14.91deg); }
+					&:nth-child(8) { transform: translate(97.12%, 93.98%) scale(23.40%) rotate(-7.71deg); }
+					&:nth-child(9) { transform: translate(-96.45%, 171.36%) scale(12.26%) rotate(-29.5deg); }
+					&:nth-child(10) { transform: translate(173.90%, 123.18%) scale(13.99%) rotate(27.32deg); }
 				}
 				@include lg {
 					&:nth-child(1) { transform: translate(8.88%, -18.40%) scale(16.52%) rotate(26.88deg); }
@@ -159,7 +167,37 @@
 					&:nth-child(10) { transform: translate(28.30%, 90.84%) scale(12.05%) rotate(-27.58deg); }
 				}
 			}
-		}	
+		}
 	}
+	div.workgrid {
+		display: flex;
+		flex-wrap: wrap;
+		z-index: 1;
+		justify-content:center;
+		box-sizing:border-box;
 
+		@include xs {
+			width: 100%;
+		}
+		@include sm {
+			width: 100%;
+		}
+		@include md {
+			width: 48rem;
+		}
+		@include lg {
+			width:61.5rem;
+		}
+		@include xl {
+			width:80rem;
+		}
+
+		div.workthumb {
+			/* defaults to animate to / from when the below is added / removed */
+			rotate:0deg;
+			transform: scale(1) translate(0,0);
+			transition: transform 1000ms ease-out, rotate 1000ms ease-out;
+			transform-origin: top left;
+		}
+	}
 </style>

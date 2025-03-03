@@ -33,8 +33,6 @@ div.contact {
   overflow:hidden;
   div.contactContent {
     background:url('/public/img/contact-full.jpg') center center / cover no-repeat;
-    background-blend-mode: multiply;
-    mix-blend-mode: multiply;
 
 
     @include xs {
