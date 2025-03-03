@@ -12,15 +12,49 @@
 			}
 		},
 		beforeMount() {
-			this.project = jsonData.projects.find(project => project.slug === this.$route.params.slug);
-			this.project.index = jsonData.projects.findIndex(project => project.slug === this.$route.params.slug);
+			this.loadProject(this.$route.params.slug);
+		},
+		methods: {
+			closeProject() {
+				this.$router.push('/work');
+			},
+			nextProject: function() {
+				// handler for loading the next project
+				let nextProjectIndex = this.project.index+1;
+				nextProjectIndex = (nextProjectIndex > (jsonData.projects.length-1)) ? 0 : nextProjectIndex;
+				let nextProjectRoute = '/work/project/'+this.getProjectSlug(nextProjectIndex);
+				this.$router.push(nextProjectRoute);
+			},
+			prevProject: function() {
+				// handler for loading the previous project
+				let prevProjectIndex = this.project.index-1;
+				prevProjectIndex = prevProjectIndex < 0 ? jsonData.projects.length-1 : prevProjectIndex;
+				let prevProjectRoute = '/work/project/'+this.getProjectSlug(prevProjectIndex);
+				this.$router.push(prevProjectRoute);
+			},
+			getProjectSlug(key) {
+				return jsonData.projects[key].slug
+			},
+			loadProject(newSlug) {
+				// loads a project based on its slug
+				this.project = jsonData.projects.find(project => project.slug === newSlug);
+				// update the current project's index for back / next reference
+				this.project.index = jsonData.projects.findIndex(project => project.slug === newSlug);
+			}
+		},
+		watch: {
+			'$route' (to) {
+				if (to.params.slug) {
+					this.loadProject(to.params.slug);
+				}
+			}
 		}
 	}
 </script>
 
 <template>
 	<div class="project">
-		<ProjectNav />
+		<ProjectNav @prev-project="prevProject" @next-project="nextProject" @close-project="closeProject" />
 		<div class="currentProject">
 			<h1>{{ project.title }} <span class="id">({{ project.index }})</span> <span class="year">{{ project.year }}</span></h1>
 			<p v-html="project.description"></p>
