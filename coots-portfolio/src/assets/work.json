@@ -1,6 +1,46 @@
 {
 	"projects": [
 		{
+			"title": "Test Project",
+			"slug": "test",
+			"year": "2025–2030",
+			"role": "Director of Product Design",
+			"lead-art": "li-zhang-K-DwbsTXliY-unsplash.jpg",
+			"description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Vitae montes suspendisse vitae vestibulum praesent quis habitant finibus posuere. Placerat cursus tristique maximus morbi tristique enim semper. Class magnis fringilla, ut ex conubia lectus. Aptent magna urna mauris efficitur mauris bibendum dis semper. Dis lacinia commodo duis praesent montes montes efficitur sit eleifend. Luctus mi parturient nascetur fames aptent phasellus amet neque. Scelerisque hendrerit quam purus blandit iaculis dictum himenaeos. Ultricies sociosqu hendrerit turpis eleifend justo litora.",
+			"tags": ["Agency", "Sketch", "Photoshop", "Website", "Ecommerce", "Flowcharts", "Design Systems", "Content Design"],
+			"content": [
+				{				
+					"title": "A Private Psychadellic Reel",
+					"subtitle": "Test data for portfolio styling purposes only"
+				},
+				{
+					"description": "The canvas devours intention before the brush even grazes its surface. What is a line but the memory of movement, an echo of an unseen gesture? I place color where color demands to be, not as a choice but as a reconciliation. The weight of an unspoken hue lingers in the air, vibrating between presence and absence. This is not creation but discovery, peeling back the skin of the ordinary to reveal the marrow of meaning beneath. But what if the meaning resists? What if the act of looking collapses it entirely? No matter—the act remains, indifferent to understanding."
+				},
+				{
+					"description": "A shape dissolves into another, neither willing to remain distinct. Shadows press forward while light recedes, a reversal of the expected order. I try to capture the moment between breath and exhale, but the paper laughs at my arrogance. It does not record—it translates, misinterprets, improvises. I call it failure, but only to disguise my admiration. There is a violence in articulation, in forcing the unformed into structure, but also a tenderness in allowing it to remain incomplete. It is the silence between notes that defines the melody, the omission that allows the presence to take shape."
+				},
+				{
+					"pullquote": "It is not merely paint on canvas but a raw, unfiltered confrontation with the act of seeing itself—an unraveling of form, a negotiation with absence, a whispered rebellion against the notion of completion.",
+					"attr": "Bellvue Klaus Friedling"
+				},
+				{
+					"description": "I step back, but the work steps forward. It questions me in a language I do not speak, a dialect of smudges and fractures, of raw edges and accidental precision. What is left unfinished carries the weight of infinity, while what is complete is already decaying. I could call it done, but to do so would be a lie, a betrayal of the process. The work is never finished—only abandoned, only surrendered to time. It will wait here, watching, patient in its incompleteness, knowing that the moment I turn away, it will continue without me.",
+					"url": "bharath-kumar-cudX3kfa4kU-unsplash.jpg"
+				},
+				{
+					"url": "imkara-visual-Fhviswz6Iw8-unsplash.jpg",
+					"caption": "A tangled mass of indigo and burnt sienna wrestles across the canvas, each stroke a collision of hesitation and certainty, a frozen argument between movement and stillness."
+				},
+				{
+					"url": "philip-oroni-cUVqZyCJgfI-unsplash.jpg",
+					"caption": "A single smear of ochre interrupts the expanse of deep charcoal, a rupture in the void that hums with the tension of almost becoming something recognizable."
+				},
+				{
+					"description": "To commission a piece is not to purchase an object but to summon something from the ether, to coax meaning from the unseen and give it a body. My work does not simply fill a space; it alters it, bends the air around it, teaches the walls to whisper. Each stroke is a dialogue between intention and accident, a record of something that can never be replicated, only witnessed. You are not paying for pigment on a surface—you are investing in a fracture in the ordinary, a disruption of the expected. The price is not for what you receive, but for what it continues to become long after I have set it free."
+				}
+			]
+		},
+		{
 			"title": "WorkStep",
 			"slug": "workstep",
 			"year": "2022–2024",

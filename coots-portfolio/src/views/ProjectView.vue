@@ -53,6 +53,11 @@
 </script>
 
 <template>
+	<!-- 
+	Items to account for:
+	- title, slug, year, role, description, tags, lead-art
+	-- title, subtitle, description, pullquote, attribute, url, caption
+	-->
 	<div class="project">
 		<ProjectNav @prev-project="prevProject" @next-project="nextProject" @close-project="closeProject" />
 		<div class="currentProject">
