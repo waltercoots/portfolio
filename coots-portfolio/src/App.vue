@@ -44,8 +44,8 @@ body:after {
 	content:'Test';
   display:none; // When testing, comment this line out
 	position:absolute;
-	top:0;
-	right:0;
+	bottom:0;
+	left:0;
 	background:$black;
 	color:#fff;
 	font-size:1rem;

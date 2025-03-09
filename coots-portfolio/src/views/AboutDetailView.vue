@@ -17,6 +17,9 @@ export default {
     window.removeEventListener('resize', this.handleResize);
     clearSkillFall();
   },
+  updated() {
+    this.handleResize();
+  }
 }
 
 /* MatterJS Shortcuts */
@@ -34,6 +37,7 @@ let stage = undefined;
 let render = undefined;
 let engineArray = []; // to pass all the bodies to MatterJS
 /* MatterJS Bodies */
+let outerPadding = 200; // thickness of walls to prevent words from slipping out
 let ceiling = undefined;
 let ground = undefined;
 let wallLeft = undefined;
@@ -59,11 +63,11 @@ function skillFallSetup() {
   });
   Matter.Common.setDecomp(decomp);
   updateStageDimensions();
-  ceiling = Bodies.rectangle(stage.width / 2, -40, (stage.width), 80, { isStatic: true });
-  ground = Bodies.rectangle(stage.width / 2, (stage.height+20), (stage.width), 40, { isStatic: true });
-  wallLeft = Bodies.rectangle(-10, 0, 20, stage.height * 2, { isStatic: true });
-  wallRight = Bodies.rectangle((stage.width+10), 0, 20, stage.height * 2, { isStatic: true });
-  headshotOutline = Bodies.fromVertices((stage.width / 2),(stage.height/2)+(645/2)+82,
+  ceiling = Bodies.rectangle(0, 0, 0, 0, { isStatic: true });
+  ground = Bodies.rectangle(0, 0, 0, 0, { isStatic: true });
+  wallLeft = Bodies.rectangle(0, 0, 0, 0, { isStatic: true });
+  wallRight = Bodies.rectangle(0, 0, 0, 0, { isStatic: true });
+  headshotOutline = Bodies.fromVertices(0,0,
 	[
   { x: 77, y: 641 },
   { x: 77, y: 581 },
@@ -89,7 +93,7 @@ function skillFallSetup() {
   Composite.add(engine.world, engineArray);
 
   // Run the renderer
-  // Render.run(render); // Disable this line for production; enable it for troubleshooting
+  // Render.run(render); // Enable this line for troubleshooting
   // Run the runner
   runner = Runner.create();
   Runner.run(runner, engine);
@@ -120,7 +124,7 @@ function connectBox(elem) {
   skill.w = skill.clientRect.width;
   skill.h = skill.clientRect.height;
   skill.x = Math.random() * (stage.width - skill.w);
-  skill.y = 0;
+  skill.y = 40;
   skill.body = Bodies.rectangle(skill.x, skill.y, skill.w, skill.h);
   skill.render = function () {
       const x = this.body.position.x;
@@ -148,16 +152,54 @@ function updateStageDimensions() {
 }
 
 function updateBodyDimensions() {
-  /* Note: there are issues here when the page is resized; need to resolve but it's 2:30am on a Sunday and I'm tired */
-  Body.setPosition(ground, {x: (stage.width / 2), y: (stage.height+20)});
-  Body.set(ceiling,"width", (stage.width));
-  Body.set(ground,"width", (stage.width));
-  Body.set(wallLeft,"height", (stage.height * 2));
-  Body.set(wallRight,"position", {x:(stage.width+10),y:0});
-  Body.set(wallRight,"height", (stage.height * 2));
-  Body.setPosition(headshotOutline,{x:(stage.width / 2),y:(stage.height)-(645/2)+82});
+  // Update the sizes of the walls, ceiling, ground
+  changeSize(ceiling,stage.width,outerPadding);
+  changeSize(ground,stage.width,outerPadding);
+  changeSize(wallLeft,outerPadding,stage.height);
+  changeSize(wallRight,outerPadding,stage.height);
+  // Update the positions of those elements
+  Body.setPosition(ground, {x: (stage.width / 2), y: (stage.height+(outerPadding*.5))});
+  Body.setPosition(ceiling, {x: (stage.width / 2), y: 0-(outerPadding*.5)});
+  Body.setPosition(wallRight,{x:(stage.width+(outerPadding*.5)), y:stage.height/2});
+  Body.setPosition(wallLeft,{x:-(outerPadding*.5), y:stage.height/2});
+
+  let headshotImage = document.querySelector(".headshot");
+  let headshotWidth = headshotImage.getBoundingClientRect().width;
+  let headshotHeight = headshotImage.getBoundingClientRect().height;
+  if(headshotHeight == 0) {
+    if(stage.width <= 1024) {
+      headshotHeight = 375;
+    }
+    else {
+      headshotHeight = 653;
+    }
+  }
+  let headshotOutlineWidth = headshotOutline.bounds.max.x - headshotOutline.bounds.min.x
+  let headshotScale = headshotWidth / headshotOutlineWidth;
+  Body.scale(headshotOutline,headshotScale,headshotScale);
+  Body.setPosition(headshotOutline,{x:(stage.width / 2),y:(stage.height)-(headshotHeight/3)});
 }
 
+// Function to change the size of a MatterJS Body
+function changeSize(body, newWidth, newHeight) {
+    // Get current position
+    const { x, y } = body.position;
+
+    // Calculate half width and half height
+    const halfWidth = newWidth / 2;
+    const halfHeight = newHeight / 2;
+
+    // Define new vertices
+    const newVertices = [
+        { x: x - halfWidth, y: y - halfHeight },
+        { x: x + halfWidth, y: y - halfHeight },
+        { x: x + halfWidth, y: y + halfHeight },
+        { x: x - halfWidth, y: y + halfHeight }
+    ];
+
+    // Update the body's vertices
+     Body.setVertices(body, newVertices);
+}
 
 function clearSkillFall() {
   boxes.forEach((box) => {
@@ -257,10 +299,12 @@ div.about {
   color:$white;
   display:flex;
   justify-content: center;
+	z-index:3;
 	@include xs {
     flex-direction: column-reverse;
     overflow-x:auto;
     position:absolute;
+    justify-content:start;
     top:0;
     left:0;
     width:100%;
@@ -270,6 +314,7 @@ div.about {
     flex-direction: column-reverse;
     overflow-x:auto;
     position:absolute;
+    justify-content:start;
     top:0;
     left:0;
     width:100%;
@@ -369,26 +414,41 @@ div.bio {
 }
 div.skills {
 	@include xs {
-    flex:2 0 50vh;
+    background:darken($black,3%);
+    flex:2 0 500px;
+    @include modular-scale(-5); // Font size
 	}
 	@include sm {
-    flex:2 0 50vh;
+    background:darken($black,3%);
+    flex:2 0 400px;
+    @include modular-scale(-4); // Font size
 	}
 	@include md {
+    background:$black;
     flex:1 0 33vw;
+    height:100%;
+    position: sticky;
+    top:0;
+    @include modular-scale(-3); // Font size
 	}
 	@include lg {
     flex:2 0 50vw;
+    height:100%;
+    position: sticky;
+    top:0;
+    @include modular-scale(-2); // Font size
 	}
 	@include xl {
     flex:2 0 50vw;
     max-width:80rem;
+    height:100%;
+    position: sticky;
+    top:0;
+    @include modular-scale(-2); // Font size
 	}
 
-  height:100%;
   user-select: none;
-  position: sticky;
-  top:0;
+  position:relative;
   ul {
     list-style:none;
     position:relative;
@@ -418,9 +478,10 @@ div.skills {
       width:15rem;
     }
     @include md {
-      width:30rem;
+      width:15rem;
     }
     @include lg {
+      width:30rem;
       flex:2 0 50vw;
     }
     @include xl {
