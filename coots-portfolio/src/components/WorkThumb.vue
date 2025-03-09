@@ -34,7 +34,7 @@ export default {
 		@include sm {
 			width: 10.5rem;
 			height: 10.5rem;
-			margin:0.75rem;
+			margin:0.5rem;
 		}
 		@include md {
 			width: 10.5rem;
