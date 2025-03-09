@@ -35,11 +35,11 @@ export default {
   },
   watch: {
 			'$route' (to) {
-				if (to.path !== '/') {
-					this.toggleHomeVisibility(false);
+				if (to.path == '/' || to.path == '/aboutDetail') {
+					this.toggleHomeVisibility(true);
 				}
         else {
-					this.toggleHomeVisibility(true);          
+					this.toggleHomeVisibility(false);
         }
 			}
 		}
