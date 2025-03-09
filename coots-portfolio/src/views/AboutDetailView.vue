@@ -16,6 +16,7 @@ export default {
   unmounted() {
     window.removeEventListener('resize', this.handleResize);
     clearSkillFall();
+    clearInterval(boxInterval);
   },
   updated() {
     this.handleResize();
@@ -42,10 +43,12 @@ let ceiling = undefined;
 let ground = undefined;
 let wallLeft = undefined;
 let wallRight = undefined;
+let boxesToAdd = [];
 let boxes = [];
 let mouseConstraint = undefined;
 let headshotOutline = undefined;
 let animationFrameId; // Store the animation frame ID
+let boxInterval; // for adding boxes piecemeal
 
 function skillFallSetup() {
   engine = Engine.create();
@@ -86,6 +89,7 @@ function skillFallSetup() {
   { x: 376, y: 607 },
   { x: 380, y: 637 },
 ],{ isStatic:true},true, 0.01, 20, 0.01);
+  engineArray.push(ceiling,ground,wallLeft,wallRight,headshotOutline,mouseConstraint);
   updateBodyDimensions();
   populateSkills();
 
@@ -110,11 +114,21 @@ function skillFallSetup() {
 function populateSkills() {
   // Select all target elements and create boxes
   document.querySelectorAll(".skills li").forEach((boxElem) => {
-      const engineBox = connectBox(boxElem);
-      boxes.push(engineBox);
-      engineArray.push(engineBox.body);
+      boxElem.style.opacity = 0;
+      boxesToAdd.push(boxElem);
   });
-  engineArray.push(ceiling,ground,wallLeft,wallRight,headshotOutline,mouseConstraint);
+  boxInterval = setInterval(addASkill, 1500);
+}
+
+function addASkill() {
+  const boxElem = boxesToAdd.shift();
+  const engineBox = connectBox(boxElem);
+  Composite.add(engine.world, engineBox.body);
+  boxes.push(engineBox);
+  if(boxesToAdd.length == 0)
+  {
+    clearInterval(boxInterval);
+  }
 }
 
 function connectBox(elem) {
@@ -123,8 +137,9 @@ function connectBox(elem) {
   skill.clientRect = skill.element.getBoundingClientRect();
   skill.w = skill.clientRect.width;
   skill.h = skill.clientRect.height;
-  skill.x = Math.random() * (stage.width - skill.w);
-  skill.y = 40;
+  skill.x = (Math.random()+0.01) * (stage.width - skill.w);
+  skill.y = 10;
+  skill.element.style.opacity = 1;
   skill.body = Bodies.rectangle(skill.x, skill.y, skill.w, skill.h);
   skill.render = function () {
       const x = this.body.position.x;
@@ -167,11 +182,11 @@ function updateBodyDimensions() {
   let headshotWidth = headshotImage.getBoundingClientRect().width;
   let headshotHeight = headshotImage.getBoundingClientRect().height;
   if(headshotHeight == 0) {
-    if(stage.width <= 1024) {
-      headshotHeight = 375;
+    if(window.innerWidth <= 1024) {
+      headshotHeight = 326.578125;
     }
     else {
-      headshotHeight = 653;
+      headshotHeight = 653.15625;
     }
   }
   let headshotOutlineWidth = headshotOutline.bounds.max.x - headshotOutline.bounds.min.x
@@ -241,25 +256,25 @@ function clearSkillFall() {
     <div ref="scene" class="skills">
       <img src="img/headshot-placeholder.png" alt="What Walter looks like" class="headshot" />
       <ul>
-        <li>Digital Product Design</li>
+        <li class="level-3">Digital Product Design</li>
         <li>Graphic Design</li>
         <li>Webflow</li>
         <li>Data Visualization</li>
         <li>Animate</li>
-        <li>User Interface</li>
+        <li class="level-3">User Interface</li>
         <li>Miro</li>
         <li>Layout</li>
         <li>Roadmapping</li>
         <li>Agile Methodologies</li>
-        <li>Responsive Web Design</li>
+        <li class="level-3">Responsive Web Design</li>
         <li>InVision</li>
         <li>Prototyping</li>
         <li>User Research</li>
         <li>Workshops</li>
         <li>Adobe Creative Suite</li>
-        <li>Figma</li>
+        <li class="level-3">Figma</li>
         <li>User-Centered Design</li>
-        <li>User Experience</li>
+        <li class="level-3">User Experience</li>
         <li>Photoshop</li>
         <li>Framer</li>
         <li>JavaScript</li>
@@ -268,7 +283,7 @@ function clearSkillFall() {
         <li>Illustrator</li>
         <li>After Effects</li>
         <li>Visual Design</li>
-        <li>Wireframing</li>
+        <li class="level-3">Wireframing</li>
         <li>Problem Solving</li>
         <li>Color</li>
         <li>Typography</li>
@@ -278,7 +293,7 @@ function clearSkillFall() {
         <li>Usability Testing</li>
         <li>Motion Graphics</li>
         <li>Simplification</li>
-        <li>Mobile Web Design</li>
+        <li class="level-3">Mobile Web Design</li>
         <li>Blender</li>
         <li>HTML & CSS</li>
         <li>Design Systems</li>
@@ -459,6 +474,9 @@ div.skills {
       white-space: nowrap;
       color:$accent;
       background:none;
+      &.level-3 {
+        font-size:1.5em;
+      }
     }    
   }
   img.headshot {
