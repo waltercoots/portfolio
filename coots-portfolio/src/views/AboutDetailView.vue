@@ -117,7 +117,7 @@ function populateSkills() {
       boxElem.style.opacity = 0;
       boxesToAdd.push(boxElem);
   });
-  boxInterval = setInterval(addASkill, 1500);
+  boxInterval = setInterval(addASkill, 650);
 }
 
 function addASkill() {
@@ -137,8 +137,8 @@ function connectBox(elem) {
   skill.clientRect = skill.element.getBoundingClientRect();
   skill.w = skill.clientRect.width;
   skill.h = skill.clientRect.height;
-  skill.x = (Math.random()+0.01) * (stage.width - skill.w);
-  skill.y = 10;
+  skill.x = (Math.random() * (stage.width - skill.w)) + (skill.w / 2);
+  skill.y = 0;
   skill.element.style.opacity = 1;
   skill.body = Bodies.rectangle(skill.x, skill.y, skill.w, skill.h);
   skill.render = function () {
@@ -174,7 +174,7 @@ function updateBodyDimensions() {
   changeSize(wallRight,outerPadding,stage.height);
   // Update the positions of those elements
   Body.setPosition(ground, {x: (stage.width / 2), y: (stage.height+(outerPadding*.5))});
-  Body.setPosition(ceiling, {x: (stage.width / 2), y: 0-(outerPadding*.5)});
+  Body.setPosition(ceiling, {x: (stage.width / 2), y: 0-(outerPadding*.75)});
   Body.setPosition(wallRight,{x:(stage.width+(outerPadding*.5)), y:stage.height/2});
   Body.setPosition(wallLeft,{x:-(outerPadding*.5), y:stage.height/2});
 
