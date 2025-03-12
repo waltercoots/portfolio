@@ -1,46 +1,6 @@
 {
 	"projects": [
 		{
-			"title": "Test Project",
-			"slug": "test",
-			"year": "2025–2030",
-			"role": "Director of Product Design",
-			"lead-art": "li-zhang-K-DwbsTXliY-unsplash.jpg",
-			"description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Vitae montes suspendisse vitae vestibulum praesent quis habitant finibus posuere. Placerat cursus tristique maximus morbi tristique enim semper. Class magnis fringilla, ut ex conubia lectus. Aptent magna urna mauris efficitur mauris bibendum dis semper. Dis lacinia commodo duis praesent montes montes efficitur sit eleifend. Luctus mi parturient nascetur fames aptent phasellus amet neque. Scelerisque hendrerit quam purus blandit iaculis dictum himenaeos. Ultricies sociosqu hendrerit turpis eleifend justo litora.",
-			"tags": ["Agency", "Sketch", "Photoshop", "Website", "Ecommerce", "Flowcharts", "Design Systems", "Content Design"],
-			"content": [
-				{				
-					"title": "A Private Psychadellic Reel",
-					"subtitle": "Test data for portfolio styling purposes only"
-				},
-				{
-					"description": "The canvas devours intention before the brush even grazes its surface. What is a line but the memory of movement, an echo of an unseen gesture? I place color where color demands to be, not as a choice but as a reconciliation. The weight of an unspoken hue lingers in the air, vibrating between presence and absence. This is not creation but discovery, peeling back the skin of the ordinary to reveal the marrow of meaning beneath. But what if the meaning resists? What if the act of looking collapses it entirely? No matter—the act remains, indifferent to understanding."
-				},
-				{
-					"description": "A shape dissolves into another, neither willing to remain distinct. Shadows press forward while light recedes, a reversal of the expected order. I try to capture the moment between breath and exhale, but the paper laughs at my arrogance. It does not record—it translates, misinterprets, improvises. I call it failure, but only to disguise my admiration. There is a violence in articulation, in forcing the unformed into structure, but also a tenderness in allowing it to remain incomplete. It is the silence between notes that defines the melody, the omission that allows the presence to take shape."
-				},
-				{
-					"pullquote": "It is not merely paint on canvas but a raw, unfiltered confrontation with the act of seeing itself—an unraveling of form, a negotiation with absence, a whispered rebellion against the notion of completion.",
-					"attr": "Bellvue Klaus Friedling"
-				},
-				{
-					"description": "I step back, but the work steps forward. It questions me in a language I do not speak, a dialect of smudges and fractures, of raw edges and accidental precision. What is left unfinished carries the weight of infinity, while what is complete is already decaying. I could call it done, but to do so would be a lie, a betrayal of the process. The work is never finished—only abandoned, only surrendered to time. It will wait here, watching, patient in its incompleteness, knowing that the moment I turn away, it will continue without me.",
-					"url": "bharath-kumar-cudX3kfa4kU-unsplash.jpg"
-				},
-				{
-					"url": "imkara-visual-Fhviswz6Iw8-unsplash.jpg",
-					"caption": "A tangled mass of indigo and burnt sienna wrestles across the canvas, each stroke a collision of hesitation and certainty, a frozen argument between movement and stillness."
-				},
-				{
-					"url": "philip-oroni-cUVqZyCJgfI-unsplash.jpg",
-					"caption": "A single smear of ochre interrupts the expanse of deep charcoal, a rupture in the void that hums with the tension of almost becoming something recognizable."
-				},
-				{
-					"description": "To commission a piece is not to purchase an object but to summon something from the ether, to coax meaning from the unseen and give it a body. My work does not simply fill a space; it alters it, bends the air around it, teaches the walls to whisper. Each stroke is a dialogue between intention and accident, a record of something that can never be replicated, only witnessed. You are not paying for pigment on a surface—you are investing in a fracture in the ordinary, a disruption of the expected. The price is not for what you receive, but for what it continues to become long after I have set it free."
-				}
-			]
-		},
-		{
 			"title": "WorkStep",
 			"slug": "workstep",
 			"year": "2022–2024",
@@ -324,36 +284,82 @@
 			"title": "Austin Film Society",
 			"slug": "afs",
 			"year": "2016",
-			"description": "As a film lover, I was thrilled to be the lead UX designer on the Austin Film Society website redesign. The old site was very confusing and difficult to navigate, with several stakeholders handling separate parts of the site. Implementation is still underway, and it has shifted some from our original design. Here, you can see what our intent was.",
-			"credits": "Created as a collaborative effort at <a href=\"http://foxtrot.co\" target=\"_blank\">Foxtrot</a>, with my role as UX lead and some UI design and concepting.",
+			"role": "Lead UX Designer",
+			"tags": ["Agency", "Sketch", "Photoshop", "InDesign", "Website", "User Experience", "User Interface", "Content Design", "Information Architecture", "Content Audit", "Sitemap", "Wireframes"],
 			"content": [
 				{
-					"url":"01-homed.jpg",
-					"border":"true",
-					"clear":"true"
+					"type":"paragraph",
+					"copy":"Nearly 10 years ago when I worked at Foxtrot, I was beyond excited that I got to be the lead UX designer on the revamped Austin Film Society website. The old site was pretty confusing and difficult to navigate, and because AFS does so many different things which are managed by so many different stakeholders, my role was mainly to work with these stakeholders to untangle the information architecture and ensure the most prominent areas of their site matched the prominence of the organization’s goals."
 				},
 				{
-					"url":"08-tfhfd.jpg",
-					"clear":"true"
+					"type":"paragraph",
+					"copy":"The people at the organization were terrific to work with, as was Oscar Morris who collaborated with me on the UI and did their terrific branding. The branding and site launch coincided with AFS opening AFS Cinema. While I have no quant or qual data on the success of the site, they’re still <a href=\"https://www.austinfilm.org\" target=\"_blank\">using the same design</a> (as of March 2025), and AFS Cinema remains Austin’s only nonprofit art house theater. "
 				},
 				{
-					"url":"02-homem.jpg"
+					"type":"image",
+					"url":"01-homed.jpg"
 				},
 				{
-					"url":"09-tfhfp.jpg"
+					"type":"h2",
+					"copy":"Process"
 				},
 				{
-					"url":"03-content-mapping.jpg",
-					"clear":"true",
-					"caption":"The most daunting part was doing a full inventory of the content on every page, with the intent of bringing it to the stakeholders at AFS to weigh in on usefulness and determine what we could cut, and what needed to be added. Good thing I like spreadsheets!"
+					"type":"paragraph",
+					"copy":"The first big piece of the puzzle was a content audit, which involved mapping out the existing site and logging every “chunk” of UI and content on every page. Everything was logged into a spreadsheet, and meetings were held with the appropriate stakeholders to figure out what needed to stay and what could go, as well as who was responsible for keeping which piece updated. This was my first time doing a real content audit and working on an information architecture of this size, so I learned a lot, and when doing a project like this, I still use similar methods today."
 				},
 				{
-					"url":"04-recipes.jpg",
-					"caption":"Similar to Dimensional Fund Advisors, the AFS site was designed with a modular design so that we could provide AFS with “recipes” to build all of the pages. This afforded flexibility for them, and substantially cut down on the time and cost of design for Foxtrot."
+					"type":"image",
+					"url":"03-content-mapping.jpg"
 				},
 				{
-					"url":"05-sitemap.png",
-					"border":"true"
+					"type":"paragraph",
+					"copy":"Dev resources were limited, so bearing that in mind and wanting to maintain consistency across the site we came up with several reusable content modules. As I was going through the audit, I identified similarities where pieces of content could use the same module. This also helped us define how many times any given module was being used."
+				},
+				{
+					"type":"image",
+					"url":"05-sitemap.png"
+				},
+				{
+					"type":"paragraph",
+					"copy":"A sitemap was put together with a hierarchy that made more sense, and the content modules were color-coded and organized so we could try to highlight similarities between pages. We realized the majority of pages were pretty basic content and could be handled by a few common page templates."
+				},
+				{
+					"type":"image",
+					"url":"content-framework.png"
+				},
+				{
+					"type":"image",
+					"url":"04-recipes.jpg"
+				},
+				{
+					"type":"image",
+					"url":"common-wires.png"
+				},
+				{
+					"type":"paragraph",
+					"copy":"For the remaining pages, we identified some common user goals and how they’d be accomplished coming from different sources. "
+				},
+				{
+					"type":"image",
+					"url":"buying-ticket-user-flow.png"
+				},
+				{
+					"type":"paragraph",
+					"copy":"By this point we were getting into wireframe territory to identify exactly how on the more complex pages users would accomplish their goals such as buying tickets to see a movie, donating, or signing up for classes. This was where mine and Oscar’s work began to overlap the most and where the site finally started to take shape."
+				},
+				{
+					"type":"image",
+					"url":"screening-x-ux.png",
+					"width":"half"
+				},
+				{
+					"type":"image",
+					"url":"screening-x-ui.jpg",
+					"width":"half"
+				},
+				{
+					"type":"paragraph",
+					"copy":"The last detail I’ll leave you with is that the sitemap was originally manually created using Adobe Illustrator, which at the time didn’t have any kind of automatic layout capabilities. The manual nature of making small changes became pretty tedious, so I coded <a href=\"https://lab.waltercoots.com/taxonomy/\" target=\"_blank\">a tool</a> to do it in a web browser. I’ve reused this tool over the years and often daydream of making a web content planning tool to simplify a lot of what I did on this project, because it’s very much a collaborative process that could benefit from having a robust, dedicated tool. "
 				}
 			]
 		},
