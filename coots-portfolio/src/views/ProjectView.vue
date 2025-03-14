@@ -40,6 +40,11 @@
 				this.project = jsonData.projects.find(project => project.slug === newSlug);
 				// update the current project's index for back / next reference
 				this.project.index = jsonData.projects.findIndex(project => project.slug === newSlug);
+				// reset scroll
+				if(document.querySelector(".project"))
+				{
+					document.querySelector(".project").scrollTop = 0;
+				}
 			}
 		},
 		watch: {
@@ -53,11 +58,6 @@
 </script>
 
 <template>
-	<!-- 
-	Items to account for:
-	- title, slug, year, role, description, tags, lead-art
-	-- title, subtitle, description, pullquote, attribute, url, caption
-	-->
 	<div class="project">
 		<ProjectNav @prev-project="prevProject" @next-project="nextProject" @close-project="closeProject" />
 		<div class="currentProject">
@@ -91,6 +91,7 @@
 	width:100%;
 	height:100%;
 	overflow-y:auto;
+	overflow-x:hidden;
 	z-index:3;
 	padding-top:1.5rem;
 	padding-bottom:1.5rem;
@@ -107,7 +108,7 @@ div.currentProject {
 	}
 	@include xl {
 		padding-top:4rem;
-	}	
+	}
 	div.metadata {
 		margin:0 auto 1rem auto;
 		@include md {
@@ -124,7 +125,7 @@ div.currentProject {
 			}
 			@include xl {
 				@include modular-scale(-1);
-			}			
+			}
 		}
 		p.year {
 			&:after {
@@ -145,7 +146,7 @@ div.currentProject {
 			}
 			@include xl {
 				@include modular-scale(-4);
-			}			
+			}
 			li {
 				border-radius:0.25rem;
 				background:lighten($gray,20%);
@@ -221,7 +222,7 @@ h2 {
 	}
 	@include xl {
 		@include modular-scale(5);
-	}	
+	}
 }
 p {
 	@include xs {
@@ -229,6 +230,6 @@ p {
 	}
 	@include xl {
 		@include modular-scale(0);
-	}	
+	}
 }
 </style>
