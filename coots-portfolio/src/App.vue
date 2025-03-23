@@ -73,6 +73,7 @@ div.foundation {
   overflow:hidden;
   margin:0;
   padding:0;
+  border:16px solid $accent;
 }
 a {
     color:$accent;
@@ -98,6 +99,6 @@ a {
     opacity:1;
   }
   .flyaway-leave-active, .flyaway-enter-active {
-		transition: opacity 1000ms ease-in;
+		transition: opacity 250ms ease-in;
   }
 </style>

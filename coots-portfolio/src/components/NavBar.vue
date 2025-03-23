@@ -15,7 +15,7 @@
 			padding:0 0.5em;
 			color:$black;
 			&.router-link-active {
-				color:fade-out($black, 0.5);
+				color:$accent;
 			}
 		}
 	}

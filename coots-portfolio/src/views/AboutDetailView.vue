@@ -310,7 +310,7 @@ function clearSkillFall() {
 
 <style scoped lang="scss">
 div.about {
-  background:$black;
+  background:$accent;
   color:$white;
   display:flex;
   justify-content: center;
@@ -338,6 +338,7 @@ div.about {
 	@include md {
     flex-direction: row;
     position:absolute;
+    justify-content: center;
     top:0;
     left:0;
     width:100%;
@@ -429,17 +430,17 @@ div.bio {
 }
 div.skills {
 	@include xs {
-    background:darken($black,3%);
+    background:lighten($accent,3%);
     flex:2 0 500px;
     @include modular-scale(-5); // Font size
 	}
 	@include sm {
-    background:darken($black,3%);
+    background:lighten($accent,3%);
     flex:2 0 400px;
     @include modular-scale(-4); // Font size
 	}
 	@include md {
-    background:$black;
+    background:$accent;
     flex:1 0 33vw;
     height:100%;
     position: sticky;
@@ -472,7 +473,7 @@ div.skills {
       position:absolute;
       display:inline-block;
       white-space: nowrap;
-      color:$accent;
+      color:$white;
       background:none;
       &.level-3 {
         font-size:1.5em;
@@ -484,7 +485,7 @@ div.skills {
     bottom:0;
     left:50%;
     transform:translate(-50%,0);
-    mix-blend-mode: color-dodge;
+    mix-blend-mode: hard-light;
     user-select:none;
     -webkit-user-drag: none;
     -moz-user-select: none;    
