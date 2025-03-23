@@ -16,7 +16,7 @@ export default {
 </script>
 
 <template>
-	<div class="workthumb" :key="project.title" @click="goToProject" :style="`background:url(/img/workthumbs/${project.slug}.jpg) no-repeat center / contain;`">
+	<div class="workthumb" :key="project.title" @click="goToProject" :style="`background:url(/img/workthumbs/${project.slug}.png) no-repeat center / contain;`">
 		<span class="title">{{ project.title }}</span>
 		<span class="year">{{ project.year }}</span>
 	</div>
