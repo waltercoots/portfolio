@@ -3,27 +3,12 @@
 		{
 			"title": "WorkStep",
 			"slug": "workstep",
-			"year": "2022–Current",
-			"description": "WorkStep is enterprise HR software designed for companies with large warehouse, supply chain, and retail divisions. The software helps leaders identify ways they can improve working conditions for employees, thus leading to higher engagement and happiness in the workforce, which in turn leads to reduced turnover, and increases other important factors like productivity and safety.\r\nSince many of these employees aren’t desk workers and often have corporate emails, web-based surveys are sent out to workers’ personal contact info via text and email. Results are anonymous unless workers elect to reveal their contact info on a question-by-question basis, and the aggregated results are summarized and analyzed within the WorkStep app.\r\nAs is the case in a typical Series B startup, I wore a lot of hats and had my hands in a lot of areas in the product. I’ll take you through some highlights that I think were pretty fun and interesting.",
+			"year": "2022–Now",
+			"role": "Senior Product Designer",
 			"content": [
 				{
 					"title": "Re-architecture",
 					"description": "WorkStep actually started out as a tool for sourcing candidates for frontline jobs. The software went through a lot of changes during those first several years and not all of the changes were carefully thought through. It was starting to show, and hampering product and engineering’s ability to move quickly, so the product team was approached with the task of “Making the product make sense”. I was the design lead on this project."
-				},
-				{
-					"subtitle": "The Problem",
-					"description": "An emphasis on moving fast caused features and areas to be bolted on without making adjustments to surrounding features that may have been affected, which accumulated several years worth of design and tech debt."
-				},
-				{
-					"subtitle": "The Approach",
-					"description": "The PM and myself conducted interviews and surveys with both internal stakeholders as well as customers. After creating some opportunity solution trees and better identifying some key problem areas, we worked together to fill out a product brief and get new designs going. We didn’t want to change the design so much that what was working was eliminated. But we did want to rename and move things into places that were more self-evident."
-				},
-				{
-					"url": "../placeholder.png",
-					"width": 920,
-					"clear": "",
-					"caption": "",
-					"credits": ""
 				}
 			]
 		},
@@ -31,22 +16,236 @@
 			"title": "Unilease",
 			"slug": "unilease",
 			"year": "2021–2022",
+			"role": "Head of Design",
 			"description": "Commercial real estate is an industry slow to adopt new ways of doing things. Brokers who are doing well for themselves have little incentive to change things, large firms even less so, and tenants are at the mercy of these gatekeepers’ well-established processes. Unilease was created by a commercial real estate broker in central Texas to streamline the way he did business, making it easier for both brokers and tenants. I was brought in to help establish a design system, improve the existing user experience, and expand the toolset Unilease offered with the intent of it becoming a product available to all brokers and brokerages.",
 			"content": [
 				{
-					"url":"comp.png",
-					"width":"920",
-					"clear":"false"
+					"type":"image",
+					"url":"../placeholder.png"
 				},
 				{
-					"url":"sign.png",
-					"width":"327",
-					"clear":"false"
+					"type":"paragraph",
+					"copy":"Commercial real estate is an industry slow to adopt new ways of doing things. Brokers who are doing well for themselves have little incentive to change things, large firms even less so, and tenants are at the mercy of these gatekeepers’ well-established processes. Landlords seem to be involved the least of anyone. "
 				},
 				{
-					"url":"t-shirt.png",
-					"width":"327",
-					"clear":"false"
+					"type":"paragraph",
+					"copy":"Unilease was created by a commercial real estate broker to streamline the way he did business, making it easier for both brokers and tenants. Part SaaS, part social network, I was brought in to help establish a design system, improve the existing user experience, and expand the toolset Unilease offered with the intent of it becoming a product available to all brokers and brokerages."
+				},
+				{
+					"type":"paragraph",
+					"copy":"A few things drew me to Unilease. First, my good friend and teammate from long ago worked there so I thought it would be great to work together. Second, I really liked founder and CEO Rob Marshall. But above all, the prospect of bridging the gap between two different types of users. I envisioned an experience that could be similar to gig economy products where the tech was ultimately a go-between for people looking for and offering services. Things didn’t quite pan out the way I hoped, but I learned a ton."
+				},
+				{
+					"type":"h2",
+					"url":"Brand &amp; Marketing"
+				},
+				{
+					"type":"paragraph",
+					"copy":"The initial brand direction and logo were approached with several goals in mind: differentiate from competitors in the CRE tech space; elevate the company to a more exclusive and luxurious level, but also avoid feeling too affectatious to brokers’ clients. Above all else we were going for trustworthy, clean, energetic, and memorable. "
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				},
+				{
+					"type":"paragraph",
+					"copy":""
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				},
+				{
+					"type":"paragraph",
+					"copy":""
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				},
+				{
+					"type":"paragraph",
+					"copy":""
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				},
+				{
+					"type":"paragraph",
+					"copy":"We settled on a simple mark without any visual reference to buildings, offices, or stores since commercial real estate can manifest in a variety of ways. This also harkened back to Unilease’s old logo and felt like an improvement. "
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				},
+				{
+					"type":"paragraph",
+					"copy":"In parallel to logo work I’d been picking at a few different style tiles to try to build a common visual vocabulary between everyone and suss out what made the most sense. This whole time I had been working on website concepts that incorporated the new branding. Once we’d settled on a direction, the look and feel of the site began to fall into place. "
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				},
+				{
+					"type":"paragraph",
+					"copy":"Ironically right when we were close to deciding on a finalized brand direction, we realized a very similar product in the same space was using close to the same colors and typefaces. We decided to pivot a little."
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				},
+				{
+					"type":"paragraph",
+					"copy":"This was a foundation we were all comfortable starting from, and overall I’m happy with how it shook out. "
+				},
+				{
+					"type":"h2",
+					"url":"Product"
+				},
+				{
+					"type":"h3",
+					"url":"Streamlining Archaic Processes"
+				},
+				{
+					"type":"paragraph",
+					"copy":"Unilease's biggest opportunity and most interesting challenge was modernizing old ways of doing things. One of these processes, surveying the market, had brokers creating files to describe leasable space their client was looking for, then playing a game of Go Fish with their network via phone and email. Some of the more complex work I did for Unilease involved this process. "
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				},
+				{
+					"type":"paragraph",
+					"copy":"If you’re unfamiliar with commercial real state, it’s easy to think of it from a residential point of view. Why not just make a search engine that lists available properties? Landlords could list their properties, tenants could find them, we eliminate the need for brokers, and that’s it. But for a variety of reasons, it couldn’t be this straightforward. For starters, landlords didn’t have any incentive to change the way they did business, and brokers didn’t want to make themselves obsolete. Brokers relied heavily on their personal and professional connections, and a large part of their job was being the purveyors of this closely guarded information of which sometimes they only gained street cred and favors for. Lastly there’s a fairly large company that has an iron grip on commercial properties being listed online, and by becoming too much like it we risked alienating brokers and getting ourselves into major legal trouble."
+				},
+				{
+					"type":"paragraph",
+					"copy":"All that to say, there are much better user experiences to solve this process, but the business strategy and circumstances of the space prevented them from being feasible. "
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				},
+				{
+					"type":"h4",
+					"url":"Creating the Market Survey"
+				},
+				{
+					"type":"paragraph",
+					"copy":"This was simple enough, it’s effectively an “advanced search” the broker sends out to their network to find available properties that might match what their client is wanting. If there were already properties that met those criteria which people in their network had listed within Unilease, we’d let those people know and tell them to , otherwise we’d just let them know their colleague was on the lookout for something matching that set of criteria. The most novel feature we had was the ability to draw boundaries on an interactive map. "
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				},
+				{
+					"type":"paragraph",
+					"copy":"The old method of doing this took 7–9 minutes. After my updates it took 1 minute, 16 seconds so 750% faster. So I’d say that’s a win."
+				},
+				{
+					"type":"h4",
+					"url":"Submitting properties "
+				},
+				{
+					"type":"paragraph",
+					"copy":"This was a classic set of several data entry challenges. Too many fields, all uncategorized, no universal standardization for the data, lack of quality control, and don’t get me started on the stuff that got uploaded for location photography. OCR wasn’t an option, LLMs hadn’t made their major debut, and our dev team was a single guy so it fell on me to design the best data entry experience I possibly could. "
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				},
+				{
+					"type":"h4",
+					"url":"Analytics, Comps, and Sharing"
+				},
+				{
+					"type":"paragraph",
+					"copy":"Given the criteria the broker entered, we could generate analytics based on peer properties and lease data, which we decided could be a great upsell. Sharing presented an avalanche of complexity. Say a broker was putting together a market survey and they were a member of a team - a hierarchy comes into play where that person’s manager should be able to see the survey as well. Then when the survey is shared with people on the tenant side, depending on how large of an organization the tenant is and how many people are involved in the decision process, the sharing of this private information quickly becomes less and less private. Our dev wanted to run the entire process using RBAC, but pigeonholing users into roles and asking admin users to categorize their team felt like a non-starter. "
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				},
+				{
+					"type":"paragraph",
+					"copy":"The big elephant in the room with all three of these tasks was recruiting for research proved really difficult. We had Fullstory and the broker founding Unilease got some of his colleagues to sign up, but I really wanted to have conversations with them and get the details from them. The majority of the user feedback we got was from our founder, Rob. We all wondered if perhaps more junior brokers just starting out might find the software more helpful. "
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				},
+				{
+					"type":"h3",
+					"url":"Business Strategy for Different Customer Tiers"
+				},
+				{
+					"type":"paragraph",
+					"copy":"Creating pricing tiers for Unilease was one of those seemingly simple decisions that turned out to be anything but. We were debating whether to add a \"Team\" tier in addition to the \"Free\" and \"Pro\" tiers, and opinions were split on how to approach it. I decided to visualize the problem to help everyone see the implications more clearly. The flowchart mapped out how each approach would affect the user journey, show all the touchpoints where human intervention would be required, and highlighted what technical changes we'd need to make to the app to support each scenario. Although I can’t remember exactly which direction we went, I can safely say the team arrived at a decision much faster. "
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				},
+				{
+					"type":"h3",
+					"url":"Other Misc. Screens"
+				},
+				{
+					"type":"paragraph",
+					"copy":"There’s a lot more that went on at Unilease than can fit in a single case study. I worked on a design system and the flowchart for an entire app. We pivoted strategy a few different times, rebuilt the app from scratch, switched platforms the marketing site was built on, hired freelance help, and shifted the roadmap a lot. I had a good time working with those guys and hope we’re able to do it again sometime. "
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
 				}
 			]
 		},
@@ -54,14 +253,83 @@
 			"title": "Halliburton",
 			"slug": "halliburton",
 			"year": "2020–2021",
-			"description": "The goal of Halliburton's 2020 website redesign was to not only bring them into the 21st century, but give them a look and feel that rivaled competitors such as Schlumberger. We built an elaborate system of prefab components, content guidelines, and a backend that allowed the company to make changes as needed.",
+			"role": "Senior Product Designer, (Material neé T3)",
 			"content": [
 				{
-					"url": "../placeholder.png",
-					"width": 920,
-					"clear": "",
-					"caption": "",
-					"credits": ""
+					"type":"image",
+					"url":"../placeholder.png"
+				
+				},
+				{
+					"type":"paragraph",
+					"copy":"To be completely candid, I had more than a little reluctance to work on any kind of fossil fuel client, especially Halliburton. But when our director of product design approached me about it, I gave it some thought, researched the industry more, learned about Halliburton’s role in it, and after learning about their sustainability efforts and considered the end users who the project would be helping (basically geologists and scientists), I decided to accept the project."
+				},
+				{
+					"type":"paragraph",
+					"copy":"There were really good people I got to work with at Halliburton, and I was quite happy with how far we were able to push the design for a somewhat conventional company. "
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				
+				},
+				{
+					"type":"paragraph",
+					"copy":"Halliburton’s old site felt extremely dated, and their limited color palette wasn’t doing them any favors. Though it was being designed for the web, we knew whatever we’d be creating may be leveraged by Halliburton for other marketing materials. After extensive research and interviews (shout out to our rockstar content strategist Matt Herron), the team created mood boards to share some ideas with the client. There were a lot of rounds, some of which we presented directly to the C suite."
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				
+				},
+				{
+					"type":"paragraph",
+					"copy":"How the design system for Halliburton manifested."
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				
+				},
+				{
+					"type":"paragraph",
+					"copy":"After conducting several workshops with the client, we established a set of modular components that Halliburton was able to use, as well as extensive guidelines on usage. It was my first time documenting components to this level of detail, and I learned a lot on the project. "
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				
+				},
+				{
+					"type":"paragraph",
+					"copy":"Wayfinding was a big issue for Halliburton’s audience. We also learned through research that a lot of newcomers to the industry aren’t familiar with the jargon, and visit sites like Halliburton to learn it. This Wizard was designed to help visitors find what they were looking for when they didn’t necessarily know what to call it. Some participants in workshops questioned the need to have another means of navigation on top of search and standard navigation links, but we explained it was like going to the wine shop knowing what you were making for dinner but not knowing what paired with it. "
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				
+				},
+				{
+					"type":"paragraph",
+					"copy":"There were several major challenges to the Wizard. The first was that it needed to be able to scale and change with the company, but we didn’t have time to enable management of it (in the traditional sense) within the CMS our engineers were building. The other was that we had no idea how many directions it needed to accommodate, or what the scope of the questions might be. The system we wound up creating used elaborate processes and rigorous guidelines to allow an unusual but effective way of editing the Wizard to keep it from breaking. "
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				
+				},
+				{
+					"type":"paragraph",
+					"copy":"Outside of planning and running workshops to resolve all of our Wizard questions, I also designed the interactions and animations. I helped communicate all of this using InVision studio, and fortunately had wonderful dev help from extremely talented developers who could take the ball and run with it."
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				
+				},
+				{
+					"type":"paragraph",
+					"copy":"My final work with Halliburton was on their company Intranet, which took a lot of cues from the marketing site’s design, but importantly differentiated itself so folks weren’t confused as to whether they were looking at public or private content. There were several new components created which were designed to service the internal Halliburton employee rather than external customers."
 				}
 			]
 		},
@@ -69,25 +337,78 @@
 			"title": "Hallmark",
 			"slug": "hallmark",
 			"year": "2019–2020",
-			"description": "My first client at T3 was Hallmark, who were a joy to work with. Our engagement lasted over a year, so I was involved in a variety of initiatives: coordinating with other designers on establishing a new design system; designing the main navigation; collaborating with Hallmark's internal stakeholders on how the new site's registration would work with Hallmark's Crown Rewards program; and desiging the product details page (PDP) to name the big ones.",
+			"role": "Senior Product Designer, (Material neé T3)",
 			"content": [
 				{
-					"url":"../placeholder.png",
-					"width":"0",
-					"clear":"false",
-					"caption":"The finished PDP. Hallmark saw an enormous increase in card sales after the launch of this new PDP, although it was during the 2020 COVID-19 pandemic and folks wanting to reach out to each other from afar was no doubt partly responsible. "
+					"type":"image",
+					"url":"../placeholder.png"
+				
 				},
 				{
-					"url":"../placeholder.png",
-					"width":"0",
-					"clear":"true",
-					"caption":"Flowchart detailing sign up behavior. Hallmark's leadership wanted user registration to automatically assign a rewards account to any new user signing up. But because customers could enroll in the rewards program at a physical Hallmark store without providing an email address, we wanted to afford the ability to link an existing rewards program account during account registration. Similar functionality existed in the account area, but we knew resolving it here would reduce support call volume to Hallmark."
+					"type":"paragraph",
+					"copy":"People close to me can tell you that I can be kind of a schmaltzy guy, and part of the reason I went to an agency was so I could work on bigger name projects. So when I was interviewing with T3 and learned my first client would be Hallmark, you could imagine my excitement! On my second day of work, I flew to their corporate HQ in Kansas City to meet the team and participate in workshops where I learned about the projects and who we were building them for. "
 				},
 				{
-					"url":"../placeholder.png",
-					"width":"0",
-					"clear":"true",
-					"caption":"Some examples from the design system's documentation."
+					"type":"paragraph",
+					"copy":"We were designing what would eventually become the new Hallmark Cards site. Our engagement lasted over a year, so I was involved in a variety of initiatives: coordinating with other designers on laying the groundwork for a new design system; designing the main navigation; collaborating with Hallmark’s internal stakeholders on how the new site’s registration would work with Hallmark’s Crown Rewards program; and designing the product details page (PDP) to name the big ones."
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				
+				},
+				{
+					"type":"paragraph",
+					"copy":"Some examples from the design system documentation."
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				
+				},
+				{
+					"type":"paragraph",
+					"copy":"The finished PDP. "
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				
+				},
+				{
+					"type":"paragraph",
+					"copy":"This was my first time designing a PDP for a company as big as Hallmark, and I learned a lot about order fulfillment and the different ways a product needed to be represented. "
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				
+				},
+				{
+					"type":"paragraph",
+					"copy":"Similarly, designing a feature for users to find a Hallmark store was an interesting challenge."
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				
+				},
+				{
+					"type":"paragraph",
+					"copy":"Flowchart detailing sign up behavior. Hallmark’s leadership wanted user registration to automatically assign a rewards account to any new user signing up. But because customers could enroll in the rewards program at a physical Hallmark store without providing an email address, we wanted to afford the ability to link an existing rewards program account during account registration. Similar functionality existed in the account area, but we knew resolving it here would reduce support call volume to Hallmark."
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				
+				},
+				{
+					"type":"paragraph",
+					"copy":"One of the coolest features I helped with was a means for folks to create custom cards. This was a brand new feature for Hallmark, so our team was able to really have fun with it."
+				},
+				{
+					"type":"paragraph",
+					"copy":"Hallmark saw an enormous increase in card sales after the launch of this new site. Although it was during the 2020 COVID-19 pandemic and folks wanting to reach out to each other from afar was no doubt partly responsible, I know our work contributed to this and at the end of the day helped brighten some people’s days. What more can you ask for? I’ve stayed in touch with some of the people from this era and hope I get to work with them again sometime."
 				}
 			]
 		},		
@@ -95,37 +416,140 @@
 			"title": "EverlyWell",
 			"slug": "everlywell",
 			"year": "2018–2019",
-			"description": "EverlyWell sells at-home lab testing kits for things such as thyroid, vitamins, STD, and food sensitivities. After a user collects their sample and mails it in, EverlyWell helps make sense of the results. When I joined, it had just raised its series A and had a staff of about 25 people. I stayed 18 months, and during that time it raised its series B, launched two major versions of its results platform, tripled in staff, and began offering several additional tests.",
+			"role": "Lead UX/UI Designer",
 			"content": [
 				{
-					"url":"UIKit.png",
-					"width":"1440",
-					"clear":"false"
+					"type":"paragraph",
+					"copy":"EverlyWell sells at-home lab testing kits for things such as thyroid, vitamins, STD, and food sensitivities. After a user collects their sample (the method which varies from test to test)  and mails it in, EverlyWell’s lab partners process the sample and help the end user make sense of the results."
 				},
 				{
-					"url":"Results.jpg",
-					"width":"1440",
-					"clear":"false",
-					"caption":"There was a running joke that time spent at EverlyWell was like dog years, because everyone did a lot in a small amount of time. EverlyWell’s branding was purchased through Fiverr, and the marketing site when I arrived had been designed by Funsize. A lot of talented people helped create the 2019 design for the results platform, including <a href=\"https://www.anna-ho.com/\" target=\"_blank\">Anna Ho</a>, <a href=\"http://williamfikes.com/\" target=\"_blank\">Will Fikes</a>, and <a href=\"http://www.ericbog.gs\" target=\"_blank\">Eric Boggs</a>."
+					"type":"paragraph",
+					"copy":"When I joined, EverlyWell had just raised its series A and had a staff of about 25 people. I stayed 18 months, and during that time it raised its series B, launched two major versions of its results platform, tripled in staff, and began offering several additional tests."
 				},
 				{
-					"url":"SciencePage.jpg",
-					"width":"1350",
-					"clear":"false",
-					"caption":"When the 2019 Theranos documentary was about to be released on HBO, EverlyWell’s leaders were working hard to close series B funding. The website had only cursory information about the science behind EverlyWell’s tests, and it wasn’t easy to find. With only a week’s turnaround, we planned, designed, wrangled content for, and published a brand new science section prominently featured in the main navigation."
+					"type":"h1",
+					"copy":"Results Platform Redesign, Content, & Design System"
 				},
 				{
-					"url":"ContentBlocks.png",
-					"width":"800",
-					"clear":"false",
-					"caption":"EverlyWell’s results platform had a “one-size-fits-all” approach to 30 different tests, and consistently we heard that users’ results didn’t feel very personalized or actionable. Using low fidelity wireframes, I created a modular content system to outline the different blocks of content we’d show, and when. For example, if a user had taken the same test six times and their latest results were normal, we wouldn’t show the same content as a brand new user who had abnormal results. This was a page from a document intended to get buy-in from stakeholders on what these blocks were, what order we’d show them, and in what phase we’d roll them out."
+					"type":"h2",
+					"copy":"Content"
 				},
 				{
-					"url":"ADA-Color-Wheel.svg",
-					"width":"800",
-					"clear":"false",
-					"caption":"EverlyWell had a lot of fragmentation when it came to color. There were two or three blues used for button colors, and three or four different greens used throughout the site. To make matters worse, one of our frontend engineers was colorblind, and it was really difficult for him to notice the differences. Additionally the entire company was wanting to become more ADA compliant, and we really didn’t have any internal guidelines on how that would translate to our work. I followed Lyft’s lead and used their <a href=“http://colorbox.io/“ target=“_blank”>color tool</a> to create a systematic color scheme. Black text was compliant on the 6 inner rings, and white text was compliant on the 6 outer rings. We didn’t use more than a handful of the colors, but it gave us room to grow if we needed. It was much easier to tell the devs to use “Blue 4” instead of “The same one we use for button colors”. Plus since all the colors were variables in the code, it paved the way to more smoothly roll out future branding."
-				}
+					"type":"paragraph",
+					"copy":"When I joined, EverlyWell’s results platform had a “one-size-fits-all” approach to 30 different tests, and we consistently heard that users’ results didn’t feel very personalized or actionable. Using low fidelity wireframes, I created a modular content system to outline the different blocks of content we’d show, and when. For example, if a user had taken the same test six times and their latest results were normal, we wouldn’t show the same content as a brand new user who had abnormal results. This was a page from a document intended to get buy-in from stakeholders on what these blocks were, what order we’d show them, and in what phase we’d roll them out."
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+
+				},
+				{
+					"type":"paragraph",
+					"copy":"We were also working to make the experience feel more dynamic and engaging, but we had to strike the right balance with this because some folks may have been getting bad news. Anyone who had biomarkers in dangerous zones would have received a phone call from one of EverlyWell’s medical staff, but still, an overly cheerful animation doesn’t land well with a positive STD result."
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				
+				},
+				{
+					"type":"paragraph",
+					"copy":"A proper design system hadn’t really been established, so we created one in parallel of designing the UX and UI for the new results platform. "
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				
+				},
+				{
+					"type":"paragraph",
+					"copy":"EverlyWell had a lot of fragmentation when it came to color. There were two or three blues used for button colors, and three or four different greens used throughout the site. To make matters worse, one of our frontend engineers was colorblind, and it was really difficult for him to notice the differences. Additionally the entire company was wanting to become more ADA compliant, and we really didn’t have any internal guidelines on how that would translate to our work. I followed Lyft’s lead and used their color tool to create a systematic color scheme. Black text was compliant on the 6 inner rings, and white text was compliant on the 6 outer rings. We didn’t use more than a handful of the colors, but it gave us room to grow if we needed. It was much easier to tell the devs to use “Blue 4” instead of “The same one we use for button colors”. Plus since all the colors were variables in the code, it paved the way to more smoothly roll out future branding."
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				
+				},
+				{
+					"type":"paragraph",
+					"copy":"There were a lot of variations on how we’d show the biomarker cards. Some were simple “You have this or don’t” cards while others showed several ranges a person’s results might fall under, each with a lab-provided label we legally had to use. So part of the job was making sure these were all intuitive, looked like they came from the same place, and were flexible enough to include all the content they might contain. "
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				
+				},
+				{
+					"type":"paragraph",
+					"copy":"There was a running joke that time spent at EverlyWell was like dog years, because everyone did a lot in a small amount of time. EverlyWell’s branding was purchased through Fiverr, and the marketing site when I arrived had been designed by Funsize. A lot of talented people helped create the 2019 design for the results platform, including <a href=\"https://www.anna-ho.com/\" target=\"_blank\">Anna Ho</a>, <a href=\"http://williamfikes.com/\">Will Fikes</a>, and <a href=\"http://www.ericbog.gs/\">Eric Boggs.</a>"
+				},
+				{
+					"type":"h1",
+					"copy":"Humana Partnership"
+				},
+				{
+					"type":"paragraph",
+					"copy":"EverlyWell’s first big partnership was with health insurance and wellness giant Humana to provide HbA1c and Colorectal Cancer screening tests to eligible seniors through their Humana healthcare plans. Since EverlyWell’s platform didn’t follow any kind of accessibility guidelines, and Humana wanted a co-branded experience, we opted to do a separate microsite to handle the entire process. The results were still shown on the primary EverlyWell platform, and we updated it to allow for co-branding which we knew we wanted to enable in the future and wasn’t a very big lift. "
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				
+				},
+				{
+					"type":"h1",
+					"copy":"Science Page Redesign"
+				},
+				{
+					"type":"paragraph",
+					"copy":"When the 2019 Theranos documentary was about to be released on HBO, EverlyWell’s leaders were working hard to close series B funding. The website had only cursory information about the science behind EverlyWell’s tests, and it wasn’t easy to find. With a turnaround of only a few weeks, we planned, designed, wrangled content for, and published a brand new science section prominently featured in the main navigation. "
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				
+				},
+				{
+					"type":"image",
+					"url":"../placeholder.png"
+				
+				},
+				{
+					"type":"h1",
+					"copy":"Product Page Redesign"
+				},
+				{
+					"type":"paragraph",
+					"copy":"Taking on EverlyWell's product detail page redesign was an interesting challenge – their existing PDPs were functional, but still included the “As seen on Shark Tank!” verbiage and contained 6 tabs of heavy text details describing the tests and what they measured. The team initially approached me to \"refresh\" the page, but after digging into their analytics and customer feedback, it became clear we needed to do more than just give it a new coat of paint. There was a disconnect between the friendly, approachable brand EverlyWell had built and the somewhat sterile experience of actually shopping for their products."
+				},
+				{
+					"type":"paragraph",
+					"copy":"I worked closely with the marketing team to understand what messaging resonated most with customers, and with the product team to identify where people were getting stuck in the purchase flow. We did some “guerilla user testing” by just asking strangers to look at the site on an iPad, just to get some anecdotal qualitative data on it. The biggest challenge was ensuring it felt medically credible while still having an element of novelty to it, because the majority of the traffic that would be driven to these pages was from Facebook and Instagram. "
+				},
+				{
+					"type":"paragraph",
+					"copy":"The redesigned PDP brought their brand personality forward while strategically organizing information to address common questions and concerns at each stage of the decision process. We gave more prominence to their scientific validation, simplified the explanation of how the tests work, and made the benefits more tangible through improved visualization. When we launched the new design, we saw an immediate uptick in conversion rates, which validated our approach and gave us good footing to expand the redesign to other parts of their site."
+				}			
 			]
 		},
 		{
@@ -135,6 +559,26 @@
 			"role":"Lead Designer",
 			"content": [
 				{
+					"url":"Neanderhtal_Insight@2x.jpg",
+					"width":"420"
+				},
+				{
+					"url":"Metabolism_Trait-Top@2x.jpg",
+					"width":"420"
+				},
+				{
+					"url":"Regional-Ancestry_Dashboard@2x.jpg",
+					"width":"420"
+				},
+				{
+					"url":"Regional-Ancestry_Subregion@2x.jpg",
+					"width":"420"
+				},
+				{
+					"url":"Metabolism_Trait-Infographics@2x.jpg",
+					"width":"420"
+				},
+				{
 					"type":"paragraph",
 					"copy":"Insitome (pronounced “insight-oam”) was a company partnered with DNA testing platform, Helix. Similar to 23andMe, Helix sequenced people’s DNA via mail-in saliva samples, but what made them different was providing the data to third-party app developers in a “marketplace”. The idea was for Helix to create a sort-of app store where people making the apps could leverage the DNA you had on file with Helix."
 				},
@@ -143,30 +587,8 @@
 					"copy":"Insitome was one of these creators, and sold separate edutainment modules that used DNA to shed light on people’s various traits."
 				},
 				{
-					"url":"Neanderhtal_Insight@2x.jpg",
-					"width":"420",
-					"clear":"false"
-				},
-				{
-					"url":"Metabolism_Trait-Top@2x.jpg",
-					"width":"420",
-					"clear":"false"
-				},
-				{
-					"url":"Regional-Ancestry_Dashboard@2x.jpg",
-					"width":"420",
-					"clear":"false"
-				},
-				{
-					"url":"Regional-Ancestry_Subregion@2x.jpg",
-					"width":"420",
-					"clear":"false"
-				},
-				{
-					"url":"Metabolism_Trait-Infographics@2x.jpg",
-					"width":"420",
-					"clear":"false",
-					"caption":"With branding and packaging created by Lindsay Gravette at Elbow, and one product (Neanderthal) already in the wild, my primary job was to help launch two sister products, Metabolism and Regional Ancestry. I also designed an updated marketing website, helped launch a podcast, helped plan content for the products, created a full-page print ad, and did some motion graphics work."
+					"type":"paragraph",
+					"copy":"With branding and packaging created by <a href=\"https://elbow.com\" target=\"_blank\">Elbow</a>, and one product (Neanderthal) already in the wild, my job was to help launch two sister products, Metabolism and Regional Ancestry."
 				},
 				{
 					"url":"OnboardingFlow@2x.png",
@@ -175,22 +597,45 @@
 					"caption":"Helix acting as a middleman between the apps on its marketplace and the end-user created a lot of interesting challenges from an onboarding perspective. The existing onboarding had several steps, many of which weren’t skippable. One of my first tasks was to come up with recommendations to simplify."
 				},
 				{
-					"url":"responsive@2x.jpg",
-					"width":"920",
-					"clear":"true",
-					"caption":"Another added challenge was that there were two versions of each app being developed in parallel: an iOS version, and a responsive web version. (This was a contractual obligation with Helix.) Since I had never worked alongside an iOS developer before, I was grateful to have someone who helped me understand the nuances of layout in iOS and how they differed from web, which is what I was used to."
+					"type":"paragraph",
+					"copy":"But before we’d do that, there were some problems with the existing onboarding process the team wanted help with. The existing onboarding had several steps, many of which weren’t skippable. Helix acting as a middleman between the apps on its marketplace and the end-user created a lot of interesting challenges from an onboarding perspective. So I put together a bevy of recommended hotfixes to make it easier for folks to activate their accounts and sign in."
 				},
 				{
-					"url":"migration.gif",
-					"width":"750",
+					"url":"../placeholder.png"
+				},
+				{
+					"url":"icon-animations.gif"
+				},
+				{
+					"type":"paragraph",
+					"copy":"There was a contractual obligation with Helix that created an added challenge: both an iOS version and a responsive web version needed to be created in parallel. Since I‘d never worked alongside an iOS developer before, I was grateful to have someone who helped me understand the nuances of layout in iOS and how they differed from web. The good news was the functionality was quite straightforward which made parity fairly easy. "
+				},
+				{
+					"url":"migration.gif"
+				},
+				{
+					"url":"WorldMap@2x.png"
+				},
+				{
+					"url":"../placeholder.png",
+					"note":"GIF of map animating to dots"
+				},
+				{
+					"type":"paragraph",
+					"copy":"Maps were a big part of Insitome. Sitting alongside the director of science content, I acted as a pair of hands to get the regions and migration paths in the right places with the right amount of overlap. I had concepts of maps animating as the user navigated, but the scope was too big for our release timeline."
+				},
+				{
+					"type":"paragraph",
+					"copy":"All three Insitome products were fairly static. The interactivity was navigating from one page to another, so the value I was able to add was helping the team understand the content hierarchy, envision how things would look, and providing as many supporting graphics as I was able. "
+				},
+				{
+					"url":"responsive@2x.jpg",
+					"width":"920",
 					"clear":"true"
 				},
 				{
-					"url":"WorldMap@2x.png",
-					"width":"1440",
-					"clear":"true",
-					"border":"true",
-					"caption":"Maps were a big part of Insitome. Sitting alongside the director of science content, I acted as a pair of hands to get the regions and migration paths in the right places with the right amount of overlap."
+					"type":"paragraph",
+					"copy":"After launching the Metabolism and Regional Ancestry products, I helped create an ad for Genome magazine. Several rough concept sketches were presented, and the CEO fell in love with the idea of a decoder ring because he thought it would strike a nostalgia chord with the magazine’s audience. I styled and directed the shot, retouched the photos, layed out the ad, and coordinated with Helix’s legal team and Genome magazine."
 				},
 				{
 					"url":"GenomeAdSketches@2x.png",
@@ -199,15 +644,39 @@
 				},
 				{
 					"url":"Genome-Ad-Layout@2x.jpg",
-					"width":"920",
-					"clear":"true",
-					"caption":"After launching the Metabolism and Regional Ancestry products, I helped create an ad for Genome magazine. Several rough concept sketches were presented, and the CEO fell in love with the idea of a decoder ring because he thought it would strike a nostalgia chord with the magazine’s audience. I styled and directed the shot, retouched the photos, layed out the ad, and coordinated with Helix’s legal team and Genome magazine."
+					"width":"920"
+				},
+				{
+					"type":"paragraph",
+					"copy":"Toward the end of my tenure after the modules had been released, we wanted to add sharing features in. I created two basic user flows, one for sharing a static image and another for sharing a public user profile. "
+				},
+				{
+					"url":"../placeholder.png",
+					"note":"Share Method A, screencap taken from sharing PDF"
+				},
+				{
+					"url":"../placeholder.png",
+					"note":"Share Method B, screencap taken from sharing PDF"
+				},
+				{
+					"url":"share-card-ancestry.png"
+				},
+				{
+					"url":"share-card-lifestyle.png"
+				},
+				{
+					"url":"share-card-metabolism.png"
+				},
+				{
+					"url":"share-card-nenderthal.png"
+				},
+				{
+					"type":"paragraph",
+					"copy":"After the holidays were over, I helped design a new marketing site but before construction was complete, Insitome parted ways with its product and engineering staff to put the company in maintenance mode. Helix shifted its focus to partnerships with healthcare systems and population genomics programs, and discontinued its consumer marketplace. "
 				},
 				{
 					"url":"Marketing-Site@2x.jpg",
-					"width":"1440",
-					"clear":"true",
-					"caption":"After the holidays were over, I helped design a new marketing site. Before construction was complete, Insitome parted ways with its product and engineering staff to put the company in maintenance mode. But before that happened, I created a prototype of the desktop site which you can see <a href=\"https://framer.cloud/itJps/\" target=\"_blank\">here</a>."
+					"width":"1440"
 				}
 			]
 		},
@@ -215,7 +684,7 @@
 			"title": "SXSW Music Blogger's Guide",
 			"slug": "sxsw",
 			"year": "2017",
-			"role": "Lead UX Designer",
+			"role": "Lead UX Designer, Foxtrot",
 			"content": [
 				{
 					"type":"image",
@@ -288,10 +757,10 @@
 			]
 		},
 		{
-			"title": "Dimensional",
+			"title": "Dimensional Fund Advisors",
 			"slug": "dfa",
 			"year": "2016",
-			"role": "Lead UX Designer",
+			"role": "Lead UX Designer, Foxtrot",
 			"content": [
 				{
 					"type": "image",
@@ -344,6 +813,10 @@
 				{
 					"type": "paragraph",
 					"copy": "During the UI concepting phase, this was a homepage scrollytelling style animation I had been toying around with."
+				},
+				{
+					"type": "paragraph",
+					"copy": "One of the biggest things I learned from this project was the importance of working closely with a dev team who understands my process and who can come to me with questions and problems as they arise. Despite our best efforts to detail everything as much as possible, there would still be misunderstandings that would come up, or unforeseen idiosyncrasies of frontend development we hadn’t accounted for. We were all happy with the end result, but I think we could have gotten there faster and with fewer headaches if we’d all been on the same team."
 				}
 			]
 		},
@@ -351,7 +824,7 @@
 			"title": "Austin Film Society",
 			"slug": "afs",
 			"year": "2016",
-			"role": "Lead UX Designer",
+			"role": "Lead UX Designer, Foxtrot",
 			"tags": ["Agency", "Sketch", "Photoshop", "InDesign", "Website", "User Experience", "User Interface", "Content Design", "Information Architecture", "Content Audit", "Sitemap", "Wireframes"],
 			"content": [
 				{

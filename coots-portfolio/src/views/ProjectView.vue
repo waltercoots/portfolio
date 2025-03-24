@@ -138,7 +138,7 @@ div.currentProject {
 			margin-left:0.5rem;
 		}
 		ul {
-			display:block;
+			display:none;
 			list-style:none;
 			margin-top:0.5rem;
 			@include xs {
