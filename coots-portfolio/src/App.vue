@@ -28,7 +28,7 @@ export default {
 html, body {
   padding:0;
   margin:0;
-  min-height:100vh;
+  min-height:100dvh;
   height: -webkit-fill-available;
   width:100vw;
   overflow:hidden;
@@ -69,11 +69,16 @@ body:after {
 }
 div.foundation {
   width:100vw;
-  height:100vh;
+  height:100dvh;
   overflow:hidden;
   margin:0;
   padding:0;
-  border:16px solid $accent;
+  @include xs {
+    border:0.5rem solid $accent;
+  }
+  @include md {
+    border:1rem solid $accent;
+  }
 }
 a {
     color:$accent;

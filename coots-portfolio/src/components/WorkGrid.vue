@@ -188,7 +188,7 @@
 		overflow-y:auto;
 		overflow-x:hidden;
 		width:100vw;
-		height:100vh;
+		height:100dvh;
 		z-index:1;
 		display:flex;
 		align-items: center; // vertical centering
@@ -204,6 +204,9 @@
 
 		@include xs {
 			align-items: flex-start;
+			height:calc(100dvh - 1rem);
+			margin-top:0.5rem;
+			margin-bottom:0.5rem;
 		}
 		@include sm {
 			align-items:center;
@@ -213,6 +216,9 @@
 		}
 		@include md {
 			align-items:center;
+			height:calc(100dvh - 2rem);
+			margin-top:1rem;
+			margin-bottom:1rem;
 			@media (max-height: 554px) { 
 				align-items:flex-start;
 			} 			
@@ -240,7 +246,7 @@
 			@include xs {
 				width: 100%;
 				padding-top:5rem;
-				padding-bottom:5rem;
+				padding-bottom:1rem;
 			}
 			@include sm {
 				width: 100%;
