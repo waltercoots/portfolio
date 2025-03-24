@@ -3,7 +3,7 @@
 		{
 			"title": "WorkStep",
 			"slug": "workstep",
-			"year": "2022–2024",
+			"year": "2022–Current",
 			"description": "WorkStep is enterprise HR software designed for companies with large warehouse, supply chain, and retail divisions. The software helps leaders identify ways they can improve working conditions for employees, thus leading to higher engagement and happiness in the workforce, which in turn leads to reduced turnover, and increases other important factors like productivity and safety.\r\nSince many of these employees aren’t desk workers and often have corporate emails, web-based surveys are sent out to workers’ personal contact info via text and email. Results are anonymous unless workers elect to reveal their contact info on a question-by-question basis, and the aggregated results are summarized and analyzed within the WorkStep app.\r\nAs is the case in a typical Series B startup, I wore a lot of hats and had my hands in a lot of areas in the product. I’ll take you through some highlights that I think were pretty fun and interesting.",
 			"content": [
 				{
@@ -131,9 +131,17 @@
 		{
 			"title": "Insitome",
 			"slug": "insitome",
-			"year": "20x6",
-			"description": "Insitome (pronounced “insight-oam”) was a company partnered with DNA testing startup Helix. Helix processed DNA saliva samples, and with users’ consent, provided their DNA to independent developers like Insitome within Helix’s marketplace. What made this special for end-users was that they would pay once to have their DNA sequenced, and then have the ability to continue learning from it as new information was discovered, and new apps were created to do fun things with it.",
+			"year": "2017–2018",
+			"role":"Lead Designer",
 			"content": [
+				{
+					"type":"paragraph",
+					"copy":"Insitome (pronounced “insight-oam”) was a company partnered with DNA testing platform, Helix. Similar to 23andMe, Helix sequenced people’s DNA via mail-in saliva samples, but what made them different was providing the data to third-party app developers in a “marketplace”. The idea was for Helix to create a sort-of app store where people making the apps could leverage the DNA you had on file with Helix."
+				},
+				{
+					"type":"paragraph",
+					"copy":"Insitome was one of these creators, and sold separate edutainment modules that used DNA to shed light on people’s various traits."
+				},
 				{
 					"url":"Neanderhtal_Insight@2x.jpg",
 					"width":"420",
@@ -207,11 +215,59 @@
 			"title": "SXSW Music Blogger's Guide",
 			"slug": "sxsw",
 			"year": "2017",
-			"description": "Each year, SXSW likes to highlight some of the lesser-known artists performing at SXSW. So they invite bloggers and music journalists from around the world to pick any artist on the upcoming SXSW schedule, and write a paragraph about them. 2017 was the first year they moved the guide to the web. My role as the lead UX designer involved scoping, leading internal workshops, and acting as a liaison between UI, UX, and dev.",
+			"role": "Lead UX Designer",
 			"content": [
 				{
-					"url":"01-landing.jpg",
-					"clear":"true"
+					"type":"image",
+					"url":"01-landing.jpg"
+				},
+				{
+					"type":"paragraph",
+					"copy":"Each year, Music / Film / Interactive festival SXSW (South by Southwest) likes to highlight some of the lesser-known artists who will be performing. So they invite bloggers and music journalists from around the world to pick any artist on the upcoming SXSW schedule, and write a paragraph about them. 2017 was the first year they moved the guide to the web, and my role as the lead UX designer involved project scoping, persona creation, leading internal workshops, and acting as a liaison between UI, UX, and dev."
+				},				
+				{
+					"type":"h2",
+					"copy":"Process"
+				},				
+				{
+					"type":"image",
+					"url":"07-persona.jpg"
+				},
+				{
+					"type":"paragraph",
+					"copy":"The personas we created were provisional in nature. While we didn’t identify festival goers and interview them, we had a lot of friends who attended the festival and as music lovers ourselves were solving problems we knew we and other attendees would face. "
+				},
+				{
+					"type":"image",
+					"url":"06-wires.jpg"
+				},
+				{
+					"type":"paragraph",
+					"copy":"The team created rough wireframe sketches separately, then came together as a group to share ideas and evaluate. The stickies were us organizing our thoughts on common elements we were seeing across everyone's ideas."
+				},
+				{
+					"type":"paragraph",
+					"copy":"One tricky aspect about this project was that it was to be a completely separate entity from the official SXSW website, and this meant that utilizing schedule info was a non-starter. Early concepts had ideas around a mobile experience that would highlight bands in real-time based on a person’s location.” You’re at the Fader Fort seeing Danny Brown. Earl Sweatshirt will be playing 2 blocks away in 30 minutes, here’s what MXDWN has to say about him.” If the goal of the blogger’s guide was to expose bands, this would be a great way to do it."
+				},
+				{
+					"type":"paragraph",
+					"copy":"Another initial idea included the ability for users to make and share playlists of their favorite artists in the guide. But for business reasons, we shelved the idea for another time. We also had loftier ideas for names (I was lobbying for Under the Radar) but due to the naming system for SXSW’s tightly managed brand, were forced to keep it simple and straightforward. The final structure of the site was fairly simple."
+				},
+				{
+					"type":"image",
+					"url":"08-flowchart.jpg"
+				},
+				{
+					"type":"image",
+					"url":"artist-details-wire.png"
+				},
+				{
+					"type":"h2",
+					"copy":"Outcome"
+				},							
+				{
+					"type":"paragraph",
+					"copy":"Unfortunately I don’t have any metrics on how the site was used, how much traffic it got, or whether it led to more business for Foxtrot who was doing the site at a discount in return for a credit on the site. But it’s a project I learned a lot from, and am happy with the results. Credit for the final UI goes to <a href=\"https://greganthonythomas.com\" target=\"_blank\">Greg Anthony Thomas</a> and <a href=\"https://oscarmorris.design\">Oscar Morris</a>."
 				},
 				{
 					"url":"02-browse.jpg",
@@ -228,24 +284,6 @@
 				{
 					"url":"05-mbg-phone.jpg",
 					"clear":"true"
-				},
-				{
-					"url":"07-persona.jpg",
-					"border":"true",
-					"clear":"true",
-					"caption":"After creating personas and establishing who we were designing the guide for, we created problem and vision statements."
-				},
-				{
-					"url":"06-wires.jpg",
-					"border":"true",
-					"clear":"true",
-					"caption":"The team created rough wireframe sketches separately, then came together as a group to share ideas and evaluate.  The stickies were us organizing our thoughts on common elements we were seeing across everyone's ideas."
-				},
-				{
-					"url":"08-flowchart.jpg",
-					"border":"true",
-					"clear":"true",
-					"caption":"One of our initial ideas included the ability for users to make and share playlists of their favorite artists in the guide, but for business reasons, we shelved the idea for another time. We also had loftier ideas for names, but due to the naming system for SXSW, were forced to keep it simple and straightforward. The final structure of the site was fairly simple."
 				}
 			]
 		},
@@ -253,30 +291,59 @@
 			"title": "Dimensional",
 			"slug": "dfa",
 			"year": "2016",
-			"url": "http://dimensional.com",
-			"description": "Foxtrot was challenged to redesign the website for Austin-based investment firm Dimensional Fund Advisors. I was honored to be involved in early UI concepting and mood boards, as well as the lead UX designer. The pages were structured using a series of reusable building blocks so that the client could mix and match to make new pages as necessary.",
-			"credits": "Created as a collaborative effort at <a href=\"http://foxtrot.co\" target=\"_blank\">Foxtrot</a>, with my role as UX lead and some UI design and concepting.",
+			"role": "Lead UX Designer",
 			"content": [
 				{
-					"url":"01-home-d.jpg",
-					"border":true,
-					"clear":true
+					"type": "image",
+					"url":"01-home-d.jpg"
 				},
 				{
-					"url":"04-phone.jpg",
-					"clear":true
+					"type": "paragraph",
+					"copy": "Dimensional Fund Advisors is an investment firm based in Austin that stands apart from the usual Wall Street suspects. Founded on academic research rather than market predictions, DFA takes a refreshingly different approach to managing money. While most investment firms are busy trying to time the market or pick winning stocks, Dimensional focuses on capturing returns through scientifically-tested factors that drive performance over time."
 				},
 				{
-					"url":"02-lowfi-wires.jpg",
-					"border":true,
-					"clear":true,
-					"caption":"Pages were ultimately structured using a series of reusable building blocks so that the client could mix and match to make new pages as necessary, even after our contract with them ended. We created low fidelity wireframes to illustrate which blocks would be used where."
+					"type":"h2",
+					"copy":"Process"
 				},
 				{
-					"url":"03-highfi-wires.png",
-					"border":true,
-					"clear":true,
-					"caption":"Each component had its own documentation to show how it operated. This is the page for the primary nav bar."
+					"type": "paragraph",
+					"copy": "This project was similar to the Austin Film Society site redesign, but on a smaller website and with fewer stakeholders. The client being an investment firm instead of a non-profit film collective led to differences in the tone of both the design and the level of rigor that went into the design and specs, plus the content was a lot more dense."
+				},
+				{
+					"type": "paragraph",
+					"copy": "I was involved in early UI concepting, UX design, and production on the deliverables as well as some interfacing with the offshore developers on the project. There were about 10 different templates comprising 16 different content components."
+				},
+				{
+					"type": "image",
+					"url":"04-phone.jpg"
+				},
+				{
+					"type": "image",
+					"url":"02-lowfi-wires.jpg"
+				},
+				{
+					"type": "paragraph",
+					"copy": "Pages were structured using a series of reusable building blocks so that the client could mix and match to make new pages as necessary, even after our contract with them ended. We created low fidelity wireframes to illustrate which blocks would be used where. Each component had its own documentation to show how it operated. This is the page for the primary nav bar."
+				},
+				{
+					"type": "image",
+					"url":"03-highfi-wires.png"
+				},
+				{
+					"type": "image",
+					"url":"dfa-home-wires.png"
+				},
+				{
+					"type": "paragraph",
+					"copy": "These are some of the wireframe annotations detailing the different components within the pages, our taxonomy for them, and how they should function."
+				},
+				{
+					"type": "image",
+					"url":"../placeholder.png"
+				},
+				{
+					"type": "paragraph",
+					"copy": "During the UI concepting phase, this was a homepage scrollytelling style animation I had been toying around with."
 				}
 			]
 		},
@@ -288,16 +355,16 @@
 			"tags": ["Agency", "Sketch", "Photoshop", "InDesign", "Website", "User Experience", "User Interface", "Content Design", "Information Architecture", "Content Audit", "Sitemap", "Wireframes"],
 			"content": [
 				{
+					"type":"image",
+					"url":"01-homed.jpg"
+				},
+				{
 					"type":"paragraph",
 					"copy":"Nearly 10 years ago when I worked at Foxtrot, I was beyond excited that I got to be the lead UX designer on the revamped Austin Film Society website. The old site was pretty confusing and difficult to navigate, and because AFS does so many different things which are managed by so many different stakeholders, my role was mainly to work with these stakeholders to untangle the information architecture and ensure the most prominent areas of their site matched the prominence of the organization’s goals."
 				},
 				{
 					"type":"paragraph",
 					"copy":"The people at the organization were terrific to work with, as was Oscar Morris who collaborated with me on the UI and did their terrific branding. The branding and site launch coincided with AFS opening AFS Cinema. While I have no quant or qual data on the success of the site, they’re still <a href=\"https://www.austinfilm.org\" target=\"_blank\">using the same design</a> (as of March 2025), and AFS Cinema remains Austin’s only nonprofit art house theater. "
-				},
-				{
-					"type":"image",
-					"url":"01-homed.jpg"
 				},
 				{
 					"type":"h2",
