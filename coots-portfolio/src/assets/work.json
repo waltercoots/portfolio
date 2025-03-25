@@ -7,8 +7,156 @@
 			"role": "Senior Product Designer",
 			"content": [
 				{
-					"title": "Re-architecture",
-					"description": "WorkStep actually started out as a tool for sourcing candidates for frontline jobs. The software went through a lot of changes during those first several years and not all of the changes were carefully thought through. It was starting to show, and hampering product and engineering’s ability to move quickly, so the product team was approached with the task of “Making the product make sense”. I was the design lead on this project."
+					"type":"paragraph",
+					"copy":"WorkStep is enterprise HR software designed for companies with large warehouse, supply chain, and retail divisions. One component of the software is the surveys being sent out to employees while the other is the reporting that the leaders at the company receive. WorkStep exists to help leaders identify ways they can improve working conditions for employees, thus leading to higher engagement and happiness in the workforce, which in turn leads to reduced turnover, higher productivity, and higher safety. "
+				},
+				{
+					"type":"paragraph",
+					"copy":"Since many of these employees aren’t desk workers and often have corporate emails, web-based surveys are sent out to workers’ personal contact info via text and email. Results are anonymous unless workers elect to reveal their contact info on a question-by-question basis, and the aggregated results are summarized and analyzed within the WorkStep app."
+				},
+				{
+					"type":"paragraph",
+					"copy":"As is the case in a typical Series B startup, I wore a lot of hats and had my hands in a lot of areas in the product. I’ll take you through some highlights that I think are interesting."
+				},
+				{
+					"type":"h2",
+					"copy":"Re-architecture"
+				},
+				{
+					"type":"paragraph",
+					"copy":"WorkStep actually started out as a tool for sourcing candidates for frontline jobs, and this was what I was originally brought on to help with (WorkStep HIRE). The software went through a lot of changes during those first several years and not all of the changes were carefully thought through. It was starting to show, and hampering product and engineering’s ability to move quickly, so the product team was approached with the task of “Making the product make sense”. I was the design lead on this project."
+				},
+				{
+					"type":"h3",
+					"copy":"The Problem"
+				},
+				{
+					"type":"paragraph",
+					"copy":"An emphasis on moving fast caused features and areas to be bolted on without making adjustments to surrounding features that may have been affected, which accumulated several years worth of design and tech debt. But with a definition this broad, there was an added layer of complexity to find out what our internal stakeholders believed this project should solve. "
+				},
+				{
+					"type":"The Approach",
+					"copy":"The PM and myself conducted interviews and surveys with both internal stakeholders as well as customers. After creating some opportunity solution trees and better identifying key problem areas, we worked together to highlight both what the “re-architecture” project would encompass along with what it wouldn’t. We didn’t want to change the design so much that what was working was eliminated, but we did want to rename and move things into places that were more self-evident."
+				},
+				{
+					"type":"paragraph",
+					"copy":"Some aspects of this project were glaring issues we all agreed on, while others were things that caused quite a bit of concern with some internal teams, and they needed to be convinced. Data was our friend in these cases, and bringing both quantitative and qualitative data to the conversations made everything go a lot more smoothly."
+				},
+				{
+					"type":"Challenges",
+					"bullets":["The team was split on whether we should attempt to do one large release with our new product, or do it in several stages. We ultimately went with stages. Knowing this ahead of time would have changed my approach to some of the work we did.","The Figma library we were building with wasn’t built with performance in mind, and for the larger prototypes it was really showing","There was so much to fix, and so many tangential things that needed attention, it was hard to protect the scope of the project and not commit to fixing other things “while we were in there”","Engineering was simultaneously being tasked with optimizing the app’s performance (new queries to replace a backend architecture that we’d long outgrew) as well as implementing the frontend changes we were proposing. In some cases, performance with old frontend components needed to be prioritized, complicating the rollout."]
+				},
+				{
+					"type":"h3",
+					"copy":"The Outcome"
+				},
+				{
+					"type":"paragraph",
+					"copy":"After a year of hard work and planning on everyone’s behalf, WorkStep made more sense. Customer service calls were down, sales were up, customers were vocal about how they liked the new organization, and the customer experience team had fewer requests from their customers to change things."
+				},
+				{
+					"type":"h3",
+					"copy":"What I'd Do Differently"
+				},
+				{
+					"type":"paragraph",
+					"copy":"My mind was very much in a “launch, learn, and iterate” mindset for a large part of re-architecture. Knowing what I know now, I’d spend a different level of rigor and sweat a lot more of the smaller details, because there wouldn’t be resources to return to the decisions we’d made and iterate. I also didn’t fully grasp the added cost of producing marketing and training materials, and how important working with product marketing on realistic scenarios they could speak to were. All said and done, we left the camp grounds cleaner than we found them so I think it was a win."
+				},
+				{
+					"type":"h2",
+					"copy":"Inform"
+				},
+				{
+					"type":"paragraph",
+					"copy":"This one-to-many anonymous messaging feature I designed for WorkStep is one of those projects that seems simple on paper but gets thorny when you start digging into the details. Our customers needed a way to quickly communicate with segments of their workforce during critical situations – think warehouses that need to alert specific shifts about dangerous weather, or distribution centers needing to notify specific departments about operational changes."
+				},
+				{
+					"type":"paragraph",
+					"copy":"What made this interesting was the balance between giving employers powerful communication tools while preserving employee privacy and preventing misuse. We didn't want supervisors manually selecting individual employees (which would be tedious and error-prone anyway), but the system still needed to be precise enough to reach only the relevant workers."
+				},
+				{
+					"type":"paragraph",
+					"copy":"I created a segmentation approach that allowed employers to define their audience through attributes like location, department, or shift without ever seeing individual names or contact information. The UI had to communicate clearly who would receive the message without revealing specific recipients, which required some creative approaches to visualization and confirmation screens."
+				},
+				{
+					"type":"paragraph",
+					"copy":"Inform was a sleeper hit. Originally created to be an upsell, not many people were biting, so we wound up including it as part of the overall WorkStep package, and it has since seen a much larger adoption with a lot of people using it for a variety of purposes. We've heard stories of warehouse managers sending critical updates about facility closures during winter storms, and HR teams using it to provide guidance during unexpected operational changes. It's the kind of invisible utility that quietly does its job – which in product design, is often the highest praise."
+				},
+				{
+					"type":"h2",
+					"copy":"Reports"
+				},
+				{
+					"type":"paragraph",
+					"copy":"When we started the Reports project, WorkStep had a section called “Insights” which contained various charts on quant data that was gleaned from the Surveys. As the product gained larger companies, the use cases for seeing different kinds of quant data expanded, and it was difficult to accommodate these in a one-size-fits-all design. My private goal with Reports was to pave the way for eliminating the Insights section altogether (which we eventually did) but more immediately we were putting the user in control of how they viewed their company’s data."
+				},
+				{
+					"type":"paragraph",
+					"copy":"The persona of this WorkStep user was a higher-level manager of managers, but secondarily the people who reported to those managers. Through our discovery process we learned the primary use case was exporting to PowerPoint. Most companies had internal templates they used, so we didn’t feel the need to go too far with slide customization, but we did want to give them as much context as possible for what we were providing them. "
+				},
+				{
+					"type":"paragraph",
+					"copy":"Translating interactive graphs to a static slide was challenging in that a lot of the minutiae was in tooltips, menus, and callouts, so we worked to figure out a format that could accommodate all the different charts WorkStep offered. "
+				},
+				{
+					"type":"h2",
+					"copy":"Bright Prompts"
+				},
+				{
+					"type":"paragraph",
+					"copy":"This started from a pretty straightforward observation: employees weren't giving us useful qualitative feedback on WorkStep’s surveys. When someone rated the relationship with their manager a 1 or 2 out of 5, we'd show them an open text field asking for more details, but we'd typically get frustratingly brief responses like “bad boss” or “doesn't listen” Not exactly the actionable insights a human resources person is looking for."
+				},
+				{
+					"type":"paragraph",
+					"copy":"What made this problem interesting was that we weren't dealing with lazy respondents – these were people who cared enough to give a negative rating and type something, but they weren't sure what specific feedback would be helpful or how to articulate it. The responsibility was on us to guide them better."
+				},
+				{
+					"type":"paragraph",
+					"copy":"Our solution leveraged LLMs to analyze these sparse initial responses and generate a more specific follow-up question tailored to what the employee had shared. So instead of leaving it at “bad boss,” we might ask, “You mentioned your boss is bad. Is it related to communication style, availability, or something else?” This gave the employee a more concrete direction while still leaving room for their unique perspective."
+				},
+				{
+					"type":"paragraph",
+					"copy":"One big challenge with this was prompt engineering and ensuring the LLM didn’t make tone deaf faux pas, such as asking “Why were you fired?” or “What was it about the sexual harassment that made you uncomfortable?” I can’t take credit here, this was a collaboration between our terrific PM, engineers, and data scientists. "
+				},
+				{
+					"type":"paragraph",
+					"copy":"The design challenge that was on my shoulders was making this feel conversational. We needed to strike the right visual tone – curious and helpful rather than intrusive or judgmental. We wanted the follow-up prompt to naturally and not feel like the system was challenging their initial answer."
+				},
+				{
+					"type":"paragraph",
+					"copy":"Some companies were reluctant to enable this since we couldn’t guarantee exactly what would be shown to their employees. "
+				},
+				{
+					"type":"paragraph",
+					"copy":"What surprised me was how significantly this improved the quality of feedback. Responses went from 3-5 words to multiple sentences with specific examples. Employers started getting feedback they could actually use to make targeted improvements, and employees felt more heard because they were able to express their concerns more precisely. It was a win-win that showed how thoughtful application of AI can enhance human communication rather than replace it."
+				},
+				{
+					"type":"h2",
+					"copy":"A.I. Reply Coaching"
+				},
+				{
+					"type":"paragraph",
+					"copy":"A.I. Reply Coaching at WorkStep was one of those features that walked the line between powerful innovation and ethical automation. There were a few core problems at play. For starters, HR teams and managers were overwhelmed by the volume of employee feedback they needed to respond to, leading to delays or templated replies that made employees feel ignored. But for some there was also “blank page syndrome”. However we didn't want to just automate responses entirely – that would defeat the purpose of building human connections."
+				},
+				{
+					"type":"paragraph",
+					"copy":"What I designed was a system that analyzed an employee's feedback, then generated a contextually relevant reply draft. The goal wasn't to remove humans from the loop, but to give them a smart starting point they could edit and personalize."
+				},
+				{
+					"type":"paragraph",
+					"copy":"The trickiest part of the design process was figuring out how to present these suggestions without making employers overly reliant on them."
+				},
+				{
+					"type":"paragraph",
+					"copy":"Early designs had checklists in them that diagnosed a reply, but after our PM read hundreds of replies, she determined there’s really no one-size-fits-all checklist for all replies, and even if there weren’t, we weren’t sure users would want to be reprimanded for not meeting certain criteria. We explored possibilities that tried to help users write in different tones, but ultimately WorkStep is in the business of HR software, we’re not trying to replace Grammarly. Eventually we realized that at least for the first version of this feature, addressing that blank page syndrome would solve the majority of people’s difficulties."
+				},
+				{
+					"type":"paragraph",
+					"copy":"The final design showed the AI-generated draft, but emphasized that it was still the HR team’s message and could be edited."
+				},
+				{
+					"type":"paragraph",
+					"copy":"The feature ended up saving HR teams significant time while actually improving response quality. What was most satisfying was seeing how it helped less experienced managers learn better communication patterns over time – they'd start by heavily editing the AI drafts, but eventually internalized those patterns in their own communication. It became less of a crutch and more of a coach, which was exactly what we'd hoped for."
 				}
 			]
 		},
