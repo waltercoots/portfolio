@@ -11,6 +11,12 @@ export default {
     handleResize() {
       updateStageDimensions();
       updateBodyDimensions();
+    },
+    updatePaginationLinks(elem) {
+      document.querySelectorAll("a.pagination").forEach((loopElem) => {
+        loopElem.classList.remove('selected');
+      });
+      elem.target.classList.add('selected');
     }
   },
   unmounted() {
@@ -20,7 +26,8 @@ export default {
   },
   updated() {
     this.handleResize();
-  }
+  },
+  
 }
 
 /* MatterJS Shortcuts */
@@ -49,6 +56,7 @@ let mouseConstraint = undefined;
 let headshotOutline = undefined;
 let animationFrameId; // Store the animation frame ID
 let boxInterval; // for adding boxes piecemeal
+
 
 function skillFallSetup() {
   engine = Engine.create();
@@ -248,10 +256,47 @@ function clearSkillFall() {
 <template>
   <div class="about">
     <div class="bio">
-      <p>My name’s Walter Coots, and I’m a (digital product | web | UX / UI | brand) designer in Austin, Texas. I’ve worked across a variety of industries including travel, healthcare, restaurants, entertainment, non-profits, news media, enterprise HR SaaS, energy, and finance.</p>
-      <p>My philosophy is that good design affords clarity and establishes trust with users and customers. It helps build lasting relationships and familiarity, and helps a company’s product and brand stay memorable and relevant. When it’s at its best, it also brightens people’s lives.</p> 
-      <p>Coworkers tell me I’m a positive and enthusiastic person who’s excellent at making complex ideas easier to understand. My grasp on frontend web coding affords me a higher than average understanding and empathy for engineers.  My management style leans servant leader, so I like to work alongside rather than over when it’s appropriate. Finally, I have an entrepreneurial streak that I can’t seem to turn off, and consequently a backlog of ideas I hope to someday be able to test the waters with.</p>
-      <p>I’m a husband, parent, and home owner with a dog, all which keep me busy. I have tons of interests and hobbies: art, music, gardening, video /board / computer games, food and cooking, movies and television, animals, bicycling, home automation, and cocktails.</p>
+      <h2>Your Outtie Likes Animals</h2> 
+      <p>My name’s Walter Coots, and I’m a designer in Austin, Texas. I’m a husband, parent, and home owner with a dog, all which keep me busy. I have tons of interests and hobbies: art, music, gardening, video / board / computer games, food and cooking, movies and television, bicycling, home automation, animals, and cocktails.</p>
+      <h2>Battle-tested</h2>
+      <p>I’ve worked across a variety of industries including travel, healthcare, restaurants, entertainment, non-profits, news media, commercial real estate, enterprise HR SaaS, energy, and finance.</p>
+      <p>Coworkers tell me I’m a positive and enthusiastic person who’s excellent at making complex ideas easier to understand. My grasp on frontend web coding affords me a higher than average understanding and empathy for engineers, and I'm able to maintain composure in tense and trying times.</p>
+      <p class="clients">Select past clients</p>
+      <ul class="clients">
+        <li>Austin Film Society</li>
+        <li>Denny’s</li>
+        <li>GoodPop</li>
+        <li>Halliburton</li>
+        <li>Hallmark</li>
+        <li>Southwest Airlines</li>
+        <li>SXSW</li>
+        <li>Viking Cruises</li>
+      </ul> 
+      <h2>Rave Reviews</h2>
+      <div class="reviews">
+        <blockquote cite="Rachel Bates, WorkStep CRO" id="q1">
+          I'm not exaggerating when I share that your video on Fast Track was the most detailed and best explanation of a HIRE feature since I have been at WorkStep. Your pre-work, video and way you broke it down was really valuable. Thank you!        
+        </blockquote>
+        <blockquote cite="Tommi Forsström, WorkStep CPO" id="q2">
+          I'm VERY impressed. I still have to keep reminding myself that you've got about 6 weeks of active service tenure here. With one of the most disruptive life events in the middle of it. You've brought in a newfound sense of energy and curiosity sorely lacking from the team.
+        </blockquote>
+        <blockquote cite="Dan Johnston, WorkStep CEO" id="q3">
+          Walter runs some of the most engaging and high-value design reviews I've ever been a part of. Thoughtful agendas, blend of strategic and detail-level topics, absolutely O sacred cows. It's a unique thing that basically no other roles do where you bring your work in front of other teams who don't do that job and proactively ask for as much feedback as possible. Walter nails it. 
+        </blockquote>
+        <blockquote cite="Marina Harper, T3 Account Director" id="q4">
+          thank you so much for everything, you have always been such a calm, steady and overall amazing influence for this team, i could not have weathered the ups and downs without you. i am really grateful that i was able to work with you. thank you for always making it fun and easy.
+        </blockquote>
+        <blockquote cite="Cary Brizendine, Insitome Senior Product Manager" id="q5">
+          If I could fit Walter in my pocket and take him with me to work on future products, I would! [...] Walter has an admired ability to bring order to the chaos, finely balancing the delicate relationship between user needs and the stakeholder's business and marketing needs. Plus, he's fun to work with.
+        </blockquote>
+      </div>
+      <div class="pagination">
+        <a href="#q1" class="pagination" @click="this.updatePaginationLinks">1</a>
+        <a href="#q2" class="pagination" @click="this.updatePaginationLinks">2</a>
+        <a href="#q3" class="pagination" @click="this.updatePaginationLinks">3</a>
+        <a href="#q4" class="pagination" @click="this.updatePaginationLinks">4</a>
+        <a href="#q5" class="pagination" @click="this.updatePaginationLinks">5</a>
+      </div>
     </div>
     <div ref="scene" class="skills">
       <img src="img/headshot-placeholder.png" alt="What Walter looks like" class="headshot" />
@@ -309,12 +354,150 @@ function clearSkillFall() {
 </template>
 
 <style scoped lang="scss">
+div.pagination{
+  padding-top:2rem;
+  box-sizing:content-box;
+  text-align:center;
+  a {
+    text-indent:-999em;
+    display:inline-block;
+    background:lighten($accent,5%);
+    height:1rem;
+    width:1rem;
+    margin:0 1rem 0 0;
+    border-radius:1rem;
+    &.selected {
+      background:$white;
+    }
+  }
+}
 div.about {
   background:$accent;
   color:$white;
   display:flex;
   justify-content: center;
 	z-index:3;
+  h1, h2, h3 {
+    font-weight:400;
+  }
+  div.reviews {
+    max-width:30rem;
+    display:flex;
+    flex-direction:row;
+    overflow-y:hidden;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    bottom:-2rem;
+    scrollbar-width: none;
+  }
+  blockquote {
+    min-width:100%;
+    max-width:30em;
+    margin:0.5rem 0 1.5rem 0;
+    padding:0 0 0 1.25rem;
+    position:relative;
+    scroll-snap-align: start;
+    &:before {
+      content:"“";
+      position:absolute;
+      line-height: 95%;
+      left:0rem;
+      top:-0.75rem;
+      z-index:-1;
+      color:lighten($accent,7%);
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      @include xs {
+        @include modular-scale(9); // Font size
+      }
+      @include sm {
+        @include modular-scale(9); // Font size
+      }
+      @include md {
+        @include modular-scale(9); // Font size
+      }
+      @include lg {
+        @include modular-scale(9); // Font size
+      }
+      @include xl {
+        @include modular-scale(9); // Font size
+      }    
+
+    }
+    &[cite]::after {
+      content:"– "attr(cite);
+      display:block;
+      margin:0.5rem 0 0 0.25rem;
+      font-weight:500;
+      @include xs {
+        @include modular-scale(-4); // Font size
+      }
+      @include sm {
+        @include modular-scale(-4); // Font size
+      }
+      @include md {
+        @include modular-scale(-4); // Font size
+      }
+      @include lg {
+        @include modular-scale(-4); // Font size
+      }
+      @include xl {
+        @include modular-scale(-2); // Font size
+      }    
+    }
+  }
+  @include xs {
+    @include modular-scale(-4); // Font size
+  }
+  @include sm {
+    @include modular-scale(-4); // Font size
+  }
+  @include md {
+    @include modular-scale(-4); // Font size
+  }
+  @include lg {
+    @include modular-scale(-4); // Font size
+  }
+  @include xl {
+    @include modular-scale(-2); // Font size
+  }    
+  p.clients {
+    font-weight:600;
+    margin-top:1rem;
+    @include xs {
+      @include modular-scale(-3); // Font size
+    }
+    @include xl {
+      @include modular-scale(-1); // Font size
+    }
+  }
+  ul.clients {
+    margin-bottom:1rem;
+    list-style: none;
+    @include xs {
+      @include modular-scale(-3); // Font size
+    }
+    @include sm {
+      @include modular-scale(-3); // Font size
+    }
+    @include md {
+      @include modular-scale(-3); // Font size
+    }
+    @include lg {
+      @include modular-scale(-3); // Font size
+    }
+    @include xl {
+      @include modular-scale(-1); // Font size
+    }
+    max-width:30em;
+    li {
+      background:#fff;
+      color:$accent;
+      display:inline-block;
+      margin:0 0.5rem 0.5rem 0;
+      padding:0.125em 0.5rem;
+      border-radius: 0.25rem;
+    }
+  }
 	@include xs {
     flex-direction: column-reverse;
     overflow-x:auto;
@@ -367,14 +550,14 @@ div.bio {
 	@include xs {
     @include modular-scale(-2); // Font size
     padding:1rem;
-    p {
+    p, div.reviews {
       margin-bottom:0.5rem;       
     }
 	}
 	@include sm {
     @include modular-scale(-2); // Font size
     padding:5rem;
-    p { 
+    p, div.reviews { 
       max-width:30rem;
       margin-bottom:0.5rem; 
     }
@@ -382,7 +565,7 @@ div.bio {
 	@include md {
     @include modular-scale(-2); // Font size
     padding:2rem;
-    p {
+    p, div.reviews {
       max-width:30rem;
       margin-bottom:0.5rem; 
     }
@@ -390,7 +573,7 @@ div.bio {
 	@include lg {
     @include modular-scale(-2); // Font size
     padding:2rem;
-    p {
+    p, div.reviews {
       max-width:35rem;
       margin-bottom:0.5rem; 
     }
@@ -398,7 +581,7 @@ div.bio {
 	@include xl {
     @include modular-scale(0); // Font size
     padding:4rem;
-    p { 
+    p, div.reviews { 
       max-width:50rem; 
       margin-bottom:1rem; 
     }
@@ -406,8 +589,8 @@ div.bio {
 }
 .close-btn {
   z-index: 12;
-  top: 1rem;
-  right:1rem;
+  top: 2rem;
+  right:3rem;
   position:fixed;
   svg path {
     stroke:$white;
@@ -417,13 +600,13 @@ div.bio {
   @media (hover:hover) {
     &:hover {
       svg path {
-        stroke:$accent;
+        stroke:$black;
       }
     }
   }
   &:focus {
     svg path {
-      stroke:$accent;
+      stroke:$black;
     }
   }
 
