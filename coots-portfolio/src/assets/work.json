@@ -7,8 +7,12 @@
 			"role": "Senior Product Designer",
 			"content": [
 				{
+					"type":"image",
+					"url":"ws-dashboards.png"
+				},
+				{
 					"type":"paragraph",
-					"copy":"WorkStep is enterprise HR software designed for companies with large warehouse, supply chain, and retail divisions. One component of the software is the surveys being sent out to employees while the other is the reporting that the leaders at the company receive. WorkStep exists to help leaders identify ways they can improve working conditions for employees, thus leading to higher engagement and happiness in the workforce, which in turn leads to reduced turnover, higher productivity, and higher safety. "
+					"copy":"WorkStep is enterprise HR software designed for companies with large warehouse, supply chain, and retail divisions. One component of the software is the surveys being sent out to employees while the other is the reporting that the leaders at the company receive. WorkStep exists to help leaders identify ways they can improve working conditions for employees, thus leading to higher engagement and happiness in the workforce, which in turn leads to reduced turnover, higher productivity, and higher safety."
 				},
 				{
 					"type":"paragraph",
@@ -19,16 +23,14 @@
 					"copy":"As is the case in a typical Series B startup, I wore a lot of hats and had my hands in a lot of areas in the product. I’ll take you through some highlights that I think are interesting."
 				},
 				{
-					"type":"h2",
-					"copy":"Re-architecture"
+					"h2":"Re-architecture"
 				},
 				{
 					"type":"paragraph",
 					"copy":"WorkStep actually started out as a tool for sourcing candidates for frontline jobs, and this was what I was originally brought on to help with (WorkStep HIRE). The software went through a lot of changes during those first several years and not all of the changes were carefully thought through. It was starting to show, and hampering product and engineering’s ability to move quickly, so the product team was approached with the task of “Making the product make sense”. I was the design lead on this project."
 				},
 				{
-					"type":"h3",
-					"copy":"The Problem"
+					"h3":"The Problem(s)"
 				},
 				{
 					"type":"paragraph",
@@ -39,32 +41,38 @@
 					"copy":"The PM and myself conducted interviews and surveys with both internal stakeholders as well as customers. After creating some opportunity solution trees and better identifying key problem areas, we worked together to highlight both what the “re-architecture” project would encompass along with what it wouldn’t. We didn’t want to change the design so much that what was working was eliminated, but we did want to rename and move things into places that were more self-evident."
 				},
 				{
+					"type":"image",
+					"url":"ost.png"
+				},
+				{
 					"type":"paragraph",
 					"copy":"Some aspects of this project were glaring issues we all agreed on, while others were things that caused quite a bit of concern with some internal teams, and they needed to be convinced. Data was our friend in these cases, and bringing both quantitative and qualitative data to the conversations made everything go a lot more smoothly."
 				},
 				{
-					"type":"Challenges",
+					"type":"image",
+					"url":"card_sort_dendrogram.png",
+					"caption":"A dendrogram showing how users organized our product in a card sort exercise"
+				},
+				{
+					"h3":"Challenges",
 					"bullets":["The team was split on whether we should attempt to do one large release with our new product, or do it in several stages. We ultimately went with stages. Knowing this ahead of time would have changed my approach to some of the work we did.","The Figma library we were building with wasn’t built with performance in mind, and for the larger prototypes it was really showing","There was so much to fix, and so many tangential things that needed attention, it was hard to protect the scope of the project and not commit to fixing other things “while we were in there”","Engineering was simultaneously being tasked with optimizing the app’s performance (new queries to replace a backend architecture that we’d long outgrew) as well as implementing the frontend changes we were proposing. In some cases, performance with old frontend components needed to be prioritized, complicating the rollout."]
 				},
 				{
-					"type":"h3",
-					"copy":"The Outcome"
+					"h3":"The Outcome"
 				},
 				{
 					"type":"paragraph",
 					"copy":"After a year of hard work and planning on everyone’s behalf, WorkStep made more sense. Customer service calls were down, sales were up, customers were vocal about how they liked the new organization, and the customer experience team had fewer requests from their customers to change things."
 				},
 				{
-					"type":"h3",
-					"copy":"What I'd Do Differently"
+					"h3":"What I'd Do Differently"
 				},
 				{
 					"type":"paragraph",
 					"copy":"My mind was very much in a “launch, learn, and iterate” mindset for a large part of re-architecture. Knowing what I know now, I’d spend a different level of rigor and sweat a lot more of the smaller details, because there wouldn’t be resources to return to the decisions we’d made and iterate. I also didn’t fully grasp the added cost of producing marketing and training materials, and how important working with product marketing on realistic scenarios they could speak to were. All said and done, we left the camp grounds cleaner than we found them so I think it was a win."
 				},
 				{
-					"type":"h2",
-					"copy":"Inform"
+					"h2":"Inform"
 				},
 				{
 					"type":"paragraph",
@@ -83,8 +91,7 @@
 					"copy":"Inform was a sleeper hit. Originally created to be an upsell, not many people were biting, so we wound up including it as part of the overall WorkStep package, and it has since seen a much larger adoption with a lot of people using it for a variety of purposes. We've heard stories of warehouse managers sending critical updates about facility closures during winter storms, and HR teams using it to provide guidance during unexpected operational changes. It's the kind of invisible utility that quietly does its job – which in product design, is often the highest praise."
 				},
 				{
-					"type":"h2",
-					"copy":"Reports"
+					"h2":"Reports"
 				},
 				{
 					"type":"paragraph",
@@ -99,8 +106,7 @@
 					"copy":"Translating interactive graphs to a static slide was challenging in that a lot of the minutiae was in tooltips, menus, and callouts, so we worked to figure out a format that could accommodate all the different charts WorkStep offered. "
 				},
 				{
-					"type":"h2",
-					"copy":"Bright Prompts"
+					"h2":"Bright Prompts"
 				},
 				{
 					"type":"paragraph",
@@ -131,8 +137,7 @@
 					"copy":"What surprised me was how significantly this improved the quality of feedback. Responses went from 3-5 words to multiple sentences with specific examples. Employers started getting feedback they could actually use to make targeted improvements, and employees felt more heard because they were able to express their concerns more precisely. It was a win-win that showed how thoughtful application of AI can enhance human communication rather than replace it."
 				},
 				{
-					"type":"h2",
-					"copy":"A.I. Reply Coaching"
+					"h2":"A.I. Reply Coaching"
 				},
 				{
 					"type":"paragraph",
@@ -184,8 +189,7 @@
 					"copy":"A few things drew me to Unilease. First, my good friend and teammate from long ago worked there so I thought it would be great to work together. Second, I really liked founder and CEO Rob Marshall. But above all, the prospect of bridging the gap between two different types of users. I envisioned an experience that could be similar to gig economy products where the tech was ultimately a go-between for people looking for and offering services. Things didn’t quite pan out the way I hoped, but I learned a ton."
 				},
 				{
-					"type":"h2",
-					"url":"Brand &amp; Marketing"
+					"h2":"Brand &amp; Marketing"
 				},
 				{
 					"type":"paragraph",
@@ -280,12 +284,10 @@
 					"copy":"This was a foundation we were all comfortable starting from, and overall I’m happy with how it shook out. "
 				},
 				{
-					"type":"h2",
-					"url":"Product"
+					"h2":"Product"
 				},
 				{
-					"type":"h3",
-					"url":"Streamlining Archaic Processes"
+					"h3":"Streamlining Archaic Processes"
 				},
 				{
 					"type":"paragraph",
@@ -356,8 +358,7 @@
 					"url":"../placeholder.png"
 				},
 				{
-					"type":"h3",
-					"url":"Business Strategy for Different Customer Tiers"
+					"h3":"Business Strategy for Different Customer Tiers"
 				},
 				{
 					"type":"paragraph",
@@ -368,8 +369,7 @@
 					"url":"../placeholder.png"
 				},
 				{
-					"type":"h3",
-					"url":"Other Misc. Screens"
+					"h3":"Other Misc. Screens"
 				},
 				{
 					"type":"paragraph",
@@ -575,12 +575,10 @@
 					"copy":"When I joined, EverlyWell had just raised its series A and had a staff of about 25 people. I stayed 18 months, and during that time it raised its series B, launched two major versions of its results platform, tripled in staff, and began offering several additional tests."
 				},
 				{
-					"type":"h1",
-					"copy":"Results Platform Redesign, Content, & Design System"
+					"h2":"Results Platform Redesign, Content, & Design System"
 				},
 				{
-					"type":"h2",
-					"copy":"Content"
+					"h3":"Content"
 				},
 				{
 					"type":"paragraph",
@@ -642,8 +640,7 @@
 					"copy":"There was a running joke that time spent at EverlyWell was like dog years, because everyone did a lot in a small amount of time. EverlyWell’s branding was purchased through Fiverr, and the marketing site when I arrived had been designed by Funsize. A lot of talented people helped create the 2019 design for the results platform, including <a href=\"https://www.anna-ho.com/\" target=\"_blank\">Anna Ho</a>, <a href=\"http://williamfikes.com/\">Will Fikes</a>, and <a href=\"http://www.ericbog.gs/\">Eric Boggs.</a>"
 				},
 				{
-					"type":"h1",
-					"copy":"Humana Partnership"
+					"h2":"Humana Partnership"
 				},
 				{
 					"type":"paragraph",
@@ -665,8 +662,7 @@
 				
 				},
 				{
-					"type":"h1",
-					"copy":"Science Page Redesign"
+					"h2":"Science Page Redesign"
 				},
 				{
 					"type":"paragraph",
@@ -683,8 +679,7 @@
 				
 				},
 				{
-					"type":"h1",
-					"copy":"Product Page Redesign"
+					"h2":"Product Page Redesign"
 				},
 				{
 					"type":"paragraph",
@@ -843,8 +838,7 @@
 					"copy":"Each year, Music / Film / Interactive festival SXSW (South by Southwest) likes to highlight some of the lesser-known artists who will be performing. So they invite bloggers and music journalists from around the world to pick any artist on the upcoming SXSW schedule, and write a paragraph about them. 2017 was the first year they moved the guide to the web, and my role as the lead UX designer involved project scoping, persona creation, leading internal workshops, and acting as a liaison between UI, UX, and dev."
 				},				
 				{
-					"type":"h2",
-					"copy":"Process"
+					"h2":"Process"
 				},				
 				{
 					"type":"image",
@@ -879,8 +873,7 @@
 					"url":"artist-details-wire.png"
 				},
 				{
-					"type":"h2",
-					"copy":"Outcome"
+					"h2":"Outcome"
 				},							
 				{
 					"type":"paragraph",
@@ -919,8 +912,7 @@
 					"copy": "Dimensional Fund Advisors is an investment firm based in Austin that stands apart from the usual Wall Street suspects. Founded on academic research rather than market predictions, DFA takes a refreshingly different approach to managing money. While most investment firms are busy trying to time the market or pick winning stocks, Dimensional focuses on capturing returns through scientifically-tested factors that drive performance over time."
 				},
 				{
-					"type":"h2",
-					"copy":"Process"
+					"h2":"Process"
 				},
 				{
 					"type": "paragraph",
@@ -955,12 +947,20 @@
 					"copy": "These are some of the wireframe annotations detailing the different components within the pages, our taxonomy for them, and how they should function."
 				},
 				{
-					"type": "image",
-					"url":"../placeholder.png"
+					"type": "video",
+					"url":"home-concept.mp4"
 				},
 				{
 					"type": "paragraph",
 					"copy": "During the UI concepting phase, this was a homepage scrollytelling style animation I had been toying around with."
+				},
+				{
+					"type": "image",
+					"url":"lang-480.png"
+				},
+				{
+					"type": "image",
+					"url":"lang-1280.png"
 				},
 				{
 					"type": "paragraph",
@@ -988,8 +988,7 @@
 					"copy":"The people at the organization were terrific to work with, as was Oscar Morris who collaborated with me on the UI and did their terrific branding. The branding and site launch coincided with AFS opening AFS Cinema. While I have no quant or qual data on the success of the site, they’re still <a href=\"https://www.austinfilm.org\" target=\"_blank\">using the same design</a> (as of March 2025), and AFS Cinema remains Austin’s only nonprofit art house theater. "
 				},
 				{
-					"type":"h2",
-					"copy":"Process"
+					"h2":"Process"
 				},
 				{
 					"type":"paragraph",
@@ -1055,26 +1054,63 @@
 			"title": "Misc.",
 			"slug": "misc",
 			"year": "",
-			"description": "Some things that don't warrant an individual spot, but that I can't bring myself to leave out.",
 			"content": [
 				{
+					"type":"paragraph",
+					"copy":"Websites and apps pay the bills, but I really like making all kinds of things."
+				},
+				{
+					"type":"video",
+					"url":"cotd.mp4",
+					"caption":"Daily colors on <a href=\"http://tiktok.com/@waltercoots/\" target=\"_blank\">TikTok</a>"
+				},
+				{
+					"type":"image",
 					"url":"growing-pains.jpg",
-					"clear":"true",
-					"caption":"This was an art piece I created for a friend around 2007 or 2008. It's made entirely from materials I purchased at the hardware store - PVC pipe, clamps, screws, fence planks, and paints."
+					"caption":"A painting I did for a friend around 2007"
 				},
 				{
+					"type":"image",
 					"url":"rr_02.jpg",
-					"clear":"true",
-					"caption":"Packaging design from my days in school. I really love being able to think three-dimensionally and work with physical objects."
+					"caption":"Hot sauce package design concept from my days in college"
 				},
 				{
+					"type":"video",
+					"url":"halloween-drawings.mp4",
+					"caption":"Number-based Inktober to learn to use Procreate better"
+				},
+				{
+					"type":"image",
+					"url":"pop-01.jpg",
+					"caption":"Illustrations for The Daily Dot marketing"
+				},
+				{
+					"type":"image",
+					"url":"tamed.jpg"
+				},
+				{
+					"type":"image",
 					"url":"shrew.jpg",
-					"caption":"This is another school project I can't stop putting in my portfolio because I had so much fun with it. I hardly ever get to do lettering, but when I do, I have a blast.",
-					"clear":"true"
+					"caption":"Lettering and poster design, also from college"
 				},
 				{
-					"url":"tamed.jpg",
-					"clear":"true"
+					"type":"image",
+					"url":"04-cards.jpg",
+					"caption":"Wedding RSVP and thank-you cards, 2013"
+				},
+				{
+					"type":"image",
+					"url":"zm01.jpg"
+				},
+				{
+					"type":"image",
+					"url":"zm02.jpg",
+					"caption":"Wedding invites for some friends"
+				},
+				{
+					"type":"image",
+					"url":"egg.gif",
+					"caption":"In another life I would have really enjoyed being a 2D animator"
 				}
 			]
 		}

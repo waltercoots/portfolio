@@ -70,11 +70,15 @@
 				</ul>
 			</div>
 			<div class="contents">
-				<div v-for="(item, index) in project.content" v-bind:project="item" v-bind:key="index" class="contentPiece">
+				<div v-for="(item, index) in project.content" v-bind:key="index" class="contentPiece">
 					<h2 v-if="item.h2" v-html="item.h2"></h2>
 					<h3 v-if="item.h3" v-html="item.h3"></h3>
+					<ul v-if="item.bullets">
+						<li v-for="(bullet, j) in item.bullets" v-html="bullet" v-bind:key="j"></li>
+					</ul>
 					<p v-if="item.type==='paragraph'" v-html="item.copy"></p>
-					<img v-if="item.url" :src="`/img/${project.slug}/${item.url}`" :alt="project.title" :class="[item.border,item.width]" />
+					<video v-if="item.type==='video'" :src="`/img/${project.slug}/${item.url}`" :alt="project.title" :class="[item.border,item.width]" loop autoplay muted></video>
+					<img v-if="item.type==='image'" :src="`/img/${project.slug}/${item.url}`" :alt="project.title" :class="[item.border,item.width]" />
 					<p v-if="item.caption" v-html="item.caption" class="caption"></p>
 				</div>
 			</div>
@@ -83,6 +87,11 @@
 </template>
 
 <style scoped lang="scss">
+::selection {
+	background: $accent;
+	color:$white;
+}
+
 .project {
 	background:$white;
 	position:absolute;
@@ -172,6 +181,14 @@ div.currentProject {
 				text-align:center;
 				margin:1rem auto 0 auto;
 			}
+			ul {
+				list-style: circle;
+				list-style-position: outside;
+				padding-left:2em;
+				li {
+					margin-bottom:0.5em;
+				}
+			}
 		}
 	}
 }
@@ -187,7 +204,7 @@ div.currentProject {
 		top:0;
 	}
 }
-p, h1, h2, h3 {
+p, h1, h2, h3, li {
 	@include md {
 		max-width:50.5625rem;
 	}
@@ -199,16 +216,18 @@ p, h1, h2, h3 {
 	text-align:left;
 	line-height: calc(1ex / 0.32);
 }
-p {
+p, li {
 	@include modular-scale(-1);
 	margin-bottom:1rem;
 }
-h1, h2, h3 {
+h2, h3 {
 	font-family:'Morison', serif;
 	font-weight:400;
 }
 h1 {
 	margin-bottom:1rem;
+	font-family:'Morison', serif;
+	font-weight:400;
 	@include xs {
 		@include modular-scale(3);
 	}
@@ -218,10 +237,18 @@ h1 {
 }
 h2 {
 	@include xs {
-		@include modular-scale(3);
+		@include modular-scale(1);
 	}
 	@include xl {
-		@include modular-scale(5);
+		@include modular-scale(3);
+	}
+}
+h3 {
+	@include xs {
+		@include modular-scale(-1);
+	}
+	@include xl {
+		@include modular-scale(1);
 	}
 }
 p {

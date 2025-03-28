@@ -354,6 +354,16 @@ function clearSkillFall() {
 </template>
 
 <style scoped lang="scss">
+
+*::-webkit-scrollbar-track {
+  background: $accent;
+  border-radius: 5px;
+}
+*::-webkit-scrollbar-thumb {
+  background: $white;
+  border-radius: 15px;
+  border: 4px solid $accent;
+}
 div.pagination{
   padding-top:2rem;
   box-sizing:content-box;

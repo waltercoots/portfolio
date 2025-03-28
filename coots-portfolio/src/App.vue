@@ -25,6 +25,27 @@ export default {
 * {
   box-sizing: border-box;
 }
+*::-webkit-scrollbar {
+  width: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: $white;
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: $gray;
+  border-radius: 15px;
+  border: 4px solid $white;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+      scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
 html, body {
   padding:0;
   margin:0;
