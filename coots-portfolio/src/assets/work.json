@@ -30,11 +30,25 @@
 					"copy":"WorkStep actually started out as a tool for sourcing candidates for frontline jobs, and this was what I was originally brought on to help with (WorkStep HIRE). The software went through a lot of changes during those first several years and not all of the changes were carefully thought through. It was starting to show, and hampering product and engineering’s ability to move quickly, so the product team was approached with the task of “Making the product make sense”. I was the design lead on this project."
 				},
 				{
+					"type":"paragraph",
+					"copy":"Before the company had prioritized this, the other designer and myself had already been sharing ideas with each other. This wireframe was from about 5 months before the project had any kind of traction or direction. "
+				},
+				{
+					"type":"image",
+					"url":"nextstepconcept.png",
+					"width":"1440",
+					"caption":"An early re-architecture wireframe with some scrapped ideas such as an activity feed, quick links, and a company menu where people could access admin level settings. In my head I was calling it NextStep"
+				},
+				{
 					"h3":"The Problem(s)"
 				},
 				{
 					"type":"paragraph",
 					"copy":"An emphasis on moving fast caused features and areas to be bolted on without making adjustments to surrounding features that may have been affected, which accumulated several years worth of design and tech debt. But with a definition this broad, there was an added layer of complexity to find out what our internal stakeholders believed this project should solve. "
+				},
+				{
+					"type":"paragraph",
+					"copy":"Of course, we also didn’t want this to feel so unfamiliar to people that they felt they needed to learn an entirely new product, or that they’d have a lot of trouble adjusting to the changes we made."
 				},
 				{
 					"type":"The Approach",
@@ -49,27 +63,75 @@
 					"copy":"Some aspects of this project were glaring issues we all agreed on, while others were things that caused quite a bit of concern with some internal teams, and they needed to be convinced. Data was our friend in these cases, and bringing both quantitative and qualitative data to the conversations made everything go a lot more smoothly."
 				},
 				{
-					"type":"image",
-					"url":"card_sort_dendrogram.png",
-					"caption":"A dendrogram showing how users organized our product in a card sort exercise"
-				},
-				{
-					"h3":"Challenges",
-					"bullets":["The team was split on whether we should attempt to do one large release with our new product, or do it in several stages. We ultimately went with stages. Knowing this ahead of time would have changed my approach to some of the work we did.","The Figma library we were building with wasn’t built with performance in mind, and for the larger prototypes it was really showing","There was so much to fix, and so many tangential things that needed attention, it was hard to protect the scope of the project and not commit to fixing other things “while we were in there”","Engineering was simultaneously being tasked with optimizing the app’s performance (new queries to replace a backend architecture that we’d long outgrew) as well as implementing the frontend changes we were proposing. In some cases, performance with old frontend components needed to be prioritized, complicating the rollout."]
-				},
-				{
-					"h3":"The Outcome"
+					"type":"paragraph",
+					"copy":"Instead of trying to do everything, we decided on 4 key areas we thought would give us the best impact for our effort: <strong>Reorganization</strong>, <strong>Renaming</strong>, <strong>Granular Ability Management</strong>, and <strong>Clarity of Data</strong>."
 				},
 				{
 					"type":"paragraph",
-					"copy":"After a year of hard work and planning on everyone’s behalf, WorkStep made more sense. Customer service calls were down, sales were up, customers were vocal about how they liked the new organization, and the customer experience team had fewer requests from their customers to change things."
+					"copy":"Clarity of Data was more around clarity around quant data, how it was calculated, and affording better transparency into WorkStep’s algorithms. Reorganization and Renaming were the lenses I was primarily looking at the project through, since this was what I was familiar with and good at. The granularity of the ability management meant that a single customer may want entire pages, sections, or even just functionality on a page turned off for some of their HR team, but turned on for others, so the designs needed to still make as much sense as possible in those cases. One way this manifested was showing tabs on a page even if there were no sibling tabs, because the tab added context to users who may not have access to the sibling functionality and would aid customer support in helping users navigate."
+				},
+				{
+					"h3":"Additional Challenges",
+					"bullets":["The team was split on whether we should attempt to do one large release with our new product, or do it in several stages. We ultimately went with stages. Knowing this ahead of time would have changed my approach to some of the work we did.","The Figma library we were building with wasn’t built with performance in mind, and for the larger prototypes it was really showing","There was so much to fix, and so many tangential things that needed attention, it was hard to protect the scope of the project and not commit to fixing other things “while we were in there”","Engineering was simultaneously being tasked with optimizing the app’s performance (new queries to replace a backend architecture that we’d long outgrew) as well as implementing the frontend changes we were proposing. In some cases, performance with old frontend components needed to be prioritized, complicating the rollout."]
+				},
+				{
+					"h3":"Paving the way for Scale"
+				},
+				{
+					"type":"paragraph",
+					"copy":"The most multifaceted way we’d painted ourselves into a corner from an IA standpoint was by establishing an architecture around a single type of survey. WorkStep’s primary surveys were based on employee tenure. Other survey types were offered, but they were ancillary. As time went on, we discovered users still wanted these other types of surveys, and to be competitive we needed to offer them. The results data from the various surveys was reported on in largely the same way, so the biggest question was whether users would want to access results in a single area filtered to the data they wanted (e.g. “All Survey Results” but filtered to a specific survey or set of surveys), or specific areas for each survey to see those results (e.g. “Exit Surveys” with a results area.) We wound up going with a blended approach. Actual quantitative survey results resided within that survey’s area while the open text comments were in their own area, aggregated but able to be filtered."
+				},
+				{
+					"type":"image",
+					"url":"cathy-card-sort.png",
+					"caption":"The results from an individual user's card sort excercise."
+				},
+				{
+					"type":"image",
+					"url":"card_sort_dendrogram.png",
+					"caption":"A dendrogram showing how users on average organized WorkStep."
+				},
+				{
+					"type":"paragraph",
+					"copy":"There were other “smaller” things we needed to solve, but they had easier solutions. For example, products no longer being marketed were still in the main navigation. We were calling surveys “check-ins” which led to confusion to users and eye rolls from teammates of mine making dad jokes about “kentucky fried check-ins”, “check-in tenders”, and “check-in fried steak”. Also some of the most frequently visited pages were buried 2 or 3 clicks deep."
+				},
+				{
+					"type":"image",
+					"url":"rearchitecture-mapping.png",
+					"width":"440",
+					"caption":"A map of what moved where in the re-architecture project"
+				},
+				{
+					"h3":"Outcome"
+				},
+				{
+					"type":"paragraph",
+					"copy":"After a year of hard work and planning on everyone’s behalf, WorkStep made more sense. Customer service calls were down, sales were up, customers were vocal about how they liked the new organization, and the customer experience team had fewer requests from their customers to change things. "
+				},
+				{
+					"type":"image",
+					"url":"rearchitecture-b-and-a.png",
+					"width":"1680"
 				},
 				{
 					"h3":"What I'd Do Differently"
 				},
 				{
 					"type":"paragraph",
-					"copy":"My mind was very much in a “launch, learn, and iterate” mindset for a large part of re-architecture. Knowing what I know now, I’d spend a different level of rigor and sweat a lot more of the smaller details, because there wouldn’t be resources to return to the decisions we’d made and iterate. I also didn’t fully grasp the added cost of producing marketing and training materials, and how important working with product marketing on realistic scenarios they could speak to were. All said and done, we left the camp grounds cleaner than we found them so I think it was a win."
+					"copy":"I have a new appreciation for performant design system components, and in fact this project caused me to revamp the entire design system from scratch. New components had only 12% of the layers, but looked the same. Doing this earlier in the process would have alleviated a lot of sluggishness for designers and prototype viewers alike."
+				},
+				{
+					"type":"image",
+					"url":"Component-Comparison.png",
+					"width":"1440"
+				},
+				{
+					"type":"paragraph",
+					"copy":"My mind was very much in a “launch, learn, and iterate” mindset for a large part of re-architecture. While I was thinking about it from an architecture standpoint, what it really needed was a full-on content audit. We got to this point on a lot of the content within the areas of the product, but there were others I thought we could fix later once we had more information."
+				},
+				{
+					"type":"paragraph",
+					"copy":"Knowing what I know now, I’d spend a different level of rigor and sweat a lot more of the smaller details, because there wouldn’t be resources to return to the decisions we’d made, and I underestimated the added cost of arming producing marketing with go-to-market and training materials, especially when the project was separated into multiple phases. All said and done, we left the camp grounds cleaner than we found them so I think it was a win."
 				},
 				{
 					"h2":"Inform"
@@ -79,12 +141,46 @@
 					"copy":"This one-to-many anonymous messaging feature I designed for WorkStep is one of those projects that seems simple on paper but gets thorny when you start digging into the details. Our customers needed a way to quickly communicate with segments of their workforce during critical situations – think warehouses that need to alert specific shifts about dangerous weather, or distribution centers needing to notify specific departments about operational changes."
 				},
 				{
-					"type":"paragraph",
-					"copy":"What made this interesting was the balance between giving employers powerful communication tools while preserving employee privacy and preventing misuse. We didn't want supervisors manually selecting individual employees (which would be tedious and error-prone anyway), but the system still needed to be precise enough to reach only the relevant workers."
+					"type":"image",
+					"url":"Inform.png"
 				},
 				{
 					"type":"paragraph",
-					"copy":"I created a segmentation approach that allowed employers to define their audience through attributes like location, department, or shift without ever seeing individual names or contact information. The UI had to communicate clearly who would receive the message without revealing specific recipients, which required some creative approaches to visualization and confirmation screens."
+					"copy":"The basic three-pane layout was based on an existing pattern in WorkStep designed by <a href=\"https://www.jasonmetzgar.com\" target=\"_blank\">Jason Metzgar</a> for the Comments area. A lot about this was really well designed and thought out, and it made a lot of sense to repurpose what we could. The biggest changes were to the message composer."
+				},
+				{
+					"type":"image",
+					"url":"inform-draft.png"
+				},
+				{
+					"type":"paragraph",
+					"copy":"What made Inform an interesting problem to solve was the balance between giving employers powerful communication tools while preserving employee privacy and preventing misuse. We didn't want supervisors manually selecting individual employees (which would be tedious and error-prone anyway), but the system still needed to be precise enough to reach only the relevant workers."
+				},
+				{
+					"type":"image",
+					"url":"inform-query-builder.png",
+					"width":"580"
+				},
+				{
+					"type":"paragraph",
+					"copy":"After looking at what a lot of other folks had done for similar segment / filter / query builders, I picked my favorite aspects and created a segmentation approach that allowed employers to define their audience through attributes like location, department, or shift without ever seeing individual names or contact information. The UI had to communicate clearly who would receive the message without revealing specific recipients, which required some creative approaches to visualization and confirmation screens."
+				},
+				{
+					"type":"paragraph",
+					"copy":"Some users would receive messages in their email, others would receive hyperlinks in SMSs which would direct them to a webpage. The key difference we had to account for was showing the subject line on web browsers."
+				},
+				{
+					"type":"image",
+					"url":"inform-messages.png",
+					"width":"1440"
+				},
+				{
+					"type":"paragraph",
+					"copy":"It was important to show some stats on how many employees received the messages. These were a few different data visualization concepts I put together. We wound up consolidating email and phone into a single channel which allowed us to simplify by quite a lot. "
+				},
+				{
+					"type":"image",
+					"url":"reachability-chart-exploration.png"
 				},
 				{
 					"type":"paragraph",
@@ -98,12 +194,39 @@
 					"copy":"When we started the Reports project, WorkStep had a section called “Insights” which contained various charts on quant data that was gleaned from the Surveys. As the product gained larger companies, the use cases for seeing different kinds of quant data expanded, and it was difficult to accommodate these in a one-size-fits-all design. My private goal with Reports was to pave the way for eliminating the Insights section altogether (which we eventually did) but more immediately we were putting the user in control of how they viewed their company’s data."
 				},
 				{
-					"type":"paragraph",
-					"copy":"The persona of this WorkStep user was a higher-level manager of managers, but secondarily the people who reported to those managers. Through our discovery process we learned the primary use case was exporting to PowerPoint. Most companies had internal templates they used, so we didn’t feel the need to go too far with slide customization, but we did want to give them as much context as possible for what we were providing them. "
+					"type":"image",
+					"url":"report-concept.png",
+					"width":"1024",
+					"caption":"Early sketch of what I had in mind for the Reports feature"
 				},
 				{
 					"type":"paragraph",
-					"copy":"Translating interactive graphs to a static slide was challenging in that a lot of the minutiae was in tooltips, menus, and callouts, so we worked to figure out a format that could accommodate all the different charts WorkStep offered. "
+					"copy":"At the start, I saw this as an opportunity to make a fun, visual, drag-and-drop report builder but the PMs (rightly) wanted to ensure we didn’t unnecessarily blow up the scope. It wound up being a series of forms for users to choose their data point, and outside of ordering the cards, offered very little in the way of visual customization."
+				},
+				{
+					"type":"image",
+					"url":"report-card-settings-populated.png"
+				},
+				{
+					"type":"paragraph",
+					"copy":"The charts we were using weren’t very well documented in a single area, so the first thing I did was quickly arrange them into a single spot where we could talk about them."
+				},
+				{
+					"type":"image",
+					"url":"chart-taxonomy.png",
+					"width":"1440"
+				},
+				{
+					"type":"paragraph",
+					"copy":"The Reports feature was being designed for higher-level managers of managers, but also the people who reported to those managers. Through our discovery process we learned the primary use case was exporting to PowerPoint. Most companies had internal templates they used, so we didn’t feel the need to go too far with slide customization, but we did want to give them as much context as possible for what we were providing them."
+				},
+				{
+					"type":"video",
+					"url":"report-creation.mp4"
+				},
+				{
+					"type":"paragraph",
+					"copy":"Translating interactive graphs to a static slide was challenging in that a lot of the minutiae was in tooltips, menus, and callouts, so we worked to figure out a format that could accommodate all the different charts WorkStep offered."
 				},
 				{
 					"h2":"Bright Prompts"
@@ -113,12 +236,20 @@
 					"copy":"This started from a pretty straightforward observation: employees weren't giving us useful qualitative feedback on WorkStep’s surveys. When someone rated the relationship with their manager a 1 or 2 out of 5, we'd show them an open text field asking for more details, but we'd typically get frustratingly brief responses like “bad boss” or “doesn't listen” Not exactly the actionable insights a human resources person is looking for."
 				},
 				{
+					"type":"image",
+					"url":"bad-response.png"
+				},
+				{
 					"type":"paragraph",
-					"copy":"What made this problem interesting was that we weren't dealing with lazy respondents – these were people who cared enough to give a negative rating and type something, but they weren't sure what specific feedback would be helpful or how to articulate it. The responsibility was on us to guide them better."
+					"copy":"We weren't dealing with lazy respondents – these were people who cared enough to give a negative rating and type something, but they weren't sure what specific feedback would be helpful or how to articulate it. The responsibility was on us to guide them better."
 				},
 				{
 					"type":"paragraph",
 					"copy":"Our solution leveraged LLMs to analyze these sparse initial responses and generate a more specific follow-up question tailored to what the employee had shared. So instead of leaving it at “bad boss,” we might ask, “You mentioned your boss is bad. Is it related to communication style, availability, or something else?” This gave the employee a more concrete direction while still leaving room for their unique perspective."
+				},
+				{
+					"type":"image",
+					"url":"guided-follow-ups.gif"
 				},
 				{
 					"type":"paragraph",
@@ -141,7 +272,11 @@
 				},
 				{
 					"type":"paragraph",
-					"copy":"A.I. Reply Coaching at WorkStep was one of those features that walked the line between powerful innovation and ethical automation. There were a few core problems at play. For starters, HR teams and managers were overwhelmed by the volume of employee feedback they needed to respond to, leading to delays or templated replies that made employees feel ignored. But for some there was also “blank page syndrome”. However we didn't want to just automate responses entirely – that would defeat the purpose of building human connections."
+					"copy":"A.I. Reply Coaching at WorkStep was one of those features that walked the line between powerful innovation and ethical automation. There were a few core problems at play. For starters, HR teams and managers were overwhelmed by the volume of employee feedback they needed to respond to, leading to delays or templated replies that made employees feel ignored. But for some there was also “blank page syndrome”. However we didn't want to just automate responses entirely – that would defeat the purpose of building human connections. "
+				},
+				{
+					"type":"video",
+					"url":"early-reply-coaching.mp4"
 				},
 				{
 					"type":"paragraph",
@@ -152,12 +287,20 @@
 					"copy":"The trickiest part of the design process was figuring out how to present these suggestions without making employers overly reliant on them."
 				},
 				{
+					"type":"video",
+					"url":"mid-reply-coaching.mp4"
+				},
+				{
 					"type":"paragraph",
 					"copy":"Early designs had checklists in them that diagnosed a reply, but after our PM read hundreds of replies, she determined there’s really no one-size-fits-all checklist for all replies, and even if there weren’t, we weren’t sure users would want to be reprimanded for not meeting certain criteria. We explored possibilities that tried to help users write in different tones, but ultimately WorkStep is in the business of HR software, we’re not trying to replace Grammarly. Eventually we realized that at least for the first version of this feature, addressing that blank page syndrome would solve the majority of people’s difficulties."
 				},
 				{
 					"type":"paragraph",
 					"copy":"The final design showed the AI-generated draft, but emphasized that it was still the HR team’s message and could be edited."
+				},
+				{
+					"type":"video",
+					"url":"final-reply-coaching.mp4"
 				},
 				{
 					"type":"paragraph",
@@ -170,7 +313,6 @@
 			"slug": "unilease",
 			"year": "2021–2022",
 			"role": "Head of Design",
-			"description": "Commercial real estate is an industry slow to adopt new ways of doing things. Brokers who are doing well for themselves have little incentive to change things, large firms even less so, and tenants are at the mercy of these gatekeepers’ well-established processes. Unilease was created by a commercial real estate broker in central Texas to streamline the way he did business, making it easier for both brokers and tenants. I was brought in to help establish a design system, improve the existing user experience, and expand the toolset Unilease offered with the intent of it becoming a product available to all brokers and brokerages.",
 			"content": [
 				{
 					"type":"image",
@@ -197,39 +339,15 @@
 				},
 				{
 					"type":"image",
-					"url":"../placeholder.png"
+					"url":"type-exploration.png"
 				},
 				{
 					"type":"image",
-					"url":"../placeholder.png"
+					"url":"unilease-mark-exploration.png"
 				},
 				{
 					"type":"image",
-					"url":"../placeholder.png"
-				},
-				{
-					"type":"paragraph",
-					"copy":""
-				},
-				{
-					"type":"image",
-					"url":"../placeholder.png"
-				},
-				{
-					"type":"paragraph",
-					"copy":""
-				},
-				{
-					"type":"image",
-					"url":"../placeholder.png"
-				},
-				{
-					"type":"paragraph",
-					"copy":""
-				},
-				{
-					"type":"image",
-					"url":"../placeholder.png"
+					"url":"unilease-patterns.png"
 				},
 				{
 					"type":"paragraph",
@@ -237,51 +355,52 @@
 				},
 				{
 					"type":"image",
-					"url":"../placeholder.png"
+					"url":"logo-standard-black.svg",
+					"width":"1440"
 				},
 				{
 					"type":"paragraph",
 					"copy":"In parallel to logo work I’d been picking at a few different style tiles to try to build a common visual vocabulary between everyone and suss out what made the most sense. This whole time I had been working on website concepts that incorporated the new branding. Once we’d settled on a direction, the look and feel of the site began to fall into place. "
 				},
 				{
-					"type":"image",
-					"url":"../placeholder.png"
-				},
-				{
-					"type":"image",
-					"url":"../placeholder.png"
-				},
-				{
-					"type":"image",
-					"url":"../placeholder.png"
-				},
-				{
-					"type":"paragraph",
-					"copy":"Ironically right when we were close to deciding on a finalized brand direction, we realized a very similar product in the same space was using close to the same colors and typefaces. We decided to pivot a little."
-				},
-				{
-					"type":"image",
-					"url":"../placeholder.png"
-				},
-				{
-					"type":"image",
-					"url":"../placeholder.png"
-				},
-				{
-					"type":"image",
-					"url":"../placeholder.png"
-				},
-				{
-					"type":"image",
-					"url":"../placeholder.png"
-				},
-				{
-					"type":"image",
-					"url":"../placeholder.png"
+					"type":"image-group",
+					"items":[
+						{
+							"type":"image",
+							"url":"style-tile-a.png",
+							"width":"400"
+						},
+						{
+							"type":"image",
+							"url":"style-tile-b.png",
+							"width":"400"
+						},
+						{
+							"type":"image",
+							"url":"style-tile-c.png",
+							"width":"400"
+						}
+					]
 				},
 				{
 					"type":"paragraph",
-					"copy":"This was a foundation we were all comfortable starting from, and overall I’m happy with how it shook out. "
+					"copy":"Ironically right when we were close to deciding on a finalized brand direction, we realized a very similar product in the same space was using close to the same colors and typefaces. We decided to pivot a little. This was a foundation we were all comfortable starting from, and overall I’m happy with how it shook out. "
+				},
+				{
+					"type":"image",
+					"url":"marketing-site.png"
+				},
+				{
+					"type":"image",
+					"url":"example-sign.jpg"
+				},
+				{
+					"type":"image",
+					"url":"example-shirt.jpg"
+				},
+				{
+					"type":"image",
+					"url":"example-tote.jpg"
 				},
 				{
 					"h2":"Product"
@@ -291,11 +410,7 @@
 				},
 				{
 					"type":"paragraph",
-					"copy":"Unilease's biggest opportunity and most interesting challenge was modernizing old ways of doing things. One of these processes, surveying the market, had brokers creating files to describe leasable space their client was looking for, then playing a game of Go Fish with their network via phone and email. Some of the more complex work I did for Unilease involved this process. "
-				},
-				{
-					"type":"image",
-					"url":"../placeholder.png"
+					"copy":"Unilease's biggest opportunity and most interesting challenge was modernizing old ways of doing things. One of these processes, surveying the market, had brokers creating files to describe leasable space their client was looking for, then playing a game of Go Fish with their network via phone and email. Some of the more complex work I did for Unilease involved this process."
 				},
 				{
 					"type":"paragraph",
@@ -306,12 +421,8 @@
 					"copy":"All that to say, there are much better user experiences to solve this process, but the business strategy and circumstances of the space prevented them from being feasible. "
 				},
 				{
-					"type":"image",
-					"url":"../placeholder.png"
-				},
-				{
 					"type":"h4",
-					"url":"Creating the Market Survey"
+					"url":"1. Creating the Market Survey"
 				},
 				{
 					"type":"paragraph",
@@ -319,7 +430,7 @@
 				},
 				{
 					"type":"image",
-					"url":"../placeholder.png"
+					"url":"market-survey.png"
 				},
 				{
 					"type":"paragraph",
@@ -327,7 +438,7 @@
 				},
 				{
 					"type":"h4",
-					"url":"Submitting properties "
+					"url":"2. Submitting properties "
 				},
 				{
 					"type":"paragraph",
@@ -335,11 +446,15 @@
 				},
 				{
 					"type":"image",
-					"url":"../placeholder.png"
+					"url":"property-form-modal.png"
+				},
+				{
+					"type":"image",
+					"url":"property.png"
 				},
 				{
 					"type":"h4",
-					"url":"Analytics, Comps, and Sharing"
+					"url":"3. Analytics, Comps, and Sharing"
 				},
 				{
 					"type":"paragraph",
@@ -347,15 +462,11 @@
 				},
 				{
 					"type":"image",
-					"url":"../placeholder.png"
+					"url":"analytics.png"
 				},
 				{
 					"type":"paragraph",
-					"copy":"The big elephant in the room with all three of these tasks was recruiting for research proved really difficult. We had Fullstory and the broker founding Unilease got some of his colleagues to sign up, but I really wanted to have conversations with them and get the details from them. The majority of the user feedback we got was from our founder, Rob. We all wondered if perhaps more junior brokers just starting out might find the software more helpful. "
-				},
-				{
-					"type":"image",
-					"url":"../placeholder.png"
+					"copy":"The big elephant in the room with all three of these tasks was recruiting for research proved really difficult. We had Fullstory and the broker founding Unilease got some of his colleagues to sign up, but I really wanted to have conversations with them and get the details from them. The majority of the user feedback we got was from our founder, Rob. We all wondered if perhaps more junior brokers just starting out might find the software more helpful."
 				},
 				{
 					"h3":"Business Strategy for Different Customer Tiers"
