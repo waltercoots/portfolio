@@ -91,7 +91,7 @@
 					:src="`/img/${project.slug}/${item.url}`" 
 					:alt="project.title" 
 					:class="[item.border, item.width]" 
-					:style="{ maxWidth: item.width + 'px' }"></video>
+					:style="{ width: item.width + 'px' }"></video>
 					<img v-if="item.type==='image'" 
 					:src="`/img/${project.slug}/${item.url}`" 
 					:alt="project.title" 
@@ -198,6 +198,10 @@ div.currentProject {
 				&.half {
 					max-width:20rem;
 				}
+			}
+			video {
+				background:$gray;
+				max-width:100%;
 			}
 			p.caption {
 				@include modular-scale(-3);

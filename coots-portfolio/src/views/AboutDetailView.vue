@@ -406,7 +406,8 @@ div.about {
   }
 	@include xs {
     flex-direction: column-reverse;
-    overflow-x:auto;
+    overflow-x:hidden;
+    overflow-y:auto;
     position:absolute;
     justify-content:start;
     top:0;
@@ -492,8 +493,7 @@ div.bio {
     }
   }
   div.reviews {
-    width:100%;
-    max-width:30rem;
+    max-width:100%;
     display:flex;
     flex-direction:row;
     overflow-y:hidden;
@@ -502,10 +502,10 @@ div.bio {
     bottom:-2rem;
     scrollbar-width: none;
     blockquote {
-      min-width:calc(100% + 1.25rem);
-      max-width:30em;
-      margin:0.5rem 0 1.5rem 0;
-      // padding:0 0 0 1.25rem;
+      width:100%;
+      min-width:100%;
+      margin:0.5rem 0.625rem 1.5rem 0.625rem;
+      padding:0 0 0 1.25rem;
       position:relative;
       scroll-snap-align: start;
       &:before {
@@ -560,39 +560,39 @@ div.bio {
 	@include xs {
     @include modular-scale(-2); // Font size
     padding:1rem;
-    p, div.reviews {
+    p {
       margin-bottom:0.5rem;       
     }
 	}
 	@include sm {
     @include modular-scale(-2); // Font size
     padding:5rem;
+    max-width:30rem;
     p, div.reviews { 
-      max-width:30rem;
       margin-bottom:0.5rem; 
     }
 	}
 	@include md {
     @include modular-scale(-2); // Font size
     padding:2rem;
-    p, div.reviews {
-      max-width:30rem;
+    max-width:30rem;
+    p {
       margin-bottom:0.5rem; 
     }
 	}
 	@include lg {
     @include modular-scale(-2); // Font size
     padding:2rem;
-    p, div.reviews {
-      max-width:35rem;
+    max-width:32rem;
+    p {
       margin-bottom:0.5rem; 
     }
 	}
 	@include xl {
     @include modular-scale(0); // Font size
     padding:4rem;
-    p, div.reviews { 
-      max-width:50rem; 
+    max-width:44rem; 
+    p { 
       margin-bottom:1rem; 
     }
 	}

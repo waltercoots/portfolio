@@ -746,7 +746,6 @@
 				{
 					"type":"image",
 					"url":"tiles.png"
-				
 				},
 				{
 					"type":"paragraph",
@@ -779,11 +778,6 @@
 				{
 					"type":"paragraph",
 					"copy":"The Humana collaboration was a huge success. I don’t have numbers on how many tests were registered or how Humana benefited, but this was the first in EverlyWell’s step toward working with enterprise customers and larger providers. It also paved the way for further whitelabeling of the product pages, and increased the team’s understanding of what it took to make a site with AAA WCAG compliance in mind. "
-				},
-				{
-					"type":"image",
-					"url":"../placeholder.png"
-				
 				},
 				{
 					"h2":"Science Page Redesign"
