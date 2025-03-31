@@ -368,6 +368,7 @@ div.pagination{
   padding-top:2rem;
   box-sizing:content-box;
   text-align:center;
+  display:none; // for now
   a {
     text-indent:-999em;
     display:inline-block;
@@ -500,6 +501,7 @@ div.bio {
   div.reviews {
     max-width:100%;
     display:flex;
+    display:none; // for now
     flex-direction:row;
     overflow-y:hidden;
     overflow-x:auto;
