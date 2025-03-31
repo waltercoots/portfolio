@@ -68,7 +68,7 @@ export default {
       z-index:2;
       @include xs {
         width: calc(100vw - 1rem);
-        max-width:20rem;
+        max-width:20.5rem;
         @include modular-scale(-3); // Font size
       }
       @include sm {
