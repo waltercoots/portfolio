@@ -38,21 +38,49 @@ export default {
 .projectNav {
 	display:flex;
 	justify-content: center;
+	align-items: center;
 }
 .nav-button {
-	width:1.5rem;
-	height:1.5rem;
-	margin:0 0.5rem;
-	background: none;
+	width:2rem;
+	height:2rem;
+	margin:0 1rem;
+	background: $white;
+	border-radius: 50%;
+	text-align: center;
 	border: none;
 	cursor: pointer;
+	position: relative;
 	svg {
+		position: relative;
 		margin:0 auto 0;
 		.svg-fill {
 			fill: $black;
 		}
 	}
-	&:hover, &:focus {
+	&:nth-child(1){
+		svg {
+			right:1px;
+		}
+	}
+	&:nth-child(3){
+		svg {
+			left:1px;
+		}
+	}
+	&:nth-child(2){
+		width:3rem;
+		height:3rem;
+	}
+	@media (hover:hover) {
+		&:hover {
+			svg {
+				.svg-fill {
+					fill: $accent;
+				}
+			}
+		}
+	}
+	&:focus {
 		svg {
 			.svg-fill {
 				fill: $accent;

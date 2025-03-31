@@ -87,7 +87,7 @@
 					<li v-for="(bullet, j) in item.bullets" :key="j" v-html="bullet"></li>
 					</ul>
 					<p v-if="item.type==='paragraph'" v-html="item.copy"></p>
-					<video v-if="item.type==='video'" muted loop controls
+					<video v-if="item.type==='video'" muted loop autoplay playsinline
 					:src="`/img/${project.slug}/${item.url}`" 
 					:alt="project.title" 
 					:class="[item.border, item.width]" 
