@@ -63,22 +63,41 @@
 		<div class="currentProject">
 			<div class="metadata">
 				<h1>{{ project.title }}</h1>
-				<p class="year">{{ project.year }}</p>
-				<p class="role">{{ project.role }}</p>
+				<p v-if="project.year" class="year">{{ project.year }}</p>
+				<p v-if="project.role" class="role">{{ project.role }}</p>
 				<ul class="tags">
 					<li v-for="(item, index) in project.tags" v-html="item" v-bind:key="index"></li>
 				</ul>
 			</div>
-			<div class="contents">
-				<div v-for="(item, index) in project.content" v-bind:key="index" class="contentPiece">
+			<div class="contents" v-for="(item, index) in project.content" :key="index">
+				<!-- GROUP BLOCK -->
+				<div v-if="item.type === 'image-group'" class="contentPiece image-group">
+					<img v-for="(groupItem, k) in item.items" :key="k"
+						:src="`/img/${project.slug}/${groupItem.url}`" 
+						:alt="project.title" 
+						:class="[groupItem.border]" 
+						:style="{ width: groupItem.width + 'px', display:groupItem.display }"/>
+				</div>
+				
+				<!-- REGULAR BLOCK -->
+				<div v-else class="contentPiece">
 					<h2 v-if="item.h2" v-html="item.h2"></h2>
 					<h3 v-if="item.h3" v-html="item.h3"></h3>
 					<ul v-if="item.bullets">
-						<li v-for="(bullet, j) in item.bullets" v-html="bullet" v-bind:key="j"></li>
+					<li v-for="(bullet, j) in item.bullets" :key="j" v-html="bullet"></li>
 					</ul>
 					<p v-if="item.type==='paragraph'" v-html="item.copy"></p>
-					<video v-if="item.type==='video'" :src="`/img/${project.slug}/${item.url}`" :alt="project.title" :class="[item.border,item.width]" loop autoplay muted></video>
-					<img v-if="item.type==='image'" :src="`/img/${project.slug}/${item.url}`" :alt="project.title" :class="[item.border,item.width]" />
+					<video v-if="item.type==='video'" 
+					:src="`/img/${project.slug}/${item.url}`" 
+					:alt="project.title" 
+					:class="[item.border, item.width]" 
+					loop autoplay muted 
+					:style="{ maxWidth: item.width + 'px' }"></video>
+					<img v-if="item.type==='image'" 
+					:src="`/img/${project.slug}/${item.url}`" 
+					:alt="project.title" 
+					:class="[item.border]" 
+					:style="{ width: item.width + 'px' }"/>
 					<p v-if="item.caption" v-html="item.caption" class="caption"></p>
 				</div>
 			</div>
@@ -170,6 +189,11 @@ div.currentProject {
 		div.contentPiece {
 			margin:0 auto 1rem auto;
 			text-align:center;
+			&.image-group {
+				img {
+					margin:0 0.25rem;
+				}
+			}
 			img, video {
 				display:inline-block;
 				&.half {

@@ -271,8 +271,7 @@ function clearSkillFall() {
         <li>Southwest Airlines</li>
         <li>SXSW</li>
         <li>Viking Cruises</li>
-      </ul> 
-      <h2>Rave Reviews</h2>
+      </ul>
       <div class="reviews">
         <blockquote cite="Rachel Bates, WorkStep CRO" id="q1">
           I'm not exaggerating when I share that your video on Fast Track was the most detailed and best explanation of a HIRE feature since I have been at WorkStep. Your pre-work, video and way you broke it down was really valuable. Thank you!        
@@ -291,7 +290,7 @@ function clearSkillFall() {
         </blockquote>
       </div>
       <div class="pagination">
-        <a href="#q1" class="pagination" @click="this.updatePaginationLinks">1</a>
+        <a href="#q1" class="pagination selected" @click="this.updatePaginationLinks">1</a>
         <a href="#q2" class="pagination" @click="this.updatePaginationLinks">2</a>
         <a href="#q3" class="pagination" @click="this.updatePaginationLinks">3</a>
         <a href="#q4" class="pagination" @click="this.updatePaginationLinks">4</a>
@@ -390,71 +389,6 @@ div.about {
   h1, h2, h3 {
     font-weight:400;
   }
-  div.reviews {
-    max-width:30rem;
-    display:flex;
-    flex-direction:row;
-    overflow-y:hidden;
-    overflow-x:auto;
-    scroll-snap-type:x mandatory;
-    bottom:-2rem;
-    scrollbar-width: none;
-  }
-  blockquote {
-    min-width:100%;
-    max-width:30em;
-    margin:0.5rem 0 1.5rem 0;
-    padding:0 0 0 1.25rem;
-    position:relative;
-    scroll-snap-align: start;
-    &:before {
-      content:"“";
-      position:absolute;
-      line-height: 95%;
-      left:0rem;
-      top:-0.75rem;
-      z-index:-1;
-      color:lighten($accent,7%);
-      font-family:Georgia, 'Times New Roman', Times, serif;
-      @include xs {
-        @include modular-scale(9); // Font size
-      }
-      @include sm {
-        @include modular-scale(9); // Font size
-      }
-      @include md {
-        @include modular-scale(9); // Font size
-      }
-      @include lg {
-        @include modular-scale(9); // Font size
-      }
-      @include xl {
-        @include modular-scale(9); // Font size
-      }    
-
-    }
-    &[cite]::after {
-      content:"– "attr(cite);
-      display:block;
-      margin:0.5rem 0 0 0.25rem;
-      font-weight:500;
-      @include xs {
-        @include modular-scale(-4); // Font size
-      }
-      @include sm {
-        @include modular-scale(-4); // Font size
-      }
-      @include md {
-        @include modular-scale(-4); // Font size
-      }
-      @include lg {
-        @include modular-scale(-4); // Font size
-      }
-      @include xl {
-        @include modular-scale(-2); // Font size
-      }    
-    }
-  }
   @include xs {
     @include modular-scale(-4); // Font size
   }
@@ -469,44 +403,6 @@ div.about {
   }
   @include xl {
     @include modular-scale(-2); // Font size
-  }    
-  p.clients {
-    font-weight:600;
-    margin-top:1rem;
-    @include xs {
-      @include modular-scale(-3); // Font size
-    }
-    @include xl {
-      @include modular-scale(-1); // Font size
-    }
-  }
-  ul.clients {
-    margin-bottom:1rem;
-    list-style: none;
-    @include xs {
-      @include modular-scale(-3); // Font size
-    }
-    @include sm {
-      @include modular-scale(-3); // Font size
-    }
-    @include md {
-      @include modular-scale(-3); // Font size
-    }
-    @include lg {
-      @include modular-scale(-3); // Font size
-    }
-    @include xl {
-      @include modular-scale(-1); // Font size
-    }
-    max-width:30em;
-    li {
-      background:#fff;
-      color:$accent;
-      display:inline-block;
-      margin:0 0.5rem 0.5rem 0;
-      padding:0.125em 0.5rem;
-      border-radius: 0.25rem;
-    }
   }
 	@include xs {
     flex-direction: column-reverse;
@@ -556,7 +452,111 @@ div.about {
 }
 div.bio {
   align-items: center;
-  align-content: center;
+  align-content: center;  
+  p.clients {
+    font-weight:600;
+    margin-top:1rem;
+    @include xs {
+      @include modular-scale(-3); // Font size
+    }
+    @include xl {
+      @include modular-scale(-1); // Font size
+    }
+  }
+  ul.clients {
+    margin-bottom:1rem;
+    list-style: none;
+    @include xs {
+      @include modular-scale(-3); // Font size
+    }
+    @include sm {
+      @include modular-scale(-3); // Font size
+    }
+    @include md {
+      @include modular-scale(-3); // Font size
+    }
+    @include lg {
+      @include modular-scale(-3); // Font size
+    }
+    @include xl {
+      @include modular-scale(-1); // Font size
+    }
+    max-width:26em;
+    li {
+      background:#fff;
+      color:$accent;
+      display:inline-block;
+      margin:0 0.5rem 0.5rem 0;
+      padding:0.125em 0.5rem;
+      border-radius: 0.25rem;
+    }
+  }
+  div.reviews {
+    width:100%;
+    max-width:30rem;
+    display:flex;
+    flex-direction:row;
+    overflow-y:hidden;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    bottom:-2rem;
+    scrollbar-width: none;
+    blockquote {
+      min-width:calc(100% + 1.25rem);
+      max-width:30em;
+      margin:0.5rem 0 1.5rem 0;
+      // padding:0 0 0 1.25rem;
+      position:relative;
+      scroll-snap-align: start;
+      &:before {
+        content:"“";
+        position:absolute;
+        line-height: 95%;
+        left:0rem;
+        top:-0.75rem;
+        z-index:-1;
+        color:lighten($accent,7%);
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        @include xs {
+          @include modular-scale(9); // Font size
+        }
+        @include sm {
+          @include modular-scale(9); // Font size
+        }
+        @include md {
+          @include modular-scale(9); // Font size
+        }
+        @include lg {
+          @include modular-scale(9); // Font size
+        }
+        @include xl {
+          @include modular-scale(9); // Font size
+        }    
+  
+      }
+      &[cite]::after {
+        content:"– "attr(cite);
+        display:block;
+        margin:0.5rem 0 0 0.25rem;
+        font-weight:500;
+        @include xs {
+          @include modular-scale(-4); // Font size
+        }
+        @include sm {
+          @include modular-scale(-4); // Font size
+        }
+        @include md {
+          @include modular-scale(-4); // Font size
+        }
+        @include lg {
+          @include modular-scale(-4); // Font size
+        }
+        @include xl {
+          @include modular-scale(-2); // Font size
+        }    
+      }
+    }  
+  }
 	@include xs {
     @include modular-scale(-2); // Font size
     padding:1rem;

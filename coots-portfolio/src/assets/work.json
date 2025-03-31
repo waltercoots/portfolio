@@ -174,7 +174,7 @@
 			"content": [
 				{
 					"type":"image",
-					"url":"../placeholder.png"
+					"url":"design-system-placeholder.png"
 				},
 				{
 					"type":"paragraph",
@@ -366,7 +366,8 @@
 				},
 				{
 					"type":"image",
-					"url":"../placeholder.png"
+					"url":"unilease-pricing.png",
+					"width":"1440"
 				},
 				{
 					"h3":"Other Misc. Screens"
@@ -377,23 +378,11 @@
 				},
 				{
 					"type":"image",
-					"url":"../placeholder.png"
+					"url":"account-reg-flows.png"
 				},
 				{
 					"type":"image",
-					"url":"../placeholder.png"
-				},
-				{
-					"type":"image",
-					"url":"../placeholder.png"
-				},
-				{
-					"type":"image",
-					"url":"../placeholder.png"
-				},
-				{
-					"type":"image",
-					"url":"../placeholder.png"
+					"url":"dashsearch.png"
 				}
 			]
 		},
@@ -405,7 +394,7 @@
 			"content": [
 				{
 					"type":"image",
-					"url":"../placeholder.png"
+					"url":"home.png"
 				
 				},
 				{
@@ -418,25 +407,16 @@
 				},
 				{
 					"type":"image",
-					"url":"../placeholder.png"
+					"url":"halliburton-b-and-a.png"
 				
 				},
 				{
 					"type":"paragraph",
-					"copy":"Halliburton’s old site felt extremely dated, and their limited color palette wasn’t doing them any favors. Though it was being designed for the web, we knew whatever we’d be creating may be leveraged by Halliburton for other marketing materials. After extensive research and interviews (shout out to our rockstar content strategist Matt Herron), the team created mood boards to share some ideas with the client. There were a lot of rounds, some of which we presented directly to the C suite."
+					"copy":"Halliburton’s old site felt extremely dated, and their limited color palette wasn’t doing them any favors. Though it was being designed for the web, we knew whatever we’d be creating may be leveraged by Halliburton for other marketing materials. After extensive research and interviews (shout out to our rockstar content strategist <a href=\"https://www.linkedin.com/in/mgherron/\" target=\"_blank\">Matt Herron</a>), the team created mood boards to share some ideas with the client. There were a lot of rounds, some of which we presented directly to the C suite."
 				},
 				{
 					"type":"image",
-					"url":"../placeholder.png"
-				
-				},
-				{
-					"type":"paragraph",
-					"copy":"How the design system for Halliburton manifested."
-				},
-				{
-					"type":"image",
-					"url":"../placeholder.png"
+					"url":"ds.png"
 				
 				},
 				{
@@ -444,17 +424,12 @@
 					"copy":"After conducting several workshops with the client, we established a set of modular components that Halliburton was able to use, as well as extensive guidelines on usage. It was my first time documenting components to this level of detail, and I learned a lot on the project. "
 				},
 				{
-					"type":"image",
-					"url":"../placeholder.png"
-				
-				},
-				{
 					"type":"paragraph",
 					"copy":"Wayfinding was a big issue for Halliburton’s audience. We also learned through research that a lot of newcomers to the industry aren’t familiar with the jargon, and visit sites like Halliburton to learn it. This Wizard was designed to help visitors find what they were looking for when they didn’t necessarily know what to call it. Some participants in workshops questioned the need to have another means of navigation on top of search and standard navigation links, but we explained it was like going to the wine shop knowing what you were making for dinner but not knowing what paired with it. "
 				},
 				{
 					"type":"image",
-					"url":"../placeholder.png"
+					"url":"wizard-states.png"
 				
 				},
 				{
@@ -463,7 +438,7 @@
 				},
 				{
 					"type":"image",
-					"url":"../placeholder.png"
+					"url":"wizard-sketches.png"
 				
 				},
 				{
@@ -472,12 +447,16 @@
 				},
 				{
 					"type":"image",
-					"url":"../placeholder.png"
+					"url":"halworld-cropped.png"
 				
 				},
 				{
 					"type":"paragraph",
 					"copy":"My final work with Halliburton was on their company Intranet, which took a lot of cues from the marketing site’s design, but importantly differentiated itself so folks weren’t confused as to whether they were looking at public or private content. There were several new components created which were designed to service the internal Halliburton employee rather than external customers."
+				},
+				{
+					"type":"video",
+					"url":"hal.mp4"
 				}
 			]
 		},
@@ -489,70 +468,95 @@
 			"content": [
 				{
 					"type":"image",
-					"url":"../placeholder.png"
-				
+					"url":"design-system.png"
 				},
 				{
 					"type":"paragraph",
 					"copy":"People close to me can tell you that I can be kind of a schmaltzy guy, and part of the reason I went to an agency was so I could work on bigger name projects. So when I was interviewing with T3 and learned my first client would be Hallmark, you could imagine my excitement! On my second day of work, I flew to their corporate HQ in Kansas City to meet the team and participate in workshops where I learned about the projects and who we were building them for. "
 				},
 				{
+					"type":"image-group",
+					"items":[
+						{
+							"type":"image",
+							"url":"treatment-a-edit.gif"
+						},
+						{
+							"type":"image",
+							"url":"treatment-b-edit.gif"
+						},
+						{
+							"type":"image",
+							"url":"treatment-c-edit.gif"
+						},
+						{
+							"type":"image",
+							"url":"treatment-d-edit.gif"
+						},
+						{
+							"type":"image",
+							"url":"treatment-e-edit.gif"
+						},
+						{
+							"type":"image",
+							"url":"treatment-f.gif"
+						}
+					]
+				},
+				{
 					"type":"paragraph",
 					"copy":"We were designing what would eventually become the new Hallmark Cards site. Our engagement lasted over a year, so I was involved in a variety of initiatives: coordinating with other designers on laying the groundwork for a new design system; designing the main navigation; collaborating with Hallmark’s internal stakeholders on how the new site’s registration would work with Hallmark’s Crown Rewards program; and designing the product details page (PDP) to name the big ones."
 				},
 				{
+					"type":"video",
+					"url":"simul-scroll-test.mp4",
+					"width":"1440"
+				
+				},
+				{
 					"type":"image",
-					"url":"../placeholder.png"
+					"url":"pdp-side-by-side.png"
 				
 				},
 				{
 					"type":"paragraph",
-					"copy":"Some examples from the design system documentation."
+					"copy":"This was my first time designing a PDP for a company as big as Hallmark, and I learned a lot about order fulfillment and the different ways a product needed to be represented. Designing the find-a-store feature was also a cool challenge with a lot of edge cases to account for."
 				},
 				{
 					"type":"image",
-					"url":"../placeholder.png"
+					"url":"Find-a-Store-Behavior.png",
+					"width":"1440"
 				
-				},
-				{
-					"type":"paragraph",
-					"copy":"The finished PDP. "
 				},
 				{
 					"type":"image",
-					"url":"../placeholder.png"
+					"url":"Find-a-Store-States.png",
+					"width":"1440"
 				
-				},
-				{
-					"type":"paragraph",
-					"copy":"This was my first time designing a PDP for a company as big as Hallmark, and I learned a lot about order fulfillment and the different ways a product needed to be represented. "
 				},
 				{
 					"type":"image",
-					"url":"../placeholder.png"
+					"url":"HM-Address-Lockups.png",
+					"width":"1440"
 				
-				},
-				{
-					"type":"paragraph",
-					"copy":"Similarly, designing a feature for users to find a Hallmark store was an interesting challenge."
 				},
 				{
 					"type":"image",
-					"url":"../placeholder.png"
-				
+					"url":"login-flow.png",
+					"width":"1440"				
 				},
 				{
 					"type":"paragraph",
 					"copy":"Flowchart detailing sign up behavior. Hallmark’s leadership wanted user registration to automatically assign a rewards account to any new user signing up. But because customers could enroll in the rewards program at a physical Hallmark store without providing an email address, we wanted to afford the ability to link an existing rewards program account during account registration. Similar functionality existed in the account area, but we knew resolving it here would reduce support call volume to Hallmark."
 				},
 				{
-					"type":"image",
-					"url":"../placeholder.png"
-				
-				},
-				{
 					"type":"paragraph",
 					"copy":"One of the coolest features I helped with was a means for folks to create custom cards. This was a brand new feature for Hallmark, so our team was able to really have fun with it."
+				},
+				{
+					"type":"image",
+					"url":"POD-Non-Color-Sku-Inside-Right.png",
+					"width":"450"				
 				},
 				{
 					"type":"paragraph",
@@ -566,6 +570,10 @@
 			"year": "2018–2019",
 			"role": "Lead UX/UI Designer",
 			"content": [
+				{
+					"type":"image",
+					"url":"home-side-by-side.png"
+				},
 				{
 					"type":"paragraph",
 					"copy":"EverlyWell sells at-home lab testing kits for things such as thyroid, vitamins, STD, and food sensitivities. After a user collects their sample (the method which varies from test to test)  and mails it in, EverlyWell’s lab partners process the sample and help the end user make sense of the results."
@@ -586,7 +594,8 @@
 				},
 				{
 					"type":"image",
-					"url":"../placeholder.png"
+					"url":"ContentBlocks.png",
+					"width":"720"
 
 				},
 				{
@@ -594,8 +603,9 @@
 					"copy":"We were also working to make the experience feel more dynamic and engaging, but we had to strike the right balance with this because some folks may have been getting bad news. Anyone who had biomarkers in dangerous zones would have received a phone call from one of EverlyWell’s medical staff, but still, an overly cheerful animation doesn’t land well with a positive STD result."
 				},
 				{
-					"type":"image",
-					"url":"../placeholder.png"
+					"type":"video",
+					"url":"intro.mp4",
+					"width":"1280"
 				
 				},
 				{
@@ -604,7 +614,8 @@
 				},
 				{
 					"type":"image",
-					"url":"../placeholder.png"
+					"url":"UIKit.png",
+					"width":"1280"
 				
 				},
 				{
@@ -613,7 +624,8 @@
 				},
 				{
 					"type":"image",
-					"url":"../placeholder.png"
+					"url":"ADA-Color-Wheel.svg",
+					"width":"1024"
 				
 				},
 				{
@@ -622,17 +634,7 @@
 				},
 				{
 					"type":"image",
-					"url":"../placeholder.png"
-				
-				},
-				{
-					"type":"image",
-					"url":"../placeholder.png"
-				
-				},
-				{
-					"type":"image",
-					"url":"../placeholder.png"
+					"url":"tiles.png"
 				
 				},
 				{
@@ -640,21 +642,32 @@
 					"copy":"There was a running joke that time spent at EverlyWell was like dog years, because everyone did a lot in a small amount of time. EverlyWell’s branding was purchased through Fiverr, and the marketing site when I arrived had been designed by Funsize. A lot of talented people helped create the 2019 design for the results platform, including <a href=\"https://www.anna-ho.com/\" target=\"_blank\">Anna Ho</a>, <a href=\"http://williamfikes.com/\">Will Fikes</a>, and <a href=\"http://www.ericbog.gs/\">Eric Boggs.</a>"
 				},
 				{
+					"type":"image",
+					"url":"dashboard-side-by-side.png"
+				
+				},
+				{
 					"h2":"Humana Partnership"
 				},
 				{
 					"type":"paragraph",
-					"copy":"EverlyWell’s first big partnership was with health insurance and wellness giant Humana to provide HbA1c and Colorectal Cancer screening tests to eligible seniors through their Humana healthcare plans. Since EverlyWell’s platform didn’t follow any kind of accessibility guidelines, and Humana wanted a co-branded experience, we opted to do a separate microsite to handle the entire process. The results were still shown on the primary EverlyWell platform, and we updated it to allow for co-branding which we knew we wanted to enable in the future and wasn’t a very big lift. "
+					"copy":"EverlyWell’s first big partnership was with health insurance and wellness giant Humana to provide HbA1c and Colorectal Cancer screening tests to eligible seniors through their Humana healthcare plans. Since EverlyWell’s platform didn’t follow any kind of accessibility guidelines, and Humana wanted a co-branded experience, we opted to do a separate microsite to handle the entire process. The results were still shown on the primary EverlyWell platform, and we updated it to allow for co-branding which we knew we wanted to enable in the future and wasn’t a very big lift."
 				},
 				{
 					"type":"image",
-					"url":"../placeholder.png"
-				
+					"url":"humana-home.png"				
+				},
+				{
+					"type":"paragraph",
+					"copy":"One interesting thing about the flows was that a caregiver could be going through them on behalf of the Humana member, and different verification needed to happen if that were the case. "
 				},
 				{
 					"type":"image",
-					"url":"../placeholder.png"
-				
+					"url":"humana-verification.png"				
+				},
+				{
+					"type":"paragraph",
+					"copy":"The Humana collaboration was a huge success. I don’t have numbers on how many tests were registered or how Humana benefited, but this was the first in EverlyWell’s step toward working with enterprise customers and larger providers. It also paved the way for further whitelabeling of the product pages, and increased the team’s understanding of what it took to make a site with AAA WCAG compliance in mind. "
 				},
 				{
 					"type":"image",
@@ -670,16 +683,17 @@
 				},
 				{
 					"type":"image",
-					"url":"../placeholder.png"
-				
-				},
-				{
-					"type":"image",
-					"url":"../placeholder.png"
+					"url":"SciencePage.jpg",
+					"width":"1280"
 				
 				},
 				{
 					"h2":"Product Page Redesign"
+				},
+				{
+					"type":"video",
+					"url":"pdp-side-by-side.mp4"
+				
 				},
 				{
 					"type":"paragraph",
@@ -702,24 +716,39 @@
 			"role":"Lead Designer",
 			"content": [
 				{
-					"url":"Neanderhtal_Insight@2x.jpg",
-					"width":"420"
-				},
-				{
-					"url":"Metabolism_Trait-Top@2x.jpg",
-					"width":"420"
-				},
-				{
-					"url":"Regional-Ancestry_Dashboard@2x.jpg",
-					"width":"420"
-				},
-				{
-					"url":"Regional-Ancestry_Subregion@2x.jpg",
-					"width":"420"
-				},
-				{
-					"url":"Metabolism_Trait-Infographics@2x.jpg",
-					"width":"420"
+					"type":"image-group",
+					"items": [
+						{
+							"type":"image",
+							"url":"Neanderhtal_Insight@2x.jpg",
+							"width":"420",
+							"display":"inline-block"
+						},
+						{
+							"type":"image",
+							"url":"Metabolism_Trait-Top@2x.jpg",
+							"width":"420",
+							"display":"inline-block"
+						},
+						{
+							"type":"image",
+							"url":"Regional-Ancestry_Dashboard@2x.jpg",
+							"width":"420",
+							"display":"inline-block"
+						},
+						{
+							"type":"image",
+							"url":"Regional-Ancestry_Subregion@2x.jpg",
+							"width":"420",
+							"display":"inline-block"
+						},
+						{
+							"type":"image",
+							"url":"Metabolism_Trait-Infographics@2x.jpg",
+							"width":"420",
+							"display":"inline-block"
+						}
+					]
 				},
 				{
 					"type":"paragraph",
@@ -734,19 +763,19 @@
 					"copy":"With branding and packaging created by <a href=\"https://elbow.com\" target=\"_blank\">Elbow</a>, and one product (Neanderthal) already in the wild, my job was to help launch two sister products, Metabolism and Regional Ancestry."
 				},
 				{
-					"url":"OnboardingFlow@2x.png",
-					"width":"1047",
-					"clear":"true",
-					"caption":"Helix acting as a middleman between the apps on its marketplace and the end-user created a lot of interesting challenges from an onboarding perspective. The existing onboarding had several steps, many of which weren’t skippable. One of my first tasks was to come up with recommendations to simplify."
+					"type":"image",
+					"url":"OnboardingFlow@2x.png"
 				},
 				{
 					"type":"paragraph",
 					"copy":"But before we’d do that, there were some problems with the existing onboarding process the team wanted help with. The existing onboarding had several steps, many of which weren’t skippable. Helix acting as a middleman between the apps on its marketplace and the end-user created a lot of interesting challenges from an onboarding perspective. So I put together a bevy of recommended hotfixes to make it easier for folks to activate their accounts and sign in."
 				},
 				{
-					"url":"../placeholder.png"
+					"type":"image",
+					"url":"email-stepper.png"
 				},
 				{
+					"type":"image",
 					"url":"icon-animations.gif"
 				},
 				{
@@ -754,9 +783,11 @@
 					"copy":"There was a contractual obligation with Helix that created an added challenge: both an iOS version and a responsive web version needed to be created in parallel. Since I‘d never worked alongside an iOS developer before, I was grateful to have someone who helped me understand the nuances of layout in iOS and how they differed from web. The good news was the functionality was quite straightforward which made parity fairly easy. "
 				},
 				{
+					"type":"image",
 					"url":"migration.gif"
 				},
 				{
+					"type":"image",
 					"url":"WorldMap@2x.png"
 				},
 				{
@@ -772,6 +803,7 @@
 					"copy":"All three Insitome products were fairly static. The interactivity was navigating from one page to another, so the value I was able to add was helping the team understand the content hierarchy, envision how things would look, and providing as many supporting graphics as I was able. "
 				},
 				{
+					"type":"image",
 					"url":"responsive@2x.jpg",
 					"width":"920",
 					"clear":"true"
@@ -781,11 +813,13 @@
 					"copy":"After launching the Metabolism and Regional Ancestry products, I helped create an ad for Genome magazine. Several rough concept sketches were presented, and the CEO fell in love with the idea of a decoder ring because he thought it would strike a nostalgia chord with the magazine’s audience. I styled and directed the shot, retouched the photos, layed out the ad, and coordinated with Helix’s legal team and Genome magazine."
 				},
 				{
+					"type":"image",
 					"url":"GenomeAdSketches@2x.png",
 					"width":"732",
 					"clear":"true"
 				},
 				{
+					"type":"image",
 					"url":"Genome-Ad-Layout@2x.jpg",
 					"width":"920"
 				},
@@ -794,30 +828,49 @@
 					"copy":"Toward the end of my tenure after the modules had been released, we wanted to add sharing features in. I created two basic user flows, one for sharing a static image and another for sharing a public user profile. "
 				},
 				{
-					"url":"../placeholder.png",
-					"note":"Share Method A, screencap taken from sharing PDF"
+					"type":"image",
+					"url":"sharing-lod-selection.png"
 				},
 				{
-					"url":"../placeholder.png",
-					"note":"Share Method B, screencap taken from sharing PDF"
+					"type":"image",
+					"url":"sharing-no-lod-selection.png"
 				},
 				{
-					"url":"share-card-ancestry.png"
-				},
-				{
-					"url":"share-card-lifestyle.png"
-				},
-				{
-					"url":"share-card-metabolism.png"
-				},
-				{
-					"url":"share-card-nenderthal.png"
+					"type":"image-group",
+					"items":[
+						{
+
+							"type":"image",
+							"url":"share-card-ancestry.png",
+							"display":"inline-block"
+						},
+						{
+
+							"type":"image",
+							"url":"share-card-lifestyle.png",
+							"display":"inline-block"
+						},
+						{
+
+							"type":"image",
+							"url":"share-card-metabolism.png",
+							"display":"inline-block"
+						},
+						{
+
+							"type":"image",
+							"url":"share-card-nenderthal.png",
+							"display":"inline-block"
+						}
+					]
 				},
 				{
 					"type":"paragraph",
 					"copy":"After the holidays were over, I helped design a new marketing site but before construction was complete, Insitome parted ways with its product and engineering staff to put the company in maintenance mode. Helix shifted its focus to partnerships with healthcare systems and population genomics programs, and discontinued its consumer marketplace. "
 				},
 				{
+
+					"type":"image",
 					"url":"Marketing-Site@2x.jpg",
 					"width":"1440"
 				}
