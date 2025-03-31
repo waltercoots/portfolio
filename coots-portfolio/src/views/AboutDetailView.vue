@@ -258,6 +258,7 @@ function clearSkillFall() {
     <div class="bio">
       <h2>Your Outtie Likes Animals</h2> 
       <p>My name’s Walter Coots, and I’m a designer in Austin, Texas. I’m a husband, parent, and home owner with a dog, all which keep me busy. I have tons of interests and hobbies: art, music, gardening, video / board / computer games, food and cooking, movies and television, bicycling, home automation, animals, and cocktails.</p>
+      <p><a href="/resume.pdf">Download my résumé</a></p>
       <h2>Battle-tested</h2>
       <p>I’ve worked across a variety of industries including travel, healthcare, restaurants, entertainment, non-profits, news media, commercial real estate, enterprise HR SaaS, energy, and finance.</p>
       <p>Coworkers tell me I’m a positive and enthusiastic person who’s excellent at making complex ideas easier to understand. My grasp on frontend web coding affords me a higher than average understanding and empathy for engineers, and I'm able to maintain composure in tense and trying times.</p>
@@ -386,6 +387,10 @@ div.about {
   display:flex;
   justify-content: center;
 	z-index:3;
+  a {
+    color:$white;
+    text-decoration:underline;
+  }
   h1, h2, h3 {
     font-weight:400;
   }
