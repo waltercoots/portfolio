@@ -10,6 +10,7 @@
 		data() {
 			return {
 				jsonData: projects,
+				tags: new Set(),
 				zRanges: [],
 				isTransitioning: false, // Tracks when transition is in progress
 				animationTiming:250 // Match this timeout to CSS transition timing
@@ -19,6 +20,7 @@
 			this.gridContainer = document.querySelector('.grid-container');
 			this.workGrid = document.querySelector('.workgrid');
 			this.workThumbs = document.querySelectorAll('.workthumb');
+			this.tags = this.createTagList();
 
 			if (this.workThumbs.length) {
 				this.generateZRanges(); // Generate min/max Z-depths
@@ -66,6 +68,16 @@
 			}
 		},
 		methods: {
+			createTagList() {
+				// Create a list of tags from the JSON data
+				const tags = new Set();
+				this.jsonData.projects.forEach(project => {
+					project.tags.forEach(tag => {
+						tags.add(tag);
+					});
+				});
+				return Array.from(tags);
+			},
 			generateZRanges() {
 				this.zRanges = Array.from(this.workThumbs, () => {
 					return {
@@ -173,6 +185,11 @@
 
 <template>
 	<div class="grid-container">
+		<ul class="taglist" v-if="tags.length">
+			<li v-for="(tag, index) in tags" :key="index">
+				<router-link :to="{ name: 'work', query: { tag } }">{{ tag }}</router-link>
+			</li>
+		</ul>
 		<div class="workgrid">
 			<WorkThumb v-for="(item, index) in jsonData.projects" v-bind:project="item" v-bind:key="index" />
 		</div>
@@ -284,9 +301,38 @@
 					transition: transform $animationTiming ease-in-out, rotate $animationTiming ease-in-out, opacity $animationTiming ease-in-out;
 				}
 			}
-		}								
+		}
+		ul.taglist {
+			display:none; // for now
+			list-style:none;
+			position:absolute;
+			bottom:0;
+			max-width:50rem;
+			text-align:center;
+			opacity:1;
+			li {
+				display:inline-block;
+				margin:0 0.25rem 0.5rem 0.25rem;
+				a {
+					box-sizing:border-box;
+					text-decoration:none;
+					color:$gray;
+					background:$white;
+					border:1px solid $gray;
+					padding:0.25rem 0.5rem;
+					border-radius:0.5rem;
+					&:hover {
+						color:$black;
+					}
+				}
+			}
+		}
+								
 
 		&.bg {
+			ul.taglist {
+				opacity:0;
+			}
 			/* Applied when the grid is shown as a background element */
 			overflow:hidden;
 			z-index: -2;

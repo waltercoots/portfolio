@@ -165,14 +165,15 @@ div.currentProject {
 			margin-left:0.5rem;
 		}
 		ul {
-			display:none;
 			list-style:none;
 			margin-top:0.5rem;
-			@include xs {
-				@include modular-scale(-6);
-			}
-			@include xl {
-				@include modular-scale(-4);
+			&.tags li {
+				@include xs {
+					@include modular-scale(-5);
+				}
+				@include xl {
+					@include modular-scale(-3);
+				}
 			}
 			li {
 				border-radius:0.25rem;

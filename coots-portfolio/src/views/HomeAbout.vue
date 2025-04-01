@@ -56,7 +56,7 @@ export default {
         <path d="M344.001 151.101C358.553 145.883 361.926 130.996 361.926 101.89V66.8967C361.926 37.5519 358.119 25.8236 344.001 25.2013C364.672 21.4195 383.031 14.0953 395.222 0.5V101.89C395.222 130.996 398.595 145.883 413.148 151.101H344.001Z" fill="#2A2727" class="nameplate" />
         <path d="M407.703 100.645C407.703 66.5137 430.88 47.0303 464.659 47.0303C498.437 47.0303 522 66.5137 522 100.645C522 134.777 498.822 154.5 464.659 154.5C430.495 154.5 407.703 135.639 407.703 100.645ZM484.222 100.645C484.222 67.9498 476.85 49.5196 464.61 49.5196C452.371 49.5196 445.191 67.9498 445.191 100.645C445.191 133.341 452.805 151.963 464.61 151.963C476.416 151.963 484.222 133.533 484.222 100.645Z" fill="#2A2727" class=" nameplate" />
       </svg>
-      <p>I’m Walter Coots, an Austin-based designer with over 20 years experience. I craft products and brands that help companies stand out and grow faster. <router-link to="/aboutDetail">More</router-link></p>
+      <p>I’m Walter Coots, a multidisciplinary designer with over 20 years experience. I craft products and brands that help companies stand out and grow faster, and launch features their customers love. <router-link to="/aboutDetail">More About Me</router-link></p>
       <NavBar />
     </div>
   </div>

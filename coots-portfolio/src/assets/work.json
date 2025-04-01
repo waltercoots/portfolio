@@ -4,6 +4,7 @@
 			"title": "WorkStep",
 			"slug": "workstep",
 			"year": "2022–Now",
+			"tags": ["Startup","UI","UX","Design Systems","Web","SaaS"],
 			"role": "Senior Product Designer",
 			"content": [
 				{
@@ -312,6 +313,7 @@
 			"title": "Unilease",
 			"slug": "unilease",
 			"year": "2021–2022",
+			"tags": ["Startup","Brand & Marketing","UI","UX","Design Systems","Web","SaaS","Commercial Real Estate"],
 			"role": "Head of Design",
 			"content": [
 				{
@@ -501,6 +503,7 @@
 			"title": "Halliburton",
 			"slug": "halliburton",
 			"year": "2020–2021",
+			"tags": ["Agency","Brand & Marketing","UI","UX","Design Systems","Web"],
 			"role": "Senior Product Designer, (Material neé T3)",
 			"content": [
 				{
@@ -575,6 +578,7 @@
 			"title": "Hallmark",
 			"slug": "hallmark",
 			"year": "2019–2020",
+			"tags": ["Agency","UI","UX","Design Systems","Web","Ecommerce"],
 			"role": "Senior Product Designer, (Material neé T3)",
 			"content": [
 				{
@@ -680,6 +684,7 @@
 			"slug": "everlywell",
 			"year": "2018–2019",
 			"role": "Lead UX/UI Designer",
+			"tags": ["Startup","UI","UX","Design Systems","Web","Ecommerce","Healthcare"],
 			"content": [
 				{
 					"type":"image",
@@ -819,6 +824,7 @@
 			"slug": "insitome",
 			"year": "2017–2018",
 			"role":"Lead Designer",
+			"tags": ["Startup","UI","UX","Web","Native App","Print","Entertainment"],
 			"content": [
 				{
 					"type":"image-group",
@@ -985,6 +991,7 @@
 			"title": "SXSW Music Blogger's Guide",
 			"slug": "sxsw",
 			"year": "2017",
+			"tags": ["Agency","UX","Web","Entertainment"],
 			"role": "Lead UX Designer, Foxtrot",
 			"content": [
 				{
@@ -1059,6 +1066,7 @@
 			"title": "Dimensional Fund Advisors",
 			"slug": "dfa",
 			"year": "2016",
+			"tags": ["Agency","UI","UX","Web"],
 			"role": "Lead UX Designer, Foxtrot",
 			"content": [
 				{
@@ -1131,7 +1139,7 @@
 			"slug": "afs",
 			"year": "2016",
 			"role": "Lead UX Designer, Foxtrot",
-			"tags": ["Agency", "Sketch", "Photoshop", "InDesign", "Website", "User Experience", "User Interface", "Content Design", "Information Architecture", "Content Audit", "Sitemap", "Wireframes"],
+			"tags": ["Agency","UX","Web","Entertainment"],
 			"content": [
 				{
 					"type":"image",
@@ -1212,6 +1220,7 @@
 			"title": "Misc.",
 			"slug": "misc",
 			"year": "",
+			"tags": ["Print","Illustration","Art"],
 			"content": [
 				{
 					"type":"paragraph",
