@@ -13,9 +13,9 @@
 		justify-content: center;
 		a {
 			padding:0 0.5em;
-			color:$black;
+			color:$accent;
 			&.router-link-active {
-				color:$accent;
+				color:$black;
 			}
 		}
 	}
