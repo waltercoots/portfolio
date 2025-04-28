@@ -3,6 +3,11 @@ import Matter from "matter-js";
 import decomp from "poly-decomp";
 export default {
   name: "AboutView",
+  data() {
+    return {
+      enteredFrom: false
+    };
+  },
   mounted() {
     skillFallSetup();
     window.addEventListener('resize', this.handleResize);
@@ -19,17 +24,20 @@ export default {
       elem.target.classList.add('selected');
     },
     closeAbout() {
-      const referrer = document.referrer;
-      console.log(document);
-      console.log(referrer);
-      const fromSameOrigin = referrer.includes(window.location.origin);
-
-      if (fromSameOrigin) {
+      if (this.enteredFrom) {
         this.$router.go(-1);
       } else {
         this.$router.push('/');
       }
     }
+  },
+  beforeRouteEnter(to, from, next) {
+    next(vm => {
+      vm.enteredFrom = from.name ? true : false;
+    });
+  },
+  beforeRouteLeave(to, from, next) {
+    next();
   },
   unmounted() {
     window.removeEventListener('resize', this.handleResize);
