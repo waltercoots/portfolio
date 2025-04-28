@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import AboutView from '@/views/AboutView.vue'
-import ContactView from '@/views/ContactView.vue'
 import ProjectView from '@/views/ProjectView.vue'
 
 const routes = [
@@ -32,12 +31,6 @@ const routes = [
       },
     ]
   },
-  {
-    path: '/contact',
-    name: 'contact',
-    component:ContactView,
-    meta: { title: 'Walter Coots - Contact' }
-  }
 ]
 
 const router = createRouter({
