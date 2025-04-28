@@ -17,6 +17,18 @@ export default {
         loopElem.classList.remove('selected');
       });
       elem.target.classList.add('selected');
+    },
+    closeAbout() {
+      const referrer = document.referrer;
+      console.log(document);
+      console.log(referrer);
+      const fromSameOrigin = referrer.includes(window.location.origin);
+
+      if (fromSameOrigin) {
+        this.$router.go(-1);
+      } else {
+        this.$router.push('/');
+      }
     }
   },
   unmounted() {
@@ -27,7 +39,6 @@ export default {
   updated() {
     this.handleResize();
   },
-  
 }
 
 /* MatterJS Shortcuts */
@@ -256,10 +267,7 @@ function clearSkillFall() {
 <template>
   <div class="about">
     <div class="bio">
-      <h2>Your Outie Likes Animals</h2> 
-      <p>My name’s Walter Coots, and I’m a multidisciplinary designer in Austin, Texas. I’m a husband, parent, and homeowner with a dog, all which keep me busy. I have tons of interests and hobbies: art, music, gardening, video / board / computer games, food and cooking, movies and television, bicycling, home automation, animals, and cocktails.</p>
-      <p><a href="/resume.pdf" download="walter-coots-résumé">Download my résumé</a></p>
-      <h2>Battle-tested</h2>
+      <p>My name’s Walter Coots, and I’m a product and web design lead in Austin, Texas. I’m a husband, parent, and homeowner with a dog, all which keep me busy. I have tons of interests and hobbies: art, music, gardening, video / board / computer games, food and cooking, movies and television, bicycling, home automation, animals, and cocktails.</p>
       <p>I’ve worked across a variety of industries including travel, healthcare, restaurants, entertainment, non-profits, news media, commercial real estate, enterprise HR SaaS, energy, and finance.</p>
       <p>Coworkers tell me I’m a positive and enthusiastic person who’s excellent at making complex ideas easier to understand. My grasp on frontend web coding affords me a higher than average understanding and empathy for engineers, and I'm able to maintain composure in tense and trying times.</p>
       <p class="clients">Select past clients</p>
@@ -345,12 +353,12 @@ function clearSkillFall() {
         <li>Frontend Coding</li>
       </ul>
     </div>
-    <router-link to="/" class="close-btn">
+    <a @click="closeAbout" class="close-btn">
       <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M2.42362 2L18 16M17.5764 2L2 16" />
       </svg>      
-    </router-link>
-  </div>
+    </a>
+    </div>
 </template>
 
 <style scoped lang="scss">

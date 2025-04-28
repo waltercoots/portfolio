@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import AboutDetailView from '@/views/AboutDetailView.vue'
+import AboutView from '@/views/AboutView.vue'
 import ContactView from '@/views/ContactView.vue'
 import ProjectView from '@/views/ProjectView.vue'
 
@@ -7,13 +7,13 @@ const routes = [
   {
     // Note: the actual content for the about page is contained within App.vue because it contains the main navigation and we want it to be visible on all pages. This decision was mainly made to support transitions and animation. 
     path: '/',
-    name: 'about',
+    name: 'home',
     meta: { title: 'Walter Coots' }
   },
   {
-    path: '/aboutDetail',
-    name: 'aboutDetail',
-    component: AboutDetailView,
+    path: '/about',
+    name: 'about',
+    component: AboutView,
     meta: { title: 'Walter Coots - About' }
   },
   {

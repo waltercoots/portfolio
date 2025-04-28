@@ -1,9 +1,9 @@
 <script>
 import WorkGrid from './components/WorkGrid.vue';
-import HomeAbout from './views/HomeAbout.vue';
+import HomeView from './views/HomeView.vue';
 export default {
   components: {
-    HomeAbout,
+    HomeView,
     WorkGrid,
   }
 }
@@ -12,7 +12,7 @@ export default {
 <template>
   <div class="foundation">
     <WorkGrid class="bg" />
-    <HomeAbout />
+    <HomeView />
     <router-view v-slot="{ Component }">
       <transition name="flyaway" mode="out-in">
         <component :is="Component" />
@@ -95,10 +95,10 @@ div.foundation {
   margin:0;
   padding:0;
   @include xs {
-    border:0.5rem solid $accent;
+    border:0.125rem solid $accent;
   }
   @include md {
-    border:1rem solid $accent;
+    border:0.25rem solid $accent;
   }
 }
 a {
