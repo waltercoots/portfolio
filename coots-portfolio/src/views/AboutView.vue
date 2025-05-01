@@ -274,46 +274,6 @@ function clearSkillFall() {
 
 <template>
   <div class="about">
-    <div class="bio">
-      <p>My name’s Walter Coots, and I’m a product and web design lead in Austin, Texas. I’m a husband, parent, and homeowner with a dog, all which keep me busy. I have tons of interests and hobbies: art, music, gardening, video / board / computer games, food and cooking, movies and television, bicycling, home automation, animals, and cocktails.</p>
-      <p>I’ve worked across a variety of industries including travel, healthcare, restaurants, entertainment, non-profits, news media, commercial real estate, enterprise HR SaaS, energy, and finance.</p>
-      <p>Coworkers tell me I’m a positive and enthusiastic person who’s excellent at making complex ideas easier to understand. My grasp on frontend web coding affords me a higher than average understanding and empathy for engineers, and I'm able to maintain composure in tense and trying times.</p>
-      <p class="clients">Select past clients</p>
-      <ul class="clients">
-        <li>Austin Film Society</li>
-        <li>Denny’s</li>
-        <li>GoodPop</li>
-        <li>Halliburton</li>
-        <li>Hallmark</li>
-        <li>Southwest Airlines</li>
-        <li>SXSW</li>
-        <li>Viking Cruises</li>
-      </ul>
-      <div class="reviews">
-        <blockquote cite="Rachel Bates, WorkStep CRO" id="q1">
-          I'm not exaggerating when I share that your video on Fast Track was the most detailed and best explanation of a HIRE feature since I have been at WorkStep. Your pre-work, video and way you broke it down was really valuable. Thank you!        
-        </blockquote>
-        <blockquote cite="Tommi Forsström, WorkStep CPO" id="q2">
-          I'm VERY impressed. I still have to keep reminding myself that you've got about 6 weeks of active service tenure here. With one of the most disruptive life events in the middle of it. You've brought in a newfound sense of energy and curiosity sorely lacking from the team.
-        </blockquote>
-        <blockquote cite="Dan Johnston, WorkStep CEO" id="q3">
-          Walter runs some of the most engaging and high-value design reviews I've ever been a part of. Thoughtful agendas, blend of strategic and detail-level topics, absolutely O sacred cows. It's a unique thing that basically no other roles do where you bring your work in front of other teams who don't do that job and proactively ask for as much feedback as possible. Walter nails it. 
-        </blockquote>
-        <blockquote cite="Marina Harper, T3 Account Director" id="q4">
-          thank you so much for everything, you have always been such a calm, steady and overall amazing influence for this team, i could not have weathered the ups and downs without you. i am really grateful that i was able to work with you. thank you for always making it fun and easy.
-        </blockquote>
-        <blockquote cite="Cary Brizendine, Insitome Senior Product Manager" id="q5">
-          If I could fit Walter in my pocket and take him with me to work on future products, I would! [...] Walter has an admired ability to bring order to the chaos, finely balancing the delicate relationship between user needs and the stakeholder's business and marketing needs. Plus, he's fun to work with.
-        </blockquote>
-      </div>
-      <div class="pagination">
-        <a href="#q1" class="pagination selected" @click="this.updatePaginationLinks">1</a>
-        <a href="#q2" class="pagination" @click="this.updatePaginationLinks">2</a>
-        <a href="#q3" class="pagination" @click="this.updatePaginationLinks">3</a>
-        <a href="#q4" class="pagination" @click="this.updatePaginationLinks">4</a>
-        <a href="#q5" class="pagination" @click="this.updatePaginationLinks">5</a>
-      </div>
-    </div>
     <div ref="scene" class="skills">
       <img src="img/headshot-placeholder.png" alt="What Walter looks like" class="headshot" />
       <ul>
@@ -360,7 +320,47 @@ function clearSkillFall() {
         <li>Design Systems</li>
         <li>Frontend Coding</li>
       </ul>
+    </div>    <div class="bio">
+      <p>My name’s Walter Coots, and I’m a product and web design lead in Austin, Texas. I’m a husband, parent, and homeowner with a dog, all which keep me busy. I have tons of interests and hobbies: art, music, gardening, video / board / computer games, food and cooking, movies and television, bicycling, home automation, animals, and cocktails.</p>
+      <p>I’ve worked across a variety of industries including travel, healthcare, restaurants, entertainment, non-profits, news media, commercial real estate, enterprise HR SaaS, energy, and finance.</p>
+      <p>Coworkers tell me I’m a positive and enthusiastic person who’s excellent at making complex ideas easier to understand. My grasp on frontend web coding affords me a higher than average understanding and empathy for engineers, and I'm able to maintain composure in tense and trying times.</p>
+      <p class="clients">Select past clients</p>
+      <ul class="clients">
+        <li>Austin Film Society</li>
+        <li>Denny’s</li>
+        <li>GoodPop</li>
+        <li>Halliburton</li>
+        <li>Hallmark</li>
+        <li>Southwest Airlines</li>
+        <li>SXSW</li>
+        <li>Viking Cruises</li>
+      </ul>
+      <div class="reviews">
+        <blockquote cite="Rachel Bates, WorkStep CRO" id="q1">
+          I'm not exaggerating when I share that your video on Fast Track was the most detailed and best explanation of a HIRE feature since I have been at WorkStep. Your pre-work, video and way you broke it down was really valuable. Thank you!        
+        </blockquote>
+        <blockquote cite="Tommi Forsström, WorkStep CPO" id="q2">
+          I'm VERY impressed. I still have to keep reminding myself that you've got about 6 weeks of active service tenure here. With one of the most disruptive life events in the middle of it. You've brought in a newfound sense of energy and curiosity sorely lacking from the team.
+        </blockquote>
+        <blockquote cite="Dan Johnston, WorkStep CEO" id="q3">
+          Walter runs some of the most engaging and high-value design reviews I've ever been a part of. Thoughtful agendas, blend of strategic and detail-level topics, absolutely O sacred cows. It's a unique thing that basically no other roles do where you bring your work in front of other teams who don't do that job and proactively ask for as much feedback as possible. Walter nails it. 
+        </blockquote>
+        <blockquote cite="Marina Harper, T3 Account Director" id="q4">
+          thank you so much for everything, you have always been such a calm, steady and overall amazing influence for this team, i could not have weathered the ups and downs without you. i am really grateful that i was able to work with you. thank you for always making it fun and easy.
+        </blockquote>
+        <blockquote cite="Cary Brizendine, Insitome Senior Product Manager" id="q5">
+          If I could fit Walter in my pocket and take him with me to work on future products, I would! [...] Walter has an admired ability to bring order to the chaos, finely balancing the delicate relationship between user needs and the stakeholder's business and marketing needs. Plus, he's fun to work with.
+        </blockquote>
+      </div>
+      <div class="pagination">
+        <a href="#q1" class="pagination selected" @click="this.updatePaginationLinks">1</a>
+        <a href="#q2" class="pagination" @click="this.updatePaginationLinks">2</a>
+        <a href="#q3" class="pagination" @click="this.updatePaginationLinks">3</a>
+        <a href="#q4" class="pagination" @click="this.updatePaginationLinks">4</a>
+        <a href="#q5" class="pagination" @click="this.updatePaginationLinks">5</a>
+      </div>
     </div>
+
     <a @click="closeAbout" class="close-btn">
       <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M2.42362 2L18 16M17.5764 2L2 16" />
@@ -427,7 +427,7 @@ div.about {
     @include modular-scale(-2); // Font size
   }
 	@include xs {
-    flex-direction: column-reverse;
+    flex-direction: column;
     overflow-x:hidden;
     overflow-y:auto;
     position:absolute;
@@ -438,7 +438,7 @@ div.about {
     height:100%;
 	}
 	@include sm {
-    flex-direction: column-reverse;
+    flex-direction: column;
     overflow-x:auto;
     position:absolute;
     justify-content:start;

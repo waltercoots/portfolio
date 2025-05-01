@@ -34,23 +34,25 @@ export default {
     }
   },
   watch: {
-			'$route' (to) {
-				if (to.path == '/' || to.path == '/aboutDetail') {
-					this.toggleHomeVisibility(true);
-				}
-        else {
-					this.toggleHomeVisibility(false);
+    '$route'(to) {
+      if (to.path != '/about') {
+        if (to.path == '/work') {
+          this.toggleHomeVisibility(false);
         }
-			}
-		}
+        if (to.path == '/') {
+          this.toggleHomeVisibility(true);
+        }
+      }
+    }
+  }
 }
 </script>
 
 <template>
   <div class="home">
-    <div class="homeContent collapsed">
+    <div class="homeContent">
       <img :src="require('@/assets/wcoots-lockup.svg')" alt="Walter Coots Logo" class="nameplate" />
-      <p>Design lead with over 20 years experience making <em>enterprise and consumer websites and products</em> that help companies stand out and grow faster.</p>
+      <p>Design lead with over 20 years experience making <em>enterprise and consumer websites and products</em> that help companies stand out and grow faster.</p> 
       <NavBar />
     </div>
   </div>
@@ -75,11 +77,11 @@ export default {
         @include modular-scale(-2); // Font size
       }
       @include lg {
-        width: 33rem;
+        width: 30rem;
         @include modular-scale(-1); // Font size
       }
       @include xl {
-        width: 33rem;
+        width: 30rem;
         @include modular-scale(-1); // Font size
       }
       text-align:center;
@@ -100,7 +102,11 @@ export default {
     }
     em {
       font-style:normal;
-      color:$accent;
+      color:$white;
+      box-sizing:border-box;
+      background-color:$accent;
+      border-left:4px solid $accent;
+      border-right:4px solid $accent;
     }
   }
 </style>

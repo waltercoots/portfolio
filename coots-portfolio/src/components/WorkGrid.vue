@@ -50,18 +50,13 @@
 					switch (to.matched[0].path) {
 						case '/work':
 							this.removeMouseMoveListener();
-							this.gridContainer.classList.remove('bg', 'contact');
-							break;
-						case '/contact':
-							this.removeMouseMoveListener();
-							this.gridContainer.classList.add('bg', 'contact');
+							this.gridContainer.classList.remove('bg');
 							break;
 						default:
 							setTimeout(() => {
 								this.smoothTransitionToMouseControl();
 							}, this.animationTiming);
 							this.gridContainer.classList.add('bg');
-							this.gridContainer.classList.remove('contact');
 							break;
 					}
 				}

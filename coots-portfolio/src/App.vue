@@ -95,10 +95,10 @@ div.foundation {
   margin:0;
   padding:0;
   @include xs {
-    border:0.125rem solid $accent;
+    border:0.25rem solid $accent;
   }
   @include md {
-    border:0.25rem solid $accent;
+    border:0.5rem solid $accent;
   }
 }
 a {
