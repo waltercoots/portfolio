@@ -1,6 +1,6 @@
 <template>
 	<nav class="mainNav">
-		<router-link to="/" class="home" title="Home">
+		<router-link to="/" class="home" title="Home" :class="{ notOnHome: homeShowing }" @click="homeShowing = !homeShowing">
 			<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path d="M4 8V12C4 12.5523 4.44772 13 5 13H11C11.5523 13 12 12.5523 12 12V8" stroke-linecap="round" class="svg-line" />
 			<path d="M14 7L8.70711 1.70711C8.31658 1.31658 7.68342 1.31658 7.29289 1.70711L1.95402 7.04598" class="svg-line" stroke-linecap="round" stroke-linejoin="round" />
@@ -50,8 +50,28 @@
 				}
 			}
 			&.home {
+				display:none;
+				&.notOnHome {
+					display:inline-block;
+				}
+				vertical-align: baseline;
 				svg {
-					margin-top:0.5rem;
+					display:inline-block;
+					@include xs {
+						margin-top:0.25rem;
+					}
+					@include sm {
+						margin-top:0.3rem;
+					}
+					@include md {
+						margin-top:0.35rem;
+					}
+					@include lg {
+						margin-top:0.55rem;
+					}
+					@include xl {
+						margin-top:0.6rem;
+					}
 				}
 			}
 		}
@@ -108,10 +128,20 @@
 </style>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue';
+import { ref, onMounted, onBeforeUnmount, watch } from 'vue';
+import { useRoute } from 'vue-router';
 
+const homeShowing = ref(false);
 const contactOpen = ref(false);
 const menuRef = ref(null);
+const route = useRoute();
+
+// Ensure homeShowing is only true if current path is not "/"
+watch(() => route.path, (to) => {
+	if(to != '/about') {
+		homeShowing.value = to !== '/';
+	}
+}, { immediate: true });
 
 function handleDocumentClick(event) {
   if (menuRef.value && !menuRef.value.contains(event.target)) {
