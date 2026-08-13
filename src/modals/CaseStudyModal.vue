@@ -487,11 +487,6 @@ aside {
 	}
 }
 
-div.modal.case-studies h2 {
-	@include xs {
-		margin:1rem 0 0.75rem 0;
-	}
-}
 
 // For adjusting spacing above and below elements
 .space-bottom {

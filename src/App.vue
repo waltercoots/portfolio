@@ -290,6 +290,7 @@ h1 {
 h2 {
   font-weight: 300;
   line-height: 133%;
+	margin:1rem 0 0.75rem 0;
 
   @include xs {
     @include modular-scale(3);
@@ -537,7 +538,7 @@ a.modal-nav-btn {
 }
 
 // Navigation styling specifically for non-case study modals, primarily because we're working under the pretense that case study modals will have black text
-div.modal:not(.case-studies) {
+div.modal:not(.case-studies,.job-app) {
   color: var(--accent);
   scrollbar-color: color-mix(in srgb, var(--accent) 25%, transparent) transparent;
 

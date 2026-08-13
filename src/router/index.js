@@ -5,6 +5,7 @@ import ScrollShell from "@/views/ScrollShell.vue"
 import AboutModal from "@/modals/AboutModal.vue"
 import QuickOverviewModal from "@/modals/QuickOverviewModal.vue"
 import CaseStudyModal from "@/modals/CaseStudyModal.vue"
+import TremendousJob from "@/job-apps/TremendousJob.vue"
 
 const shellRoute = (path, meta = {}) => ({
   path,
@@ -31,6 +32,7 @@ const routes = [
   modalRoute("/about", AboutModal, { title: "About Walter Coots" }, {modal:true}),
   modalRoute("/quick-overview", QuickOverviewModal, { title: "A Quick Overview of Walter Coots" }, {modal:true}),
   modalRoute("/work/:slug", CaseStudyModal, { title: ":slug"}, {modal:true}),
+  modalRoute("/tremendous", TremendousJob, { title: "Walter Coots × Tremendous" }, {modal:true}),
 ]
 
 const router = createRouter({
