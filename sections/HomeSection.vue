@@ -1,10 +1,16 @@
 <script setup>
+import { computed } from 'vue'
 import WorkGrid from '@/components/WorkGrid.vue';
+import { useVariant } from '@/composables/useVariant.js'
+import { variants } from '@/assets/variants.js'
+
+const { variant } = useVariant()
+const intro = computed(() => variant.value.intro ?? variants.default.intro)
 </script>
 
 <template>
 	<div class="about">
-		<p>Product and Web Design Lead with 20+ years building enterprise and consumer software, specializing in complex systems and scalable design architecture. Trusted partner to executive leadership, driving product strategy, and shipping high-impact features at scale.</p>
+		<p>{{ intro }}</p>
 		<ul class="main-nav">
 			<li><router-link to="/quick-overview" title="Quick Overview">Quick Overview</router-link></li>
 			<li><router-link to="/about" title="More Details">About</router-link></li>

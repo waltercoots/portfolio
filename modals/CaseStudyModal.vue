@@ -1,7 +1,10 @@
 <script setup>
-import { computed, defineAsyncComponent, onMounted, onBeforeUnmount, ref } from 'vue'
+import { computed, onMounted, onBeforeUnmount, ref } from 'vue'
 import { RouterLink, useRoute, useRouter } from 'vue-router'
 import workData from '@/assets/work.json'
+import { useVariant } from '@/composables/useVariant.js'
+import { blockRegistry } from '@/blocks/index.js'
+import CaseStudyHeader from '@/components/CaseStudyHeader.vue'
 import Lenis from 'lenis';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -28,40 +31,84 @@ const applyParallax = () => {
 
 const route = useRoute()
 const router = useRouter()
-const modules = import.meta.glob('@/work/*.vue')
+const { variant } = useVariant()
+const blockModules = import.meta.glob('@/content/case-studies/*.js', { eager: true })
 const transitionName = ref('slide-left')
 const footerVisible = ref(true)
 
 const projects = computed(() => workData.projects || [])
 
-const currentIndex = computed(() => {
-	return projects.value.findIndex((project) => project.slug === route.params.slug)
+const project = computed(() => {
+	return projects.value.find((p) => p.slug === route.params.slug) ?? null
 })
 
-const project = computed(() => {
-	if (currentIndex.value === -1) return null
-	return projects.value[currentIndex.value]
+// Prev/next always step through the active variant's case study list, not the
+// full catalog — a case study a variant leaves out simply has no prev/next.
+const variantProjects = computed(() => {
+	return variant.value.caseStudies
+		.map((slug) => projects.value.find((p) => p.slug === slug))
+		.filter(Boolean)
+})
+
+const variantIndex = computed(() => {
+	if (!project.value) return -1
+	return variantProjects.value.findIndex((p) => p.slug === project.value.slug)
 })
 
 const previousProject = computed(() => {
-	if (!projects.value.length || currentIndex.value === -1) return null
-	const previousIndex = (currentIndex.value - 1 + projects.value.length) % projects.value.length
-	return projects.value[previousIndex]
+	if (!variantProjects.value.length || variantIndex.value === -1) return null
+	const previousIndex = (variantIndex.value - 1 + variantProjects.value.length) % variantProjects.value.length
+	return variantProjects.value[previousIndex]
 })
 
 const nextProject = computed(() => {
-	if (!projects.value.length || currentIndex.value === -1) return null
-	const nextIndex = (currentIndex.value + 1) % projects.value.length
-	return projects.value[nextIndex]
+	if (!variantProjects.value.length || variantIndex.value === -1) return null
+	const nextIndex = (variantIndex.value + 1) % variantProjects.value.length
+	return variantProjects.value[nextIndex]
 })
 
-const caseStudyComponent = computed(() => {
-	if (!project.value?.file) return null
+// title/summary/tags can be reframed per variant; company/role/year stay as historical fact.
+const headerProject = computed(() => {
+	if (!project.value) return null
+	const overrides = variant.value.headerOverrides?.[project.value.slug]
+	return overrides ? { ...project.value, ...overrides } : project.value
+})
 
-	const path = `/src/work/${project.value.file}.vue`
-	const loader = modules[path]
+const migratedBlocks = computed(() => {
+	if (!project.value?.slug) return null
+	const mod = blockModules[`/src/content/case-studies/${project.value.slug}.js`]
+	return mod?.blocks ?? null
+})
 
-	return loader ? defineAsyncComponent(loader) : null
+// Each entry in a variant's blockOverrides is either the id of an existing
+// block (selects + repositions it) or a full block object (injects content
+// that isn't in the case study's base file at all, variant-only).
+const visibleBlocks = computed(() => {
+	const blocks = migratedBlocks.value
+	if (!blocks) return []
+
+	const slug = project.value?.slug
+	const overrideEntries = variant.value.blockOverrides?.[slug]
+	const base = overrideEntries
+		? overrideEntries
+			.map((entry) => (typeof entry === 'string' ? blocks.find((b) => b.id === entry) : entry))
+			.filter(Boolean)
+		: blocks
+
+	// blockInserts adds new blocks next to an existing one without curating
+	// anything else — layers on top of the base list above, whether that's
+	// the full case study or an already-curated subset. An insert whose
+	// anchor isn't present in that list (e.g. curated out) is silently skipped.
+	const inserts = variant.value.blockInserts?.[slug]
+	if (!inserts?.length) return base
+
+	const result = [...base]
+	for (const { before, after, block } of inserts) {
+		const anchorIndex = result.findIndex((b) => b.id === (after ?? before))
+		if (anchorIndex === -1) continue
+		result.splice(after ? anchorIndex + 1 : anchorIndex, 0, block)
+	}
+	return result
 })
 
 const onBeforeLeave = () => {
@@ -132,19 +179,19 @@ const setupNavScrollTrigger = () => {
 const goToNextProject = () => {
 	if (!nextProject.value) return;
 	transitionName.value = 'slide-left';
-	router.push({ path: `/work/${nextProject.value.slug}` });
+	router.push({ path: `/work/${nextProject.value.slug}`, hash: route.hash });
 }
 
 const goToPrevProject = () => {
 	if (!previousProject.value) return;
 	transitionName.value = 'slide-right';
-	router.push({ path: `/work/${previousProject.value.slug}` });
+	router.push({ path: `/work/${previousProject.value.slug}`, hash: route.hash });
 }
 
 const handleKeyDown = (e) => {
 	switch (e.key) {
 		case 'Escape':
-			router.push({ path: '/' });
+			router.push({ path: '/', hash: route.hash });
 			break;
 		case 'ArrowLeft':
 			goToPrevProject();
@@ -187,20 +234,20 @@ onBeforeUnmount(() => {
 <template>
 	<div class="modal case-studies">
 		<nav class="modal-controls case-studies">
-			<RouterLink v-if="previousProject" :to="`/work/${previousProject.slug}`" :title="`Previous case study, ${previousProject.title}`" class="modal-nav-btn" @click.prevent="goToPrevProject">
+			<RouterLink v-if="previousProject" :to="{ path: `/work/${previousProject.slug}`, hash: route.hash }" :title="`Previous case study, ${previousProject.title}`" class="modal-nav-btn" @click.prevent="goToPrevProject">
 				<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M3.41525 8.64753C3.05929 9.00531 2.48217 9.00531 2.12621 8.64753C1.77025 8.28974 1.77025 7.70965 2.12621 7.35186L6.46953 2.96219C6.82549 2.6044 7.40261 2.6044 7.75857 2.96219C8.11453 3.31998 8.11453 3.90007 7.75857 4.25786L3.41525 8.64753Z" class="foreground" />
 					<path d="M2.12621 8.64753C1.77025 8.28974 1.77025 7.70965 2.12621 7.35186C2.48217 6.99407 3.05934 6.99448 3.4153 7.35227L7.7586 11.7419C8.11456 12.0997 8.11456 12.6798 7.7586 13.0376C7.40264 13.3954 6.82551 13.3954 6.46955 13.0376L2.12621 8.64753Z" class="foreground" />
 					<path d="M4.7421 8.90656C4.2374 8.90785 3.82931 8.49976 3.83061 7.99507C3.8319 7.49037 4.24209 7.08019 4.74678 7.07889L13.2619 7.04612C13.7666 7.04483 14.1747 7.45291 14.1734 7.95761C14.1721 8.46231 13.762 8.87249 13.2573 8.87379L4.7421 8.90656Z" class="foreground" />
 				</svg>
 			</RouterLink>
-			<RouterLink to="/" title="Close" class="modal-nav-btn close">
+			<RouterLink :to="{ path: '/', hash: route.hash }" title="Close" class="modal-nav-btn close">
 				<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
 					<path d="M4.09601 13.1735C3.74005 13.5313 3.16292 13.5313 2.80696 13.1735C2.451 12.8157 2.451 12.2356 2.80696 11.8778L11.8303 2.80814C12.1862 2.45035 12.7633 2.45035 13.1193 2.80814C13.4753 3.16592 13.4753 3.74601 13.1193 4.1038L4.09601 13.1735Z" class="foreground" />
 					<path d="M2.88068 4.12178C2.52472 3.764 2.52472 3.18391 2.88068 2.82612C3.23664 2.46833 3.81377 2.46833 4.16973 2.82612L13.193 11.8958C13.549 12.2536 13.549 12.8337 13.193 13.1915C12.8371 13.5492 12.2599 13.5492 11.904 13.1915L2.88068 4.12178Z" class="foreground" />
 				</svg>
 			</RouterLink>
-			<RouterLink v-if="nextProject" :to="`/work/${nextProject.slug}`" :title="`Next case study, ${nextProject.title}`" class="modal-nav-btn" @click.prevent="goToNextProject">
+			<RouterLink v-if="nextProject" :to="{ path: `/work/${nextProject.slug}`, hash: route.hash }" :title="`Next case study, ${nextProject.title}`" class="modal-nav-btn" @click.prevent="goToNextProject">
 				<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M12.6174 8.64753C12.9734 9.00531 13.5505 9.00531 13.9065 8.64753C14.2624 8.28974 14.2624 7.70965 13.9065 7.35186L9.56314 2.96219C9.20718 2.6044 8.63006 2.6044 8.2741 2.96219C7.91814 3.31998 7.91814 3.90007 8.2741 4.25786L12.6174 8.64753Z" class="foreground" />
 					<path d="M13.9065 8.64753C14.2624 8.28974 14.2624 7.70965 13.9065 7.35186C13.5505 6.99407 12.9733 6.99448 12.6174 7.35227L8.27407 11.7419C7.91811 12.0997 7.91811 12.6798 8.27407 13.0376C8.63003 13.3954 9.20716 13.3954 9.56311 13.0376L13.9065 8.64753Z" class="foreground" />
@@ -209,7 +256,10 @@ onBeforeUnmount(() => {
 			</RouterLink>
 		</nav>
 		<Transition :name="transitionName" mode="out-in" @before-leave="onBeforeLeave" @after-leave="onAfterLeave" @after-enter="onAfterEnter">
-			<component v-if="caseStudyComponent" :is="caseStudyComponent" :key="route.params.slug" :project="project" />
+			<main v-if="migratedBlocks" :key="route.params.slug">
+				<CaseStudyHeader :project="headerProject" />
+				<component v-for="block in visibleBlocks" :key="block.id" :is="blockRegistry[block.type]" v-bind="block" />
+			</main>
 			<div v-else class="case-study-fallback" :key="'fallback'">
 				<main>
 					<h1>Work not found</h1>
@@ -220,7 +270,7 @@ onBeforeUnmount(() => {
 		<nav class="case-study-footer" :style="{ visibility: footerVisible ? 'visible' : 'hidden' }">
 			<ul>
 				<li>
-					<RouterLink v-if="previousProject" :to="`/work/${previousProject.slug}`" :title="`Previous case study, ${previousProject.title}`" @click.prevent="goToPrevProject">
+					<RouterLink v-if="previousProject" :to="{ path: `/work/${previousProject.slug}`, hash: route.hash }" :title="`Previous case study, ${previousProject.title}`" @click.prevent="goToPrevProject">
 						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M3.41525 8.64753C3.05929 9.00531 2.48217 9.00531 2.12621 8.64753C1.77025 8.28974 1.77025 7.70965 2.12621 7.35186L6.46953 2.96219C6.82549 2.6044 7.40261 2.6044 7.75857 2.96219C8.11453 3.31998 8.11453 3.90007 7.75857 4.25786L3.41525 8.64753Z" class="foreground" />
 							<path d="M2.12621 8.64753C1.77025 8.28974 1.77025 7.70965 2.12621 7.35186C2.48217 6.99407 3.05934 6.99448 3.4153 7.35227L7.7586 11.7419C8.11456 12.0997 8.11456 12.6798 7.7586 13.0376C7.40264 13.3954 6.82551 13.3954 6.46955 13.0376L2.12621 8.64753Z" class="foreground" />
@@ -230,7 +280,7 @@ onBeforeUnmount(() => {
 				</li>
 				<li><a href="mailto:&#119;&#97;&#108;&#116;&#101;&#114;&#64;&#119;&#97;&#108;&#116;&#101;&#114;&#99;&#111;&#111;&#116;&#115;&#46;&#99;&#111;&#109;" class="liame"><span class="label">Get in Touch</span></a></li>
 				<li>
-					<RouterLink v-if="nextProject" :to="`/work/${nextProject.slug}`" :title="`Next case study, ${nextProject.title}`" @click.prevent="goToNextProject">
+					<RouterLink v-if="nextProject" :to="{ path: `/work/${nextProject.slug}`, hash: route.hash }" :title="`Next case study, ${nextProject.title}`" @click.prevent="goToNextProject">
 						<span class="label">{{ nextProject.title }}</span>
 						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M12.6174 8.64753C12.9734 9.00531 13.5505 9.00531 13.9065 8.64753C14.2624 8.28974 14.2624 7.70965 13.9065 7.35186L9.56314 2.96219C9.20718 2.6044 8.63006 2.6044 8.2741 2.96219C7.91814 3.31998 7.91814 3.90007 8.2741 4.25786L12.6174 8.64753Z" class="foreground" />

@@ -13,9 +13,10 @@ export default {
 		}
 	},
 	methods: {
-		// When a thumbnail is clicked, navigate to the project page
+		// When a thumbnail is clicked, navigate to the project page,
+		// carrying the active variant hash forward
 		goToProject() {
-			this.$router.push(`/work/${this.project.slug}`);
+			this.$router.push({ path: `/work/${this.project.slug}`, hash: this.$route.hash });
 		}
 	}
 }

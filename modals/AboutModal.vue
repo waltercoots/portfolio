@@ -2,9 +2,17 @@
 import Lenis from 'lenis';
 import Matter from "matter-js";
 import decomp from "poly-decomp";
+import { useVariant } from '@/composables/useVariant.js'
+import { blockRegistry } from '@/blocks/index.js'
+import { skills } from '@/content/skills.js'
+import { blocks as aboutBlocks } from '@/content/about.js'
 
 export default {
   name: "AboutView",
+  setup() {
+    const { variant } = useVariant()
+    return { variant, aboutBlocks, blockRegistry }
+  },
   data() {
     return {
       lenis: null,
@@ -35,6 +43,19 @@ export default {
       ]
     };
   },
+  computed: {
+    // Full replacement, not additive: when the active variant defines
+    // skillEmphasis, promotion for this render is exactly promote + inject;
+    // otherwise each tag's own `promoted` flag from skills.js applies.
+    mergedSkills() {
+      const emphasis = this.variant.skillEmphasis
+      if (!emphasis) return skills
+      const promotedIds = new Set(emphasis.promote ?? [])
+      const base = skills.map(s => ({ ...s, promoted: promotedIds.has(s.id) }))
+      const injected = (emphasis.inject ?? []).map(s => ({ ...s, promoted: true }))
+      return [...base, ...injected]
+    }
+  },
   mounted() {
     skillFallSetup();
     window.addEventListener('resize', this.handleResize);
@@ -54,7 +75,7 @@ export default {
     },
     handleKeyDown(e) {
       if (e.key === 'Escape') {
-        this.$router.push({ path: '/' });
+        this.$router.push({ path: '/', hash: this.$route.hash });
       }
     },
     goToQuote(index, direction) {
@@ -123,7 +144,7 @@ export default {
       if (this.enteredFrom) {
         this.$router.go(-1);
       } else {
-        this.$router.push('/');
+        this.$router.push({ path: '/', hash: this.$route.hash });
       }
     }
   },
@@ -393,86 +414,7 @@ function clearSkillFall() {
             <img src="/assets/img/headshot.png" class="headshot light" alt="" draggable="false" />
           </div>
           <ul>
-            <li>Interaction Design</li>
-            <li>Personas</li>
-            <li class="level-3">User Experience</li>
-            <li>Atomic Design</li>
-            <li>Illustration</li>
-            <li>Facilitation</li>
-            <li>Design Tokens</li>
-            <li>Iconography</li>
-            <li class="level-3">Figma</li>
-            <li>Stakeholder Management</li>
-            <li>Design Critique</li>
-            <li>Inclusive Design</li>
-            <li>AI Assisted Design Workflows</li>
-            <li>Journey Mapping</li>
-            <li>Microinteractions</li>
-            <li class="level-3">Wireframing</li>
-            <li>Sketch</li>
-            <li>Agile Methodologies</li>
-            <li>FigJam</li>
-            <li>Color Theory</li>
-            <li>Webflow</li>
-            <li>Mentorship</li>
-            <li>Zeplin</li>
-            <li>Motion Prototyping</li>
-            <li>Service Design</li>
-            <li class="level-3">Responsive Web Design</li>
-            <li>Design Operations</li>
-            <li>Photoshop</li>
-            <li>User Strategy</li>
-            <li>Art Direction</li>
-            <li>Design Leadership</li>
-            <li>Interaction Animation</li>
-            <li>Illustrator</li>
-            <li>Typography</li>
-            <li>Miro</li>
-            <li>ProtoPie</li>
-            <li>HTML & CSS</li>
-            <li>Problem Solving</li>
-            <li>Principle</li>
-            <li class="level-3">Figma MCP Integration</li>
-            <li>Design Documentation</li>
-            <li>Roadmapping</li>
-            <li>After Effects</li>
-            <li>Accessibility</li>
-            <li>Usability Testing</li>
-            <li>Cross-Functional Collaboration</li>
-            <li class="level-3">Mobile Web Design</li>
-            <li>Visual Hierarchy</li>
-            <li>InDesign</li>
-            <li>Component Libraries</li>
-            <li>Blender</li>
-            <li>ChatGPT</li>
-            <li>Scalable Design</li>
-            <li>Data Visualization</li>
-            <li>Experience Design</li>
-            <li>Design Thinking</li>
-            <li>Theming</li>
-            <li>Framer</li>
-            <li>InVision</li>
-            <li>Adobe Creative Suite</li>
-            <li>Product Strategy</li>
-            <li>JavaScript</li>
-            <li>Gemini</li>
-            <li>User Research</li>
-            <li class="level-3">Digital Product Design</li>
-            <li>Workshops</li>
-            <li>Graphic Design</li>
-            <li>Motion Graphics</li>
-            <li>Visual Design</li>
-            <li>Animate</li>
-            <li>Frontend Development</li>
-            <li>Claude Design</li>
-            <li>Simplification</li>
-            <li class="level-3">User Interface</li>
-            <li>Layout</li>
-            <li>Information Architecture</li>
-            <li class="level-3">Design Systems</li>
-            <li>Prototyping</li>
-            <li>User-Centered Design</li>
-            <li>Storybook</li>
+            <li v-for="tag in mergedSkills" :key="tag.id" :class="{ 'level-3': tag.promoted }">{{ tag.label }}</li>
           </ul>
         </div>
       </div>
@@ -501,30 +443,7 @@ function clearSkillFall() {
             </svg>
           </button>
         </div>
-        <h2>The story so far</h2>
-        <p>It all began in a suburb in Texas which happens to be the largest city in the U.S. without public transportation. It's the 90s, and I was a bored teenager sitting in the kitchen at a Performa 630CD in the middle of the night. My dad, a photographer for the newspaper, installed a copy of Adobe Photoshop 2.5. I used the twirl filter, and my mind was blown.</p>
-        <p>Later, I decided I wanted to learn to make webpages to impress other kids, and making them became a hobby. In addition to collecting CDs and Star Wars figures, I was collecting books on web design. I got a part-time job designing websites at a small ad agency, which would be the first of many. I freelanced, worked at more agencies, and got a degree which fundamentally shaped how I operated.</p>
-        <p>In 2009, I moved to Austin. Having made tons of websites, I wondered if I'd enjoy working on software, so I joined a software company. Ever since, I've been designing software and websites across a variety of industries. I've had the privilege of managing and mentoring other designers, giving talks, participating in clubs, leading workshops, and even tried creating a few startups and non-profits of my own.</p>
-        <p>Over the past 4 years, I've been a Senior Product Designer at <a href="https://workstep.com" target="_blank">WorkStep</a> which was recently acquired by <a href="https://learningpool.com" target="_blank">Learning Pool</a>. I'm now actively seeking my next role.</p>
-        <div class="clients">
-          <h2>Name-dropping</h2>
-          <ul>
-            <li>Hallmark</li>
-            <li>Denny's</li>
-            <li>Deep Eddy Vodka</li>
-            <li>SXSW</li>
-            <li>The Daily Dot</li>
-            <li>Intuit</li>
-            <li>Halliburton</li>
-            <li>Helms Workshop</li>
-
-          </ul>
-        </div>
-        <h2>Get a load of this guy</h2>
-        <p>People say I'm friendly, earnest, and easy to get along with. I love people and find them interesting, and you'll find me being a social butterfly at a party where I don't know anyone, but I also greatly appreciate time to myself. I'm a little silly, but also take my work and certain convictions pretty seriously.</p>
-        <p>I'm a father, husband, home owner, and pet companion which all take up the majority of my time. I like going to concerts, visiting museums, seeing movies, playing video games, playing board games, and cycling. I make great cocktails.</p>
-        <p>I'm in an era where I feel more drawn than ever to working on challenges that affect the largest amount of people, like climate change, media literacy, water purification, homelessness, and food security. Simultaneously, I'm always excited to learn more about emerging technologies such as AI, spatial computing, quantum computing, and robotics.</p>
-        <p>If you think I might be a good fit for your team, please <a href="mailto:&#119;&#97;&#108;&#116;&#101;&#114;&#64;&#119;&#97;&#108;&#116;&#101;&#114;&#99;&#111;&#111;&#116;&#115;&#46;&#99;&#111;&#109;" title="&#119;&#97;&#108;&#116;&#101;&#114;&#64;&#119;&#97;&#108;&#116;&#101;&#114;&#99;&#111;&#111;&#116;&#115;&#46;&#99;&#111;&#109;">reach out</a> and perhaps we can make some good stuff together.</p>
+        <component v-for="block in aboutBlocks" :key="block.id" :is="blockRegistry[block.type]" v-bind="block" />
       </main>
     </div>
   </div>
@@ -820,20 +739,6 @@ div.modal a.modal-nav-btn.close {
 @keyframes march-ants {
   to {
     background-position: -10px 87%;
-  }
-}
-
-div.clients {
-  ul {
-    list-style:none;
-    display:grid;
-    gap:0.25rem;
-    @include xs {
-      grid-template-columns: 1fr 1fr;
-    }
-    @include md {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
   }
 }
 </style>

@@ -91,7 +91,7 @@ function updatePathViaScroll(key) {
   const targetPath = pathForSection(key)
   if (route.path !== targetPath) {
     ignoreNextRouteWatch = true
-    router.push({ path: targetPath })
+    router.push({ path: targetPath, hash: route.hash })
   }
 }
 

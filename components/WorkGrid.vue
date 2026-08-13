@@ -2,11 +2,16 @@
 import WorkThumb from '@/components/WorkThumb.vue';
 import projects from '@/assets/work.json';
 import filterSvg from '@/assets/svgs/icn-filter.svg?raw';
+import { useVariant } from '@/composables/useVariant.js';
 
 export default {
 	name: 'WorkGrid',
 	components: {
 		WorkThumb
+	},
+	setup() {
+		const { variant } = useVariant()
+		return { variant }
 	},
 	data() {
 		return {
@@ -25,11 +30,18 @@ export default {
 		activeTag() {
 			return this.$route.query.tag;
 		},
+		// The active variant's caseStudies list drives both membership and order;
+		// the tag filter then narrows within that scoped list.
+		variantProjects() {
+			return this.variant.caseStudies
+				.map(slug => this.jsonData.projects.find(p => p.slug === slug))
+				.filter(Boolean);
+		},
 		filteredProjects() {
 			if (!this.activeTag) {
-				return this.jsonData.projects;
+				return this.variantProjects;
 			}
-			return this.jsonData.projects.filter(project => project.tags.includes(this.activeTag));
+			return this.variantProjects.filter(project => project.tags.includes(this.activeTag));
 		},
 		featuredProjects() {
 			return this.filteredProjects.filter(p => p.featured);

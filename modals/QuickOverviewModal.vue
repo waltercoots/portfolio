@@ -1,11 +1,12 @@
 <script setup>
 import { computed, nextTick, onBeforeUnmount, onMounted, ref } from 'vue';
-import { useRouter } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import Lenis from 'lenis';
 import searchIconSvg from '@/assets/svgs/icn-search.svg?raw'
 
 let lenis = null;
 
+const route = useRoute()
 const router = useRouter()
 const contentRef = ref(null)
 const copied = ref(false)
@@ -99,7 +100,7 @@ const handleKeyDown = (e) => {
     if (searchActive.value) {
       closeSearch()
     } else {
-      router.push({ path: '/' })
+      router.push({ path: '/', hash: route.hash })
     }
   }
 }
