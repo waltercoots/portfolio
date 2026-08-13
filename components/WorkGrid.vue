@@ -66,7 +66,9 @@ export default {
 		},
 		tagLink(tag) {
 			// Clicking the already-active tag clears the filter instead of re-applying it
-			return this.activeTag === tag ? { path: '/work' } : { path: '/work', query: { tag } };
+			return this.activeTag === tag
+				? { path: '/work', hash: this.$route.hash }
+				: { path: '/work', query: { tag }, hash: this.$route.hash };
 		},
 		toggleTags() {
 			this.tagsVisible = !this.tagsVisible;

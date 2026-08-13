@@ -39,6 +39,20 @@ export const variants = {
           },
         },
       ],
+      // The About page's bio content (src/content/about.js) resolves through
+      // the same blockOverrides/blockInserts mechanism as case studies, just
+      // under the fixed key 'about' instead of a slug. This adds one note to
+      // the bio without curating anything else on the page.
+      about: [
+        {
+          after: 'story-current-role-paragraph',
+          block: {
+            id: 'tremendous-spd-systems-note',
+            type: 'paragraph',
+            text: 'That systems mindset extends to how I work today — I build AI tools like Cursor and Claude directly into my process, from early prototyping through shipped implementation, rather than treating them as a bolt-on.',
+          },
+        },
+      ],
     },
     headerOverrides: {
       'ai-assistant': {

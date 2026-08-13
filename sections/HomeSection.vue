@@ -1,9 +1,11 @@
 <script setup>
 import { computed } from 'vue'
+import { useRoute } from 'vue-router'
 import WorkGrid from '@/components/WorkGrid.vue';
 import { useVariant } from '@/composables/useVariant.js'
-import { variants } from '@/assets/variants.js'
+import { variants } from '@/assets/content-variants.js'
 
+const route = useRoute()
 const { variant } = useVariant()
 const intro = computed(() => variant.value.intro ?? variants.default.intro)
 </script>
@@ -12,8 +14,8 @@ const intro = computed(() => variant.value.intro ?? variants.default.intro)
 	<div class="about">
 		<p>{{ intro }}</p>
 		<ul class="main-nav">
-			<li><router-link to="/quick-overview" title="Quick Overview">Quick Overview</router-link></li>
-			<li><router-link to="/about" title="More Details">About</router-link></li>
+			<li><router-link :to="{ path: '/quick-overview', hash: route.hash }" title="Quick Overview">Quick Overview</router-link></li>
+			<li><router-link :to="{ path: '/about', hash: route.hash }" title="More Details">About</router-link></li>
 			<li><a href="/assets/wcoots-resume.pdf" download title="Download my Résumé">Résumé</a></li>
 		</ul>
 		<ul class="contact-info">

@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import { useRoute } from 'vue-router'
 import { useAccentColor } from '@/composables/useAccentColor'
 import madeInSvg from '@/assets/svgs/made-in.svg?raw'
 import tldrSvg from '@/assets/svgs/tldr.svg?raw'
@@ -7,6 +8,7 @@ import tldrSvg from '@/assets/svgs/tldr.svg?raw'
 const nameBG = ref(null)
 defineExpose({ nameBG })
 
+const route = useRoute()
 const { cycleColor } = useAccentColor()
 
 </script>
@@ -14,10 +16,10 @@ const { cycleColor } = useAccentColor()
 <template>
 	<div class="name-bg" ref="nameBG">
 		<span class="made-in" v-html="madeInSvg" role="img" aria-label="Written, Designed, and Coded in Austin, Texas" />
-		<router-link to="/quick-overview" title="Quick Overview"><span class="tldr" v-html="tldrSvg" aria-hidden="true" /></router-link>
+		<router-link :to="{ path: '/quick-overview', hash: route.hash }" title="Quick Overview"><span class="tldr" v-html="tldrSvg" aria-hidden="true" /></router-link>
 		<ul class="nav">
-			<li><router-link to="/work" title="See Walter's Work">Work</router-link></li>
-			<li><router-link to="/about" title="Learn About Walter">About</router-link></li>
+			<li><router-link :to="{ path: '/work', hash: route.hash }" title="See Walter's Work">Work</router-link></li>
+			<li><router-link :to="{ path: '/about', hash: route.hash }" title="Learn About Walter">About</router-link></li>
 			<li><a href="/assets/wcoots-resume.pdf" download title="Download my Résumé">Résumé</a></li>
 			<li><a href="mailto:&#119;&#97;&#108;&#116;&#101;&#114;&#64;&#119;&#97;&#108;&#116;&#101;&#114;&#99;&#111;&#111;&#116;&#115;&#46;&#99;&#111;&#109;" title="&#119;&#97;&#108;&#116;&#101;&#114;&#64;&#119;&#97;&#108;&#116;&#101;&#114;&#99;&#111;&#111;&#116;&#115;&#46;&#99;&#111;&#109;">Contact</a></li>
 		</ul>

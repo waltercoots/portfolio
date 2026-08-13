@@ -154,7 +154,7 @@ onBeforeUnmount(() => {
     <main>
       <nav class="modal-controls">
       <button class="copy-btn" @click="copyContent">{{ copied ? 'Copied!' : 'Copy' }}</button>
-        <router-link to="/" title="Close" class="modal-nav-btn close">
+        <router-link :to="{ path: '/', hash: route.hash }" title="Close" class="modal-nav-btn close">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M4.09601 13.1735C3.74005 13.5313 3.16292 13.5313 2.80696 13.1735C2.451 12.8157 2.451 12.2356 2.80696 11.8778L11.8303 2.80814C12.1862 2.45035 12.7633 2.45035 13.1193 2.80814C13.4753 3.16592 13.4753 3.74601 13.1193 4.1038L4.09601 13.1735Z" class="foreground" />
             <path d="M2.88068 4.12178C2.52472 3.764 2.52472 3.18391 2.88068 2.82612C3.23664 2.46833 3.81377 2.46833 4.16973 2.82612L13.193 11.8958C13.549 12.2536 13.549 12.8337 13.193 13.1915C12.8371 13.5492 12.2599 13.5492 11.904 13.1915L2.88068 4.12178Z" class="foreground" />

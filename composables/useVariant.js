@@ -1,6 +1,6 @@
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
-import { variants } from '@/assets/variants.js'
+import { variants } from '@/assets/content-variants.js'
 
 // The URL hash (e.g. #tremendous-spd) selects a variant. It's a plain URL
 // fragment, independent of vue-router's history-mode path routing, but

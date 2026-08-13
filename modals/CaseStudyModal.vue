@@ -4,6 +4,7 @@ import { RouterLink, useRoute, useRouter } from 'vue-router'
 import workData from '@/assets/work.json'
 import { useVariant } from '@/composables/useVariant.js'
 import { blockRegistry } from '@/blocks/index.js'
+import { resolveBlocks } from '@/blocks/resolveBlocks.js'
 import CaseStudyHeader from '@/components/CaseStudyHeader.vue'
 import Lenis from 'lenis';
 import gsap from 'gsap';
@@ -80,36 +81,7 @@ const migratedBlocks = computed(() => {
 	return mod?.blocks ?? null
 })
 
-// Each entry in a variant's blockOverrides is either the id of an existing
-// block (selects + repositions it) or a full block object (injects content
-// that isn't in the case study's base file at all, variant-only).
-const visibleBlocks = computed(() => {
-	const blocks = migratedBlocks.value
-	if (!blocks) return []
-
-	const slug = project.value?.slug
-	const overrideEntries = variant.value.blockOverrides?.[slug]
-	const base = overrideEntries
-		? overrideEntries
-			.map((entry) => (typeof entry === 'string' ? blocks.find((b) => b.id === entry) : entry))
-			.filter(Boolean)
-		: blocks
-
-	// blockInserts adds new blocks next to an existing one without curating
-	// anything else — layers on top of the base list above, whether that's
-	// the full case study or an already-curated subset. An insert whose
-	// anchor isn't present in that list (e.g. curated out) is silently skipped.
-	const inserts = variant.value.blockInserts?.[slug]
-	if (!inserts?.length) return base
-
-	const result = [...base]
-	for (const { before, after, block } of inserts) {
-		const anchorIndex = result.findIndex((b) => b.id === (after ?? before))
-		if (anchorIndex === -1) continue
-		result.splice(after ? anchorIndex + 1 : anchorIndex, 0, block)
-	}
-	return result
-})
+const visibleBlocks = computed(() => resolveBlocks(migratedBlocks.value, variant.value, project.value?.slug))
 
 const onBeforeLeave = () => {
 	footerVisible.value = false
@@ -263,7 +235,7 @@ onBeforeUnmount(() => {
 			<div v-else class="case-study-fallback" :key="'fallback'">
 				<main>
 					<h1>Work not found</h1>
-					<p>That's not here! Maybe it was never here. Try looking at my <RouterLink to="/work" title="Work">other work</RouterLink> instead.</p>
+					<p>That's not here! Maybe it was never here. Try looking at my <RouterLink :to="{ path: '/work', hash: route.hash }" title="Work">other work</RouterLink> instead.</p>
 				</main>
 			</div>
 		</Transition>
