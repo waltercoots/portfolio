@@ -1,3 +1,0 @@
-@mixin modular-scale($step, $base-size: 16px, $ratio: 1.2) {
-  font-size: #{$base-size * pow($ratio, $step)};
-}

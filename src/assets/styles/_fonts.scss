@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'Morison';
+  src: url('/src/assets/fonts/morison-medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Morison';
+  src: url('/src/assets/fonts/morison-medium-italic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TT Hoves';
+  src:
+    url('/src/assets/fonts/tt_hoves_extralight.woff2') format('woff2'),
+    url('/src/assets/fonts/tt_hoves_extralight.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Hoves';
+  src:
+    url('/src/assets/fonts/tt_hoves_light.woff2') format('woff2'),
+    url('/src/assets/fonts/tt_hoves_light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Hoves';
+  src:
+    url('/src/assets/fonts/tt_hoves_light_italic.woff2') format('woff2'),
+    url('/src/assets/fonts/tt_hoves_light_italic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TT Hoves';
+  src:
+    url('/src/assets/fonts/tt_hoves_medium.woff2') format('woff2'),
+    url('/src/assets/fonts/tt_hoves_medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Hoves';
+  src:
+    url('/src/assets/fonts/tt_hoves_medium_italic.woff2') format('woff2'),
+    url('/src/assets/fonts/tt_hoves_medium_italic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
