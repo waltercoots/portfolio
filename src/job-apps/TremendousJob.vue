@@ -80,7 +80,7 @@ onBeforeUnmount(() => {
         <div class="requirement">
           <h2>Collaborative design</h2>
           <p>My best work is done in close collaboration with PMs and engineers, not by myself. I've worked with content strategists, data scientists, UX researchers, and all kinds of other stakeholders and have found it consistently to help the end result.</p>
-          <img src="/assets/img/job-apps/collaborative.png" alt="" />
+          <img src="/assets/img/job-apps/collaborative.png" alt="Me and the Unilease team in a Zoom call" />
         </div>
       </div>
       <p>Thanks for considering me. Check out the <router-link to="/" title="View full portfolio">rest of my portfolio</router-link> if you'd like to see more, or feel free to <a href="https://calendly.com/walter-coots" target="_blank">grab some time with me</a>.</p>
