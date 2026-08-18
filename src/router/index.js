@@ -8,6 +8,7 @@ import CaseStudyModal from "@/modals/CaseStudyModal.vue"
 import TremendousJob from "@/job-apps/TremendousJob.vue"
 import NgrokJob from "@/job-apps/NgrokJob.vue"
 import ValonJob from "@/job-apps/ValonJob.vue"
+import BetterUpJob from "@/job-apps/BetterUpJob.vue"
 
 const shellRoute = (path, meta = {}) => ({
   path,
@@ -37,6 +38,7 @@ const routes = [
   modalRoute("/tremendous", TremendousJob, { title: "Walter Coots × Tremendous" }, {modal:true}),
   modalRoute("/ngrok", NgrokJob, { title: "Walter Coots × ngrok" }, {modal:true}),
   modalRoute("/valon", ValonJob, { title: "Walter Coots × Valon" }, {modal:true}),
+  modalRoute("/betterup", BetterUpJob, { title: "Walter Coots × BetterUp" }, {modal:true}),
 ]
 
 const router = createRouter({
