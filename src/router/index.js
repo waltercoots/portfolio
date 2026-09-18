@@ -13,6 +13,14 @@ import FunctionHealthJob from "@/cover-letters/FunctionHealthJob.vue"
 import HomeboundJob from "@/cover-letters/HomeboundJob.vue"
 import NetspendJob from "@/cover-letters/NetspendJob.vue"
 import LightJob from "@/cover-letters/LightJob.vue"
+import MachinifyJob from "@/cover-letters/MachinifyJob.vue"
+import LuxuryPresenceJob from "@/cover-letters/LuxuryPresenceJob.vue"
+import ModusCreateJob from "@/cover-letters/ModusCreateJob.vue"
+import ZillowJob from "@/cover-letters/ZillowJob.vue"
+import OllieJob from "@/cover-letters/OllieJob.vue"
+import SeekrJob from "@/cover-letters/SeekrJob.vue"
+import DuckDuckGoJob from "@/cover-letters/DuckDuckGoJob.vue"
+import AppleJob from "@/cover-letters/AppleJob.vue"
 
 const shellRoute = (path, meta = {}) => ({
   path,
@@ -47,6 +55,14 @@ const routes = [
   modalRoute("/homebound", HomeboundJob, { title: "Walter Coots × Homebound" }, {modal:true}),
   modalRoute("/netspend", NetspendJob, { title: "Walter Coots × Netspend" }, {modal:true}),
   modalRoute("/light", LightJob, { title: "Walter Coots × Light" }, {modal:true}),
+  modalRoute("/machinify", MachinifyJob, { title: "Walter Coots × Machinify" }, {modal:true}),
+  modalRoute("/luxury-presence", LuxuryPresenceJob, { title: "Walter Coots × Luxury Presence" }, {modal:true}),
+  modalRoute("/modus-create", ModusCreateJob, { title: "Walter Coots × Modus Create" }, {modal:true}),
+  modalRoute("/zillow", ZillowJob, { title: "Walter Coots × Zillow" }, {modal:true}),
+  modalRoute("/ollie", OllieJob, { title: "Walter Coots × Ollie" }, {modal:true}),
+  modalRoute("/seekr", SeekrJob, { title: "Walter Coots × Seekr" }, {modal:true}),
+  modalRoute("/duckduckgo", DuckDuckGoJob, { title: "Walter Coots × DuckDuckGo" }, {modal:true}),
+  modalRoute("/apple", AppleJob, { title: "Walter Coots × Apple" }, {modal:true}),
 ]
 
 const router = createRouter({
