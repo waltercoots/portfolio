@@ -5,10 +5,14 @@ import ScrollShell from "@/views/ScrollShell.vue"
 import AboutModal from "@/modals/AboutModal.vue"
 import QuickOverviewModal from "@/modals/QuickOverviewModal.vue"
 import CaseStudyModal from "@/modals/CaseStudyModal.vue"
-import TremendousJob from "@/job-apps/TremendousJob.vue"
-import NgrokJob from "@/job-apps/NgrokJob.vue"
-import ValonJob from "@/job-apps/ValonJob.vue"
-import BetterUpJob from "@/job-apps/BetterUpJob.vue"
+import TremendousJob from "@/cover-letters/TremendousJob.vue"
+import NgrokJob from "@/cover-letters/NgrokJob.vue"
+import ValonJob from "@/cover-letters/ValonJob.vue"
+import BetterUpJob from "@/cover-letters/BetterUpJob.vue"
+import FunctionHealthJob from "@/cover-letters/FunctionHealthJob.vue"
+import HomeboundJob from "@/cover-letters/HomeboundJob.vue"
+import NetspendJob from "@/cover-letters/NetspendJob.vue"
+import LightJob from "@/cover-letters/LightJob.vue"
 
 const shellRoute = (path, meta = {}) => ({
   path,
@@ -39,6 +43,10 @@ const routes = [
   modalRoute("/ngrok", NgrokJob, { title: "Walter Coots × ngrok" }, {modal:true}),
   modalRoute("/valon", ValonJob, { title: "Walter Coots × Valon" }, {modal:true}),
   modalRoute("/betterup", BetterUpJob, { title: "Walter Coots × BetterUp" }, {modal:true}),
+  modalRoute("/function-health", FunctionHealthJob, { title: "Walter Coots × Function Health" }, {modal:true}),
+  modalRoute("/homebound", HomeboundJob, { title: "Walter Coots × Homebound" }, {modal:true}),
+  modalRoute("/netspend", NetspendJob, { title: "Walter Coots × Netspend" }, {modal:true}),
+  modalRoute("/light", LightJob, { title: "Walter Coots × Light" }, {modal:true}),
 ]
 
 const router = createRouter({

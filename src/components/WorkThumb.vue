@@ -68,6 +68,7 @@ div.workthumb {
 		position: absolute;
 		opacity:0;
 		transition: all 150ms ease-in;
+		margin-top:0;
 		width:100%;
 		height:100%;
 		display:flex;
