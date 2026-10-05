@@ -26,6 +26,9 @@ import CodePathJob from "@/cover-letters/CodePathJob.vue"
 import MyPatternJob from "@/cover-letters/MyPatternJob.vue"
 import ClipboardJob from "@/cover-letters/ClipboardJob.vue"
 import MicrosoftJob from "@/cover-letters/MicrosoftJob.vue"
+import PartlyJob from "@/cover-letters/PartlyJob.vue"
+import ComPsychJob from "@/cover-letters/ComPsychJob.vue"
+import AshbyJob from "@/cover-letters/AshbyJob.vue"
 
 const shellRoute = (path, meta = {}) => ({
   path,
@@ -73,6 +76,9 @@ const routes = [
   modalRoute("/mypattern", MyPatternJob, { title: "Walter Coots × MyPattern" }, {modal:true}),
   modalRoute("/clipboard", ClipboardJob, { title: "Walter Coots × Clipboard" }, {modal:true}),
   modalRoute("/microsoft", MicrosoftJob, { title: "Walter Coots × Microsoft" }, {modal:true}),
+  modalRoute("/partly", PartlyJob, { title: "Walter Coots × Partly" }, {modal:true}),
+  modalRoute("/compsych", ComPsychJob, { title: "Walter Coots × ComPsych" }, {modal:true}),
+  modalRoute("/ashby", AshbyJob, { title: "Walter Coots × Ashby" }, {modal:true}),
 ]
 
 const router = createRouter({
