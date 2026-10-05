@@ -21,6 +21,11 @@ import OllieJob from "@/cover-letters/OllieJob.vue"
 import SeekrJob from "@/cover-letters/SeekrJob.vue"
 import DuckDuckGoJob from "@/cover-letters/DuckDuckGoJob.vue"
 import AppleJob from "@/cover-letters/AppleJob.vue"
+import ScotchJob from "@/cover-letters/ScotchJob.vue"
+import CodePathJob from "@/cover-letters/CodePathJob.vue"
+import MyPatternJob from "@/cover-letters/MyPatternJob.vue"
+import ClipboardJob from "@/cover-letters/ClipboardJob.vue"
+import MicrosoftJob from "@/cover-letters/MicrosoftJob.vue"
 
 const shellRoute = (path, meta = {}) => ({
   path,
@@ -63,6 +68,11 @@ const routes = [
   modalRoute("/seekr", SeekrJob, { title: "Walter Coots × Seekr" }, {modal:true}),
   modalRoute("/duckduckgo", DuckDuckGoJob, { title: "Walter Coots × DuckDuckGo" }, {modal:true}),
   modalRoute("/apple", AppleJob, { title: "Walter Coots × Apple" }, {modal:true}),
+  modalRoute("/scotch", ScotchJob, { title: "Walter Coots × Scotch" }, {modal:true}),
+  modalRoute("/codepath", CodePathJob, { title: "Walter Coots × CodePath" }, {modal:true}),
+  modalRoute("/mypattern", MyPatternJob, { title: "Walter Coots × MyPattern" }, {modal:true}),
+  modalRoute("/clipboard", ClipboardJob, { title: "Walter Coots × Clipboard" }, {modal:true}),
+  modalRoute("/microsoft", MicrosoftJob, { title: "Walter Coots × Microsoft" }, {modal:true}),
 ]
 
 const router = createRouter({

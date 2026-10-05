@@ -9,7 +9,7 @@ defineProps({
     <h1>{{ project.title }}</h1>
     <div class="title-and-timeframe">
       <span class="title small">{{ project.role }}</span>
-      <span class="company small">{{ project.company }}</span>
+      <span v-if="project.company" class="company small">{{ project.company }}</span>
       <span class="timeframe small">{{ project.year }}</span>
     </div>
     <p>{{ project.summary }}</p>

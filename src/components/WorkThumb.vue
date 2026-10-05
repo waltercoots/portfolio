@@ -211,7 +211,6 @@ div.workthumb.featured {
 	@include md {
 		gap: 2rem;
 	}
-	aspect-ratio: unset;
 	margin-bottom: 2.5rem;
 
 	@container (max-width:479px) {
@@ -266,15 +265,15 @@ div.workthumb.featured {
 		text-decoration: underline;
 		text-decoration-color: transparent;
 		
-		&:before {
-			content: '0'; // note: see below for numbering
-			position: absolute;
-			top: -2.375em;
-			font-size: 0.5em;
-			font-weight: 400;
-			@include modular-scale(-1);
-			font-variant-numeric: slashed-zero;
-		}
+		// &:before {
+		// 	content: '0'; // note: see below for numbering
+		// 	position: absolute;
+		// 	top: -2.375em;
+		// 	font-size: 0.5em;
+		// 	font-weight: 400;
+		// 	@include modular-scale(-1);
+		// 	font-variant-numeric: slashed-zero;
+		// }
 
 	}
 	@media (hover:hover) {
@@ -285,23 +284,23 @@ div.workthumb.featured {
 			}
 		}
 	}
-	&:nth-of-type(1) {
-		h2:before {
-			content: '01';
-		}
-	}
+	// &:nth-of-type(1) {
+	// 	h2:before {
+	// 		content: '01';
+	// 	}
+	// }
 
-	&:nth-of-type(02) {
-		h2:before {
-			content: '02';
-		}
-	}
+	// &:nth-of-type(02) {
+	// 	h2:before {
+	// 		content: '02';
+	// 	}
+	// }
 
-	&:nth-of-type(03) {
-		h2:before {
-			content: '03';
-		}
-	}
+	// &:nth-of-type(03) {
+	// 	h2:before {
+	// 		content: '03';
+	// 	}
+	// }
 
 	div.thumbholder {
 		flex-shrink: 1fr;

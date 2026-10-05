@@ -1,61 +1,27 @@
 {
   "projects": [
+
     {
-      "title": "Untangling WorkStep",
-      "title-short": "Untangling WorkStep",
-      "file": "UntanglingWorkStepCaseStudy",
-      "slug": "untangling-workstep",
+      "title": "WorkStep",
+      "title-short": "WorkStep",
+      "file": "WorkStepGeneralCaseStudy",
+      "slug": "workstep",
       "featured": true,
-      "summary": "Re-evaluating the content and information architecture on an enterprise HR B2B SaaS application",
-      "year": "2023–2024",
+      "summary": "4 years taking a Series B startup from $2M ARR to $8M ARR",
+      "year": "2022–2026",
       "tags": [
+        "Startup",
+        "User Interface Design",
         "User Experience Design",
         "Web",
-        "SaaS",
         "B2B",
+        "SaaS",
+        "Design Systems",
+        "Interaction Design",
         "Information Architecture"
       ],
-      "company": "WorkStep",
-      "role": "Senior Product Designer"
-    },
-    {
-      "title": "The AI Assistant",
-      "title-short": "The AI Assistant",
-      "file": "AIAssistantCaseStudy",
-      "slug": "ai-assistant",
-      "featured": true,
-      "summary": "LLM and logic-based notifications to bring signal from noise.",
-      "year": "2024–2026",
-      "tags": [
-        "AI",
-        "User Interface Design",
-        "User Experience Design",
-        "Web",
-        "SaaS",
-        "B2B",
-        "Interaction Design"
-      ],
-      "company": "WorkStep",
-      "role": "Senior Product Designer"
-    },
-    {
-      "title": "Inform",
-      "title-short": "Inform",
-      "file": "InformCaseStudy",
-      "slug": "inform",
-      "featured": true,
-      "summary": "Broadcast messenger with confidential recipients",
-      "year": "2023",
-      "tags": [
-        "User Interface Design",
-        "Web",
-        "SaaS",
-        "B2B",
-        "Interaction Design"
-      ],
-      "company": "WorkStep",
-      "role": "Senior Product Designer"
-    },
+      "role": "Sr. Product Designer"
+    },    
     {
       "title": "Unilease",
       "title-short": "Unilease",
@@ -73,7 +39,6 @@
         "B2B",
         "SaaS"
       ],
-      "company": "Unilease",
       "role": "Head of Design"
     },
     {
@@ -130,7 +95,6 @@
         "Web",
         "Ecommerce",
         "Healthcare"],
-        "company": "EverlyWell",
         "role": "Lead UX/UI Designer"
       },
     {
@@ -147,7 +111,6 @@
        "Interaction Design",
        "Print",
        "Entertainment"],
-       "company": "Insitome",
        "role": "Lead Designer"
     },
     {

@@ -34,53 +34,43 @@ onBeforeUnmount(() => {
       <header>
         <h1>Hello, Tremendous</h1>
         <p>I know you’re going through a lot of applications, so I’ve put together some highlights on how I align with what you’re looking for.</p>
-        <p>I've spent the last 4 years at WorkStep, a fast-moving B2B HR SaaS company. My portfolio has more examples of functional, simple interfaces than I could fit in this page, so consider what's below a sampling. Please don't be shy to reach out if you'd like more context or specifics on anything.</p>
+        <p>Tremendous wants someone to raise the craft of the whole product: the dashboard, the recipient experience, the design system, and the motion that ties it together. I've been designing B2B and consumer products since 2009. Most recently I spent four years at WorkStep, where I rebuilt the information architecture and the design system of an enterprise platform while it grew from $2M to $8M ARR. Here's how that lines up with what you're asking for.</p>
       </header>
       <div class="requirement-list">
         <div class="requirement">
-          <h2>Rational, elegant, and intuitive interfaces</h2>
-          <p>I've been working in product design for 17 years, and in web for over 20, so I have lots of examples of this.</p>
-          <img src="/assets/img/job-apps/nice-interfaces.png" alt="" />
-        </div>
-        <div class="requirement">
-          <h2>Owning the content</h2>
-          <p>I believe good copy is a core part of what makes products great, and I’m happy to handle this. But I also believe product orgs benefit from having copy guidelines so it sounds like it's in the same voice.</p>
-          <img src="/assets/img/job-apps/content-strategy.png" alt="" />
-        </div>
-        <div class="requirement">
-          <h2>Strategic influence</h2>
-          <p>I sat in on roadmap planning at WorkStep and pushed back when priorities didn’t match what we were hearing from users. Many projects I’ve worked on have started as a design-led initiative, not something handed down from above.</p>
-          <img src="/assets/img/job-apps/strategic-influence.png" alt="" />
-        </div>
-        <div class="requirement">
-          <h2>Contributing to the design system</h2>
-          <p>I’ve been building, maintaining, expanding, and refactoring design systems for about 10 years now. AI has made this tremendously easier and more fun. At WorkStep I refactored many of our design system components for better performance, and have been actively participating in refactoring them to better integrate with Claude Code.</p>
+          <h2>Owning the Design System, and Raising It</h2>
+          <p>I rebuilt WorkStep's design system from scratch in Figma on variables and tokens, and it cut component bloat by 88%. I decided what got tokenized, what got aliased, and how the libraries were split so designers weren't choosing between duplicate menus. Color came from a systematic audit instead of a fixed handful of swatches. Type came from a modular scale. Everything was built to WCAG AA contrast. The goal was fewer one-off decisions downstream, which is the same gap you're describing.</p>
           <img src="/assets/img/job-apps/design-systems@2x.png" alt="Example design system from a project with Halliburton" />
         </div>
         <div class="requirement">
-          <h2>Documenting heavily</h2>
-          <p>A long time ago, I manually spec’d interfaces in Photoshop and more complex flows in InDesign and Illustrator. I’m grateful we have better tools for this now, and I still believe in the importance. I pride myself on (and find comfort in) having the t’s crossed and i’s dotted when a project is completed.</p>
-          <img src="/assets/img/job-apps/design-specs.png" alt="Some specs I did of a design at WorkStep" />
+          <h2>Information Architecture and a Vision You Can Build Toward</h2>
+          <p>Untangling WorkStep started as a navigation problem and turned into a full re-architecture. I took a sprawling enterprise platform and made it coherent and task-based, with room for new features to land without another round of bolting things on. I've also set a product vision from zero as Unilease's first designer, so I know how to make a vision concrete enough that engineering can start on it Monday.</p>
+          <img src="/assets/img/job-apps/info-architecture.png" alt="Information architecture work from the WorkStep IA re-architecture" />
         </div>
         <div class="requirement">
-          <h2>Using AI throughout my workflow</h2>
-          <p>I use Claude, and Figma’s MCP integration daily, not as a novelty but as part of how I actually work. I prototype with AI to test ideas faster and bring working artifacts into critique instead of static mocks.</p>
+          <h2>Motion, Micro-interactions, and How Things Open and Close</h2>
+          <p>This is the part of the role I'm most excited about. I'd rather tune easing and timing in After Effects than guess at it in code, and Lottie and GSAP are how I get that work into a real product. Recently I tested five ways to do hand-drawn, frame-by-frame animation on the web (GIFs, Canvas, Lottie, video, and SVG) and landed on SVG sprites for weight and control. I care about the small stuff: how a drawer opens, what an empty state says, how long a transition runs before it starts to feel slow.</p>
+          <div class="image-group space-top space-bottom"><img src="/assets/img/hallmark/treatment-a-edit.gif" alt="Hallmark" /><img src="/assets/img/hallmark/treatment-b-edit.gif" alt="Hallmark" /><img src="/assets/img/hallmark/treatment-c-edit.gif" alt="Hallmark" /><img src="/assets/img/hallmark/treatment-d-edit.gif" alt="Hallmark" /><img src="/assets/img/hallmark/treatment-e-edit.gif" alt="Hallmark" /><img src="/assets/img/hallmark/treatment-f.gif" alt="Hallmark" /></div>
+        </div>
+        <div class="requirement">
+          <h2>Prototyping With AI, Alongside an Engineer</h2>
+          <p>I prototype in code with Claude Code and Cursor, to a standard an engineer can pick up and build from. After WorkStep was acquired, I carried integration work that way under a real deadline, shrinking the gap between an idea and something people could click. That's the working style you're describing: showing how something should feel in the browser so nobody has to imagine it from a spec.</p>
           <img src="/assets/img/job-apps/use-of-ai.png" alt="A screenshot of my Claude usage as of recently" />
         </div>
         <div class="requirement">
-          <h2>Raising the bar</h2>
-          <p>I'm the person who asks "is this actually good, or just done" before something ships. That's earned me a reputation as someone who pushes for the extra pass when it matters.</p>
-          <img src="/assets/img/job-apps/precision-and-details.png" alt="A callout I had in a design spec about a faint shadow being necessary" />
+          <h2>Product Thinking That Holds Up at the Edges</h2>
+          <p>Enterprise customers meant a lot of edge cases at WorkStep: role-based access control, a report builder, survey translation across languages, data export. None of it is glamorous, and all of it breaks if the design only works on the happy path. Sending payouts to anyone, anywhere, in any currency has the same shape.</p>
+          <img src="/assets/img/job-apps/report-cards.png" alt="Cards from a report builder I designed" />
         </div>
         <div class="requirement">
-          <h2>Designing for a diverse set of recipients</h2>
-          <p>Frontline warehouse workers using WorkStep on cracked phone screens in poor lighting taught me a lot about accessibility that isn't theoretical. Contrast, tap targets, plain language, all of it mattered because real people were depending on it working.</p>
-          <img src="/assets/img/job-apps/accessible-international-button.png" alt="" />
-        </div>
-        <div class="requirement">
-          <h2>Collaborative design</h2>
-          <p>My best work is done in close collaboration with PMs and engineers, not by myself. I've worked with content strategists, data scientists, UX researchers, and all kinds of other stakeholders and have found it consistently to help the end result.</p>
+          <h2>Covering Work That Has No Designer</h2>
+          <p>I've been the only designer more than once. At EverlyWell I was the sole product designer from Series A to Series B, and at Unilease I was the first. Picking up a small project from a team with no design support, working out what they actually need, and shipping it without a lot of ceremony is familiar ground.</p>
           <img src="/assets/img/job-apps/collaborative.png" alt="Me and the Unilease team in a Zoom call" />
+        </div>
+        <div class="requirement">
+          <h2>Owning the Copy</h2>
+          <p>I write a lot. I've kept a personal blog for years, including long write-ups on how I organize design systems and how I'd approach frame-by-frame animation on the web. This page is a decent sample. A high-documentation, low-meeting culture sounds like a place where that habit gets put to use.</p>
+          <img src="/assets/img/job-apps/content-strategy.png" alt="" />
         </div>
       </div>
       <p>Thanks for considering me. Check out the <router-link to="/" title="View full portfolio">rest of my portfolio</router-link> if you'd like to see more, or feel free to <a href="https://calendly.com/walter-coots" target="_blank">grab some time with me</a>.</p>

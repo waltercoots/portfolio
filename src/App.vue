@@ -53,6 +53,15 @@ onMounted(() => {
 onBeforeUnmount(() => {
   document.documentElement.classList.remove('modal-open')
 })
+
+// Lenis caches the scrollable height on init, so HMR patches that change
+// content height (without a full page reload) leave it stale — recalculate
+// after every dev update.
+if (import.meta.hot) {
+  import.meta.hot.on('vite:afterUpdate', () => {
+    requestAnimationFrame(() => lenis.resize())
+  })
+}
 </script>
 
 <template>
@@ -409,7 +418,29 @@ div.modal {
       grid-column: 2;
     }
 
-    &>.wide {
+    // Spans main's full grid and inherits its columns, so nested .wide can break out
+    &>.mini-case-study {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: subgrid;
+      margin-top: 3rem;
+
+      // Decorative wave, kept to the text column
+      &::before {
+        content: '';
+        grid-column: 2;
+        height: 10px; // wave.svg's height
+        margin-bottom: 3rem;
+        background: url('/assets/img/wave.svg') repeat-x top left;
+      }
+
+      &>* {
+        grid-column: 2;
+      }
+    }
+
+    &>.wide,
+    &>.mini-case-study>.wide {
       grid-column: 1 / -1;
       text-align: center;
       margin-left:auto;

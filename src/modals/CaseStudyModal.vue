@@ -2,6 +2,7 @@
 import { computed, defineAsyncComponent, onMounted, onBeforeUnmount, ref } from 'vue'
 import { RouterLink, useRoute, useRouter } from 'vue-router'
 import workData from '@/assets/work.json'
+import SectionNav from '@/components/SectionNav.vue'
 import Lenis from 'lenis';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -129,6 +130,9 @@ const setupNavScrollTrigger = () => {
 	})
 }
 
+const getModalEl = () => document.querySelector('div.modal.case-studies')
+const scrollToSection = (el) => lenis?.scrollTo(el, { offset: -48 })
+
 const goToNextProject = () => {
 	if (!nextProject.value) return;
 	transitionName.value = 'slide-left';
@@ -157,6 +161,16 @@ const handleKeyDown = (e) => {
 	}
 }
 
+// HMR patches inside the modal (editing a work/*.vue case study) change
+// content height without a full reload — this Lenis instance and its
+// ScrollTrigger cache the scrollable height at init, so both need a nudge.
+const onHmrUpdate = () => {
+	requestAnimationFrame(() => {
+		lenis?.resize()
+		navScrollTrigger?.refresh()
+	})
+}
+
 onMounted(() => {
 	lenis = new Lenis({
 		wrapper: document.querySelector("div.modal"),
@@ -165,6 +179,9 @@ onMounted(() => {
 	})
 	gsap.ticker.add(applyParallax)
 	window.addEventListener('keydown', handleKeyDown);
+	if (import.meta.hot) {
+		import.meta.hot.on('vite:afterUpdate', onHmrUpdate)
+	}
 })
 
 onBeforeUnmount(() => {
@@ -180,6 +197,9 @@ onBeforeUnmount(() => {
 	lenis.stop();
 	lenis.destroy();
 	window.removeEventListener('keydown', handleKeyDown);
+	if (import.meta.hot) {
+		import.meta.hot.off('vite:afterUpdate', onHmrUpdate)
+	}
 })
 
 </script>
@@ -208,6 +228,7 @@ onBeforeUnmount(() => {
 				</svg>
 			</RouterLink>
 		</nav>
+		<SectionNav :scroller="getModalEl" :scroll-to="scrollToSection" />
 		<Transition :name="transitionName" mode="out-in" @before-leave="onBeforeLeave" @after-leave="onAfterLeave" @after-enter="onAfterEnter">
 			<component v-if="caseStudyComponent" :is="caseStudyComponent" :key="route.params.slug" :project="project" />
 			<div v-else class="case-study-fallback" :key="'fallback'">
@@ -486,7 +507,6 @@ aside {
 		}
 	}
 }
-
 
 // For adjusting spacing above and below elements
 .space-bottom {
