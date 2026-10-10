@@ -31,6 +31,9 @@ import ComPsychJob from "@/cover-letters/ComPsychJob.vue"
 import AshbyJob from "@/cover-letters/AshbyJob.vue"
 import LoanCrateJob from "@/cover-letters/LoanCrateJob.vue"
 import DesignSystemsJob from "@/cover-letters/DesignSystemsJob.vue"
+import RealtorJob from "@/cover-letters/RealtorJob.vue"
+import ArriveLogisticsJob from "@/cover-letters/ArriveLogisticsJob.vue"
+import RampJob from "@/cover-letters/RampJob.vue"
 
 const shellRoute = (path, meta = {}) => ({
   path,
@@ -83,6 +86,9 @@ const routes = [
   modalRoute("/ashby", AshbyJob, { title: "Walter Coots × Ashby" }, {modal:true}),
   modalRoute("/loancrate", LoanCrateJob, { title: "Walter Coots × LoanCrate" }, {modal:true}),
   modalRoute("/design-systems", DesignSystemsJob, { title: "Walter Coots — Design Systems" }, {modal:true}),
+  modalRoute("/realtor", RealtorJob, { title: "Walter Coots × Realtor.com" }, {modal:true}),
+  modalRoute("/arrive-logistics", ArriveLogisticsJob, { title: "Walter Coots × Arrive Logistics" }, {modal:true}),
+  modalRoute("/ramp", RampJob, { title: "Walter Coots × Ramp" }, {modal:true}),
 ]
 
 const router = createRouter({
