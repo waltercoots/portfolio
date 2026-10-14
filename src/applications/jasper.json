@@ -1,0 +1,91 @@
+{
+  "slug": "jasper",
+  "company": "Jasper",
+  "headingLevel": 2,
+  "intro": [
+    "I know you’re going through a lot of applications, so I’ve put together some highlights on how I align with what you’re looking for.",
+    "Some of my favorite work has been the first version of something: the first designer at Unilease, the only product designer at EverlyWell, and the AI assistant I designed at WorkStep with our data scientist and CPO. I also spent years at agencies designing marketing sites and campaigns for brands like Hallmark, so I know what marketing teams are up against!"
+  ],
+  "requirements": [
+    {
+      "heading": "Taking ideas from 0 to 1",
+      "body": "WorkStep's AI Assistant started as a question: managers had piles of survey data and no time to read dashboards, so what if the product just told them what changed? I worked with our data scientist and CPO to shape the idea, scope a first version, and get it into customers' hands. Adoption was strong, and watching how people used it after launch told us what to build next.",
+      "images": [
+        {
+          "key": "job-apps/user-flow"
+        }
+      ]
+    },
+    {
+      "heading": "Shaping what to build",
+      "body": "At Unilease I was the first designer, working directly with the CEO and engineering. Nobody handed me a backlog. I helped decide what the product should be, designed the MVP for commercial real estate brokers, and built the marketing site that supported fundraising. Early-stage work rewards bringing ideas and having opinions, and I'm comfortable doing both.",
+      "images": [
+        {
+          "key": "job-apps/strategic-influence",
+          "alt": "Sticky notes from an ideation session"
+        }
+      ]
+    },
+    {
+      "heading": "Prototyping to learn",
+      "body": "I build high-fidelity prototypes in code with Claude Code and Cursor, using realistic data so the conversation is about real behavior, not mockups. I did this for WorkStep's post-acquisition integration work, and my portfolio is a Vue project I maintain myself. A working prototype is also the fastest way to find out when ideas aren't working well, which saves resources for the ones that are!",
+      "images": [
+        {
+          "key": "job-apps/nice-interfaces"
+        }
+      ]
+    },
+    {
+      "heading": "Closing the loop after launch",
+      "body": "The first version of WorkStep's report builder was messy, and watching customers use it showed me what was good about it and where it stood to be improved. Later releases allowed us to improve and polish it. At EverlyWell I redesigned and A/B tested our product page and got a 25% lift in sales. I want things to accomplish the business goals, not just ship!",
+      "images": [
+        {
+          "key": "job-apps/report-cards",
+          "alt": "Cards from a report builder I designed"
+        }
+      ]
+    },
+    {
+      "heading": "Designing AI people trust",
+      "body": "The hard parts of AI Assistant were all about trust: how confident to sound, how much reasoning to show, and when to send someone to the real data instead of a summary. Marketing agents face similar questions, and in some cases higher stakes since their output carries a brand's name. Approvals, edits, and clear handoffs between agent and person are where I'd want to focus.",
+      "images": [
+        {
+          "key": "job-apps/content-strategy"
+        }
+      ]
+    },
+    {
+      "heading": "Craft in complex workflows",
+      "body": "Most of my recent work is dense: tables, filters, dashboards, permissions, and multi-step flows like WorkStep's confidential broadcast messaging with its custom segment builder. I design the empty, broken, and overloaded states as carefully as the happy path, and I built WorkStep's color system so every pairing met WCAG AA.",
+      "images": [
+        {
+          "key": "job-apps/user-flow"
+        }
+      ]
+    },
+    {
+      "heading": "Shared patterns and a stronger team",
+      "body": "I rebuilt WorkStep's design system from scratch with Figma variables and tokens and cut component bloat by 85%. At T3 and Foxtrot I mentored designers and ran critiques. Good shared patterns free designers to spend their time on the new, hard problems instead of rebuilding the same table again.",
+      "images": [
+        {
+          "key": "job-apps/design-systems",
+          "alt": "Example design system from a project with Halliburton"
+        }
+      ]
+    },
+    {
+      "heading": "Driving decisions with partners",
+      "body": "Every project on my resume has a name attached to it because none of them happened solo. AI Assistant was built with a data scientist and a CPO. The design system exists because engineering needed it as much as design did. I'm used to being the person translating between domain experts, product, and engineering, not just handing off a file.",
+      "images": [
+        {
+          "key": "job-apps/collaborative",
+          "alt": "Information architecture work from the WorkStep IA re-architecture"
+        }
+      ]
+    },
+    {
+      "heading": "Where I'd be learning",
+      "body": "I haven't designed agents that run marketing work autonomously, and enterprise marketing governance, like brand compliance and approvals, would be new territory. I also work in Git on my own projects, but shipping design changes through pull requests into a production codebase is something I'd want to grow into quickly."
+    }
+  ]
+}

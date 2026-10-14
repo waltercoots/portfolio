@@ -1,0 +1,59 @@
+{
+  "slug": "apple",
+  "company": "Apple",
+  "headingLevel": 2,
+  "intro": [
+    "I know you’re going through a lot of applications, so I’ve put together some highlights on how I align with what you’re looking for.",
+    "Twenty years, split between agency campaign work early on and a decade of enterprise product design more recently. Most of my recent work has been product design, not marketing or e-commerce specifically. But I have a lot of experience with that in the past that I think carries over nicely."
+  ],
+  "requirements": [
+    {
+      "heading": "Scaling a style guide across touchpoints",
+      "body": "I worked on both the Halliburton and Hallmark websites (ironically, around the same time) and established the design language for both. I was responsible for getting buy-in from high level executives, and I've worked with other brands across digital campaigns in the past such as Southwest Airlines and Denny's. I know how to automate production assets and grease the wheels to move fast when it matters most.",
+      "images": [
+        {
+          "key": "job-apps/design-systems",
+          "alt": "Example design system from a project with Halliburton"
+        }
+      ]
+    },
+    {
+      "heading": "E-commerce and conversion",
+      "body": "At EverlyWell I redesigned product detail pages for lab test products. I also built the subscription and checkout flow across both the results platform and the marketing site. When it comes to larger brands, I did a lot with Hallmark and updating their PDP. So purchase paths aren't new territory for me.",
+      "images": [
+        {
+          "key": "job-apps/user-flow"
+        }
+      ]
+    },
+    {
+      "heading": "Agency work for national brands",
+      "body": "Earlier in my career, at ImageVisible, I designed campaigns for Southwest Airlines and Denny's, working under agency creative direction and scaling a brand identity across a bunch of different touchpoints on real deadlines. T3 and Foxtrot were the same muscle, Fortune 500 clients, presenting straight to client stakeholders, delivering polished work fast, etc. It's been a while since I worked in that specific structure day to day, but it's not unfamiliar ground.",
+      "images": [
+        {
+          "key": "job-apps/nice-interfaces",
+          "alt": "Some of the various mobile and web designs I've done"
+        }
+      ]
+    },
+    {
+      "heading": "Visual craft and typography",
+      "body": "Typography, layout, balance, hierarchy, this has been the backbone of my work for two decades regardless of what the product was. I care about getting the pixels right, not just the flow.",
+      "images": [
+        {
+          "key": "job-apps/precision-and-details",
+          "alt": "A closeup of a spec I did calling out a specific shadow"
+        }
+      ]
+    },
+    {
+      "heading": "Where I'm honest about the fit",
+      "body": "Most of my last several years have been digital product work on things like design systems, roadmaps, and executive alignment. Not really art direction, creative direction, or production work. But I've done that kind of work in the past, and miss various elements of it. I use Figma day to day, but am quite comfortable in Photoshop, Illustrator, After Effects, and even Sketch if y'all are still using it.",
+      "images": [
+        {
+          "key": "job-apps/report-cards"
+        }
+      ]
+    }
+  ]
+}

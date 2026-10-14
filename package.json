@@ -5,8 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "node scripts/validate-applications.mjs",
     "build": "vite build",
     "preview": "vite preview",
+    "validate": "node scripts/validate-applications.mjs",
+    "images": "node scripts/build-image-manifest.mjs",
+    "deploy": "scripts/deploy.sh",
+    "deploy:dry": "scripts/deploy.sh --dry-run",
     "lint": "run-s lint:*",
     "lint:oxlint": "oxlint . --fix",
     "lint:eslint": "eslint . --fix --cache",

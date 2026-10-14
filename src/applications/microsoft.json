@@ -1,0 +1,90 @@
+{
+  "slug": "microsoft",
+  "company": "Microsoft",
+  "headingLevel": 2,
+  "intro": [
+    "I know you’re going through a lot of applications, so I’ve put together some highlights on how I align with what you’re looking for.",
+    "I've spent 20+ years launching websites and digital products, most recently spending 4 years at WorkStep which is an enterprise platform for frontline workforces that grew 4x before being acquired by Learning Pool, a learning technology company. Helping people build skills runs through more of my career than I expected: e-learning applications early on, science education apps at Insitome, and integration work with a learning platform at the end of WorkStep."
+  ],
+  "requirements": [
+    {
+      "heading": "Complex experiences, concept to delivery",
+      "body": "At WorkStep I took features from a vague request to a shipped product: research, flows, prototypes, and specs. Report Builder is the honest example. The first version was messy, and watching customers use it after launch taught me what the spec missed. The second round was much better for it. Delivery means the work isn't done when the designs are approved.",
+      "images": [
+        {
+          "key": "job-apps/report-cards",
+          "alt": "Cards from a report builder I designed"
+        }
+      ]
+    },
+    {
+      "heading": "Journeys and IA that scale",
+      "body": "Untangling WorkStep started as a navigation complaint. With our senior PM, I found the real problem: years of features added by different teams had left a structure that matched our org chart instead of how customers worked. We rebuilt the information architecture and journeys around their jobs, which also left room for the features coming next. Learning platforms have the same risk once content, paths, and credentials start piling up.",
+      "images": [
+        {
+          "key": "job-apps/info-architecture",
+          "alt": "Information architecture work from the WorkStep IA re-architecture"
+        }
+      ]
+    },
+    {
+      "heading": "Designing AI experiences",
+      "body": "I designed WorkStep's AI Assistant with our data scientist and CPO. It read survey and retention data and told managers in plain language what changed and what to do about it. Adoption was strong because it met people where they were instead of sending them to a dashboard. A good AI tutor or skilling guide faces the same questions: when to explain, when to step back, and how to earn trust.",
+      "images": [
+        {
+          "key": "job-apps/user-flow"
+        }
+      ]
+    },
+    {
+      "heading": "Design systems and accessibility",
+      "body": "I rebuilt WorkStep's design system from scratch with Figma variables and tokens, cut component bloat by 85%, and built the color system so every pairing met WCAG AA. I also learned when not to componentize. We stopped building charts as components because Figma locked the data in place, and reviews went better once charts looked real. Systems should make the right thing the easy thing.",
+      "images": [
+        {
+          "key": "job-apps/design-systems",
+          "alt": "Example design system from a project with Halliburton"
+        }
+      ]
+    },
+    {
+      "heading": "Research, data, and experimentation",
+      "body": "At Intuit I planned and ran research and usability evaluations with tax professionals. At EverlyWell I redesigned the product page, A/B tested it, and got a 25% lift in sales. At WorkStep we watched AI Assistant adoption after launch to decide what to build next. I want conversations to explain the why and data to confirm the what before I recommend a direction.",
+      "images": [
+        {
+          "key": "job-apps/strategic-influence"
+        }
+      ]
+    },
+    {
+      "heading": "Influencing strategy and alignment",
+      "body": "At WorkStep I worked directly with our CPO and executive team on what to build and why, bringing customer evidence into roadmap debates. At T3 I led work for Fortune 500 clients like Halliburton, where getting legal, marketing, IT, and business owners to agree was most of the job. Alignment comes from making the trade-offs visible, so people argue about the same thing.",
+      "images": [
+        {
+          "key": "job-apps/collaborative"
+        }
+      ]
+    },
+    {
+      "heading": "Prototyping and iterative learning",
+      "body": "I prototype in code with Claude Code to a standard engineers can build from, and I used it for WorkStep's integration work after the Learning Pool acquisition. A working prototype answers questions a static mockup can't, and it gets real feedback faster. My portfolio site is a Vue project I build and maintain myself.",
+      "images": [
+        {
+          "key": "job-apps/nice-interfaces"
+        }
+      ]
+    },
+    {
+      "heading": "Mentoring designers",
+      "body": "At T3 and Foxtrot I mentored and directed other designers, ran critiques, and helped with hiring. My approach is to name what's working first so they keep it, be specific about what isn't, and explain the reasoning so the next decision doesn't need me. Helping other designers get better is the part of senior work I enjoy most.",
+      "images": [
+        {
+          "key": "job-apps/precision-and-details"
+        }
+      ]
+    },
+    {
+      "heading": "Where I'd be learning",
+      "body": "My recent work has been at startups, where aligning \"multiple teams\" meant a few people in one room. Microsoft's scale is different, and I'd expect to spend my first months learning how decisions actually get made. I also haven't designed a dedicated learning platform end to end. I'd start by talking with learners and the content teams behind the paths before redesigning anything."
+    }
+  ]
+}

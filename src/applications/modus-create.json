@@ -1,0 +1,61 @@
+{
+  "slug": "modus-create",
+  "company": "Modus Create",
+  "headingLevel": 2,
+  "intro": [
+    "I know you’re going through a lot of applications, so I’ve put together some highlights on how I align with what you’re looking for.",
+    "Modus Create is asking for someone who's done real client-consulting work and can bring AI-assisted tooling into that delivery without it feeling bolted on. Both of those are already how I work."
+  ],
+  "requirements": [
+    {
+      "heading": "Client Delivery, Not Just In-House Design",
+      "body": "Years at T3 and Foxtrot had me working directly with client stakeholders across multiple concurrent engagements, defending design decisions to people who weren't in the room for the research. Big clients like Halliburton, Hallmark, and mid-sized like Viking Cruises. Lots of different constraints, but all necessitated framing the problem, shipping something, and keeping the client's trust the whole way through.",
+      "images": [
+        {
+          "key": "job-apps/collaborative",
+          "alt": "Me and some teammates meeting"
+        }
+      ]
+    },
+    {
+      "heading": "AI-Assisted Tools in Actual Production Work",
+      "body": "I used Claude Code and AI-generated prototypes to carry WorkStep's post-acquisition integration work, structuring design decisions so they translated cleanly into engineering handoff rather than needing a second pass. I realize this is a bonus point, but for me it's just how the last year of my work has run.",
+      "images": [
+        {
+          "key": "job-apps/use-of-ai",
+          "alt": "A screenshot of my Claude usage as of recently"
+        }
+      ]
+    },
+    {
+      "heading": "Design Systems Across Contexts",
+      "body": "Built WorkStep's design system from scratch in Figma, variables, tokens, aliasing, cutting UI bloat by 88%. Consulting work means walking into someone else's existing system and knowing how to extend it without breaking it, which is a different skill than building one from a blank canvas, and I've done both.",
+      "images": [
+        {
+          "key": "job-apps/design-systems",
+          "alt": "Example design system from a project with Halliburton"
+        }
+      ]
+    },
+    {
+      "heading": "Technical Fluency Underneath the Design",
+      "body": "Before I was doing product design full time, I was coding my own sites as a freelancer. I'm not going to out-code an engineer, but I understand what I'm asking for when I hand off a spec, which shows up in cleaner engineering conversations and fewer rounds of \"that's not actually possible.\"",
+      "images": [
+        {
+          "key": "job-apps/design-specs",
+          "alt": "Some specs I did of a design at WorkStep"
+        }
+      ]
+    },
+    {
+      "heading": "Where I'm honest about the gap",
+      "body": "My frontend coding knowledge is foundational HTML, JavaScript, and CSS. I wouldn't claim fluency in frameworks such as React or TypeScript. But my design decisions are structured clearly enough that an engineer, or an AI coding agent, can pick them up without guessing.",
+      "images": [
+        {
+          "key": "job-apps/nice-interfaces",
+          "alt": "Some of the various mobile and web designs I've done"
+        }
+      ]
+    }
+  ]
+}

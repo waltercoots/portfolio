@@ -1,0 +1,94 @@
+{
+  "slug": "arrive-logistics",
+  "company": "Arrive Logistics",
+  "headingLevel": 2,
+  "intro": [
+    "I know you’re going through a lot of applications, so I’ve put together some highlights on how I align with what you’re looking for.",
+    "For four years I designed WorkStep, a platform used across warehouses, distribution centers, and logistics companies like JB Hunt and PepsiCo. My users ran fast, physical operations and checked our product between a dozen other things, so every extra click cost them. Arrive's reps and operations teams sound like the same kind of people, and designing tools that help freight move faster is the work I like most."
+  ],
+  "requirements": [
+    {
+      "heading": "Dense interfaces with clear hierarchy",
+      "body": "Most of my WorkStep work was dense: tables, filters, dashboards, and charts for managers tracking thousands of workers across many sites. The trick is deciding what deserves attention at a glance and what can wait a click. I design the empty, broken, and overloaded states as carefully as the happy path, because in an operational tool, that's where people actually spend their day.",
+      "images": [
+        {
+          "key": "job-apps/nice-interfaces",
+          "alt": "Some of the various mobile and web designs I've done"
+        }
+      ]
+    },
+    {
+      "heading": "Taking friction out of repeated tasks",
+      "body": "When someone does the same task forty times a day, small friction adds up fast. At Intuit I designed for tax professionals during busy season, people with zero patience for an extra screen. That taught me to watch for the clicks people make without thinking and to treat each one as a cost. Speed comes from defaults, shortcuts, and keeping people in one place instead of bouncing between screens.",
+      "images": [
+        {
+          "key": "job-apps/user-flow"
+        }
+      ]
+    },
+    {
+      "heading": "Owning a team's area, framing to shipped UI",
+      "body": "At WorkStep I worked with our PM and engineers from the first conversation to shipped UI and kept going after launch. Report Builder is the honest example. The first version was messy, and watching how customers really used it taught me what the spec missed. The next round was much better. I work best embedded in a sprint team, iterating fast and making calls together.",
+      "images": [
+        {
+          "key": "job-apps/report-cards",
+          "alt": "Cards from a report builder I designed"
+        }
+      ]
+    },
+    {
+      "heading": "Sharpening the problem before solving it",
+      "body": "Untangling WorkStep started as \"the navigation is confusing.\" Digging in with our senior PM, I found the real problem: years of features from different teams had left a structure that matched our org chart, not our customers' jobs. Fixing that was very different from shuffling menu items. I'd rather spend an extra day on the problem than a week on the wrong solution.",
+      "images": [
+        {
+          "key": "job-apps/info-architecture",
+          "alt": "Information architecture work from the WorkStep IA re-architecture"
+        }
+      ]
+    },
+    {
+      "heading": "Lightweight research with real users",
+      "body": "At Intuit I planned and ran research and usability tests with professional users. At WorkStep my users were rarely at a desk, so I kept sessions short and always brought something concrete to react to. Having users on site at Arrive is a gift. I'd want to sit with reps during a busy shift to see where the tool gets in their way.",
+      "images": [
+        {
+          "key": "job-apps/strategic-influence",
+          "alt": "Sticky notes from an ideation session"
+        }
+      ]
+    },
+    {
+      "heading": "Contributing to the design system",
+      "body": "I rebuilt WorkStep's design system from scratch with Figma variables and tokens, cut component bloat by 85%, and built to WCAG AA contrast. Working within someone else's system is a different job, and I like it. Learn its logic first, use it the way it's meant to be used, and contribute components back when a real gap shows up.",
+      "images": [
+        {
+          "key": "job-apps/design-systems",
+          "alt": "Example design system from a project with Halliburton"
+        }
+      ]
+    },
+    {
+      "heading": "AI in my design process",
+      "body": "I use Claude daily for research synthesis and first drafts, and I build working prototypes in code with Claude Code, including WorkStep's post-acquisition integration work. A prototype running on real data answers questions a static mockup can't, and it gets real reactions from users faster.",
+      "images": [
+        {
+          "key": "job-apps/use-of-ai",
+          "alt": "A screenshot of my Claude usage as of recently"
+        }
+      ]
+    },
+    {
+      "heading": "Critique and presenting rationale",
+      "body": "I've mentored designers and run critiques at T3 and Foxtrot, and I like giving and getting feedback. Good critique is specific: what's working, what isn't, and why. When I present to stakeholders, I lead with the problem and the trade-offs in plain language, so the room argues about the decision instead of the pixels.",
+      "images": [
+        {
+          "key": "job-apps/collaborative",
+          "alt": "Me and some teammates meeting"
+        }
+      ]
+    },
+    {
+      "heading": "Where I'd be learning",
+      "body": "I know logistics from the workforce side, but I haven't designed for freight brokerage itself: carrier sourcing, load booking, and the rest of a rep's day. I'd want to shadow reps and ops teams early to learn their vocabulary and where the real time goes before redesigning anything."
+    }
+  ]
+}

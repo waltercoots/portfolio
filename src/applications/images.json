@@ -1,0 +1,1097 @@
+[
+  {
+    "key": "afs/01-homed",
+    "path": "/assets/img/afs/01-homed.jpg",
+    "description": "Austin Film Society desktop homepage: 'MAKE WATCH LOVE FILM' hero with photos inside giant letters"
+  },
+  {
+    "key": "afs/02-homem",
+    "path": "/assets/img/afs/02-homem.jpg",
+    "description": "Austin Film Society mobile homepage in a phone mockup: bold 'FILM' wordmark over a film series promo"
+  },
+  {
+    "key": "afs/03-content-mapping",
+    "path": "/assets/img/afs/03-content-mapping.jpg",
+    "description": "Austin Film Society content mapping spreadsheet: page inventory with content types and notes"
+  },
+  {
+    "key": "afs/04-recipes",
+    "path": "/assets/img/afs/04-recipes.jpg",
+    "description": "Austin Film Society content 'recipes': color-coded columns of content blocks per section"
+  },
+  {
+    "key": "afs/05-sitemap",
+    "path": "/assets/img/afs/05-sitemap.png",
+    "description": "Austin Film Society sitemap: navigation tree from eyebrow to footer"
+  },
+  {
+    "key": "afs/06-screeningsd",
+    "path": "/assets/img/afs/06-screeningsd.jpg",
+    "description": "Austin Film Society desktop screenings page: black UI with a row of classic film posters"
+  },
+  {
+    "key": "afs/07-screeningsm",
+    "path": "/assets/img/afs/07-screeningsm.jpg",
+    "description": "Austin Film Society mobile screenings listing in a phone mockup, poster cards with Buy Tickets buttons"
+  },
+  {
+    "key": "afs/08-tfhfd",
+    "path": "/assets/img/afs/08-tfhfd.jpg",
+    "description": "Austin Film Society desktop page for the Texas Film Hall of Fame: large photo hero with condensed type"
+  },
+  {
+    "key": "afs/09-tfhfp",
+    "path": "/assets/img/afs/09-tfhfp.jpg",
+    "description": "Austin Film Society Texas Film Hall of Fame page on mobile, phone mockup"
+  },
+  {
+    "key": "afs/buying-ticket-user-flow",
+    "path": "/assets/img/afs/buying-ticket-user-flow.png",
+    "description": "Austin Film Society user flow for 'I want to buy tickets to a screening', with annotated paths"
+  },
+  {
+    "key": "afs/common-wires",
+    "path": "/assets/img/afs/common-wires.png",
+    "description": "Austin Film Society wireframes of three common page templates (A, B, C) with annotations"
+  },
+  {
+    "key": "afs/content-framework",
+    "path": "/assets/img/afs/content-framework.png",
+    "description": "Austin Film Society content framework: wireframe modules paired with a content requirements table"
+  },
+  {
+    "key": "afs/screening-x-ui",
+    "path": "/assets/img/afs/screening-x-ui.jpg",
+    "description": "Austin Film Society screening detail page design: 'Dinosaur 13' with trailer, showtimes and sponsor logos"
+  },
+  {
+    "key": "afs/screening-x-ux",
+    "path": "/assets/img/afs/screening-x-ux.png",
+    "description": "Austin Film Society screening detail wireframe: film info, Buy Tickets and related films"
+  },
+  {
+    "key": "dfa/01-home-d",
+    "path": "/assets/img/dfa/01-home-d.jpg",
+    "description": "Dimensional Fund Advisors desktop homepage: serif headline over a dotted wave graphic, key stats below"
+  },
+  {
+    "key": "dfa/02-lowfi-wires",
+    "path": "/assets/img/dfa/02-lowfi-wires.jpg",
+    "description": "Dimensional Fund Advisors low-fidelity page wireframes, a grid of layouts"
+  },
+  {
+    "key": "dfa/03-highfi-wires",
+    "path": "/assets/img/dfa/03-highfi-wires.png",
+    "description": "Dimensional Fund Advisors annotated high-fidelity wireframes of the header and navigation states"
+  },
+  {
+    "key": "dfa/04-phone",
+    "path": "/assets/img/dfa/04-phone.jpg",
+    "description": "Dimensional Fund Advisors mobile homepage in a phone mockup, with yellow 'Tell us who you are' bar"
+  },
+  {
+    "key": "dfa/dfa-home-wires",
+    "path": "/assets/img/dfa/dfa-home-wires.png",
+    "description": "Dimensional Fund Advisors annotated homepage wireframe with numbered spec notes"
+  },
+  {
+    "key": "dfa/lang-1280",
+    "path": "/assets/img/dfa/lang-1280.png",
+    "description": "Dimensional Fund Advisors region and language picker on desktop: yellow panel with country list"
+  },
+  {
+    "key": "dfa/lang-480",
+    "path": "/assets/img/dfa/lang-480.png",
+    "description": "Dimensional Fund Advisors 'Experience Dimensional Investing' region picker on mobile"
+  },
+  {
+    "key": "everlywell/ADA-Color-Wheel",
+    "path": "/assets/img/everlywell/ADA-Color-Wheel.svg",
+    "description": "Accessibility color wheel: hues by lightness ring, used to pick WCAG-compliant Everlywell colors"
+  },
+  {
+    "key": "everlywell/ContentBlocks",
+    "path": "/assets/img/everlywell/ContentBlocks.png",
+    "description": "Everlywell results-page content blocks: map of reusable modules and where each is used"
+  },
+  {
+    "key": "everlywell/dashboard-side-by-side",
+    "path": "/assets/img/everlywell/dashboard-side-by-side.png",
+    "description": "Everlywell 'My Everly' customer dashboard with in-progress and completed tests, desktop and mobile"
+  },
+  {
+    "key": "everlywell/home-side-by-side",
+    "path": "/assets/img/everlywell/home-side-by-side.png",
+    "description": "Everlywell homepage 'Lab testing made easy' at desktop and mobile"
+  },
+  {
+    "key": "everlywell/humana-home",
+    "path": "/assets/img/everlywell/humana-home.png",
+    "description": "Everlywell + Humana co-branded landing page, desktop and mobile, family photo hero"
+  },
+  {
+    "key": "everlywell/humana-verification",
+    "path": "/assets/img/everlywell/humana-verification.png",
+    "description": "Everlywell + Humana member verification form, desktop and mobile"
+  },
+  {
+    "key": "everlywell/Results",
+    "path": "/assets/img/everlywell/Results.jpg",
+    "description": "Four angled phone mockups of Everlywell's at-home lab test results screens"
+  },
+  {
+    "key": "everlywell/SciencePage",
+    "path": "/assets/img/everlywell/SciencePage.jpg",
+    "description": "Everlywell science page with lab certification content, desktop and mobile"
+  },
+  {
+    "key": "everlywell/tiles",
+    "path": "/assets/img/everlywell/tiles.png",
+    "description": "Everlywell result range indicators: low/normal/high bars and markers for lab values"
+  },
+  {
+    "key": "everlywell/UIKit",
+    "path": "/assets/img/everlywell/UIKit.png",
+    "description": "Everlywell UI kit: colors, type, buttons, form controls and range sliders"
+  },
+  {
+    "key": "halliburton/ds",
+    "path": "/assets/img/halliburton/ds.png",
+    "description": "Halliburton design system overview: color swatches, type scale, components and grids"
+  },
+  {
+    "key": "halliburton/halliburton-b-and-a",
+    "path": "/assets/img/halliburton/halliburton-b-and-a.png",
+    "description": "Halliburton homepage before (red, crowded) and after (dark 'The future of energy is digital')"
+  },
+  {
+    "key": "halliburton/halworld-cropped",
+    "path": "/assets/img/halliburton/halworld-cropped.png",
+    "description": "Halliburton HalWorld intranet homepage: search hero, quick links, messages and news cards"
+  },
+  {
+    "key": "halliburton/home",
+    "path": "/assets/img/halliburton/home.png",
+    "description": "Halliburton homepage redesign at desktop and mobile: 'The future of energy is digital'"
+  },
+  {
+    "key": "halliburton/wizard-sketches",
+    "path": "/assets/img/halliburton/wizard-sketches.png",
+    "description": "Hand-drawn sketches for a Halliburton 'What's your role?' solution finder wizard"
+  },
+  {
+    "key": "halliburton/wizard-states",
+    "path": "/assets/img/halliburton/wizard-states.png",
+    "description": "Halliburton solution finder wizard: three steps of icon-based choices narrowing a problem"
+  },
+  {
+    "key": "hallmark/design-system",
+    "path": "/assets/img/hallmark/design-system.png",
+    "description": "Hallmark design system: dense grid of purple UI components and states"
+  },
+  {
+    "key": "hallmark/Find-a-Store-Behavior",
+    "path": "/assets/img/hallmark/Find-a-Store-Behavior.png",
+    "description": "Hallmark Find a Store spec with red behavior annotations for location and store selection"
+  },
+  {
+    "key": "hallmark/Find-a-Store-States",
+    "path": "/assets/img/hallmark/Find-a-Store-States.png",
+    "description": "Hallmark Find a Store states: no location, loading, store selected, no stores found"
+  },
+  {
+    "key": "hallmark/HM-Address-Lockups",
+    "path": "/assets/img/hallmark/HM-Address-Lockups.png",
+    "description": "Hallmark address lockup spec: how store addresses and hours display across contexts"
+  },
+  {
+    "key": "hallmark/HM-PDP-Details_Bullets",
+    "path": "/assets/img/hallmark/HM-PDP-Details_Bullets.png",
+    "description": "Hallmark product detail page spec: annotated layout for card feature bullets (cover, inside, envelope, translations)"
+  },
+  {
+    "key": "hallmark/IMG_4535",
+    "path": "/assets/img/hallmark/IMG_4535.JPG",
+    "description": "Photo of a workshop: two people presenting in front of whiteboards covered in sticky notes"
+  },
+  {
+    "key": "hallmark/login-flow",
+    "path": "/assets/img/hallmark/login-flow.png",
+    "description": "Hallmark login flow diagram with decision points and annotated notes"
+  },
+  {
+    "key": "hallmark/pdp-side-by-side",
+    "path": "/assets/img/hallmark/pdp-side-by-side.png",
+    "description": "Hallmark product detail page for a Halloween card, desktop and mobile"
+  },
+  {
+    "key": "hallmark/POD-Non-Color-Sku-Inside-Right",
+    "path": "/assets/img/hallmark/POD-Non-Color-Sku-Inside-Right.png",
+    "description": "Hallmark card personalization panel: write or type a message, font, size and alignment controls"
+  },
+  {
+    "key": "hallmark/treatment-a-edit",
+    "path": "/assets/img/hallmark/treatment-a-edit.gif",
+    "description": "Animated GIF: purple Hallmark button with star icon, interaction treatment A"
+  },
+  {
+    "key": "hallmark/treatment-b-edit",
+    "path": "/assets/img/hallmark/treatment-b-edit.gif",
+    "description": "Animated GIF: purple Hallmark button with star icon, interaction treatment B"
+  },
+  {
+    "key": "hallmark/treatment-c-edit",
+    "path": "/assets/img/hallmark/treatment-c-edit.gif",
+    "description": "Animated GIF: purple Hallmark button with star icon, interaction treatment C"
+  },
+  {
+    "key": "hallmark/treatment-d-edit",
+    "path": "/assets/img/hallmark/treatment-d-edit.gif",
+    "description": "Animated GIF: purple Hallmark button with star icon, interaction treatment D"
+  },
+  {
+    "key": "hallmark/treatment-e-edit",
+    "path": "/assets/img/hallmark/treatment-e-edit.gif",
+    "description": "Animated GIF: purple Hallmark button with star icon, interaction treatment E"
+  },
+  {
+    "key": "hallmark/treatment-f",
+    "path": "/assets/img/hallmark/treatment-f.gif",
+    "description": "Animated GIF: purple Hallmark button with star icon, interaction treatment F"
+  },
+  {
+    "key": "insitome/email-stepper",
+    "path": "/assets/img/insitome/email-stepper.png",
+    "description": "Insitome welcome email with an order-progress stepper, annotated with changes"
+  },
+  {
+    "key": "insitome/Genome-Ad-Layout",
+    "path": "/assets/img/insitome/Genome-Ad-Layout@2x.jpg",
+    "description": "Insitome print ad 'You, decoded': rings on an old leather-bound book"
+  },
+  {
+    "key": "insitome/GenomeAdSketches",
+    "path": "/assets/img/insitome/GenomeAdSketches@2x.png",
+    "description": "Hand-drawn thumbnail sketches of Insitome ad concepts with headline ideas"
+  },
+  {
+    "key": "insitome/icon-animations",
+    "path": "/assets/img/insitome/icon-animations.gif",
+    "description": "Frames of an orange Insitome icon animation, abstract pieces assembling"
+  },
+  {
+    "key": "insitome/Marketing-Site",
+    "path": "/assets/img/insitome/Marketing-Site@2x.jpg",
+    "description": "Insitome 'Discover your DNA story' marketing site at desktop, tablet and mobile sizes"
+  },
+  {
+    "key": "insitome/Metabolism_Trait-Infographics",
+    "path": "/assets/img/insitome/Metabolism_Trait-Infographics@2x.png",
+    "description": "Insitome iPhone screen: fat synthesis gauge and world trait distribution map"
+  },
+  {
+    "key": "insitome/Metabolism_Trait-Top",
+    "path": "/assets/img/insitome/Metabolism_Trait-Top@2x.png",
+    "description": "Insitome iPhone screen: 'Alcohol Flush' trait result with What/Why/How explanation"
+  },
+  {
+    "key": "insitome/migration",
+    "path": "/assets/img/insitome/migration.gif",
+    "description": "Insitome human migration map: world in blue starting from a point in East Africa"
+  },
+  {
+    "key": "insitome/Neanderhtal_Insight",
+    "path": "/assets/img/insitome/Neanderhtal_Insight@2x.png",
+    "description": "Insitome iPhone screen: Neanderthal DNA results, 1.2% Neanderthal vs 98.8% modern human"
+  },
+  {
+    "key": "insitome/OnboardingFlow",
+    "path": "/assets/img/insitome/OnboardingFlow@2x.png",
+    "description": "Insitome onboarding flow map: many phone screens connected by arrows"
+  },
+  {
+    "key": "insitome/Regional-Ancestry_Dashboard",
+    "path": "/assets/img/insitome/Regional-Ancestry_Dashboard@2x.png",
+    "description": "Insitome iPhone screen: regional ancestry dashboard with insight cards"
+  },
+  {
+    "key": "insitome/Regional-Ancestry_Subregion",
+    "path": "/assets/img/insitome/Regional-Ancestry_Subregion@2x.png",
+    "description": "Insitome iPhone screen: Western European subregion map with description"
+  },
+  {
+    "key": "insitome/responsive",
+    "path": "/assets/img/insitome/responsive@2x.png",
+    "description": "Insitome ancestry map screen on iPad and iPhone (Bantu region highlighted)"
+  },
+  {
+    "key": "insitome/share-card-ancestry",
+    "path": "/assets/img/insitome/share-card-ancestry.png",
+    "description": "Insitome social share card: ancestral regions with percentages over a world map"
+  },
+  {
+    "key": "insitome/share-card-lifestyle",
+    "path": "/assets/img/insitome/share-card-lifestyle.png",
+    "description": "Insitome social share card on teal: lifestyle trait score 5/8 'Wanderlust'"
+  },
+  {
+    "key": "insitome/share-card-metabolism",
+    "path": "/assets/img/insitome/share-card-metabolism.png",
+    "description": "Insitome social share card on orange: metabolism score 5/8 'Modern Farmer DNA'"
+  },
+  {
+    "key": "insitome/share-card-nenderthal",
+    "path": "/assets/img/insitome/share-card-nenderthal.png",
+    "description": "Insitome social share card on blue: Neanderthal percentage ring"
+  },
+  {
+    "key": "insitome/sharing-lod-selection",
+    "path": "/assets/img/insitome/sharing-lod-selection.png",
+    "description": "Insitome sharing flow storyboard with level-of-detail selection, sender and recipient views"
+  },
+  {
+    "key": "insitome/sharing-no-lod-selection",
+    "path": "/assets/img/insitome/sharing-no-lod-selection.png",
+    "description": "Insitome sharing flow storyboard without level-of-detail selection, sender and recipient views"
+  },
+  {
+    "key": "insitome/WorldMap",
+    "path": "/assets/img/insitome/WorldMap@2x.png",
+    "description": "Insitome world ancestry map: colored regions and population data points with a legend"
+  },
+  {
+    "key": "job-apps/accessible-international-button",
+    "path": "/assets/img/job-apps/accessible-international-button.png",
+    "description": "Search button translated into a dozen languages (incl. RTL scripts), with a contrast checker showing 15.71:1"
+  },
+  {
+    "key": "job-apps/collaborative",
+    "path": "/assets/img/job-apps/collaborative.png",
+    "description": "Video call screenshot: four teammates meeting remotely"
+  },
+  {
+    "key": "job-apps/content-strategy",
+    "path": "/assets/img/job-apps/content-strategy.png",
+    "description": "Cropped close-up of a WorkStep 'New Segment' modal with plain-language helper text"
+  },
+  {
+    "key": "job-apps/design-specs",
+    "path": "/assets/img/job-apps/design-specs.png",
+    "description": "Annotated WorkStep design spec: UI states with numbered pink callouts and notes"
+  },
+  {
+    "key": "job-apps/design-systems",
+    "path": "/assets/img/job-apps/design-systems@2x.png",
+    "description": "Halliburton design system overview: colors, type scale, components and grid, angled"
+  },
+  {
+    "key": "job-apps/info-architecture",
+    "path": "/assets/img/job-apps/info-architecture.png",
+    "description": "Close-up of WorkStep's new information architecture: numbered nav items linked by colored lines"
+  },
+  {
+    "key": "job-apps/nice-interfaces",
+    "path": "/assets/img/job-apps/nice-interfaces.png",
+    "description": "Collage of mobile and web UI from several projects (WorkStep, Hallmark, Dimensional, AFS)"
+  },
+  {
+    "key": "job-apps/precision-and-details",
+    "path": "/assets/img/job-apps/precision-and-details.png",
+    "description": "WorkStep nav spec calling out a subtle scroll shadow and a 'fixed to bottom' area"
+  },
+  {
+    "key": "job-apps/report-cards",
+    "path": "/assets/img/job-apps/report-cards.png",
+    "description": "Grid of WorkStep report builder cards: charts, heatmaps, tables and metrics"
+  },
+  {
+    "key": "job-apps/strategic-influence",
+    "path": "/assets/img/job-apps/strategic-influence.png",
+    "description": "Photo of a wall of sticky notes and paper sketches from an ideation session"
+  },
+  {
+    "key": "job-apps/use-of-ai",
+    "path": "/assets/img/job-apps/use-of-ai.png",
+    "description": "Screenshot of a Claude project list showing day-to-day AI use for design work"
+  },
+  {
+    "key": "job-apps/user-flow",
+    "path": "/assets/img/job-apps/user-flow.png",
+    "description": "Wide user flow diagram with screens, decision diamonds and connecting arrows"
+  },
+  {
+    "key": "misc/01-app",
+    "path": "/assets/img/misc/01-app.jpg",
+    "description": "The Daily Dot Android app on an angled phone, showing an article reading view"
+  },
+  {
+    "key": "misc/01-poster-1",
+    "path": "/assets/img/misc/01-poster-1.jpg",
+    "description": "'Her Wilderness' film poster: woman pouring from a telephone handset like a pitcher"
+  },
+  {
+    "key": "misc/01-top-down",
+    "path": "/assets/img/misc/01-top-down.jpg",
+    "description": "Dark navy gatefold invitation with gold art deco linework, folded, top-down view"
+  },
+  {
+    "key": "misc/02-banner-a",
+    "path": "/assets/img/misc/02-banner-a.jpg",
+    "description": "Deep Eddy Vodka web banner ad: 'Who wants to drink some vodka?' with video thumbnails of people"
+  },
+  {
+    "key": "misc/02-folded-unfolded",
+    "path": "/assets/img/misc/02-folded-unfolded.jpg",
+    "description": "Dark navy and gold art deco invitation shown folded and unfolded"
+  },
+  {
+    "key": "misc/02-poster-1",
+    "path": "/assets/img/misc/02-poster-1.jpg",
+    "description": "'Her Wilderness' film poster: red-haired woman holding garden shears"
+  },
+  {
+    "key": "misc/02-topic",
+    "path": "/assets/img/misc/02-topic.jpg",
+    "description": "The Daily Dot Android app sections screen with an Entertainment story list"
+  },
+  {
+    "key": "misc/03-back-down",
+    "path": "/assets/img/misc/03-back-down.jpg",
+    "description": "Inside of the art deco invitation: gold type on navy for an event at the French Legation, Austin"
+  },
+  {
+    "key": "misc/03-banner-b",
+    "path": "/assets/img/misc/03-banner-b.jpg",
+    "description": "Deep Eddy Vodka web banner ad: 'Possibly the best vodka ever made' with lifestyle photos"
+  },
+  {
+    "key": "misc/03-drawer",
+    "path": "/assets/img/misc/03-drawer.jpg",
+    "description": "The Daily Dot Android app with the navigation drawer open (Your Feed, All Stories, Communities, Sections)"
+  },
+  {
+    "key": "misc/03-poster-2",
+    "path": "/assets/img/misc/03-poster-2.jpg",
+    "description": "'Her Wilderness' film poster: woman in a bathrobe with an apple in her mouth"
+  },
+  {
+    "key": "misc/04-cards",
+    "path": "/assets/img/misc/04-cards.jpg",
+    "description": "Art deco event stationery set: RSVP card, thank-you card, gold-foil detail card and postcard"
+  },
+  {
+    "key": "misc/04-customize",
+    "path": "/assets/img/misc/04-customize.jpg",
+    "description": "The Daily Dot Android app 'Customize Your Feed' screen with topic tiles to select interests"
+  },
+  {
+    "key": "misc/04-poster-3",
+    "path": "/assets/img/misc/04-poster-3.jpg",
+    "description": "'Her Wilderness' film poster: man cracking an egg on his own head"
+  },
+  {
+    "key": "misc/04-poster-4",
+    "path": "/assets/img/misc/04-poster-4.jpg",
+    "description": "'Her Wilderness' film poster: young girl holding a single red rose"
+  },
+  {
+    "key": "misc/05-architecture",
+    "path": "/assets/img/misc/05-architecture.gif",
+    "description": "The Daily Dot app information architecture map: settings, stories, search and about branches"
+  },
+  {
+    "key": "misc/06-wireframes",
+    "path": "/assets/img/misc/06-wireframes.gif",
+    "description": "Four low-fidelity Android wireframes for The Daily Dot app (feed, drawer, sections, customize)"
+  },
+  {
+    "key": "misc/daily-dot-ui-kit",
+    "path": "/assets/img/misc/daily-dot-ui-kit.jpg",
+    "description": "The Daily Dot UI kit sheet: form controls, buttons, icon set, light and dark components"
+  },
+  {
+    "key": "misc/egg",
+    "path": "/assets/img/misc/egg.gif",
+    "description": "Illustration of a fried egg with a calm face floating on an orange background"
+  },
+  {
+    "key": "misc/gif-wire-mobile",
+    "path": "/assets/img/misc/gif-wire-mobile.gif",
+    "description": "Mobile wireframe for GIF Madness: GIF player with scrubber and curated social feed"
+  },
+  {
+    "key": "misc/gifmadness-full",
+    "path": "/assets/img/misc/gifmadness-full.jpg",
+    "description": "The Daily Dot 'GIF Madness' full page: basketball GIF player, voting and a grid of fan reactions"
+  },
+  {
+    "key": "misc/gifmadness-top",
+    "path": "/assets/img/misc/gifmadness-top.jpg",
+    "description": "The Daily Dot 'GIF Madness' hero: basketball court graphic with a GIF carousel and scrubber"
+  },
+  {
+    "key": "misc/gm-wire-desktop",
+    "path": "/assets/img/misc/gm-wire-desktop.gif",
+    "description": "Desktop wireframe for the GIF Madness page: GIF carousel, ad slots and curated social feed"
+  },
+  {
+    "key": "misc/growing-pains",
+    "path": "/assets/img/misc/growing-pains.jpg",
+    "description": "Art piece: a pixelated magenta portrait printed across a fan of vertical strips"
+  },
+  {
+    "key": "misc/hw-flowchart",
+    "path": "/assets/img/misc/hw-flowchart.gif",
+    "description": "Color-coded node flowchart mapping questions and characters for the Her Wilderness interactive site"
+  },
+  {
+    "key": "misc/hw-wireframes",
+    "path": "/assets/img/misc/hw-wireframes.gif",
+    "description": "Her Wilderness responsive wireframes: a quote screen at phone, tablet and desktop sizes"
+  },
+  {
+    "key": "misc/pop-01",
+    "path": "/assets/img/misc/pop-01.jpg",
+    "description": "Pop-art editorial illustration on teal: collaged public figures, a doge and newsprint textures"
+  },
+  {
+    "key": "misc/pop-02",
+    "path": "/assets/img/misc/pop-02.jpg",
+    "description": "Pop-art editorial illustration on yellow: collaged figures around a bearded man holding a bowl"
+  },
+  {
+    "key": "misc/pop-03",
+    "path": "/assets/img/misc/pop-03.jpg",
+    "description": "Pop-art editorial illustration on gray: collaged politicians and the US Capitol"
+  },
+  {
+    "key": "misc/rr_02",
+    "path": "/assets/img/misc/rr_02.jpg",
+    "description": "Ruthless Rick's hot sauce packaging: vintage oil-can bottle with a Brimstone label"
+  },
+  {
+    "key": "misc/rr_03",
+    "path": "/assets/img/misc/rr_03.jpg",
+    "description": "Ruthless Rick's hot sauce packaging: four oil-can bottles in a row (Hell Dip, Inferno, Sulfur Sauce, Brimstone)"
+  },
+  {
+    "key": "misc/shrew",
+    "path": "/assets/img/misc/shrew.jpg",
+    "description": "Hand-lettered 'Taming of the Shrew' theater poster over a graffiti wall photo, held up"
+  },
+  {
+    "key": "misc/tamed",
+    "path": "/assets/img/misc/tamed.jpg",
+    "description": "Pencil and ink sketches of 'Taming of the Shrew' script lettering on tracing paper"
+  },
+  {
+    "key": "misc/zm01",
+    "path": "/assets/img/misc/zm01.jpg",
+    "description": "Letterpress wedding invitation suite with Western theme: invite, RSVP card, map and vintage postcard"
+  },
+  {
+    "key": "misc/zm02",
+    "path": "/assets/img/misc/zm02.jpg",
+    "description": "Close-up of letterpress wedding RSVP and room-and-board cards"
+  },
+  {
+    "key": "misc/zm03",
+    "path": "/assets/img/misc/zm03.jpg",
+    "description": "Angled close-up of the letterpress wedding invitation: 'October 27th, Four O'Clock'"
+  },
+  {
+    "key": "misc/zm04",
+    "path": "/assets/img/misc/zm04.jpg",
+    "description": "Letterpress wedding map card showing the route from Austin to Albert, Texas"
+  },
+  {
+    "key": "rsteaser/01-rsdesktop",
+    "path": "/assets/img/rsteaser/01-rsdesktop.jpg",
+    "description": "Republic Square teaser website at desktop: tree-canopy photo with stacked 'Republic Square' type, 'Opening Fall 2017'"
+  },
+  {
+    "key": "rsteaser/02-phone",
+    "path": "/assets/img/rsteaser/02-phone.jpg",
+    "description": "Republic Square teaser website on mobile, in a phone mockup"
+  },
+  {
+    "key": "sxsw/01-landing",
+    "path": "/assets/img/sxsw/01-landing.jpg",
+    "description": "The Music Bloggers Guide to SXSW 2017 landing screen: bold type over a blurred peach collage"
+  },
+  {
+    "key": "sxsw/02-browse",
+    "path": "/assets/img/sxsw/02-browse.jpg",
+    "description": "Music Bloggers Guide browse view: collage of artist photos (Beach Slang, Artificial Pleasure, Carnival Youth)"
+  },
+  {
+    "key": "sxsw/03-artist",
+    "path": "/assets/img/sxsw/03-artist.jpg",
+    "description": "Music Bloggers Guide artist detail: The Cool Kids bio with photo and audio player"
+  },
+  {
+    "key": "sxsw/04-directory",
+    "path": "/assets/img/sxsw/04-directory.jpg",
+    "description": "Music Bloggers Guide artist directory: dark sortable table of artists, authors and genres"
+  },
+  {
+    "key": "sxsw/05-mbg-phone",
+    "path": "/assets/img/sxsw/05-mbg-phone.jpg",
+    "description": "Music Bloggers Guide on mobile in a phone mockup, artist collage with audio player"
+  },
+  {
+    "key": "sxsw/06-wires",
+    "path": "/assets/img/sxsw/06-wires.jpg",
+    "description": "Photo of a wall of sticky notes and paper wireframes from SXSW project planning"
+  },
+  {
+    "key": "sxsw/07-persona",
+    "path": "/assets/img/sxsw/07-persona.jpg",
+    "description": "User persona sheet: 'Wade Foster', goals, listening habits and social networks"
+  },
+  {
+    "key": "sxsw/08-flowchart",
+    "path": "/assets/img/sxsw/08-flowchart.jpg",
+    "description": "Annotated flowchart of the Music Bloggers Guide experience with screen thumbnails"
+  },
+  {
+    "key": "sxsw/artist-details-wire",
+    "path": "/assets/img/sxsw/artist-details-wire.png",
+    "description": "Wireframe of the artist detail screen: image placeholder, bio and related artists"
+  },
+  {
+    "key": "unilease/account-reg-flows",
+    "path": "/assets/img/unilease/account-reg-flows.png",
+    "description": "Unilease account registration flows: rows of connected screen thumbnails"
+  },
+  {
+    "key": "unilease/analytics",
+    "path": "/assets/img/unilease/analytics.png",
+    "description": "Unilease lease analytics: base rent distribution curve, economics bar charts and option donuts"
+  },
+  {
+    "key": "unilease/dashsearch",
+    "path": "/assets/img/unilease/dashsearch.png",
+    "description": "Unilease desktop home feed: 'Good afternoon, Mike' welcome card and property activity"
+  },
+  {
+    "key": "unilease/design-system-placeholder",
+    "path": "/assets/img/unilease/design-system-placeholder.png",
+    "description": "Zoomed-out canvas of Unilease design system components and screens (very small at this size)"
+  },
+  {
+    "key": "unilease/example-shirt",
+    "path": "/assets/img/unilease/example-shirt.jpg",
+    "description": "Unilease brand mockup: black t-shirt with the white 'U' logo"
+  },
+  {
+    "key": "unilease/example-sign",
+    "path": "/assets/img/unilease/example-sign.jpg",
+    "description": "Unilease brand mockup: square blade sign on a building with the logo"
+  },
+  {
+    "key": "unilease/example-tote",
+    "path": "/assets/img/unilease/example-tote.jpg",
+    "description": "Unilease brand mockup: tote bag with a black-and-white architectural pattern"
+  },
+  {
+    "key": "unilease/logo-standard-black",
+    "path": "/assets/img/unilease/logo-standard-black.svg",
+    "description": "Unilease logo lockup: 'U' mark with UNILEASE wordmark in black"
+  },
+  {
+    "key": "unilease/market-survey",
+    "path": "/assets/img/unilease/market-survey.png",
+    "description": "Unilease new market survey form: map, property type selectors and criteria fields"
+  },
+  {
+    "key": "unilease/market-survey-results",
+    "path": "/assets/img/unilease/market-survey-results.png",
+    "description": "Unilease market survey results screen: map of the target area, property criteria and a comment thread"
+  },
+  {
+    "key": "unilease/marketing-site",
+    "path": "/assets/img/unilease/marketing-site.png",
+    "description": "Unilease marketing site in dark theme: 'Do More Deals' with a dashboard preview"
+  },
+  {
+    "key": "unilease/property",
+    "path": "/assets/img/unilease/property.png",
+    "description": "Unilease property detail screen, long scrolling layout (shown very narrow)"
+  },
+  {
+    "key": "unilease/property-filled",
+    "path": "/assets/img/unilease/property-filled.png",
+    "description": "Unilease property detail screen: rent breakdown, property details, attachments and a photo"
+  },
+  {
+    "key": "unilease/property-form-modal",
+    "path": "/assets/img/unilease/property-form-modal.png",
+    "description": "Unilease 'New Property' modal with map search and progress sections"
+  },
+  {
+    "key": "unilease/search, phone, light mode",
+    "path": "/assets/img/unilease/search, phone, light mode.png",
+    "description": "Unilease mobile home feed in light mode: 'Good afternoon, Mike' welcome card and activity on properties"
+  },
+  {
+    "key": "unilease/style-tile-a",
+    "path": "/assets/img/unilease/style-tile-a.png",
+    "description": "Unilease style tile A: teal marketing page with 'Do More Deals' and dashboard preview"
+  },
+  {
+    "key": "unilease/style-tile-b",
+    "path": "/assets/img/unilease/style-tile-b.png",
+    "description": "Unilease style tile B: bright green marketing page with dashboard preview"
+  },
+  {
+    "key": "unilease/style-tile-c",
+    "path": "/assets/img/unilease/style-tile-c.png",
+    "description": "Unilease style tile C: black-and-white marketing page with dark dashboard preview"
+  },
+  {
+    "key": "unilease/type-exploration",
+    "path": "/assets/img/unilease/type-exploration.png",
+    "description": "Unilease wordmark type exploration: many typeface and weight options"
+  },
+  {
+    "key": "unilease/unilease-concept-animation",
+    "path": "/assets/img/unilease/unilease-concept-animation.gif",
+    "description": "Unilease 'U' logo mark animation concept, shown small on white"
+  },
+  {
+    "key": "unilease/unilease-mark",
+    "path": "/assets/img/unilease/unilease-mark.png",
+    "description": "Unilease 'U' logo mark in solid black, large"
+  },
+  {
+    "key": "unilease/unilease-mark-exploration",
+    "path": "/assets/img/unilease/unilease-mark-exploration.png",
+    "description": "Unilease logo mark exploration: dozens of black 'U' shapes and variations"
+  },
+  {
+    "key": "unilease/unilease-patterns",
+    "path": "/assets/img/unilease/unilease-patterns.png",
+    "description": "Unilease brand pattern exploration: lines, dots, waves and geometric shapes in black"
+  },
+  {
+    "key": "unilease/unilease-pricing",
+    "path": "/assets/img/unilease/unilease-pricing.png",
+    "description": "Unilease pricing flow diagram: tiers and decision paths with colored nodes"
+  },
+  {
+    "key": "unilease/unilease-topper",
+    "path": "/assets/img/unilease/unilease-topper.png",
+    "description": "Unilease dark-mode screens collage: analytics, home feed and property details"
+  },
+  {
+    "key": "workstep/ai-assistant-3-up",
+    "path": "/assets/img/workstep/ai-assistant-3-up.png",
+    "description": "Three WorkStep AI Assistant cards side by side: comment insight, quantitative trend and training alert"
+  },
+  {
+    "key": "workstep/ai-assistant-alert",
+    "path": "/assets/img/workstep/ai-assistant-alert.png",
+    "description": "WorkStep AI Assistant 'Training Alert' card: an employee comment translated from Spanish with suggested actions"
+  },
+  {
+    "key": "workstep/ai-assistant-comment-insight",
+    "path": "/assets/img/workstep/ai-assistant-comment-insight.png",
+    "description": "WorkStep AI Assistant comment insight card: summary of 18 comments on attendance policy confusion, with sentiment bar"
+  },
+  {
+    "key": "workstep/ai-assistant-maneuver-paths",
+    "path": "/assets/img/workstep/ai-assistant-maneuver-paths.png",
+    "description": "Large flow diagram mapping the paths a user can take through WorkStep's AI Assistant actions"
+  },
+  {
+    "key": "workstep/ai-assistant-quant-trend",
+    "path": "/assets/img/workstep/ai-assistant-quant-trend.png",
+    "description": "WorkStep AI Assistant trend card: line chart of falling feedback favorability against an expected range"
+  },
+  {
+    "key": "workstep/assistant-early-dashboard-open",
+    "path": "/assets/img/workstep/assistant-early-dashboard-open.png",
+    "description": "Early WorkStep AI Assistant concept: insight panel open beside the dashboard"
+  },
+  {
+    "key": "workstep/assistant-journey-early",
+    "path": "/assets/img/workstep/assistant-journey-early.png",
+    "description": "Early user journey flow for the WorkStep AI Assistant, with decision points"
+  },
+  {
+    "key": "workstep/assistant-orig-sketch",
+    "path": "/assets/img/workstep/assistant-orig-sketch.png",
+    "description": "Rough pen sketches of the original WorkStep AI Assistant idea, from table to summarized insights"
+  },
+  {
+    "key": "workstep/bad-response",
+    "path": "/assets/img/workstep/bad-response.png",
+    "description": "WorkStep employee survey on mobile (Pepsi branded): open-ended answer 'Need better benefits'"
+  },
+  {
+    "key": "workstep/card_sort_dendrogram",
+    "path": "/assets/img/workstep/card_sort_dendrogram.png",
+    "description": "Card sort dendrogram clustering WorkStep navigation items into groups"
+  },
+  {
+    "key": "workstep/cathy-card-sort",
+    "path": "/assets/img/workstep/cathy-card-sort.png",
+    "description": "Card sort results: WorkStep features grouped into columns by a participant"
+  },
+  {
+    "key": "workstep/chart-taxonomy",
+    "path": "/assets/img/workstep/chart-taxonomy.png",
+    "description": "Whiteboard-style chart taxonomy: WorkStep chart types (bar, line, area, donut, heatmap, table) grouped by family"
+  },
+  {
+    "key": "workstep/comment-insights-3-up",
+    "path": "/assets/img/workstep/comment-insights-3-up.png",
+    "description": "Three WorkStep milestone survey comment screens side by side on a dark nav layout"
+  },
+  {
+    "key": "workstep/Component-Comparison",
+    "path": "/assets/img/workstep/Component-Comparison.png",
+    "description": "Before/after comparison of WorkStep's Figma component library: 2,352 vs 19,102 elements"
+  },
+  {
+    "key": "workstep/dashboard-combo",
+    "path": "/assets/img/workstep/dashboard-combo.png",
+    "description": "WorkStep dashboard collage: unread comments, top opportunities, favorability by theme and response rates"
+  },
+  {
+    "key": "workstep/data-export",
+    "path": "/assets/img/workstep/data-export.png",
+    "description": "WorkStep data export flow: export settings modal, export history table and identity confirmation"
+  },
+  {
+    "key": "workstep/design-system",
+    "path": "/assets/img/workstep/design-system.png",
+    "description": "Overview of WorkStep design system components: tables, charts, date pickers, menus and form controls"
+  },
+  {
+    "key": "workstep/guided-follow-ups",
+    "path": "/assets/img/workstep/guided-follow-ups.gif",
+    "description": "WorkStep employee survey on mobile (Pepsi branded) prompting for more detail: 'The more details the better!'"
+  },
+  {
+    "key": "workstep/inform/inform-attachments-a",
+    "path": "/assets/img/workstep/inform/inform-attachments-a.png",
+    "description": "WorkStep Inform attachments modal: PDFs uploading with progress bars"
+  },
+  {
+    "key": "workstep/inform/inform-attachments-errors",
+    "path": "/assets/img/workstep/inform/inform-attachments-errors.png",
+    "description": "WorkStep Inform attachments modal with an error state: a file over the 20MB limit"
+  },
+  {
+    "key": "workstep/inform/inform-draft",
+    "path": "/assets/img/workstep/inform/inform-draft.png",
+    "description": "WorkStep Inform message composer: drafts list, recipient segment and message body"
+  },
+  {
+    "key": "workstep/inform/inform-graph-1",
+    "path": "/assets/img/workstep/inform/inform-graph-1.png",
+    "description": "WorkStep Inform delivery chart: nested donut of 87 employees by channel, opened, clicked and bounced"
+  },
+  {
+    "key": "workstep/inform/inform-graph-2",
+    "path": "/assets/img/workstep/inform/inform-graph-2.png",
+    "description": "WorkStep Inform delivery chart exploration: donut of 220 employees by email/phone with delivery stats"
+  },
+  {
+    "key": "workstep/inform/inform-graph-3",
+    "path": "/assets/img/workstep/inform/inform-graph-3.png",
+    "description": "WorkStep Inform delivery chart exploration: concentric arcs for phone and email delivery"
+  },
+  {
+    "key": "workstep/inform/inform-graph-4",
+    "path": "/assets/img/workstep/inform/inform-graph-4.png",
+    "description": "WorkStep Inform delivery chart exploration: stacked horizontal bars for phone and email"
+  },
+  {
+    "key": "workstep/inform/inform-graph-5",
+    "path": "/assets/img/workstep/inform/inform-graph-5.png",
+    "description": "WorkStep Inform delivery chart exploration: multi-ring donut with colored outcome rings"
+  },
+  {
+    "key": "workstep/inform/inform-message-sent",
+    "path": "/assets/img/workstep/inform/inform-message-sent.png",
+    "description": "WorkStep Inform sent-message view in the full app, with delivery donut and reactions"
+  },
+  {
+    "key": "workstep/inform/inform-messages",
+    "path": "/assets/img/workstep/inform/inform-messages.png",
+    "description": "WorkStep Inform message as received by employees, desktop and mobile email layouts"
+  },
+  {
+    "key": "workstep/inform/inform-query-builder-1",
+    "path": "/assets/img/workstep/inform/inform-query-builder-1.png",
+    "description": "WorkStep Inform 'Edit Recipients' query builder modal, empty state (967 employees)"
+  },
+  {
+    "key": "workstep/inform/inform-query-builder-2",
+    "path": "/assets/img/workstep/inform/inform-query-builder-2.png",
+    "description": "WorkStep Inform 'Edit Recipients' query builder with filters: unfavorable feedback on tools, Field Fleet, forklift operators"
+  },
+  {
+    "key": "workstep/inform/inform-query-builder-3",
+    "path": "/assets/img/workstep/inform/inform-query-builder-3.png",
+    "description": "WorkStep Inform 'New Segment' modal: saving a recipient query as a named segment"
+  },
+  {
+    "key": "workstep/inform/inform-tenure",
+    "path": "/assets/img/workstep/inform/inform-tenure.png",
+    "description": "Do/don't comparison of a tenure filter: 'between 30 and 90 days' vs a simpler 'Under 30 days' dropdown"
+  },
+  {
+    "key": "workstep/matrix",
+    "path": "/assets/img/workstep/matrix.png",
+    "description": "WorkStep favorability heatmap: locations by theme, green to orange cells with percentages"
+  },
+  {
+    "key": "workstep/rbac",
+    "path": "/assets/img/workstep/rbac.png",
+    "description": "WorkStep role-based access control screens: permission settings, user roles and edit dialogs"
+  },
+  {
+    "key": "workstep/report-card-settings-populated",
+    "path": "/assets/img/workstep/report-card-settings-populated.png",
+    "description": "WorkStep report builder card settings: component type, questions, sort and title fields"
+  },
+  {
+    "key": "workstep/report-concept",
+    "path": "/assets/img/workstep/report-concept.png",
+    "description": "Hand-drawn sketch of a report dashboard layout with charts"
+  },
+  {
+    "key": "workstep/translation",
+    "path": "/assets/img/workstep/translation.png",
+    "description": "WorkStep survey translation screens side by side: question editor with language options"
+  },
+  {
+    "key": "workstep/untangling/concept-activity-feed",
+    "path": "/assets/img/workstep/untangling/concept-activity-feed.png",
+    "description": "Hand-drawn style concept for an activity feed: 'Jeanette Eubank created a new Task'"
+  },
+  {
+    "key": "workstep/untangling/concept-search",
+    "path": "/assets/img/workstep/untangling/concept-search.png",
+    "description": "Hand-drawn style concept for global search: 'Search People, Locations, Analysis, Comments'"
+  },
+  {
+    "key": "workstep/untangling/concept-settings-menu",
+    "path": "/assets/img/workstep/untangling/concept-settings-menu.png",
+    "description": "Hand-drawn style concept for a settings menu: Templates, Automations, Segments"
+  },
+  {
+    "key": "workstep/untangling/filter-toolbar-revamp",
+    "path": "/assets/img/workstep/untangling/filter-toolbar-revamp.png",
+    "description": "Before/after of WorkStep's filter toolbar: a crowded row of filters vs a simplified one"
+  },
+  {
+    "key": "workstep/untangling/info-architecture",
+    "path": "/assets/img/workstep/untangling/info-architecture.png",
+    "description": "Close-up of WorkStep's new information architecture: numbered nav items connected by colored lines"
+  },
+  {
+    "key": "workstep/untangling/mapping",
+    "path": "/assets/img/workstep/untangling/mapping.png",
+    "description": "Full map connecting old WorkStep navigation items to their new locations"
+  },
+  {
+    "key": "workstep/untangling/old-sitemap",
+    "path": "/assets/img/workstep/untangling/old-sitemap.png",
+    "description": "WorkStep's original sitemap: color-coded top-level sections with their child pages"
+  },
+  {
+    "key": "workstep/untangling/old-sitemap-checkins",
+    "path": "/assets/img/workstep/untangling/old-sitemap-checkins.png",
+    "description": "WorkStep's original sitemap with the check-ins section highlighted and the rest faded"
+  },
+  {
+    "key": "workstep/untangling/outlier",
+    "path": "/assets/img/workstep/untangling/outlier.png",
+    "description": "WorkStep outlier insight: radar chart comparing a location to industry standard, with a highlighted callout"
+  },
+  {
+    "key": "workstep/untangling/report-cards",
+    "path": "/assets/img/workstep/untangling/report-cards.png",
+    "description": "Grid of WorkStep report card types: charts, heatmaps, tables and metrics"
+  },
+  {
+    "key": "workstep/untangling/stage-2-screens",
+    "path": "/assets/img/workstep/untangling/stage-2-screens.png",
+    "description": "Zoomed-out grid of dozens of WorkStep screens from the second stage of the IA project"
+  },
+  {
+    "key": "workstep/ws-dashboards",
+    "path": "/assets/img/workstep/ws-dashboards.png",
+    "description": "WorkStep's dashboard shown in a laptop viewport and a mobile viewport"
+  },
+  {
+    "key": "workthumbs/afs",
+    "path": "/assets/img/workthumbs/afs.png",
+    "description": "Thumbnail: Austin Film Society 'MAKE WATCH LOVE FILM' hero"
+  },
+  {
+    "key": "workthumbs/ai-assistant",
+    "path": "/assets/img/workthumbs/ai-assistant.png",
+    "description": "Thumbnail: WorkStep AI Assistant trend card with a line chart"
+  },
+  {
+    "key": "workthumbs/dfa",
+    "path": "/assets/img/workthumbs/dfa.png",
+    "description": "Thumbnail: Dimensional Fund Advisors serif headline over a dotted wave graphic"
+  },
+  {
+    "key": "workthumbs/everlywell",
+    "path": "/assets/img/workthumbs/everlywell.png",
+    "description": "Thumbnail: Everlywell cortisol results with low/normal/high range sliders"
+  },
+  {
+    "key": "workthumbs/halliburton",
+    "path": "/assets/img/workthumbs/halliburton.png",
+    "description": "Thumbnail: Halliburton 'The future of energy is digital' dark landing page"
+  },
+  {
+    "key": "workthumbs/hallmark",
+    "path": "/assets/img/workthumbs/hallmark.png",
+    "description": "Thumbnail: Hallmark Halloween card product page with Sign & Send"
+  },
+  {
+    "key": "workthumbs/inform",
+    "path": "/assets/img/workthumbs/inform.png",
+    "description": "Thumbnail: angled close-up of the WorkStep Inform query builder"
+  },
+  {
+    "key": "workthumbs/insitome",
+    "path": "/assets/img/workthumbs/insitome.png",
+    "description": "Thumbnail: Insitome map of human migration routes in blue, red and orange"
+  },
+  {
+    "key": "workthumbs/misc",
+    "path": "/assets/img/workthumbs/misc.png",
+    "description": "Thumbnail: close-up of letterpress wedding stationery"
+  },
+  {
+    "key": "workthumbs/sxsw",
+    "path": "/assets/img/workthumbs/sxsw.png",
+    "description": "Thumbnail: SXSW collage of film stills with a video scrubber"
+  },
+  {
+    "key": "workthumbs/unilease",
+    "path": "/assets/img/workthumbs/unilease.png",
+    "description": "Thumbnail: Unilease 'U' logo mark"
+  },
+  {
+    "key": "workthumbs/workstep",
+    "path": "/assets/img/workthumbs/workstep.png",
+    "description": "Thumbnail: close-up of WorkStep's information architecture map"
+  },
+  {
+    "key": "workthumbs/workstep-1-1",
+    "path": "/assets/img/workthumbs/workstep-1-1.png",
+    "description": "Thumbnail: angled WorkStep dashboard with bar charts, retention rate and satisfaction by location"
+  }
+]

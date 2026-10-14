@@ -1,0 +1,84 @@
+{
+  "slug": "vercel",
+  "company": "Vercel",
+  "headingLevel": 2,
+  "intro": [
+    "I know you’re going through a lot of applications, so I’ve put together some highlights on how I align with what you’re looking for.",
+    "I've been writing front-end code since 1999 and designing software for most of that time. Lately the two have merged: I prototype with coding agents every day, and this page was published by a workflow I built that turns a job posting into data and pushes it to my site. Marketplace and Connect sit right where I like to work, on two-sided products full of permissions, edge cases, and plumbing that should feel simple without lying about what's underneath."
+  ],
+  "requirements": [
+    {
+      "heading": "Designing both sides of an ecosystem",
+      "body": "At WorkStep, every feature had two audiences who depended on each other. Hourly workers answered surveys on their phones, and their managers acted on the results in web dashboards. If the worker side got clunky, the manager side went quiet. It sounds like builders and partners on Marketplace work similarly! I design both ends of a flow together and pay the most attention to the handoff, because that's where things usually break.",
+      "images": [
+        {
+          "key": "job-apps/user-flow"
+        }
+      ]
+    },
+    {
+      "heading": "Making complex rules feel clear",
+      "body": "I designed role-based access control at WorkStep, along with data export and confidential broadcast messaging with a custom segment builder. All three were about turning rules people couldn't see into settings they could trust. My approach is plain language up front, with details one step away for the people who need them, and empty, error, and recovery states designed as carefully as the happy path.",
+      "images": [
+        {
+          "key": "job-apps/content-strategy",
+          "alt": "Plain-language helper text in a WorkStep segment builder"
+        }
+      ]
+    },
+    {
+      "heading": "Prototyping with coding agents",
+      "body": "I use Claude Code and Cursor daily to build working prototypes, learn unfamiliar systems, and poke at how something will actually behave. For WorkStep's post-acquisition integration I prototyped the new flows in code so engineering could pressure-test them before anyone committed to a build. I'm not a production engineer, but I read code comfortably and I maintain this site myself in Vue.",
+      "images": [
+        {
+          "key": "job-apps/use-of-ai",
+          "alt": "A screenshot of my Claude usage as of recently"
+        }
+      ]
+    },
+    {
+      "heading": "Building structure where there's no playbook",
+      "body": "I was the first designer at Unilease and the only product designer at EverlyWell from Series A to Series B. Nobody handed me patterns in either place, so I made them and changed them as we learned. At WorkStep I rebuilt the design system from scratch on Figma variables and tokens and cut component bloat by 85%. I also learned when not to standardize: charts worked better as shared styles than as components, so we went with styles.",
+      "images": [
+        {
+          "key": "job-apps/design-systems",
+          "alt": "Example design system from a project with Halliburton"
+        }
+      ]
+    },
+    {
+      "heading": "Proving improvements with evidence",
+      "body": "At EverlyWell I redesigned and A/B tested the product detail page, and sales went up 25%. At WorkStep, Report Builder's first version was messy, and watching how customers really used it showed us what the spec had missed. The second round was much better because I stayed on it after launch. I like defining what success looks like before shipping and changing course when the numbers disagree with me.",
+      "images": [
+        {
+          "key": "job-apps/report-cards",
+          "alt": "Cards from a report builder I designed"
+        }
+      ]
+    },
+    {
+      "heading": "Working through implementation",
+      "body": "I stay close to engineering from the first conversation through launch. My specs cover the weird states with numbered callouts, so an engineer can point at exactly what they're asking about. When a constraint shows up mid-build, I'd rather adjust the design together than defend a mockup.",
+      "images": [
+        {
+          "key": "job-apps/design-specs",
+          "alt": "An annotated design spec covering UI states"
+        }
+      ]
+    },
+    {
+      "heading": "Craft that holds up at the edges",
+      "body": "Every color pairing in WorkStep's design system meets WCAG AA, and I set type on a modular scale instead of picking sizes by feel. I care about language as much as layout, because for developer products the words in an error message or a confirmation dialog do a lot of the design work.",
+      "images": [
+        {
+          "key": "job-apps/accessible-international-button",
+          "alt": "A button translated into a dozen languages, with a contrast checker"
+        }
+      ]
+    },
+    {
+      "heading": "Where I'd be learning",
+      "body": "I haven't designed developer tools or infrastructure products. I've been on the builder side of them for years, building and deploying my own sites, but designing OAuth flows, secrets management, and provider billing would be new. Same with agent flows that hand off between human approval and autonomous action. My AI Assistant work at WorkStep is the closest I've come, and it's the area I'm most excited to dig into."
+    }
+  ]
+}

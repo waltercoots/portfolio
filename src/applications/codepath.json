@@ -1,0 +1,102 @@
+{
+  "slug": "codepath",
+  "company": "CodePath",
+  "headingLevel": 2,
+  "intro": [
+    "I know you’re going through a lot of applications, so I’ve put together some highlights on how I align with what you’re looking for.",
+    "I've been designing web products for over 20 years, and I've been the first or only designer more often than not: Unilease, EverlyWell, Insitome. Most recently I spent four years at WorkStep, where I restructured the platform's information architecture, built the design system from scratch, and designed our first LLM-powered features. I like the messy, uncharted parts of a product."
+  ],
+  "requirements": [
+    {
+      "heading": "Untangling the parts nobody owns",
+      "body": "WorkStep's re-architecture started as \"the nav is confusing.\" The real problem was years of features bolted on by different teams had left a structure that matched our org chart instead of how customers worked. We rebuilt the information architecture around people's jobs, then redesigned navigation and dashboards to match. Accounts, onboarding, and navigation sound like the same kind of problem at CodePath.",
+      "images": [
+        {
+          "key": "job-apps/info-architecture",
+          "alt": "Information architecture work from the WorkStep IA re-architecture"
+        }
+      ]
+    },
+    {
+      "heading": "From ambiguous problem to build-ready spec",
+      "body": "Lately my prototypes are built in Claude Code and much more interactive and collaborative. But when buttoned-down specs are still appropriate, I try to include a flow that shows every path including the ugly edge cases, detailed specs, and coded prototypes when interactions are hard to describe. Report Builder, broadcast messaging, and role-based permissions at WorkStep all went that route.",
+      "images": [
+        {
+          "key": "job-apps/design-specs",
+          "alt": "Some specs I did of a design at WorkStep"
+        }
+      ]
+    },
+    {
+      "heading": "Building a first design system",
+      "body": "I've built two from nothing. At Insitome I made one system that kept responsive web and iOS consistent. At WorkStep I rebuilt everything in Figma with variables and tokens, cut component bloat by 85%, and built to WCAG AA. I also learned what to leave out. We stopped componentizing charts because Figma froze the data in place, and reviews went better once charts looked real. A first system should be small, opinionated, and used.",
+      "images": [
+        {
+          "key": "job-apps/design-systems",
+          "alt": "Example design system from a project with Halliburton"
+        }
+      ]
+    },
+    {
+      "heading": "Running my own discovery",
+      "body": "At Intuit I planned and ran research with tax professionals, people with zero patience during busy season. At Foxtrot I ran workshops, content audits, and persona work for clients like SXSW and Austin Film Society when nobody could agree on who the site was for. Without a dedicated researcher I keep it light: short conversations, something concrete for people to react to, and a write-up the team reads the same week.",
+      "images": [
+        {
+          "key": "job-apps/collaborative",
+          "alt": "Me and some teammates meeting"
+        }
+      ]
+    },
+    {
+      "heading": "Comfortable without a design org",
+      "body": "At Unilease I was the only designer, working directly with the CEO and one engineer to take a broker platform from idea to launch. There was no design system, research team, or second opinion. You learn to prioritize by asking what blocks engineering next week, and to make decisions you can defend later instead of waiting for certainty.",
+      "images": [
+        {
+          "key": "job-apps/strategic-influence",
+          "alt": "Sticky notes from an ideation session"
+        }
+      ]
+    },
+    {
+      "heading": "Directing someone else's UI work",
+      "body": "At T3 and Foxtrot I directed and mentored other designers on client work. The job was setting a clear direction, giving feedback that was specific enough to act on, and protecting their time to do the craft. I'd treat a UI contractor the same way. They'd get the flows, the system, and the reasoning, so the work comes back right the first time more often.",
+      "images": [
+        {
+          "key": "job-apps/precision-and-details"
+        }
+      ]
+    },
+    {
+      "heading": "Designing AI that helps people learn",
+      "body": "I designed WorkStep's AI Assistant with data scientist Zack Keller and CPO Justin Butler. It read survey and retention data and told managers in plain language what changed and what to do. Adoption was strong because it met people where they were instead of making them read a dashboard. Tutoring and coaching raise the same questions: when to explain, when to step back, and how to make people trust it without overtrusting it.",
+      "images": [
+        {
+          "key": "job-apps/user-flow"
+        }
+      ]
+    },
+    {
+      "heading": "Front-end fluency",
+      "body": "I write HTML, CSS, JavaScript, and Vue, and my portfolio is a Vue project I maintain myself. I prototype with Claude Code to a standard engineers can build from, and I used it for WorkStep's post-acquisition integration work. It means I know which design decisions are cheap and which ones eat a sprint, before I ask for them.",
+      "images": [
+        {
+          "key": "job-apps/content-strategy"
+        }
+      ]
+    },
+    {
+      "heading": "Education, then and now",
+      "body": "Some of my earliest work was e-learning: applications and training videos for fitness professionals at KnightWorks. At Insitome I turned dense genetics research into apps regular people could learn from. At WorkStep my users were frontline workers, the people technical skills can move into better jobs. I care about who gets access to opportunity, and CodePath is working on that directly.",
+      "images": [
+        {
+          "key": "job-apps/nice-interfaces",
+          "alt": "Some of the various mobile and web designs I've done"
+        }
+      ]
+    },
+    {
+      "heading": "Where I'd be learning",
+      "body": "I haven't designed a modern learner platform with career roadmaps, skills tracking, and grading. I'd want to start by talking to students, instructors, and the career coaching team before drawing anything. I also mostly work in plain CSS and Vue rather than Tailwind, though the utility-class approach maps closely to how I already think about tokens."
+    }
+  ]
+}

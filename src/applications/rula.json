@@ -1,0 +1,84 @@
+{
+  "slug": "rula",
+  "company": "Rula",
+  "headingLevel": 2,
+  "intro": [
+    "I know you’re going through a lot of applications, so I’ve put together some highlights on how I align with what you’re looking for.",
+    "Early in my career at Intuit, I was on a team exploring practice management software for physicians' offices. I spent a lot of that project cold calling practices just to get someone on the phone who used their software every day, and once I did, I'd hear how much of their time it ate, which stuck with me. Since then I've designed EverlyWell's lab results experience and spent four years at WorkStep building tools for managers whose real job was taking care of people, not clicking through dashboards. Rula's Provider Team is a similar problem with a mission I care about!"
+  ],
+  "requirements": [
+    {
+      "heading": "Multi-step workflows with less friction",
+      "body": "At WorkStep I designed Inform, a confidential broadcast tool with a custom segment builder, and a report builder that let managers assemble their own dashboards. Both were long, branching workflows where one confusing step meant the whole thing got abandoned. At Intuit I designed for tax professionals during busy season, people with zero patience for an extra screen. I treat every click someone makes forty times a day as a cost, and I go looking for the ones they make without thinking.",
+      "images": [
+        {
+          "key": "job-apps/user-flow"
+        }
+      ]
+    },
+    {
+      "heading": "Research with practice owners",
+      "body": "At Intuit, I did the unglamorous part of research for a practice management project: cold calling physicians' offices until I found someone who used the software and would talk to me. Those conversations with office staff and practice owners were scrappy, but they surfaced workarounds and frustrations that never made it into a requirements doc. With Rula's providers I'd want to go further, talking with them early and watching how they actually get through a week.",
+      "images": [
+        {
+          "key": "job-apps/strategic-influence",
+          "alt": "Sticky notes from an ideation session"
+        }
+      ]
+    },
+    {
+      "heading": "High-trust domains",
+      "body": "I was the only product designer at EverlyWell from Series A to Series B, designing how people saw their own lab results. Health data needs to be clear and calm without being vague, especially when a number comes back high. I also spent four years at Intuit on professional tax software and did IA work for Dimensional Fund Advisors. Getting healthcare and money right both come down to earning trust one screen at a time.",
+      "images": [
+        {
+          "key": "job-apps/content-strategy",
+          "alt": "Plain-language helper text in a WorkStep segment builder"
+        }
+      ]
+    },
+    {
+      "heading": "Lightweight, AI-enabled experiences",
+      "body": "I designed WorkStep's AI Assistant with our data scientist and CPO. It read survey responses and trends and surfaced short, plain-language cards for managers: what's happening, why it matters, and what to do next. We kept it deliberately small, and adoption after launch was strong. I'd bring the same restraint to clinical tools, where AI should save a provider time and never put words in their mouth.",
+      "images": [
+        {
+          "key": "job-apps/use-of-ai",
+          "alt": "A screenshot of my Claude usage as of recently"
+        }
+      ]
+    },
+    {
+      "heading": "Owning a problem from start to finish",
+      "body": "The first version of WorkStep's report builder was very basic, and watching how customers actually used it showed us what the spec had missed. The next round was much better because I stayed on it after launch. I like owning an area from the first fuzzy conversation through the second and third versions, not handing it off once the mockups are done.",
+      "images": [
+        {
+          "key": "job-apps/report-cards",
+          "alt": "Cards from a report builder I designed"
+        }
+      ]
+    },
+    {
+      "heading": "Documenting logic and trade-offs",
+      "body": "Complex workflows live or die on the spec. I write mine to cover the empty, broken, and in-between states, with numbered callouts so engineering, product, and anyone in compliance can point at exactly what they're asking about. When I present, I lead with the problem and the trade-offs in plain language, so the room debates the decision instead of the pixels.",
+      "images": [
+        {
+          "key": "job-apps/design-specs",
+          "alt": "An annotated design spec with numbered callouts for UI states"
+        }
+      ]
+    },
+    {
+      "heading": "Design systems and accessibility",
+      "body": "I rebuilt WorkStep's design system from scratch on Figma variables and tokens, cut component bloat by 85%, and built every color pairing to WCAG AA. At EverlyWell I picked the brand palette with an accessibility color wheel, sorting hues by lightness so text contrast held up on lab results people might be reading in a hurry or on a bad day.",
+      "images": [
+        {
+          "key": "job-apps/accessible-international-button",
+          "alt": "A button translated into a dozen languages, with a contrast checker"
+        }
+      ]
+    },
+    {
+      "heading": "Where I'd be learning",
+      "body": "I haven't designed clinical tools for therapists, and the details of documentation, intake, and insurance billing in mental health are new to me. I'd want to shadow providers and lean on Rula's clinical team early, before I touched anything they rely on. I'm also more practiced working with product and engineering than with compliance partners, so I'd make a point of bringing them in at the start instead of at review."
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "slug": "mypattern",
+  "company": "MyPattern",
+  "headingLevel": 2,
+  "intro": [
+    "I know you’re going through a lot of applications, so I’ve put together some highlights on how I align with what you’re looking for.",
+    "I've designed consumer health products twice. At EverlyWell I was the only product designer from Series A to Series B, working on the lab results experience for people testing at home. At Insitome I turned genetics research into apps regular people actually enjoyed. Most recently at WorkStep I designed an AI assistant that found patterns in messy data and explained them in plain language. MyPattern sits right where those three meet."
+  ],
+  "requirements": [
+    {
+      "heading": "Making health data make sense",
+      "body": "At EverlyWell, people got their lab results on their own, at home, with no doctor sitting next to them. That changes the design job. A number with a reference range isn't enough. People need to know what it means, whether to worry, and what to do next. I designed the results platform around those questions, using infographics and plain-language explanations so a result felt like an answer instead of a puzzle.",
+      "images": [
+        {
+          "key": "job-apps/nice-interfaces"
+        }
+      ]
+    },
+    {
+      "heading": "AI that connects the dots",
+      "body": "I designed WorkStep's AI Assistant with our data scientist Zack Keller and CPO Justin Butler. It read survey and retention data, spotted what changed, and told managers in plain English what to look at. The hard design problems were the same ones MyPattern will face: how confident to sound, how to show the evidence behind an insight, and how to be useful without overwhelming people. Adoption was strong because it earned trust one small insight at a time.",
+      "images": [
+        {
+          "key": "job-apps/user-flow"
+        }
+      ]
+    },
+    {
+      "heading": "Defining the UX vision from zero",
+      "body": "I've been the first or only designer at Unilease, EverlyWell, and Insitome. In each case nobody handed me a design direction, so I wrote one, tested it, and kept it alive through launch. At an early-stage company the vision has to be clear enough to guide decisions this week and loose enough to change when users show you something new.",
+      "images": [
+        {
+          "key": "job-apps/strategic-influence",
+          "alt": "Sticky notes from an ideation session"
+        }
+      ]
+    },
+    {
+      "heading": "Flows, structure, and information architecture",
+      "body": "Untangling WorkStep started as a navigation cleanup and turned into a full IA overhaul once we saw the product's structure matched our org chart instead of how people worked. I rebuilt the task flows and navigation around users' real jobs. A health platform pulling together symptoms, labs, wearables, and history has the same risk at a bigger scale, and the structure decides whether it feels like clarity or clutter.",
+      "images": [
+        {
+          "key": "job-apps/info-architecture",
+          "alt": "Information architecture work from the WorkStep IA re-architecture"
+        }
+      ]
+    },
+    {
+      "heading": "High-fidelity design across platforms",
+      "body": "At Insitome we built native iOS and responsive web in parallel, and I made a platform-agnostic design system to keep them consistent. At WorkStep I rebuilt the pattern library from scratch with Figma variables and tokens, cut component bloat by 85%, and built to WCAG AA. I prototype in code with Claude Code when an interaction is easier to show than to spec.",
+      "images": [
+        {
+          "key": "job-apps/design-systems",
+          "alt": "Example design system from a project with Halliburton"
+        }
+      ]
+    },
+    {
+      "heading": "Measuring what worked",
+      "body": "At EverlyWell I redesigned the product page for our lab tests, A/B tested it, and saw a 25% increase in sales. At WorkStep we watched AI Assistant adoption after launch to decide what to build next. I like to agree on what success looks like before designing, because it settles arguments early and makes the next round of decisions easier.",
+      "images": [
+        {
+          "key": "job-apps/report-cards",
+          "alt": "Cards from a report builder I designed"
+        }
+      ]
+    },
+    {
+      "heading": "Research, starting small",
+      "body": "At Intuit I planned and ran research and usability testing, and at Foxtrot I ran workshops and persona work with clients. Building research from nothing at a startup means keeping it light and constant: a few conversations every week, a simple way to log what we hear, and a habit of testing rough ideas before they're expensive. I'd rather talk to five women this week than plan a perfect study for next quarter.",
+      "images": [
+        {
+          "key": "job-apps/collaborative"
+        }
+      ]
+    },
+    {
+      "heading": "Moving fast without breaking trust",
+      "body": "Startups reward speed, and health products punish carelessness. At EverlyWell we shipped quickly from Series A to Series B, but anything touching someone's results got extra care. Today I use Claude and Claude Code to get from idea to something testable in hours, which leaves more time for the details that actually matter to users.",
+      "images": [
+        {
+          "key": "job-apps/use-of-ai"
+        }
+      ]
+    },
+    {
+      "heading": "Where I'd be learning",
+      "body": "I haven't worked with wearable or clinical data. MyPattern's users are living through experiences I haven't had, so I'd lean hard on research and on the clinical team before trusting my own instincts. My native mobile work is also older, from Insitome's iOS app. I'm currently designing a native mobile app and design system on the side to get current."
+    }
+  ]
+}

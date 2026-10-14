@@ -1,0 +1,94 @@
+{
+  "slug": "shopmy",
+  "company": "ShopMy",
+  "headingLevel": 2,
+  "intro": [
+    "I know you’re going through a lot of applications, so I’ve put together some highlights on how I align with what you’re looking for.",
+    "I've been designing for the web since 1999, and one of my first freelance gigs was a PHP store selling state quarters to collectors. Since then I've lifted product page sales 25% at EverlyWell, redesigned Hallmark's product pages, and spent four years at WorkStep designing a platform with two audiences who depended on each other. ShopMy has three. That's the kind of puzzle I like, and it sounds like a team that wants designers who build!"
+  ],
+  "requirements": [
+    {
+      "heading": "Visual craft",
+      "body": "I went to school for this stuff. I care about details, I geek out on colors, layout, typography, and photography. At one point I was equal parts developer and designer, and I chose design to focus on because I love it the most.",
+      "images": [
+        {
+          "key": "job-apps/precision-and-details",
+          "alt": "A closeup of a spec I did calling out a specific shadow"
+        }
+      ]
+    },
+    {
+      "heading": "Designing and building",
+      "body": "I prototype in code every day with Claude Code, and I maintain this portfolio myself in Vue. For WorkStep's post-acquisition integration I built working prototypes instead of static mockups, so the team could react to something real. Recently I built hand-drawn, frame-by-frame web animations with SVG sprites because I wanted the wobbly lines to survive. I see code as another means of making things.",
+      "images": [
+        {
+          "key": "job-apps/use-of-ai",
+          "alt": "A screenshot of my Claude usage as of recently"
+        }
+      ]
+    },
+    {
+      "heading": "Shaping what gets built",
+      "body": "At WorkStep, I led a product-wide IA re-architecture with our Senior PM. This project touched navigation, information hierarchy, and dozens of existing features at once. Multi-phase, cross-team, and I owned the direction the whole way through, not just the first few weeks of it.",
+      "images": [
+        {
+          "key": "job-apps/info-architecture",
+          "alt": "Information architecture work from the WorkStep IA re-architecture"
+        }
+      ]
+    },
+    {
+      "heading": "Commerce and shoppers",
+      "body": "At EverlyWell I redesigned and A/B tested the product detail page for at-home lab tests, and sales went up 25%. I also built subscriptions into both the results platform and the marketing site checkout. At T3 I worked on Hallmark's sign-up, loyalty, and product page flows across desktop, tablet, and mobile. Discovery and checkout are familiar ground.",
+      "images": [
+        {
+          "key": "job-apps/nice-interfaces",
+          "alt": "Some of the various mobile and web designs I've done"
+        }
+      ]
+    },
+    {
+      "heading": "Designing for more than one side",
+      "body": "At WorkStep, frontline workers answered surveys on their phones during breaks and their managers acted on the results in web dashboards. If the worker side got clunky, the manager side went quiet. Creators, brands, and shoppers work the same way. I design both ends of a flow together and pay close attention to the handoff, because that's usually where things break.",
+      "images": [
+        {
+          "key": "job-apps/user-flow"
+        }
+      ]
+    },
+    {
+      "heading": "Web, mobile, and responsive",
+      "body": "Almost everything I've shipped in the last 15 years has been responsive. EverlyWell's customer dashboard and homepage, WorkStep's mobile web surveys, Unilease's product in light and dark mode. I designed Insitome's native iOS app alongside its responsive web version, and I'm designing a native app and its design system on the side right now.",
+      "images": [
+        {
+          "key": "job-apps/design-specs",
+          "alt": "An annotated design spec covering UI states"
+        }
+      ]
+    },
+    {
+      "heading": "Design systems and accessibility",
+      "body": "I rebuilt WorkStep's design system from scratch on Figma variables and tokens, cut component bloat by 85%, and built every color pairing to WCAG AA. I also learned when to stop. Building charts as components locked the data in place, so we replaced them with shared styles and reviews got better overnight. Joining an existing system, I'd learn its logic first and then help push it forward.",
+      "images": [
+        {
+          "key": "job-apps/accessible-international-button",
+          "alt": "A button translated into a dozen languages, with a contrast checker"
+        }
+      ]
+    },
+    {
+      "heading": "Critique and raising the bar",
+      "body": "I've mentored designers and run critiques at T3 and Foxtrot, and I like giving and getting feedback. Good critique is specific: what's working, what isn't, and why. On a small team that energy matters a lot, and it's a big part of why I'd want to be on this one.",
+      "images": [
+        {
+          "key": "job-apps/collaborative",
+          "alt": "Me and some teammates meeting"
+        }
+      ]
+    },
+    {
+      "heading": "Where I'd be learning",
+      "body": "I haven't worked in the creator economy, and I'd need to learn how creators actually make money and what keeps a brand coming back to a program. Building my own ShopMy page would be a good start. My native app experience is also thinner than my web work but there's a lot of overlap with mobile web SaaS, and the side project I mentioned is how I'm closing that gap."
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "slug": "assured",
+  "company": "Assured",
+  "headingLevel": 2,
+  "intro": [
+    "I know you’re going through a lot of applications, so I’ve put together some highlights on how I align with what you’re looking for.",
+    "Assured wants someone to take a pile of fragmented patterns and turn it into a foundation the whole company builds on. That's the work I did at WorkStep, where I rebuilt the design system from scratch and led a platform-wide IA overhaul through 4x growth and an acquisition."
+  ],
+  "requirements": [
+    {
+      "heading": "Turning fragmented patterns into a shared foundation",
+      "body": "WorkStep's old design system had grown into a junk drawer with a bunch of kitchen sink components. I rebuilt it on Figma variables and tokens, with color and breakpoint collections that each had their own modes and aliasing so a change at the token level rippled everywhere it should. Component bloat dropped by 85%!",
+      "images": [
+        {
+          "key": "job-apps/design-systems",
+          "alt": "Example design system from a project with Halliburton"
+        }
+      ]
+    },
+    {
+      "heading": "Craft, and knowing where to stop standardizing",
+      "body": "Good systems know when to back off. WorkStep is chart-heavy, and we first built every chart as a component. But this backfired, to put it mildly. Figma didn't have the flexibility for every chart to be customized, and stakeholders and users fixated on the unrealistic data for a given chart within a prototype. So I migrated to a \"starter kit\" approach where components had the fundamentals down but afforded designers the flexibility to populate as necessary.",
+      "images": [
+        {
+          "key": "job-apps/precision-and-details",
+          "alt": "A closeup of a spec I did calling out a specific shadow"
+        }
+      ]
+    },
+    {
+      "heading": "Turning complexity into something clear",
+      "body": "At WorkStep, I led a product-wide IA re-architecture with our Senior PM. This project touched navigation, information hierarchy, and dozens of existing features at once. Multi-phase, cross-team, and I owned the direction the whole way through, not just the first few weeks of it.",
+      "images": [
+        {
+          "key": "job-apps/info-architecture",
+          "alt": "Information architecture work from the WorkStep IA re-architecture"
+        }
+      ]
+    },
+    {
+      "heading": "Working deeply with engineering",
+      "body": "I've been writing HTML and CSS since 1999, and I still maintain my own site in Vue. Today I prototype in code with Claude Code, so engineers get something they can click and poke at instead of a static frame. During WorkStep's post-acquisition integration I prototyped the new flows in code so the team could pressure-test them before anyone committed to a build. I also write specs that cover the weird states, because that's where systems quietly fall apart.",
+      "images": [
+        {
+          "key": "job-apps/design-specs",
+          "alt": "An annotated design spec with numbered callouts for UI states"
+        }
+      ]
+    },
+    {
+      "heading": "Connecting brand expression with how the product works",
+      "body": "Having studied visual communication in college and having done a lot of brand and identity work on my own, I see tremendous value in brand and lots of opportunities to express it across a product. I believe most products fall short of this when it could be a valuable point of differentiation.",
+      "images": [
+        {
+          "key": "job-apps/nice-interfaces",
+          "alt": "Collage of mobile and web UI from several projects (WorkStep, Hallmark, Dimensional, AFS)"
+        }
+      ]
+    },
+    {
+      "heading": "Leading without a lot of structure",
+      "body": "I've been the only designer more than once. Head of Design at Unilease, and sole product designer at EverlyWell from Series A to Series B, where a redesigned and A/B tested product page lifted sales 25%. Nobody handed me a process in either place. I set one up, got the CEO and engineering on board, and kept it light enough that people actually used it.",
+      "images": [
+        {
+          "key": "job-apps/strategic-influence",
+          "alt": "Sticky notes from an ideation session"
+        }
+      ]
+    },
+    {
+      "heading": "Curious about AI and how teams build",
+      "body": "I designed WorkStep's LLM-powered AI Assistant with our data scientist and CPO. It surfaced insights and alerts for managers in plain language, and we added LLM-based grouping for survey comments. On the side I'm designing a native app in Figma through its MCP integration to see how far AI-assisted design can really go.",
+      "images": [
+        {
+          "key": "job-apps/use-of-ai",
+          "alt": "My claude screen"
+        }
+      ]
+    },
+    {
+      "heading": "Where I'd be learning",
+      "body": "I haven't worked in insurance or claims. I have spent a lot of my career getting up to speed on dense, regulated domains: professional tax software at Intuit, research sessions in physicians' offices for practice management tools, and four years of HR software for frontline supply chain workers. I'd lean on Assured's claims experts early and often, same as I did there."
+    }
+  ]
+}

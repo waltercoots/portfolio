@@ -10,3 +10,13 @@
   # Otherwise, fall back to index.html and let Vue Router handle it
   RewriteRule ^ index.html [L]
 </IfModule>
+
+# Keep application pages (and anything else that isn't part of the public
+# portfolio) out of search results. Matches the original request line, so the
+# index.html fallback above doesn't affect it. Public routes: /, /work,
+# /work/<slug>, /about, /quick-overview, and files under /assets/.
+<IfModule mod_headers.c>
+  <If "%{THE_REQUEST} !~ m#^[A-Z]+ /(work(/[^/?\s]*)?|about|quick-overview|assets/\S*|index\.html)?/?(\?\S*)?\s#">
+    Header set X-Robots-Tag "noindex, nofollow"
+  </If>
+</IfModule>

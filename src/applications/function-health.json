@@ -1,0 +1,61 @@
+{
+  "slug": "function-health",
+  "company": "Function Health",
+  "greeting": "Hello, Function",
+  "headingLevel": 2,
+  "intro": [
+    "I know you’re going through a lot of applications, so I’ve put together some highlights on how I align with what you’re looking for.",
+    "I have twenty years in product design. Most recently, a design system at WorkStep that had to hold up under fast, AI-accelerated engineering, and before that, real commerce and subscription work at EverlyWell. Hands-on craft, systems thinking, AI-native product design, this is close to how I already work day to day."
+  ],
+  "requirements": [
+    {
+      "heading": "Commerce and membership experience",
+      "body": "At EverlyWell I redesigned product detail pages for lab test products. 25% sales increase. I also built the subscription model into both the results platform and the marketing site checkout. Purchase paths, membership flows, not new territory. It's actually where some of my clearest measured impact has come from.",
+      "images": [
+        {
+          "key": "job-apps/user-flow"
+        }
+      ]
+    },
+    {
+      "heading": "A design system that holds up",
+      "body": "WorkStep's design system, built from scratch in Figma, variables, tokens, aliasing, cut UI bloat by 88% across features built by teams I wasn't reviewing screen by screen. During post-acquisition integration I used Claude Code and AI-generated prototypes to keep pace with requirements that kept shifting. Close to the AI-accelerated engineering context you're describing here.",
+      "images": [
+        {
+          "key": "job-apps/design-systems",
+          "alt": "Example design system from a project with Halliburton"
+        }
+      ]
+    },
+    {
+      "heading": "AI-native product experience",
+      "body": "At WorkStep, I designed and launched an LLM-powered insights and notification tool. Built alongside a data scientist and our CPO, from early prototyping through production launch. Confidence, relevance, when the system should say something versus stay quiet, those were real design decisions, not an afterthought bolted onto a feature at the end. I'm also actively using Claude Code to rapidly prototype and test out multiple iterations of designs.",
+      "images": [
+        {
+          "key": "job-apps/use-of-ai",
+          "alt": "A screenshot of my Claude usage as of recently"
+        }
+      ]
+    },
+    {
+      "heading": "Consumer health and craft",
+      "body": "Insitome and EverlyWell were both consumer health products. Genomics, lab results. Both demanded making complex, sometimes uncomfortable information feel clear and trustworthy instead of clinical or scary. Same instinct SuppIQ and TrustScore seem to be asking for.",
+      "images": [
+        {
+          "key": "job-apps/nice-interfaces",
+          "alt": "Some of the various mobile and web designs I've done"
+        }
+      ]
+    },
+    {
+      "heading": "Where I'm honest about the gap",
+      "body": "My consumer mobile track record is thinner than my web and B2B history. Insitome's my strongest proof point there. I don't have a shelf of shipped consumer mobile products the way a lifelong consumer designer would, and I'd rather say that upfront than have it come up as a surprise later.",
+      "images": [
+        {
+          "key": "job-apps/report-cards",
+          "alt": "Various card designs from a report builder I did"
+        }
+      ]
+    }
+  ]
+}
