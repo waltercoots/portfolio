@@ -1,0 +1,74 @@
+{
+  "slug": "render",
+  "company": "Render",
+  "headingLevel": 2,
+  "intro": [
+    "I know you’re going through a lot of applications, so I’ve put together some highlights on how I align with what you’re looking for.",
+    "The surfaces this role covers are some of my favorites, such as the product page, the checkout, the upgrade, the bill. I know it's these places where trust is won or lost, and they're where small design changes show up in the numbers. I've owned that path before, and I build and deploy my own sites, so I know the feeling of reading a hosting bill and wondering what exactly I'm paying for."
+  ],
+  "requirements": [
+    {
+      "heading": "One path from first touch to paying customer",
+      "body": "As the only product designer at EverlyWell from Series A to Series B, I owned the marketing site, the product page, checkout, the results experience, and the next purchase. I treated it as one path instead of a set of screens, so buying felt like the obvious next step. I redesigned and A/B tested the product page and sales went up 25%. I also built a subscription option into both checkout and the results platform, which turned one-time buyers into recurring ones.",
+      "images": [
+        {
+          "key": "job-apps/user-flow"
+        }
+      ]
+    },
+    {
+      "heading": "Rigor in the unglamorous flows",
+      "body": "I designed role-based access control and data export at WorkStep, where getting a permission or a file wrong had real consequences for enterprise customers. Before that I spent four years at Intuit on professional tax software, where accuracy wasn't optional. I design the failed, partial, and confusing states as carefully as the happy path, because that's where people decide whether to trust you. A clear bill is a design artifact, and I'd treat it like one.",
+      "images": [
+        {
+          "key": "job-apps/design-specs",
+          "alt": "An annotated design spec covering UI states"
+        }
+      ]
+    },
+    {
+      "heading": "Making a tangle feel like one obvious thing",
+      "body": "Untangling WorkStep started as \"the navigation is confusing.\" With our Senior PM, I found the real problem: years of features from different teams had produced a structure that matched our org chart, not our customers' jobs. Rebuilding the information architecture gave everything a place. Plans, usage, and billing states are the same kind of problem, and I'd love to dig into them.",
+      "images": [
+        {
+          "key": "job-apps/info-architecture",
+          "alt": "Information architecture work from the WorkStep IA re-architecture"
+        }
+      ]
+    },
+    {
+      "heading": "Validation and experimentation",
+      "body": "I have a strong ruberik for figuring out when decisions need conversations versus testing. I ran user research sessions at Intuit, learned how user behavior affected ecom at EverlyWell, and have seen how product features benefit from testing, data, and iteration at Unilease and WorkStep. ",
+      "images": [
+        {
+          "key": "job-apps/report-cards",
+          "alt": "Cards from a report builder I designed"
+        }
+      ]
+    },
+    {
+      "heading": "Craft at speed, close to the code",
+      "body": "I've been writing HTML and CSS since 1999, and I maintain my own site in Vue. I build working prototypes with Claude Code and Cursor every day, which is how I keep the bar high without slowing down. This page was published by a workflow I built that turns a job posting into structured data and pushes it to my site.",
+      "images": [
+        {
+          "key": "job-apps/use-of-ai",
+          "alt": "A screenshot of my Claude usage as of recently"
+        }
+      ]
+    },
+    {
+      "heading": "First-run experiences",
+      "body": "I overhauled onboarding for Insitome's DNA apps on iOS and web, where the challenge was getting people to their first interesting result before they lost interest. At Unilease I designed account registration, onboarding, and pricing tiers for a brand-new product. The first ten minutes decide whether someone comes back.",
+      "images": [
+        {
+          "key": "job-apps/nice-interfaces",
+          "alt": "Some of the various mobile and web designs I've done"
+        }
+      ]
+    },
+    {
+      "heading": "Where I'd be learning",
+      "body": "I haven't designed a product for developers as my primary audience. I've been on the other side of platforms like Render for years, building and deploying my own sites, but designing for compute plans, instance types, and usage-based metering would be new. Same with dunning and proration at scale. My subscription work at EverlyWell is the closest I've come, and it's the kind of rigor I'm excited to go deeper on."
+    }
+  ]
+}

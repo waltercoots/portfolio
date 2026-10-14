@@ -1,0 +1,84 @@
+{
+  "slug": "linktree",
+  "company": "Linktree",
+  "headingLevel": 2,
+  "intro": [
+    "I know you’re going through a lot of applications, so I’ve put together some highlights on how I align with what you’re looking for.",
+    "My favorite design work has always been the kind you can measure. At EverlyWell I was the only product designer, so I owned the whole funnel from product page to checkout to subscription, and I watched the numbers move. Linktree's Growth team is that loop at a much bigger scale, with a team of designers I'd love to help grow. I've mentored designers for years and I'm ready to make that a bigger part of the job."
+  ],
+  "requirements": [
+    {
+      "heading": "Designing for conversion and revenue",
+      "body": "At EverlyWell I redesigned the product detail page for at-home lab tests and A/B tested it against the original. Sales went up 25%. I also built a subscription option into both the marketing site checkout and the results experience, which turned a one-time purchase into a recurring one. At T3 I designed Hallmark's sign-up, loyalty, and product page flows across every screen size. Getting people from curious to paying is ground I know well.",
+      "images": [
+        {
+          "key": "job-apps/nice-interfaces",
+          "alt": "Some of the various mobile and web designs I've done"
+        }
+      ]
+    },
+    {
+      "heading": "Experiments, results, and iteration",
+      "body": "I like deciding what success looks like before anything ships and changing course when the numbers disagree with me. Report Builder at WorkStep is my honest example. The first version was messy, and watching how customers used it showed us what the spec missed. The second version was much better because I stayed on it after launch instead of moving on.",
+      "images": [
+        {
+          "key": "job-apps/report-cards",
+          "alt": "Cards from a report builder I designed"
+        }
+      ]
+    },
+    {
+      "heading": "Activation and engagement",
+      "body": "I overhauled onboarding for Insitome's DNA apps on iOS and web, where the hard part was getting people to their first interesting result before they lost interest. At WorkStep, our AI Assistant pushed short, plain-language insights to managers instead of waiting for them to dig through dashboards, and we tracked adoption after launch to decide what to build next. WorkStep was also two-sided: if workers stopped answering surveys, managers stopped coming back, so I designed both ends of that loop together.",
+      "images": [
+        {
+          "key": "job-apps/user-flow"
+        }
+      ]
+    },
+    {
+      "heading": "Shaping strategy alongside product",
+      "body": "At WorkStep I worked directly with our CPO on product strategy and the roadmap. Untangling WorkStep started as a complaint that the navigation was confusing. With our Senior PM, I found the real problem: years of features had produced a structure that matched our org chart instead of our customers' jobs. Reframing it that way got the whole team aligned before anyone drew a screen.",
+      "images": [
+        {
+          "key": "job-apps/strategic-influence",
+          "alt": "Sticky notes from an ideation session"
+        }
+      ]
+    },
+    {
+      "heading": "From pixels to product vision",
+      "body": "I rebuilt WorkStep's design system from scratch on Figma variables and tokens, cut component bloat by 85%, and built every color pairing to WCAG AA. A solid system is what lets a growth team run experiments fast without the product slowly turning into a patchwork. I care just as much about the details inside a single test variant as I do about the system underneath it.",
+      "images": [
+        {
+          "key": "job-apps/design-systems",
+          "alt": "Example design system from a project with Halliburton"
+        }
+      ]
+    },
+    {
+      "heading": "Mentoring designers",
+      "body": "I mentored and directed designers at T3 and Foxtrot, ran critiques, and was involved in hiring. As Head of Design at Unilease I set the design standards from scratch. Good critique is specific: what's working, what isn't, and how it connects to the goal. Helping other designers tie their work to business outcomes is the part of the job I want more of, and growing into managing a team is where I'm headed.",
+      "images": [
+        {
+          "key": "job-apps/collaborative",
+          "alt": "Me and some teammates meeting"
+        }
+      ]
+    },
+    {
+      "heading": "Speed without sloppiness",
+      "body": "Growth work rewards velocity, so I build working prototypes in code with Claude Code and Cursor instead of stopping at static mockups. It's faster to test an idea with something real, and it keeps quality up when the pace picks up. This page came out of a workflow I built to turn a job posting into structured data and publish it to my site.",
+      "images": [
+        {
+          "key": "job-apps/use-of-ai",
+          "alt": "A screenshot of my Claude usage as of recently"
+        }
+      ]
+    },
+    {
+      "heading": "Where I'd be learning",
+      "body": "I haven't been on a dedicated growth team. My growth work has happened as the one designer in the room at smaller companies, where I owned the funnel because nobody else did. I'd be learning from a team that runs experiments at real volume, with proper tooling and analysts, and I'd bring the habit of measuring everything I ship. Creator-led platforms would also be new territory for me."
+    }
+  ]
+}

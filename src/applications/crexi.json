@@ -1,0 +1,84 @@
+{
+  "slug": "crexi",
+  "company": "Crexi",
+  "headingLevel": 2,
+  "intro": [
+    "I know you’re going through a lot of applications, so I’ve put together some highlights on how I align with what you’re looking for.",
+    "I've designed for commercial real estate before. As Head of Design at Unilease, I was the first designer on a platform that helped brokers survey markets and match properties to their clients, and I saw firsthand how much of that work still lived in spreadsheets, PDFs, and phone calls. Crexi is going after the same problem at a much bigger scale, and I'd love to help."
+  ],
+  "requirements": [
+    {
+      "heading": "Commercial real estate, from the broker's side",
+      "body": "At Unilease I designed the core broker workflow end to end: setting up a market survey on a map, filtering by property type and criteria, reviewing results with comments, and digging into property details, rent breakdowns, and lease analytics. I worked directly with the CEO and our engineer from concept through launch. Brokers live on their phones and in their relationships, so the product had to earn a spot in a day that was already full.",
+      "images": [
+        {
+          "key": "job-apps/nice-interfaces",
+          "alt": "Some of the various mobile and web designs I've done"
+        }
+      ]
+    },
+    {
+      "heading": "Data-dense products people actually use",
+      "body": "For four years at WorkStep I designed dashboards, data tables, and charts for managers tracking thousands of workers across many sites. The trick is deciding what deserves attention at a glance and what can wait a click. I designed the empty, broken, and overloaded states as carefully as the happy path, because that's where people spend their day.",
+      "images": [
+        {
+          "key": "job-apps/report-cards",
+          "alt": "Cards from a report builder I designed"
+        }
+      ]
+    },
+    {
+      "heading": "Design systems in sync with code",
+      "body": "I rebuilt WorkStep's design system from scratch on Figma variables, tokens, and aliasing, cut component bloat by 85%, and kept it lined up with what engineering actually shipped. Every color pairing meets WCAG AA, because accessibility is cheaper as a default than as a retrofit. I also learned when not to componentize: charts worked better as shared styles than as rigid components.",
+      "images": [
+        {
+          "key": "job-apps/design-systems",
+          "alt": "Example design system from a project with Halliburton"
+        }
+      ]
+    },
+    {
+      "heading": "Designing for the numbers",
+      "body": "At EverlyWell I redesigned and A/B tested the product detail page, and sales went up 25%. I also built subscriptions into both checkout and the results experience. At WorkStep we tracked AI Assistant adoption after launch to decide what to build next. I like agreeing on what success looks like before shipping, and changing course when the data disagrees with me.",
+      "images": [
+        {
+          "key": "job-apps/user-flow"
+        }
+      ]
+    },
+    {
+      "heading": "Prototyping with AI, close to the code",
+      "body": "I've been writing HTML and CSS since 1999, and I maintain my own site in Vue. Today I build working prototypes with Claude Code and Cursor so customers and engineers can react to something real. For WorkStep's post-acquisition integration, I prototyped the new flows in code before anyone committed to a build. This page came out of a workflow I built that turns a job posting into structured data and publishes it to my site.",
+      "images": [
+        {
+          "key": "job-apps/use-of-ai",
+          "alt": "A screenshot of my Claude usage as of recently"
+        }
+      ]
+    },
+    {
+      "heading": "AI that earns its place in the workflow",
+      "body": "I designed WorkStep's LLM-powered AI Assistant with our data scientist and CPO. It turned survey data into short, plain-language cards for managers: what's happening, why it matters, and what to do next. We kept it small and inside the tools people already used, and adoption after launch was strong. Brokers would need the same thing: AI that saves them time on the grind without getting between them and their clients.",
+      "images": [
+        {
+          "key": "job-apps/content-strategy",
+          "alt": "Plain-language helper text in a WorkStep segment builder"
+        }
+      ]
+    },
+    {
+      "heading": "Owning ambiguous problems",
+      "body": "Untangling WorkStep started as \"the navigation is confusing.\" Digging in with our Senior PM, I found the real problem: years of features had produced a structure that matched our org chart instead of our customers' jobs. Fixing that was a very different project than shuffling menu items. I'd rather bring structure to a fuzzy problem than wait for someone to hand me a spec.",
+      "images": [
+        {
+          "key": "job-apps/info-architecture",
+          "alt": "Information architecture work from the WorkStep IA re-architecture"
+        }
+      ]
+    },
+    {
+      "heading": "Where I'd be learning",
+      "body": "My CRE experience is on the leasing and broker side. I haven't designed for investment sales, auctions, or the deal-closing workflows a full marketplace like Crexi supports, and I'd want to spend time with brokers and investors early to learn where their time really goes. I also work in Vue rather than React, though the move between them is a short one."
+    }
+  ]
+}
