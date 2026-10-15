@@ -1,0 +1,74 @@
+{
+  "slug": "stable",
+  "company": "Stable",
+  "headingLevel": 2,
+  "intro": [
+    "I know you’re going through a lot of applications, so I’ve put together some highlights on how I align with what you’re looking for.",
+    "For the last four years I designed software for warehouses and distribution centers, for customers like PepsiCo, PetSmart, and JB Hunt. Clicking a button in that software changed what happened on a real floor with real people, so \"this isn't typical SaaS\" sounds like home. A mailroom handling a million pieces of mail is my kind of puzzle."
+  ],
+  "requirements": [
+    {
+      "heading": "Bridging software and physical operations",
+      "body": "WorkStep helped managers at warehouses and distribution centers understand and keep their frontline workers. The workers answered short surveys on their phones, and managers acted on what came back across many sites. At EverlyWell, the product connected a physical test kit, a lab, and a results experience, and keeping people from getting lost in weird edge cases was a big part of it. This wouldn't be my first rodeo!",
+      "images": [
+        {
+          "key": "job-apps/user-flow"
+        }
+      ]
+    },
+    {
+      "heading": "Hunting through data myself",
+      "body": "I owned WorkStep's Report Builder through launch and a second version, so I've spent a lot of time thinking about how people slice operational data. After launch, watching how customers actually built reports showed us what the spec missed. I'm happy pulling my own numbers before I ask anyone, and an internal MCP as a data sidekick sounds great to me.",
+      "images": [
+        {
+          "key": "job-apps/report-cards",
+          "alt": "Cards from a report builder I designed"
+        }
+      ]
+    },
+    {
+      "heading": "Owning product decisions",
+      "body": "As the first designer at Unilease, I worked directly with the CEO and engineering on what to build, what to cut, and what to ship first. At WorkStep, I led a product-wide IA re-architecture with our Senior PM. This project touched navigation, information hierarchy, and dozens of existing features at once. Multi-phase, cross-team, and I owned the direction the whole way through.",
+      "images": [
+        {
+          "key": "job-apps/info-architecture",
+          "alt": "Information architecture work from the WorkStep IA re-architecture"
+        }
+      ]
+    },
+    {
+      "heading": "Working close to the code with AI",
+      "body": "I start a lot of work in Claude, Claude Code and finish it in Figma or in code, wherever it makes the most sense. During WorkStep's post-acquisition integration I prototyped new flows in code so the team could test real behavior early. I've been writing HTML and CSS since 1999 and maintain my own site in Vue.",
+      "images": [
+        {
+          "key": "job-apps/use-of-ai",
+          "alt": "A screenshot of my Claude usage as of recently"
+        }
+      ]
+    },
+    {
+      "heading": "A generalist who finishes things",
+      "body": "I've been the only designer more than once: Head of Design at Unilease, and the sole product designer at EverlyWell from Series A to Series B, where a redesigned and A/B tested product page lifted sales 25%. In both places I did research, UI, systems, and project management, and broke big fuzzy problems into milestones the team could actually ship. I've also started a few small startups with friends, and just recently began forming my own LLC!",
+      "images": [
+        {
+          "key": "job-apps/nice-interfaces",
+          "alt": "Some of the various mobile and web designs I've done"
+        }
+      ]
+    },
+    {
+      "heading": "Design systems that make the product better",
+      "body": "I rebuilt WorkStep's Figma design system from scratch on variables and tokens, cut component bloat by 85%, and built it to WCAG AA contrast. A good system frees up time for the human parts of design (like UX research!)",
+      "images": [
+        {
+          "key": "job-apps/design-systems",
+          "alt": "Example design system from a project with Halliburton"
+        }
+      ]
+    },
+    {
+      "heading": "Where I'd be learning",
+      "body": "I haven't designed for mail processing or entity management, and the regulations behind business addresses are new to me. My operational experience comes from the manager's side of warehouse work, not the processing floor itself. I'd want to spend time in one of your processing centers early, watching how mail actually moves before designing anything for it."
+    }
+  ]
+}

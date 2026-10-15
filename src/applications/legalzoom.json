@@ -1,0 +1,84 @@
+{
+  "slug": "legalzoom",
+  "company": "LegalZoom",
+  "headingLevel": 2,
+  "intro": [
+    "I know you’re going through a lot of applications, so I’ve put together some highlights on how I align with what you’re looking for.",
+    "Building in code how I've been working more recently! I craft the direction, and I switch between vibe coding and refinement in Figma to something that makes sense and functions, because a static frame hides half the decisions. I'm also located in Austin, and I'd be happy to come into the office."
+  ],
+  "requirements": [
+    {
+      "heading": "Taking the strongest direction to something that runs",
+      "body": "I build working prototypes with Claude Code every day, and I keep them in Git with branches and pull requests like any other code. During WorkStep's post-acquisition integration, I prototyped the new flows in code so engineers could click through real behavior before anyone committed to a build. I've been writing HTML and CSS since 1999, and I maintain my own site in Vue.",
+      "images": [
+        {
+          "key": "job-apps/use-of-ai",
+          "alt": "A screenshot of my Claude usage as of recently"
+        }
+      ]
+    },
+    {
+      "heading": "Knowing when AI output carries the design and when it doesn't",
+      "body": "AI-generated code is fast. I spend my attention refining spacing that drifts off the scale, hover states that never got designed, and components rebuilt from scratch instead of pulled from the system. I fix as much as I can myself instead of filing it for someone else. Keeping the model on track across a project comes down to good context, so I keep tokens, component names, and conventions where the tools can see them.",
+      "images": [
+        {
+          "key": "job-apps/precision-and-details",
+          "alt": "A closeup of a spec I did calling out a specific shadow"
+        }
+      ]
+    },
+    {
+      "heading": "Closing gaps in the design system",
+      "body": "I rebuilt WorkStep's Figma design system from scratch on variables and tokens, with aliasing so a change at the token level ripples everywhere. Component bloat dropped by 85%, and everything is built to WCAG AA contrast. I've also learned well what does and doesn't belong in a design system, which is half the job.",
+      "images": [
+        {
+          "key": "job-apps/design-systems",
+          "alt": "Example design system from a project with Halliburton"
+        }
+      ]
+    },
+    {
+      "heading": "Calibrating trust in AI features",
+      "body": "At WorkStep I designed an LLM-powered assistant with our data scientist and CPO that turned workforce data into plain-language insights for managers. I also designed LLM-based grouping for open-ended survey comments. In both cases the real design question was how sure the system should sound, and what a manager should be able to check before acting on it. Legal help raises those stakes a lot, and that's a problem I'd love to work on.",
+      "images": [
+        {
+          "key": "job-apps/content-strategy",
+          "alt": "Plain-language helper text in a WorkStep segment builder"
+        }
+      ]
+    },
+    {
+      "heading": "Guiding people through high-stakes paperwork",
+      "body": "I spent four years at Intuit designing professional tax software for accountants working against deadlines, plus an early web-based tax prep app. At Halliburton I designed an onboarding wizard for people new to the industry. Taking someone through an intimidating process without making them feel dumb is a lot of what LegalZoom does, and it's work I've done for a long time.",
+      "images": [
+        {
+          "key": "job-apps/user-flow"
+        }
+      ]
+    },
+    {
+      "heading": "Instrumenting what ships",
+      "body": "I owned WorkStep's Report Builder through launch and kept watching after it shipped. How customers actually used it showed us what the spec missed, and the second version was much better for it. At EverlyWell I redesigned and A/B tested the product page, and sales went up 25%. I want real usage to feed the next round, and building in code makes that loop a lot shorter.",
+      "images": [
+        {
+          "key": "job-apps/report-cards",
+          "alt": "Cards from a report builder I designed"
+        }
+      ]
+    },
+    {
+      "heading": "Raising the bar for the people around me",
+      "body": "At T3 and Foxtrot I mentored designers, ran critiques, helped with hiring, and improved how the team worked. At Unilease I was the first designer and set up the process from nothing. I enjoy helping other designers advance in their careers, challenging them to stay sharp, and learning from them as well. Design critiques are a great avenue for this, but even just banter in Slack and demonstrating a good work ethic goes a long way.",
+      "images": [
+        {
+          "key": "job-apps/collaborative",
+          "alt": "Me and some teammates meeting"
+        }
+      ]
+    },
+    {
+      "heading": "Where I'd be learning",
+      "body": "My code has been prototype-grade and production-quality, but I haven't been the person merging front-end changes into a production codebase and answering CI checks, visual regression, and token audits. I'm comfortable in Git and I read code well, so I expect that to come quickly. Legal services is also new territory for me. I'd lean on your attorneys and support teams early, the same way I learned tax and HR."
+    }
+  ]
+}

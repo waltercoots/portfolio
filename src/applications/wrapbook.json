@@ -1,0 +1,85 @@
+{
+  "slug": "wrapbook",
+  "company": "Wrapbook",
+  "headingLevel": 2,
+  "intro": [
+    "I know you’re going through a lot of applications, so I’ve put together some highlights on how I align with what you’re looking for.",
+    "Payroll and finance software is a world where a misplaced decimal turns into somebody's rent. I spent four years on Intuit's professional tax software and four more on HR software for frontline workforces, so I'm used to designing where accuracy is the whole job. Film production adds deadlines and chaos on top of that, which sounds like a great problem."
+  ],
+  "requirements": [
+    {
+      "heading": "Owning a product area without waiting for the what",
+      "body": "I owned WorkStep's Report Builder from the first framing through launch and into a second version. I worked out what managers were trying to answer, designed it, and then watched how customers actually used it. That post-launch behavior showed us what the spec missed, and the redesign was much better for it!",
+      "images": [
+        {
+          "key": "job-apps/report-cards",
+          "alt": "Cards from a report builder I designed"
+        }
+      ]
+    },
+    {
+      "heading": "Accuracy, edge cases, and implementation-ready specs",
+      "body": "At Intuit I designed workflows for ProSeries, used by accountants filing under deadline pressure, where an error had real financial consequences. At WorkStep I designed role-based access control and data export for enterprise customers like PepsiCo, PetSmart, and JB Hunt. My specs cover the empty, error, partial, and overloaded states as carefully as the happy path, because that's where trust gets built.",
+      "images": [
+        {
+          "key": "job-apps/design-specs",
+          "alt": "An annotated design spec covering UI states"
+        }
+      ]
+    },
+    {
+      "heading": "Building AI workflows other people use",
+      "body": "I use Claude Code every day, and I've built the AI workflows I depend on. This page is actually one of them: I paste in a job posting, and the workflow tailors my résumé, writes structured JSON, and publishes it to my site through a dynamic route. (AI writing still tends to sound pretty bad, so I use it as a starting point and make edits from there.) At WorkStep I prototyped post-acquisition integration flows with Claude Code so the team could test real behavior early. So this wouldn't be my first rodeo.",
+      "images": [
+        {
+          "key": "job-apps/use-of-ai",
+          "alt": "A screenshot of my Claude usage as of recently"
+        }
+      ]
+    },
+    {
+      "heading": "Framing problems that don't have a clear answer",
+      "body": "At WorkStep, I led a product-wide IA re-architecture with our Senior PM. This was to address a kind of \"death by a thousand cuts\" problem where lots of small issues were combining to make the product confusing. We project touched navigation, information hierarchy, and dozens of existing features at once. It rolled out in multiple phases across multiple teams, and I owned the direction the whole way through.",
+      "images": [
+        {
+          "key": "job-apps/info-architecture",
+          "alt": "Information architecture work from the WorkStep IA re-architecture"
+        }
+      ]
+    },
+    {
+      "heading": "Evidence over assumption",
+      "body": "At EverlyWell I redesigned and A/B tested the product page, and sales went up 25%. At Intuit I planned and ran research with professional users. At WorkStep I designed an LLM-powered assistant with our data scientist that turned workforce data into plain-language insights. I like defining what success looks like before the work starts, so we can tell afterward whether it happened.",
+      "images": [
+        {
+          "key": "job-apps/strategic-influence",
+          "alt": "Sticky notes from an ideation session"
+        }
+      ]
+    },
+    {
+      "heading": "A high craft and documentation bar",
+      "body": "I rebuilt WorkStep's Figma design system from scratch on variables and tokens, cut component bloat by 85%, and built it to WCAG AA contrast. I sweat details like which shadow a card gets and why. I also keep status, decisions, and risks documented so nobody has to ask me where something stands or why it happened. Or if they do, I'll be able to give them a good answer!",
+      "images": [
+        {
+          "key": "job-apps/precision-and-details",
+          "alt": "A closeup of a spec I did calling out a specific shadow"
+        }
+      ]
+    },
+    {
+      "heading": "Mentoring designers",
+      "body": "At T3 and Foxtrot I mentored designers, ran critiques, helped with hiring, and improved how the team worked. At Unilease I was the first designer and set up the process from nothing. I enjoy helping other designers advance in their careers, challenging them to stay sharp, and learning from them as well. Design critiques are a great avenue for this, but even just banter in Slack and demonstrating a good work ethic goes a long way.",
+      "images": [
+        {
+          "key": "job-apps/collaborative",
+          "alt": "Me and some teammates meeting"
+        }
+      ]
+    },
+    {
+      "heading": "Where I'd be learning",
+      "body": "Although my wife worked for a home shopping network for a few years, and I did a few 48 hour film projects, I haven't worked in film and TV production or entertainment payroll, with its unions, fringes, and production accounting. I also haven't used Pendo or Dovetail day to day, though I've done the same kind of analysis and synthesis with other tools. I picked up tax and HR by getting close to the people who do the work, and I'd do the same with production accountants here."
+    }
+  ]
+}

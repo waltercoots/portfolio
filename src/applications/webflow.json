@@ -1,0 +1,84 @@
+{
+  "slug": "webflow",
+  "company": "Webflow",
+  "headingLevel": 2,
+  "intro": [
+    "I know you’re going through a lot of applications, so I’ve put together some highlights on how I align with what you’re looking for.",
+    "I've been building content systems for a long time. My first one was a homemade PHP CMS in 2000 for a webcomic and forum. Later I led a publisher's move from a custom CMS to WordPress. A CMS that serves marketers and agents at the same time is the most interesting version of that problem I've seen."
+  ],
+  "requirements": [
+    {
+      "heading": "Making complex content infrastructure feel obvious",
+      "body": "At WorkStep, I led a product-wide IA re-architecture with our Senior PM. This project touched navigation, information hierarchy, and dozens of existing features at once. Multi-phase, cross-team, and I owned the direction the whole way through. A CMS with content models, locales, sites, and publishing states is a similar exercise.",
+      "images": [
+        {
+          "key": "job-apps/info-architecture",
+          "alt": "Information architecture work from the WorkStep IA re-architecture"
+        }
+      ]
+    },
+    {
+      "heading": "Content and publishing tools, from the inside",
+      "body": "At The Daily Dot I led UX for our internal publishing tools and the migration from a custom CMS to WordPress. Editors were moving fast on deadline, so every extra step in authoring or publishing showed up immediately. At Foxtrot I ran content audits and IA for clients like Dimensional Fund Advisors and the Austin Film Society. I've seen what happens to content when the model underneath it is wrong.",
+      "images": [
+        {
+          "key": "job-apps/content-strategy",
+          "alt": "Plain-language helper text in a WorkStep segment builder"
+        }
+      ]
+    },
+    {
+      "heading": "Designing for humans and agents",
+      "body": "At WorkStep I designed an LLM-powered assistant with our data scientist and CPO that turned workforce data into plain-language insights for managers. I also designed LLM-based grouping that made thousands of open-ended survey comments readable. On my own time I'm building a landscaping app in Figma through the Figma MCP, so I spend a lot of hours watching an agent work against a structured system. Good structure is what makes agents reliable, and clear controls are what make people trust them.",
+      "images": [
+        {
+          "key": "job-apps/nice-interfaces",
+          "alt": "Some of the various mobile and web designs I've done"
+        }
+      ]
+    },
+    {
+      "heading": "Systems that survive translation",
+      "body": "Localization breaks layouts in predictable ways: German runs long, Japanese changes line height, and right-to-left flips everything. I design components to hold up across languages and still pass contrast checks, and I check them in more than one language before calling them done.",
+      "images": [
+        {
+          "key": "job-apps/accessible-international-button",
+          "alt": "A button translated into a dozen languages, with a contrast checker"
+        }
+      ]
+    },
+    {
+      "heading": "Design systems with judgment",
+      "body": "I rebuilt WorkStep's Figma design system from scratch on variables and tokens, with aliasing so a change at the token level ripples everywhere. Component bloat dropped by 85%, and everything is built to WCAG AA contrast. I've also learned well what does and doesn't belong in a design system, which is half the job.",
+      "images": [
+        {
+          "key": "job-apps/design-systems",
+          "alt": "Example design system from a project with Halliburton"
+        }
+      ]
+    },
+    {
+      "heading": "Comfortable where design meets production",
+      "body": "I've been writing HTML and CSS since 1999, and I maintain my own site in Vue. I prototype in code with Claude Code every day, so talking through content models, API shapes, and data structures with engineers feels normal to me. This page was published by a workflow I built that turns a job posting into structured JSON and renders it through a dynamic route on my site. That's a tiny headless CMS, and building it taught me a lot.",
+      "images": [
+        {
+          "key": "job-apps/user-flow"
+        }
+      ]
+    },
+    {
+      "heading": "Presenting tradeoffs without losing the room",
+      "body": "As Head of Design at Unilease and a lead at T3 and Foxtrot, I presented to CEOs and Fortune 500 stakeholders and mentored other designers. I like making the reasoning visible so partners can disagree with it productively, and I'd rather test an assumption early than defend it late.",
+      "images": [
+        {
+          "key": "job-apps/collaborative",
+          "alt": "Me and some teammates meeting"
+        }
+      ]
+    },
+    {
+      "heading": "Where I'd be learning",
+      "body": "I haven't designed a commercial CMS for enterprise marketing teams, and localization workflows at Webflow's scale would be new to me. I've been a Webflow-adjacent builder for years from the outside, hand-coding sites that marketers then had to live with. I'd want to spend early time with your customers and your agentic platform engineers to learn where content actually gets stuck."
+    }
+  ]
+}
