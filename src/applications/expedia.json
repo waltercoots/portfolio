@@ -1,0 +1,84 @@
+{
+  "slug": "expedia",
+  "company": "Expedia Group",
+  "headingLevel": 2,
+  "intro": [
+    "I know you’re going through a lot of applications, so I’ve put together some highlights on how I align with what you’re looking for.",
+    "The cold-start problem is the part of this posting that interests me! Someone shows up knowing what they want, and you know almost nothing about them. My recent work has lived right where signals turn into experiences people can trust: worker surveys that fed an AI assistant, onboarding that had to earn interest in the first minute, and a lot of time sitting next to a data scientist figuring out what a model's output should actually say to a human."
+  ],
+  "requirements": [
+    {
+      "heading": "Turning signals into something people trust",
+      "body": "At WorkStep I designed an LLM-powered AI assistant with our data scientist and CPO. It took survey responses and workforce data and turned them into plain-language insights and notifications for managers. A lot of the design work was deciding what to say and how to say it, so a model's output read like advice from someone who understood the manager's situation. Adoption was strong after launch.",
+      "images": [
+        {
+          "key": "job-apps/user-flow"
+        }
+      ]
+    },
+    {
+      "heading": "Designing how people tell you what matters",
+      "body": "Most of WorkStep's data came from frontline workers answering short surveys on their phones. If the survey felt like homework, the signal dried up. I designed those capture moments to be quick and low-effort, then designed the other side too: LLM-based grouping that turned thousands of open-ended comments into themes a manager could read in a minute. Capture and payoff are the same system to me.",
+      "images": [
+        {
+          "key": "job-apps/content-strategy",
+          "alt": "Plain-language helper text in a WorkStep segment builder"
+        }
+      ]
+    },
+    {
+      "heading": "Getting to value from almost nothing",
+      "body": "At Insitome I overhauled onboarding for consumer DNA apps on iOS and web. New users arrived with zero context. The job was getting them to a first interesting result before they wandered off. At Unilease I designed registration and onboarding for a brand-new product with no users at all. Both taught me that the first few interactions have to give something back before you ask for more.",
+      "images": [
+        {
+          "key": "job-apps/nice-interfaces",
+          "alt": "Some of the various mobile and web designs I've done"
+        }
+      ]
+    },
+    {
+      "heading": "Connecting the surface and the system",
+      "body": "Untangling WorkStep started as \"the navigation is confusing.\" With our Senior PM, I found the real problem: years of features had built a structure that matched our org chart, not our customers' jobs. Fixing it meant mapping how every object related to every other one before touching a screen. Signals, memory, and models feeding traveler experiences is that same kind of map, with more moving parts.",
+      "images": [
+        {
+          "key": "job-apps/info-architecture",
+          "alt": "Information architecture work from the WorkStep IA re-architecture"
+        }
+      ]
+    },
+    {
+      "heading": "Prototyping to learn",
+      "body": "I've been writing HTML and CSS since 1999 and maintain my own site in Vue. I build working prototypes with Claude Code and Cursor every day. During WorkStep's post-acquisition integration I prototyped new flows in code so the team could poke at real behavior before anyone committed to a build. Personalization is hard to judge in a static frame, so I'd lean on this a lot.",
+      "images": [
+        {
+          "key": "job-apps/use-of-ai",
+          "alt": "A screenshot of my Claude usage as of recently"
+        }
+      ]
+    },
+    {
+      "heading": "Craft that holds up in an emerging space",
+      "body": "I rebuilt WorkStep's design system from scratch on variables and tokens, cut component bloat by 85%, and built everything to WCAG AA contrast. I spec the empty, partial, and \"we don't know enough yet\" states as carefully as the happy path. In personalization, that thin-data state is most of the experience for a lot of people.",
+      "images": [
+        {
+          "key": "job-apps/design-systems",
+          "alt": "Example design system from a project with Halliburton"
+        }
+      ]
+    },
+    {
+      "heading": "Storytelling and raising the bar around me",
+      "body": "I've been Head of Design at Unilease, the sole product designer at EverlyWell from Series A to Series B, and a lead at agencies like T3 and Foxtrot, where I mentored and directed other designers. At EverlyWell, a redesigned and A/B tested product page lifted sales 25%. I like making the reasoning visible so partners can disagree with it productively.",
+      "images": [
+        {
+          "key": "job-apps/collaborative",
+          "alt": "Me and some teammates meeting"
+        }
+      ]
+    },
+    {
+      "heading": "Where I'd be learning",
+      "body": "My signal and AI work has been in B2B, with thousands of users rather than millions of travelers. I haven't designed recommendation systems at consumer scale or worked with the kind of experimentation volume Expedia has. Travel isn't brand new to me, since I worked on Viking Cruises booking flows at Foxtrot, but that was a while ago. I'd want to get close to your data scientists and ML partners early, the same way I did at WorkStep."
+    }
+  ]
+}
