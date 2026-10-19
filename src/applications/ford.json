@@ -1,0 +1,84 @@
+{
+  "slug": "ford",
+  "company": "Ford",
+  "headingLevel": 2,
+  "intro": [
+    "I know you’re going through a lot of applications, so I’ve put together some highlights on how I align with what you’re looking for.",
+    "For the last four years I designed software for people who run large operational teams: warehouse and distribution managers at companies like PepsiCo, PetSmart, and JB Hunt, plus the frontline workers who report to them. Fleet managers, administrators, and drivers on the move feel very familiar. So does an app that's outgrown its original job and needs a new structure."
+  ],
+  "requirements": [
+    {
+      "heading": "Rethinking a product's architecture",
+      "body": "At WorkStep, I led a product-wide IA re-architecture with our Senior PM. This project touched navigation, information hierarchy, and dozens of existing features at once. Multi-phase, cross-team, and I owned the direction the whole way through, not just the first few weeks of it.",
+      "images": [
+        {
+          "key": "job-apps/info-architecture",
+          "alt": "Information architecture work from the WorkStep IA re-architecture"
+        }
+      ]
+    },
+    {
+      "heading": "Different roles, different needs",
+      "body": "WorkStep served managers and administrators on desktop dashboards and frontline workers answering surveys on their phones. I designed role-based access control and data export for enterprise customers, where a permission mistake had real consequences. Designing one product that feels right for a fleet manager at a desk and a driver in a parking lot is a problem I've lived with.",
+      "images": [
+        {
+          "key": "job-apps/user-flow"
+        }
+      ]
+    },
+    {
+      "heading": "Simple experiences on top of a complex system",
+      "body": "At WorkStep I designed an LLM-powered assistant with our data scientist and CPO that turned workforce data into plain-language insights and notifications. Managers wanted to know what needed attention today rather than being shown another dashboard or list. Vehicle status, maintenance, and fleet operations have a similar shape! Lots of data with a few outlier things that actually matter right now.",
+      "images": [
+        {
+          "key": "job-apps/report-cards",
+          "alt": "Cards from a report builder I designed"
+        }
+      ]
+    },
+    {
+      "heading": "Mobile and cross-platform",
+      "body": "At Insitome I led design for native iOS apps and responsive web in parallel, including an onboarding overhaul and a design system that worked across both. I've designed mobile web experiences at WorkStep, Unilease, EverlyWell, and Foxtrot, and I'm currently building a landscaping app to keep my native patterns sharp.",
+      "images": [
+        {
+          "key": "job-apps/nice-interfaces",
+          "alt": "Some of the various mobile and web designs I've done"
+        }
+      ]
+    },
+    {
+      "heading": "Working well inside an established system",
+      "body": "I rebuilt WorkStep's Figma design system from scratch on variables and tokens, cut component bloat by 85%, and built it to WCAG AA contrast. That work taught me when to use what exists and when a new pattern really earns its place, which matters a lot in an organization the size of Ford.",
+      "images": [
+        {
+          "key": "job-apps/design-systems",
+          "alt": "Example design system from a project with Halliburton"
+        }
+      ]
+    },
+    {
+      "heading": "Prototyping to decide faster",
+      "body": "I build working prototypes with Claude Code and Cursor every day. During WorkStep's post-acquisition integration I prototyped new flows in code so the team could test real behavior before anyone committed to a build. I've been writing HTML and CSS since 1999.",
+      "images": [
+        {
+          "key": "job-apps/use-of-ai",
+          "alt": "A screenshot of my Claude usage as of recently"
+        }
+      ]
+    },
+    {
+      "heading": "Workshops, storytelling, and raising the bar",
+      "body": "I've run workshops and reviews with Fortune 500 clients like Halliburton and Hallmark, mentored designers at T3 and Foxtrot, and presented to CEOs as Head of Design at Unilease. At EverlyWell, a redesigned and A/B tested product page lifted sales 25%, and I'm used to defining success with product and analytics before the work ships.",
+      "images": [
+        {
+          "key": "job-apps/collaborative",
+          "alt": "Me and some teammates meeting"
+        }
+      ]
+    },
+    {
+      "heading": "Where I'd be learning",
+      "body": "I haven't worked in automotive, telematics, or connected vehicles, and my native mobile experience is mostly iOS from one company. I know the operational world from the manager's side, and I'd want to ride along with fleet managers and drivers early to learn how the work actually happens."
+    }
+  ]
+}

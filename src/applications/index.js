@@ -8,4 +8,13 @@ const slugs = new Set(Object.keys(loaders).map(slugFromPath))
 
 export const hasApplication = (slug) => slugs.has(slug)
 
-export const loadApplication = (slug) => loaders[`./${slug}.json`]?.()
+// Dev only: edited JSON arrives over HMR (see vite.config.js) rather than
+// reloading the page. Keep the latest copy so navigating away and back doesn't
+// serve the browser's cached original module.
+const hotUpdates = new Map()
+if (import.meta.hot) {
+  import.meta.hot.on('application:update', ({ slug, data }) => hotUpdates.set(slug, data))
+}
+
+export const loadApplication = async (slug) =>
+  hotUpdates.get(slug) ?? loaders[`./${slug}.json`]?.()

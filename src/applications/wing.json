@@ -1,0 +1,74 @@
+{
+  "slug": "wing",
+  "company": "Wing",
+  "headingLevel": 2,
+  "intro": [
+    "I know you’re going through a lot of applications, so I’ve put together some highlights on how I align with what you’re looking for.",
+    "For the last four years I designed HR software geared toward warehouse and supply chain workers, for customers like PepsiCo, PetSmart, and JB Hunt. This is quite different from what Wing is creating, but there's some audience overlap, and I think the space sounds really interesting."
+  ],
+  "requirements": [
+    {
+      "heading": "Operational tools for people running real-world logistics",
+      "body": "At WorkStep I designed high-density dashboards, data tables, and charts for managers responsible for large frontline workforces across many sites. I owned a report builder feature through launch and later iteration, and post-launch behavior showed us what the spec missed. Tools for configuring and monitoring a drone fleet sound like they have a similar shape in terms of dense information, high stakes, and ensuring the most important things surface to the top.",
+      "images": [
+        {
+          "key": "job-apps/report-cards",
+          "alt": "Cards from a report builder I designed"
+        }
+      ]
+    },
+    {
+      "heading": "Where software meets the physical world",
+      "body": "As the only product designer at EverlyWell from Series A to Series B, I owned a journey that ran from the website, to a test kit in the mail, to the lab, to a digital results experience. The handoffs between physical and digital were where people got lost, so I designed it as one service rather than a set of screens. A redesigned and A/B tested product page lifted sales 25%. Merchant fulfillment, flight, and delivery sound like a bigger version of that same chain!",
+      "images": [
+        {
+          "key": "job-apps/user-flow"
+        }
+      ]
+    },
+    {
+      "heading": "Many sides, one platform",
+      "body": "WorkStep served managers and administrators on desktop and frontline workers on their phones, each with different needs and permissions. I designed role-based access control and data export for enterprise customers, where getting a permission wrong had real consequences. It sounds like a variety of different audiences need Wing to make sense from where they stand, and ensuring that clarity for several different angles is one of the kinds of problems I enjoy working on.",
+      "images": [
+        {
+          "key": "job-apps/nice-interfaces",
+          "alt": "Some of the various mobile and web designs I've done"
+        }
+      ]
+    },
+    {
+      "heading": "Setting direction as an individual contributor",
+      "body": "At T3 and Foxtrot I mentored designers, ran critiques, helped with hiring, and improved how the team worked. At Unilease I was the first designer and set up the process from nothing. I enjoy helping other designers advance in their careers, challenging them to stay sharp, and learning from them as well. Design critiques are a great avenue for this, but even just banter in Slack and demonstrating a good work ethic goes a long way.",
+      "images": [
+        {
+          "key": "job-apps/collaborative",
+          "alt": "Me and some teammates meeting"
+        }
+      ]
+    },
+    {
+      "heading": "Automation people can trust",
+      "body": "At WorkStep I designed an LLM-powered assistant with our data scientist and CPO that turned workforce data into plain-language insights and notifications for managers. I also designed LLM-based grouping that made thousands of open-ended survey comments readable. The hard questions were how sure the system should sound, what it should show its work on, and where a person needed to check before acting. ",
+      "images": [
+        {
+          "key": "job-apps/strategic-influence",
+          "alt": "Sticky notes from an ideation session"
+        }
+      ]
+    },
+    {
+      "heading": "Rapid, AI-assisted prototyping",
+      "body": "I build working prototypes with Claude Code, Cursor, and Figma Make every day, and I've been writing HTML and CSS since 1999. During WorkStep's post-acquisition integration I prototyped new flows in code so the team could test real behavior before anyone committed to a build. This page was published by a workflow I built that turns a job posting into structured data and pushes it to my site.",
+      "images": [
+        {
+          "key": "job-apps/use-of-ai",
+          "alt": "A screenshot of my Claude usage as of recently"
+        }
+      ]
+    },
+    {
+      "heading": "Where I'd be learning",
+      "body": "I haven't worked with hardware, aviation, or the regulations that come with them, and my native mobile work is mostly iOS from one company. I've also led as a senior IC rather than at Sr. Staff scope across a company Wing's size. I know logistics from the warehouse manager's side, and I'd want to spend early time with your aviation operations team and merchants to see how a delivery actually happens."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "slug": "communityphone",
+  "company": "Community Phone",
+  "headingLevel": 2,
+  "intro": [
+    "At first I was confused as to why anyone would need what you offer, but after reading through the marketing site I thought about my parents who are in their 70s and live in a different city, my aunt who lived by herself with alzheimers before going into assisted living, and my grandmother who suffered from dementia. I started to get it, and it seems like a really great service!",
+    "I know you’re going through a lot of applications, so I’ve put together some highlights on how I align with what you’re looking for."
+  ],
+  "requirements": [
+    {
+      "heading": "One journey across physical and digital",
+      "body": "As the only product designer at EverlyWell from Series A to Series B, I owned a journey that ran from the website to a test kit in the mail, to the lab, to a digital results experience, and back to the next purchase. The seams between those steps were where people got lost, so I treated it as one story. A redesigned and A/B tested product page lifted sales 25%, and I built subscriptions into both checkout and the results platform.",
+      "images": [
+        {
+          "key": "job-apps/user-flow"
+        }
+      ]
+    },
+    {
+      "heading": "Activation for people who didn't ask for an app",
+      "body": "At Insitome I overhauled onboarding for consumer DNA apps on native iOS and web. People arrived curious and with no context, and the job was getting them to a first meaningful result before they wandered off. At Halliburton I designed an onboarding wizard for newcomers to the industry. Good onboarding gives something back before it asks for more.",
+      "images": [
+        {
+          "key": "job-apps/nice-interfaces",
+          "alt": "Some of the various mobile and web designs I've done"
+        }
+      ]
+    },
+    {
+      "heading": "Designing for people with no patience for software",
+      "body": "One of the projects I worked on at EverlyWell was a collaboration with Humana to offer colorectal cancer screening kits to Humana insurance members. Direct mail, email, and robocalls were sent out regarding the kits and we had great success with sign up and registration. Keeping things direct, simple, clear, and easy to understand is table stakes in my mind.",
+      "images": [
+        {
+          "key": "job-apps/strategic-influence"
+        }
+      ]
+    },
+    {
+      "heading": "AI that tells you what matters",
+      "body": "I designed WorkStep's LLM-powered assistant with our data scientist and CPO. It turned workforce data into plain-language insights and notifications so managers knew what needed attention. Adoption was strong after launch. An AI check-in call that surfaces how someone is really doing is the same idea with much higher emotional stakes, and getting the tone right would be most of the job.",
+      "images": [
+        {
+          "key": "job-apps/content-strategy",
+          "alt": "A screenshot of my Claude usage as of recently"
+        }
+      ]
+    },
+    {
+      "heading": "Working prototypes, fast",
+      "body": "I build working prototypes with Claude Code and Cursor every day and have been writing HTML and CSS since 1999. During WorkStep's post-acquisition integration I prototyped new flows in code so the team could react to real behavior. I'd much rather show a CEO something that runs than a deck about it. This page came out of a workflow I built that turns a job posting into structured data and publishes it to my site.",
+      "images": [
+        {
+          "key": "job-apps/use-of-ai",
+          "alt": "A screenshot of my Claude usage as of recently"
+        }
+      ]
+    },
+    {
+      "heading": "Being the whole design function",
+      "body": "As Head of Design at Unilease I worked directly with the CEO and engineering and was the entire design function: product, brand, marketing site, and design system. At WorkStep I rebuilt the design system from scratch on tokens, cut component bloat by 85%, and built it to WCAG AA contrast, which matters a lot for older eyes.",
+      "images": [
+        {
+          "key": "job-apps/design-systems",
+          "alt": "Example design system from a project with Halliburton"
+        }
+      ]
+    },
+    {
+      "heading": "Where I'd be learning",
+      "body": "Outside of the Humana experience I mentioned, I haven't designed for eldercare, hardware unboxing, or voice interfaces. WorkStep peaked around $8M ARR, so I haven't owned design at the $20M+ scale you mention, though I designed through 4x growth there. I'd want to sit in on check-in calls and talk with families early, because the emotional side of this product is where I believe I'd have a lot to learn."
+    }
+  ]
+}

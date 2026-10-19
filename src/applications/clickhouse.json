@@ -1,0 +1,74 @@
+{
+  "slug": "clickhouse",
+  "company": "ClickHouse",
+  "headingLevel": 2,
+  "intro": [
+    "I know you’re going through a lot of applications, so I’ve put together some highlights on how I align with what you’re looking for.",
+    "\"Fix bugs yourself instead of filing tickets\" is my favorite line in your job post! A design system lives or dies in the gap between the Figma file and the shipped component, and I'd rather close that gap with my own hands than write a Jira ticket about a 2px misalignment. Owning Click UI in the open, with real contributors and real consumers, sounds like a lot of fun."
+  ],
+  "requirements": [
+    {
+      "heading": "Rebuilding a design system from scratch",
+      "body": "At WorkStep I rebuilt our Figma design system from scratch to replace one that had grown into a junk drawer. I built it on variables and tokens, with aliasing so a change at the token level ripples everywhere, plus modes for light and dark and for breakpoints. Component bloat dropped by 85%, and everything is built to WCAG AA contrast.",
+      "images": [
+        {
+          "key": "job-apps/design-systems",
+          "alt": "Example design system from a project with Halliburton"
+        }
+      ]
+    },
+    {
+      "heading": "Knowing what belongs in the system",
+      "body": "WorkStep is chart-heavy, and our chart components looked great on paper but froze fake data in place, so every review showed the same line graph. I pulled charts out of the component library and replaced them with shared styles, so designers drew real data and stakeholders reacted to something believable. Deciding what not to componentize is half of owning a system, especially one that serves teams building very different things.",
+      "images": [
+        {
+          "key": "job-apps/report-cards",
+          "alt": "Cards from a report builder I designed"
+        }
+      ]
+    },
+    {
+      "heading": "A designer who codes",
+      "body": "I've been writing HTML and CSS since 1999, and I maintain my own site in Vue with Git and GitHub. I build working prototypes with Claude Code and Cursor every day, and during WorkStep's post-acquisition integration I prototyped new flows in code so engineers could test real behavior before committing to a build. This page was published by a workflow I built that turns a job posting into structured JSON and renders it through a dynamic route on my site.",
+      "images": [
+        {
+          "key": "job-apps/use-of-ai",
+          "alt": "A screenshot of my Claude usage as of recently"
+        }
+      ]
+    },
+    {
+      "heading": "Specs that survive implementation",
+      "body": "I sweat the details engineers have to make decisions about: which shadow, which state, what happens when the content is twice as long as the mock. My specs cover empty, error, partial, and overloaded states alongside the happy path. For a component library, those edge cases are the actual product.",
+      "images": [
+        {
+          "key": "job-apps/design-specs",
+          "alt": "An annotated design spec covering UI states"
+        }
+      ]
+    },
+    {
+      "heading": "Complex, data-dense software",
+      "body": "For four years I designed high-density dashboards, data tables, and interactive charts for managers tracking large workforces across many sites. I owned Report Builder through launch and a second version, and I led an information architecture overhaul with our Senior PM. At Unilease I designed map-based market surveys and lease analytics. Data products for technical users feel like a natural next step.",
+      "images": [
+        {
+          "key": "job-apps/user-flow"
+        }
+      ]
+    },
+    {
+      "heading": "Embedded, not off to the side",
+      "body": "I've been the first designer at Unilease, working directly with the CEO and engineering, and the sole product designer at EverlyWell from Series A to Series B, where a redesigned and A/B tested product page lifted sales 25%. I work best sitting inside a product team, close enough to argue about tradeoffs and close enough to see where the system helps or gets in the way.",
+      "images": [
+        {
+          "key": "job-apps/collaborative",
+          "alt": "Me and some teammates meeting"
+        }
+      ]
+    },
+    {
+      "heading": "Where I'd be learning",
+      "body": "My code is HTML, CSS, JavaScript, and Vue. I haven't shipped React and TypeScript in a production codebase. I'd want to get comfortable in Click UI's repo quickly, and I'd start by fixing small things. I also haven't designed an IDE or database tooling, so I'd lean on your engineers, who are the users, to tell me where the experience falls short."
+    }
+  ]
+}

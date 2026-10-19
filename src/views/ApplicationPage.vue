@@ -38,20 +38,31 @@ const requirements = computed(() =>
   })),
 )
 
+const showApplication = async (data) => {
+  application.value = data
+  document.title = data.title ?? `Walter Coots × ${data.company}`
+  // Lenis caches the scrollable height, so recalculate once content renders
+  await nextTick()
+  lenis?.resize()
+}
+
 watch(
   () => route.params.slug,
   async (slug) => {
     if (!slug) return
     const data = await loadApplication(slug)
     if (!data || route.params.slug !== slug) return
-    application.value = data
-    document.title = data.title ?? `Walter Coots × ${data.company}`
-    // Lenis caches the scrollable height, so recalculate once content renders
-    await nextTick()
-    lenis?.resize()
+    showApplication(data)
   },
   { immediate: true },
 )
+
+// Dev only: swap in edited JSON in place instead of reloading the page
+const handleHotUpdate = ({ slug, data }) => {
+  if (slug === route.params.slug) showApplication(data)
+}
+import.meta.hot?.on('application:update', handleHotUpdate)
+onBeforeUnmount(() => import.meta.hot?.off('application:update', handleHotUpdate))
 
 // Body copy is rendered as HTML, so in-app links in it are plain <a> tags.
 // Route those through the router instead of reloading the page.

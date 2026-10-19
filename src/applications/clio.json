@@ -1,0 +1,84 @@
+{
+  "slug": "clio",
+  "company": "Clio",
+  "headingLevel": 2,
+  "intro": [
+    "I know you’re going through a lot of applications, so I’ve put together some highlights on how I align with what you’re looking for.",
+    "Designing AI for judges sounds like an incredibly interesting and maybe precarious problem! Wrong suggestions in consumer apps is annoying, but wrong suggestions or nudges in courtrooms could be catastrophic. Maybe I'm weird if that's the kind of zero-to-one problem I'd love to work on with a small team?"
+  ],
+  "requirements": [
+    {
+      "heading": "AI that earns trust and stays in its lane",
+      "body": "At WorkStep I designed an LLM-powered assistant with our data scientist and CPO that turned workforce data into plain-language insights and notifications for managers. I also designed LLM-based grouping that made thousands of open-ended survey comments readable. The hard questions were how sure the system should sound, what it should show its work on, and where a person needed to check before acting. Judicial independence raises the stakes on every one of those.",
+      "images": [
+        {
+          "key": "job-apps/user-flow"
+        }
+      ]
+    },
+    {
+      "heading": "Research with niche, hard-to-reach users",
+      "body": "Recruiting for niche users for research is tough. Once you have their attention, I find that short, focused conversations with a good prototype can uncover a lot. For four years I've also designed for frontline workers and the managers above them, two groups who rarely have time for designers. I'd be eager to hear what your research processes are already like, and what the budget is for it.",
+      "images": [
+        {
+          "key": "job-apps/strategic-influence",
+          "alt": "Sticky notes from an ideation session"
+        }
+      ]
+    },
+    {
+      "heading": "Starting from nothing",
+      "body": "I've been the first or only designer more than once. As Head of Design at Unilease I designed a brand-new product for commercial real estate brokers with the CEO and engineering, from the first wireframe to the design system. At EverlyWell I was the sole product designer from Series A to Series B, where a redesigned and A/B tested product page lifted sales 25%. I'm comfortable imagining something that doesn't exist yet and then testing whether anyone actually wants it.",
+      "images": [
+        {
+          "key": "job-apps/nice-interfaces",
+          "alt": "Some of the various mobile and web designs I've done"
+        }
+      ]
+    },
+    {
+      "heading": "Complex workflows made clear",
+      "body": "At WorkStep, I led a product-wide IA re-architecture with our Senior PM. This project touched navigation, information hierarchy, and dozens of existing features at once. Multi-phase, cross-team, and I owned the direction the whole way through, not just the first few weeks of it. I know courts have their own deeply structured workflows, and I'd want to map those just as carefully.",
+      "images": [
+        {
+          "key": "job-apps/info-architecture",
+          "alt": "Information architecture work from the WorkStep IA re-architecture"
+        }
+      ]
+    },
+    {
+      "heading": "Systems that scale beyond one team",
+      "body": "I rebuilt WorkStep's Figma design system from scratch on variables and tokens, cut component bloat by 85%, and built everything to WCAG AA contrast. A new product inside a larger platform has to feel like Clio while solving very different problems, and I enjoy that balance between consistency and fit.",
+      "images": [
+        {
+          "key": "job-apps/design-systems",
+          "alt": "Example design system from a project with Halliburton"
+        }
+      ]
+    },
+    {
+      "heading": "Prototypes as research stimulus",
+      "body": "I build working prototypes with Claude Code every day. During WorkStep's post-acquisition integration, I prototyped new flows in code so the team could react to real behavior instead of a static frame. With AI products, people need to feel the response time and see the output before they can tell you whether they'd trust it.",
+      "images": [
+        {
+          "key": "job-apps/use-of-ai",
+          "alt": "A screenshot of my Claude usage as of recently"
+        }
+      ]
+    },
+    {
+      "heading": "Facilitating and mentoring",
+      "body": "I mentored and directed designers at T3 and Foxtrot, ran critiques, and led scoping workshops with clients like SXSW. I like making the reasoning visible so partners can disagree with it productively, and I'm used to presenting to CEOs and senior stakeholders.",
+      "images": [
+        {
+          "key": "job-apps/collaborative",
+          "alt": "Me and some teammates meeting"
+        }
+      ]
+    },
+    {
+      "heading": "Where I'd be learning",
+      "body": "I haven't worked in legal tech or with courts, and I'd have a lot to learn about how judges and clerks actually spend their days. I'd lean hard on Chief Justice McCormack's experience and get in front of judicial users as early as possible. I'm in Austin, which isn't one of your hubs, so I'd be remote and happy to travel when it matters."
+    }
+  ]
+}

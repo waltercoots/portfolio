@@ -1,0 +1,83 @@
+{
+  "slug": "vanta",
+  "company": "Vanta",
+  "headingLevel": 2,
+  "intro": [
+    "I know you’re going through a lot of applications, so I’ve put together some highlights on how I align with what you’re looking for.",
+    "Turning risk management out of scattered spreadsheets into one connected, trustworthy system is one of my favorite kinds of problems! Most of my career has been spent on software where wrong numbers have consequences. I worked on professional tax software at Intuit, and four years of enterprise HR software where managers made real decisions about real people from what we showed them. Risk registers, scoring models, and approvals feel like a natural next step."
+  ],
+  "requirements": [
+    {
+      "heading": "Configurable, data-dense workflows",
+      "body": "At WorkStep I owned Report Builder end to end, a configurable reporting tool that let enterprise managers build their own views of workforce data. The delicate part was determining how much to expose, so a power user could configure what they needed without overwhelming a more casual user. After launch, watching how customers actually built reports showed us what the spec missed, and the second version was much better for it.",
+      "images": [
+        {
+          "key": "job-apps/report-cards",
+          "alt": "Cards from a report builder I designed"
+        }
+      ]
+    },
+    {
+      "heading": "Mapping interconnected objects",
+      "body": "At WorkStep, I led a product-wide IA re-architecture with our Senior PM. This project touched navigation, information hierarchy, and dozens of existing features at once. Fixing it meant mapping how every object related to every other one before touching a screen. Risks, controls, owners, treatments, and reports are that same kind of web, and I'd start there.",
+      "images": [
+        {
+          "key": "job-apps/info-architecture",
+          "alt": "Information architecture work from the WorkStep IA re-architecture"
+        }
+      ]
+    },
+    {
+      "heading": "Permissions, personas, and sensitive data",
+      "body": "WorkStep served managers, administrators, and frontline workers on one platform, each seeing different things. I designed role-based access control and data export for enterprise customers like PepsiCo, PetSmart, and JB Hunt, where getting a permission wrong meant someone saw data they shouldn't. Designing for the risk manager, the risk owner, and the occasional approver is a familiar shape.",
+      "images": [
+        {
+          "key": "job-apps/user-flow"
+        }
+      ]
+    },
+    {
+      "heading": "Explaining the why, and admitting uncertainty",
+      "body": "At WorkStep I designed an LLM-powered assistant with our data scientist and CPO that turned workforce data into plain-language insights and notifications for managers. I also designed LLM-based grouping that made thousands of open-ended survey comments readable. The hard questions were how sure the system should sound, what it should show its work on, and where a person needed to check before acting.",
+      "images": [
+        {
+          "key": "job-apps/nice-interfaces"
+        }
+      ]
+    },
+    {
+      "heading": "High-stakes, regulated software",
+      "body": "I spent four years at Intuit designing workflows for ProSeries, professional tax software accountants used under regulatory deadlines. A mistake there cost someone real money, so I learned to design the review, correction, and recovery paths as carefully as the main flow. I also planned and ran research with those professional users. Audit trails and approvals at Vanta feel like the same discipline.",
+      "images": [
+        {
+          "key": "job-apps/content-strategy",
+          "alt": "Plain-language helper text in a WorkStep segment builder"
+        }
+      ]
+    },
+    {
+      "heading": "Learning complex domains quickly",
+      "body": "I've had to get fluent fast in tax, frontline HR, commercial real estate, and consumer genetics. My approach is the same each time: get close to the experts, map the domain model before designing screens, and test early with the people who live in it. I'd treat your risk SMEs and customers the same way.",
+      "images": [
+        {
+          "key": "job-apps/strategic-influence",
+          "alt": "Sticky notes from an ideation session"
+        }
+      ]
+    },
+    {
+      "heading": "Craft, systems, and modern tools",
+      "body": "I rebuilt WorkStep's Figma design system on variables and tokens, cut component bloat by 85%, and built it to WCAG AA contrast, so I know how new patterns become reusable ones. I prototype in code with Claude Code and Cursor every day. This page was published by a workflow I built that turns a job posting into structured data and pushes it to my site.",
+      "images": [
+        {
+          "key": "job-apps/use-of-ai",
+          "alt": "A screenshot of my Claude usage as of recently"
+        }
+      ]
+    },
+    {
+      "heading": "Where I'd be learning",
+      "body": "I haven't worked in security, compliance, or formal risk management, and frameworks like risk scoring, treatment plans, and residual risk would be new vocabulary for me. I've applied to Vanta before for a design systems role, but this team's problems line up much more closely with the work I've done. I'd lean on your risk subject-matter experts early, the same way I learned tax and HR."
+    }
+  ]
+}
