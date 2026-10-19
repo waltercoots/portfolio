@@ -8,7 +8,7 @@ import CaseStudyModal from "@/modals/CaseStudyModal.vue"
 import NotFoundModal from "@/modals/NotFoundModal.vue"
 import { hasApplication, loadApplication } from "@/applications"
 
-const ApplicationPage = () => import("@/views/ApplicationPage.vue")
+const ApplicationModal = () => import("@/modals/ApplicationModal.vue")
 
 const shellRoute = (path, meta = {}) => ({
   path,
@@ -38,7 +38,7 @@ const routes = [
   // Per-company application pages, one JSON file each in src/applications/.
   // Unknown slugs fall through to the not-found page, keeping the URL as typed.
   {
-    ...modalRoute("/:slug", ApplicationPage, { noindex: true }),
+    ...modalRoute("/:slug", ApplicationModal, { noindex: true }),
     beforeEnter: async (to) => {
       if (hasApplication(to.params.slug)) {
         // Load the page's JSON before the modal opens so it never renders empty
