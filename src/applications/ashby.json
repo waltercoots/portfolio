@@ -1,0 +1,86 @@
+{
+  "slug": "ashby",
+  "company": "Ashby",
+  "greeting": "Hello, Chris and the Ashby team",
+  "headingLevel": 2,
+  "intro": [
+    "I know you’re going through a lot of applications, so I’ve put together some highlights on how I align with what you’re looking for.",
+    "For four years I designed WorkStep, an HR tech platform for frontline workforces, through 4x growth and an acquisition. Before that I was the only designer at two startups. I'm happiest owning a hard problem from the first question to the last detail, and writing down why I made the calls I made. Ashby's way of working reads like a description of the job I've been trying to do all along."
+  ],
+  "requirements": [
+    {
+      "heading": "Layout, navigation, and IA",
+      "body": "I've led multiple projects where I've revamped the information architecture, navigation, and layout of complex sites and apps. Most recently, I redid the architecture at WorkStep which was B2B SaaS. Prior to that, I also worked on other consumer projects such as the Austin Film Society, and EverlyWell.",
+      "images": [
+        {
+          "key": "job-apps/info-architecture",
+          "alt": "Information architecture work from the WorkStep IA re-architecture"
+        }
+      ]
+    },
+    {
+      "heading": "Tools that are approachable for beginners and scale for power users",
+      "body": "WorkStep's Report Builder is a great example of something I worked on that scaled for a variety of users at different levels. Selecting a metric and defaulting to a way to slice it, but then allowing power users to add filters, change settings such as the scope of data it was applied to, and whose dashboard it could be pinned to, led to wide adoption and a lot of love for it.",
+      "images": [
+        {
+          "key": "job-apps/report-cards",
+          "alt": "Cards from a report builder I designed"
+        }
+      ]
+    },
+    {
+      "heading": "Standards that let others make good decisions",
+      "body": "I rebuilt WorkStep's design system from scratch with Figma variables and tokens, cut component bloat by 85%, and built to WCAG AA. It's a balancing act of affording people flexibility, speed, and making everything feel like it came from the same place, and doing this again wouldn't be my first rodeo.",
+      "images": [
+        {
+          "key": "job-apps/design-systems",
+          "alt": "Example design system from a project with Halliburton"
+        }
+      ]
+    },
+    {
+      "heading": "Thinking from first principles, in writing",
+      "body": "One thing I'm looking for in my next career move is codified principles to help guide team. Most places I've worked were too small for the effort to be considered worth it, but I've always had my own. Dieter Rams is a great source for this, but I've also really admired Slack's principles.",
+      "images": [
+        {
+          "key": "job-apps/content-strategy",
+          "alt": "Plain-language helper text in a WorkStep segment builder"
+        }
+      ]
+    },
+    {
+      "heading": "Part designer, part PM",
+      "body": "At Unilease I was the only designer, working directly with the CEO and engineering. Nobody briefed me. I scoped problems, set priorities, and kept engineering aligned on what to build next. At EverlyWell I was the sole product designer from Series A to Series B. I'm comfortable without a PM handing me a brief, and collaborating on decisions with the broader team.",
+      "images": [
+        {
+          "key": "job-apps/strategic-influence",
+          "alt": "Sticky notes from an ideation session"
+        }
+      ]
+    },
+    {
+      "heading": "Craft in dense, technical products",
+      "body": "Most of my recent work is dense: tables, filters, dashboards, and charts for people managing thousands of workers across many sites. Craft in that context is hierarchy, restraint, and handling the empty, broken, and overloaded states as carefully as the happy path. It's also why my intuition can usually solve a usability problem before I need a study to confirm it.",
+      "images": [
+        {
+          "key": "job-apps/nice-interfaces",
+          "alt": "Some of the various mobile and web designs I've done"
+        }
+      ]
+    },
+    {
+      "heading": "Consulting engineers, not handing off",
+      "body": "I prototype in code with Claude Code to a standard engineers can build from, and I'd rather sit with an engineer to sort out layout and typography than throw a file over the wall. My portfolio is a Vue project I maintain myself. Knowing what's expensive to build makes my design suggestions cheaper to say yes to.",
+      "images": [
+        {
+          "key": "job-apps/design-specs",
+          "alt": "An annotated design spec covering UI states"
+        }
+      ]
+    },
+    {
+      "heading": "Where I'd be learning",
+      "body": "I haven't worked on an applicant tracking system, and while WorkStep had a \"HIRE\" platform I was responsible for when I joined, it only handled scheduling, not interviewer load or training. I've been on the candidate side of Ashby many times though, and have seen many recruiters commiserating on TikTok, so I have some understanding that could lead me into learning more during recruiter shadowing sessions."
+    }
+  ]
+}
