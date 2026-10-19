@@ -1,0 +1,84 @@
+{
+  "slug": "thistle",
+  "company": "Thistle",
+  "headingLevel": 2,
+  "intro": [
+    "I know you’re going through a lot of applications, so I’ve put together some highlights on how I align with what you’re looking for.",
+    "Well, I love food and cooking first of all. My household used Blue Apron for a while, and helping people eat well, get and stay healthy, and do it sustainably is the kind of work I most want to be doing! From Series A to Series B, I was the only product designer at EverlyWell which is a direct-to-consumer health company. Some of my favorite work lived in the space between a box on someone's doorstep and the app that tells them what's inside. I'm in Austin alongside some of your team, and I'd love to build Thistle's design practice from the first designer up!"
+  ],
+  "requirements": [
+    {
+      "heading": "Direct-to-consumer health, end to end",
+      "body": "At EverlyWell I owned the whole journey: the marketing site, the product page, checkout, a test kit in the mail, the lab, and the results experience. I treated it as one path instead of a set of screens, so buying felt like the obvious next step and results felt worth coming back to. I redesigned and A/B tested the product page and sales went up 25%. I also built a subscription option into both checkout and the results platform, which turned one-time buyers into recurring customers.",
+      "images": [
+        {
+          "key": "job-apps/user-flow"
+        }
+      ]
+    },
+    {
+      "heading": "Being the whole design function, then growing it",
+      "body": "I've been the first or only designer more than once. As Head of Design at Unilease I worked directly with the CEO and engineering, set the standards, and built the design system from scratch. At T3 and Foxtrot I mentored and directed other designers, ran critiques, and helped with hiring. A player-coach role that starts solo and grows into a team is exactly the next step I've been looking for.",
+      "images": [
+        {
+          "key": "job-apps/collaborative",
+          "alt": "Me and some teammates meeting"
+        }
+      ]
+    },
+    {
+      "heading": "One system across product, brand, and marketing",
+      "body": "At Unilease I designed the brand, the marketing site, and the product, and had to make them feel like one thing. At WorkStep I rebuilt our Figma design system from scratch on variables and tokens, cut component bloat by 85%, and built it to WCAG AA contrast. Agency work for brands like Hallmark taught me to carry a brand's personality into sign-up flows, loyalty programs, and product pages without losing it.",
+      "images": [
+        {
+          "key": "job-apps/design-systems",
+          "alt": "Example design system from a project with Halliburton"
+        }
+      ]
+    },
+    {
+      "heading": "Internal tools for the people who make it happen",
+      "body": "For four years at WorkStep I designed operational software for managers at warehouses and distribution centers, for customers like PepsiCo, PetSmart, and JB Hunt. I owned Report Builder end to end and led an information architecture overhaul with our Senior PM. Thistle's kitchens, packing lines, and delivery operations are a different setting, but the job is the same: make sure the people doing the real work have tools that keep up with them.",
+      "images": [
+        {
+          "key": "job-apps/report-cards",
+          "alt": "Cards from a report builder I designed"
+        }
+      ]
+    },
+    {
+      "heading": "Research and data, together",
+      "body": "I know when a question needs a conversation and when it needs a test. At EverlyWell the A/B test proved the product page redesign worked. At WorkStep, watching how customers actually used Report Builder after launch showed us what the spec missed. At Intuit I planned and ran research with professional users. I like making the case for a direction in writing, with the evidence right there.",
+      "images": [
+        {
+          "key": "job-apps/strategic-influence",
+          "alt": "Sticky notes from an ideation session"
+        }
+      ]
+    },
+    {
+      "heading": "Web and mobile",
+      "body": "At Insitome I led design for consumer apps on native iOS and responsive web in parallel, including an onboarding overhaul focused on getting new users to their first meaningful result. I've designed mobile-first experiences at EverlyWell, WorkStep, Unilease, and Foxtrot, and I'm building a landscaping app in Figma to keep my native patterns sharp.",
+      "images": [
+        {
+          "key": "job-apps/nice-interfaces",
+          "alt": "Some of the various mobile and web designs I've done"
+        }
+      ]
+    },
+    {
+      "heading": "Moving fast with modern tools",
+      "body": "I prototype in code with Claude Code and Cursor every day, which is how one designer keeps up with a whole product team. I've been writing HTML and CSS since 1999. This page was published by a workflow I built that turns a job posting into structured data and pushes it to my site.",
+      "images": [
+        {
+          "key": "job-apps/use-of-ai",
+          "alt": "A screenshot of my Claude usage as of recently"
+        }
+      ]
+    },
+    {
+      "heading": "Where I'd be learning",
+      "body": "I haven't worked in food production or meal delivery, and I'd want to visit your kitchens early to see how a meal actually gets from a recipe to someone's door. I've mentored, directed, and helped hire designers, but I haven't been a formal people manager with direct reports yet. Building Thistle's team would be my first time doing that end to end, and it's the part of this role I'm most excited about."
+    }
+  ]
+}

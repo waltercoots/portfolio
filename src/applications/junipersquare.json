@@ -1,0 +1,85 @@
+{
+  "slug": "junipersquare",
+  "company": "Juniper Square",
+  "headingLevel": 2,
+  "intro": [
+    "I know you’re going through a lot of applications, so I’ve put together some highlights on how I align with what you’re looking for.",
+    "\"The complexity lives in the craft, not the interface\" is about the best one-line description of my job I've read. I've spent the last several years making dense, data-heavy enterprise software feel calm, and before that I designed commercial real estate tools for brokers. Fund operations sounds like a place where that kind of quiet clarity can make a difference."
+  ],
+  "requirements": [
+    {
+      "heading": "Complex tables, filters, and data visualization",
+      "body": "At WorkStep I designed high-density dashboards, data tables, and charts for managers responsible for large frontline workforces across many sites. I owned a report builder feature through launch and later iteration, and post-launch behavior showed us what the spec missed. Watching how customers actually used it after launch showed us what the spec missed, and the second version was much better for it.",
+      "images": [
+        {
+          "key": "job-apps/report-cards",
+          "alt": "Cards from a report builder I designed"
+        }
+      ]
+    },
+    {
+      "heading": "Real estate and financial workflows",
+      "body": "At Unilease, I designed a commercial real estate platform for brokers to survey the market, review property details, and match properties to tenants. Before that I spent four years at Intuit on ProSeries, professional tax software accountants used under deadline pressure. At Foxtrot I worked on IA and UX for the Dimensional Fund Advisors website. Private markets would be new, but the neighborhood is familiar!",
+      "images": [
+        {
+          "key": "job-apps/nice-interfaces",
+          "alt": "Some of the various mobile and web designs I've done"
+        }
+      ]
+    },
+    {
+      "heading": "AI features that don't feel like a black box",
+      "body": "At WorkStep I designed an LLM-powered assistant with our data scientist and CPO that turned workforce data into plain-language insights and notifications for managers. I also designed LLM-based grouping that made thousands of open-ended survey comments readable. In both, the real design work was deciding what the system should say, how confident it should sound, and what a person should be able to check before acting.",
+      "images": [
+        {
+          "key": "job-apps/content-strategy",
+          "alt": "Plain-language helper text in a WorkStep segment builder"
+        }
+      ]
+    },
+    {
+      "heading": "Picking the right tool for the job",
+      "body": "My workflow is close to the one you describe. I often start in Claude to frame a problem, build a quick prototype in Claude Code to feel out an interaction, and finish in Figma when engineers need a polished reference. During WorkStep's post-acquisition integration I prototyped new flows in code so the team could test real behavior before committing to a build. This webpage itself came out of a workflow I built that turns a job posting into structured data and publishes it to my site.",
+      "images": [
+        {
+          "key": "job-apps/use-of-ai",
+          "alt": "A screenshot of my Claude usage as of recently"
+        }
+      ]
+    },
+    {
+      "heading": "Handoff files engineers can trust",
+      "body": "I spec the empty, error, partial, and overloaded states as carefully as the happy path, and I sweat details like which shadow a card gets and why. When a file goes to engineering, it should answer their questions before they ask them.",
+      "images": [
+        {
+          "key": "job-apps/design-specs",
+          "alt": "An annotated design spec covering UI states"
+        }
+      ]
+    },
+    {
+      "heading": "Strengthening the design system",
+      "body": "I rebuilt WorkStep's design system to replace one that had gotten long in the tooth. Figma variables finally gave us a real token layer, so I organized it around color and breakpoint collections, each with its own modes. I cut component bloat by 85% and built every color pairing to meet WCAG AA. I also learned some things the hard way, like how libraries pass variables to each other and the tradeoffs of splitting different sets of components into separate files.",
+      "images": [
+        {
+          "key": "job-apps/design-systems",
+          "alt": "Example design system from a project with Halliburton"
+        }
+      ]
+    },
+    {
+      "heading": "Autonomous, with strong partnerships",
+      "body": "I've been the first designer at Unilease and the sole product designer at EverlyWell from Series A to Series B, where a redesigned and A/B tested product page lifted sales 25%. Nobody handed me a brief in either place. At WorkStep I led an information architecture overhaul with our Senior PM, reframing a navigation complaint into the structural problem underneath it.",
+      "images": [
+        {
+          "key": "job-apps/info-architecture",
+          "alt": "Information architecture work from the WorkStep IA re-architecture"
+        }
+      ]
+    },
+    {
+      "heading": "Where I'd be learning",
+      "body": "I haven't worked in private markets or fund administration, and the vocabulary of GPs, LPs, capital calls, and waterfalls would be new to me. I've had to get fluent quickly in tax, HR, and commercial real estate, and I'd do the same here by spending early time with your customers and fund administration team. I'm in Austin, so I'd be remote and happy to travel to San Francisco when it helps."
+    }
+  ]
+}
